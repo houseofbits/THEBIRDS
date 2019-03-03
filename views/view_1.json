@@ -2,15 +2,17 @@
   "sectors":[
     {
       "position":0,
+      "image":"resources/backgrounds/v1s1.png",
       "objects":[
         {
-          "title":"Bird 1",
+          "title":"Cielava",
+          "image":"resources/birds/v1s1b1.png",
           "position":10,
           "description":"",
           "audio":[
             {
               "title":"Dziesma",
-              "fileName":"sound1.wav"
+              "fileName":"resources/sounds/sound1.wav"
             }
           ]
         }

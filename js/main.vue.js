@@ -2,12 +2,15 @@
 var app = new Vue({
     el: '#mainApp',
     data: {
-        title: 'vue ok',
-        sound: null,
         view: null,
     },
     computed:{
-
+        sectors:function () {
+            if(this.view && typeof this.view.sectors != 'undefined'){
+                return this.view.sectors;
+            }
+            return false;
+        }
     },
     methods: {
         // play:function () {

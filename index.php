@@ -16,16 +16,27 @@
 
 <div id="mainApp" viewid="<?=(isset($_GET['īd'])?intval($_GET['īd']):1)?>">
 
-    <div v-for="(sector, index) in view.sectors">
+    <sector v-for="(sector, index) in sectors" :key="index">
 
+        sector
 
-
-    </div>
+    </sector>
 
 
 </div>
+<script type="text/x-template" id="sector-template">
+    <div class="sector" v-on:mouseenter="animIn" v-on:mouseleave="animOff" v-on:mousemove="updateMove">
+        Sector element
+    </div>
+</script>
+<script type="text/x-template" id="item-template">
+    <div class="item-icon">
 
+    </div>
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+<script src="js/sector.vue.js"></script>
+<script src="js/item.vue.js"></script>
 <script src="js/main.vue.js"></script>
 </body>
 </html>

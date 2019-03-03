@@ -1,0 +1,68 @@
+.sector{
+
+    position:relative;
+    left:150px;
+    top:50px;
+    width:300px;
+    height:300px;
+    border: solid 1px black;
+    background: gray;
+    opacity:0.5;
+    box-shadow: 9px 6px 15px 0px rgba(0,0,0,0.5);
+}
+
+
+#mainApp{
+    position: relative;
+    height: 400px;
+    width: 600px;
+    margin-left: 60px;
+    margin-top: 60px;
+    border: 1px solid blue;
+    perspective: 100px;
+}
+
+#div1 {
+    position: relative;
+    height: 400px;
+    width: 600px;
+    margin-left: 60px;
+    border: 1px solid blue;
+    -webkit-perspective: 100px; /* Safari 4-8  */
+    perspective: 100px;
+}
+#div2 {
+    left:100px;
+
+    width:300px;
+    height:200px;
+    position: absolute;
+    border: 1px solid black;
+    background: gray;
+    transform-style: preserve-3d;
+    transform: rotateX(15deg);
+    box-shadow: 9px 6px 29px 0px rgba(0,0,0,0.75);
+    opacity:0.5;
+}
+
+#div3 {
+    left:200px;
+    width:100px;
+    height:100px;
+    position: absolute;
+    border: 1px solid black;
+    background: rgba(100,100,100,0.5);
+    transform-style: preserve-3d;
+    transform: rotateX(5deg);
+    box-shadow: 9px 6px 29px 0px rgba(0,0,0,0.75);
+    opacity:0.5;
+}
+
+#div2:hover {
+    background:red;
+    opacity:0.5;
+}
+#div3:hover {
+    background:blue;
+    opacity:0.5;
+}
