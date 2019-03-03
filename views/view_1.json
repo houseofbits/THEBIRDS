@@ -1,0 +1,20 @@
+{
+  "sectors":[
+    {
+      "position":0,
+      "objects":[
+        {
+          "title":"Bird 1",
+          "position":10,
+          "description":"",
+          "audio":[
+            {
+              "title":"Dziesma",
+              "fileName":"sound1.wav"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
