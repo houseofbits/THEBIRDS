@@ -1,0 +1,17 @@
+version: '3'
+services:
+  nginx: 
+    image: nginx:latest
+    container_name: production_nginx
+    ports:
+      - 80:80
+    volumes:
+        - ./site:/site
+        - ./site.conf:/etc/nginx/conf.d/site.conf
+    links:
+        - php
+
+  php:
+    image: php:7-fpm
+    volumes:
+        - ./site:/site

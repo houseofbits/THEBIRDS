@@ -16,6 +16,11 @@
     <div id="div3">DIV3</div>
 </div>
 
+<?php
+
+echo phpinfo();
+
+?>
 
 </body>
 </html>
