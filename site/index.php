@@ -1,3 +1,8 @@
+<?php
+
+// 1024 x 768 px
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
