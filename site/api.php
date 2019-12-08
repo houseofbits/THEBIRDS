@@ -1,7 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: T510
- * Date: 3/2/2019
- * Time: 15:21
- */
+if(!isset($_GET['id']))die('no access');
+$filePath = 'resources/view_' . intval($_GET['id']) . '/config.json';
+if(file_exists($filePath)){
+    header("Content-type: application/json; charset=utf-8");
+    readfile($filePath);
+    exit;
+}else die('not found');
+

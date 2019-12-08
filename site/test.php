@@ -11,16 +11,11 @@
 </head>
 <body>
 
-<div id="div1">DIV1
-    <div id="div2">DIV2</div>
-    <div id="div3">DIV3</div>
+<div class="scene">
+    <div class="panel panelA">Panel-A</div>
+    <div class="panel panelB">Panel-B</div>
+    <div class="panel panelC">Panel-C</div>
 </div>
-
-<?php
-
-echo phpinfo();
-
-?>
 
 </body>
 </html>

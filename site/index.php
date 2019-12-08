@@ -1,7 +1,25 @@
 <?php
 
 // 1024 x 768 px
+/*
+View 1
 
+1) Brūnais ibiss
+2) Karošknābis
+3) Nakts gārnis
+4) Mazais dumpis
+5) Mazais baltais gārnis
+6) Lielais baltais gārnis
+7) Lielais dumpis
+8) Zivju gārnis
+9) Baltais stārķis
+10) Melnais stārķis
+
+
+
+
+
+*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,35 +31,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/style.css" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/vue-resource.js"></script>
     <script src="js/howler.js"></script>
 </head>
 <body>
 
 <div id="mainApp" viewid="<?=(isset($_GET['īd'])?intval($_GET['īd']):1)?>">
 
-    <sector v-for="(sector, index) in sectors" :key="index">
+    <div class="mainBackground" ref="mainBackground"></div>
 
-        sector
+    <div class="mainBackgroundBlurred" ref="mainBackgroundBlurred"></div>
 
-    </sector>
+    <sector v-for="(sector, index) in sectors" :key="index"></sector>
 
+    <div class="mainScreenOverlay"></div>
 
 </div>
+
 <script type="text/x-template" id="sector-template">
     <div class="sector" v-on:mouseenter="animIn" v-on:mouseleave="animOff" v-on:mousemove="updateMove">
-        Sector element
+        <div id="div1"></div>
+        <div id="div2"></div>
     </div>
 </script>
-<script type="text/x-template" id="item-template">
-    <div class="item-icon">
 
-    </div>
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+
+<script src="js/velocity.min.js"></script>
 <script src="js/sector.vue.js"></script>
-<script src="js/item.vue.js"></script>
 <script src="js/main.vue.js"></script>
 </body>
 </html>
