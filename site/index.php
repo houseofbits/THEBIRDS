@@ -39,13 +39,20 @@ View 1
 
 <div id="mainApp" viewid="<?=(isset($_GET['īd'])?intval($_GET['īd']):1)?>">
 
-    <div class="mainBackground" ref="mainBackground"></div>
+    <div ref="mainScreen">
 
-    <div class="mainBackgroundBlurred" ref="mainBackgroundBlurred"></div>
+        <div class="mainBackground" :style="{ opacity: mainFadeValue, backgroundImage:0 }"></div>
 
-    <sector v-for="(sector, index) in sectors" :key="index"></sector>
+        <div class="mainBackgroundBlurred" :style="{ opacity: (1 - mainFadeValue), backgroundImage:0 }"></div>
 
-    <div class="mainScreenOverlay"></div>
+        <sector v-for="(sector, index) in sectors" :key="index"></sector>
+
+    </div>
+
+    <div ref="detailScreen">
+        
+
+    </div>
 
 </div>
 

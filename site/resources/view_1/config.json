@@ -1,12 +1,47 @@
 {
-  "backgoundImage":"resources/random_bg.png",
+  "background":"resources/random_bg.png",
+  "backgroundBlurred":"resources/random_bg.png",  
   "sectors":[
     {
-      "title":"Cielava",
-      "description":"",
-      "thumbnailImage":"resources/view_1/images/s1.png",
-      "thumbnailShadowImage":"resources/view_1/images/s1Shadow.png",
-      "position":{"x":10, "y":10, "z":10},
+      "title":{
+        "lv":"BRŪNAIS IBISS",
+        "ru":"КАРАВАЙКА",
+        "en":"GLOSSY IBISS",
+      },
+      "description":{
+        "lv":"Brūnais ibiss Latvijā rets ieceļotājs. Vismaz vienpadsmit novērojumi.",
+        "ru":"Каравайка в Латвии является редким залетным видом. Отмечена 11 раз.",
+        "en":"Rare vagrant. There are 11 observations of this species in Latvia.",
+      },
+      "mainImage":{
+          "image":"resources/view_1/images/s1.png",
+          "imageBlurred":"resources/view_1/images/s1_blur.png",          
+          "imageActive":"resources/view_1/images/s1_active.png",        
+          "width":"200px",
+          "height":"200px",
+          "rotateX":"0deg",
+          "rotateY":"0deg",
+          "translateX":"0px",
+          "translateY":"0px",
+          "translateZ":"0px",
+      },
+      "detailTransform":{
+          "image":"resources/view_1/images/s1_detail.png",        
+          "width":"200px",
+          "height":"200px",
+          "rotateX":"0deg",
+          "rotateY":"0deg",
+          "translateX":"0px",
+          "translateY":"0px",
+          "translateZ":"0px",
+      },
+      "zoomedTransform":{
+          "rotateX":"0deg",
+          "rotateY":"0deg",
+          "translateX":"0px",  
+          "translateY":"0px",  
+          "translateZ":"0px",
+      },
       "audio":[
         {
           "title":"Dziesma",
