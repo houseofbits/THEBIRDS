@@ -31,9 +31,9 @@ View 1
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/style.css" type="text/css" />
-    <script src="js/vue.js"></script>
-    <script src="js/vue-resource.js"></script>
-    <script src="js/howler.js"></script>
+    <script src="js/vendor/vue.js"></script>
+    <script src="js/vendor/vue-resource.js"></script>
+    <script src="js/vendor/howler.js"></script>
 </head>
 <body>
 
@@ -57,7 +57,7 @@ View 1
 </script>
 
 
-<script src="js/velocity.min.js"></script>
+<script src="js/vendor/velocity.min.js"></script>
 <script src="js/sector.vue.js"></script>
 <script src="js/main.vue.js"></script>
 </body>
