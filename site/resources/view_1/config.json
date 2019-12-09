@@ -6,12 +6,12 @@
       "title":{
         "lv":"BRŪNAIS IBISS",
         "ru":"КАРАВАЙКА",
-        "en":"GLOSSY IBISS",
+        "en":"GLOSSY IBISS"
       },
       "description":{
         "lv":"Brūnais ibiss Latvijā rets ieceļotājs. Vismaz vienpadsmit novērojumi.",
         "ru":"Каравайка в Латвии является редким залетным видом. Отмечена 11 раз.",
-        "en":"Rare vagrant. There are 11 observations of this species in Latvia.",
+        "en":"Rare vagrant. There are 11 observations of this species in Latvia."
       },
       "mainImage":{
           "image":"resources/view_1/images/s1.png",
@@ -23,7 +23,7 @@
           "rotateY":"0deg",
           "translateX":"0px",
           "translateY":"0px",
-          "translateZ":"0px",
+          "translateZ":"0px"
       },
       "detailTransform":{
           "image":"resources/view_1/images/s1_detail.png",        
@@ -33,14 +33,14 @@
           "rotateY":"0deg",
           "translateX":"0px",
           "translateY":"0px",
-          "translateZ":"0px",
+          "translateZ":"0px"
       },
       "zoomedTransform":{
           "rotateX":"0deg",
           "rotateY":"0deg",
           "translateX":"0px",  
           "translateY":"0px",  
-          "translateZ":"0px",
+          "translateZ":"0px"
       },
       "audio":[
         {
