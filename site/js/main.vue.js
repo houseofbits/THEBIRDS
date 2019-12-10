@@ -4,6 +4,7 @@ var app = new Vue({
     data: {
         view: null,
         language:'lv',
+        faded:false
     },
     computed:{
         sectors:function () {
@@ -13,19 +14,15 @@ var app = new Vue({
             return false;
         },
         backgroundImageUrl:function(){
-            if(typeof this.data.view.background != "undefined"){
-                return this.data.view.background;
+            if(this.view && typeof this.view.background != "undefined"){
+                return this.view.background;
             }
             return '';
         },
     },
     methods: {
-
         init:function (viewData) {
             this.view = viewData;
-
-
-
         },
         getView:function (id) {
             this.$http.get('api.php?id='+id).then(function(response) {
@@ -41,15 +38,30 @@ var app = new Vue({
             var scaley = -0.5 + (py / 768.0);
 
             Velocity(this.$refs.mainScreen, {
-                rotateX:scaley*30,
-                rotateY:scalex*30
+                rotateX:scaley*10,
+                rotateY:scalex*20
             }, { duration: 10});
 
         },
         onClick:function (e) {
-            //console.log('document click event '+e.clientX+", "+e.clientY);
-            this.$emit('test-event', 1);
+
+            if(!this.fade) {
+                Velocity(this.$refs.mainBackground, {
+                    blur: 2
+                }, {duration: 1000});
+
+                this.$emit('blur-effect-event', 5);
+                this.fade = true;
+            }else{
+                Velocity(this.$refs.mainBackground, {
+                    blur: 0
+                }, {duration: 1000});
+
+                this.$emit('blur-effect-event', 0);
+                this.fade = false;
+            }
         },
+
         selectDetailView:function(id){
             //1) rotate to focused perspective
             //2) fade to blurred main images

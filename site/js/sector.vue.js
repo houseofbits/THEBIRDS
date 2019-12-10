@@ -1,52 +1,44 @@
 
 Vue.component('sector', {
-    props: ['data'],
+    props: ['sector'],
     template:'#sector-template',
     data: function () {
-        return {}
+        return { data: this.sector }
     },
     computed:{
-
+        backgroundImageUrl:function(){
+            return this.getImageProp('image');
+        },
     },
     methods: {
-        animIn:function (event) {
-       //     Velocity(event.target, { opacity: 1
-       //     }, { duration: 200})
+        getImageProp:function(name){
+            if(this.data && typeof this.data.mainImage != 'undefined'){
+                if(typeof this.data.mainImage[name] != 'undefined'){
+                    return this.data.mainImage[name];
+                }
+            }
+            return '';
         },
-        animOff:function (event) {
-            // Velocity(event.target, { opacity: 0.5, rotateX:0, rotateY:0//, translateZ:-15
-            // }, { duration: 200})
-        },
-        updateMove:function (event) {
-/*
-            var px = event.offsetX;
-            var py = event.offsetY;
-            var scalex = 0.5 - (px / 1200.0);
-            var scaley = -0.5 + (py / 1000.0);
-            Velocity(event.target, {
-                rotateX:scaley*30,
-                rotateY:scalex*30
-            }, { duration: 10})*/
-        },
-        clickEventReceived:function(value){
-            console.log('click event received '+value);
+        blurEffectEventReceived:function(value){
+            //console.log('click event received '+value);
+            Velocity(this.$el,{
+                blur:value
+            }, { duration: 1000});
         }
-
-        
-        // play:function () {
-        //     if(this.sound.playing())this.sound.stop();
-        //     else this.sound.play();
-        // },
-
-
     },
     mounted:function () {
-        this.$parent.$on('test-event', this.clickEventReceived);
 
+        this.$parent.$on('blur-effect-event', this.blurEffectEventReceived);
 
-        // this.sound = new Howl({
-        //     src: ['views/sound.wav']
-        // });
-                
+        Velocity(this.$el, {
+            translateX:this.getImageProp('translateX'),
+            translateY:this.getImageProp('translateY'),
+            translateZ:this.getImageProp('translateZ'),
+            rotateX:this.getImageProp('rotateX'),
+            rotateY:this.getImageProp('rotateY'),
+            rotateZ:this.getImageProp('rotateZ'),
+            width:this.getImageProp('width'),
+            height:this.getImageProp('height')
+        }, 0);
     }
 })

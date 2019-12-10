@@ -1,5 +1,5 @@
 {
-  "background":"resources/random_bg.png",
+  "background":"resources/view_1/images/bg.png",
   "sectors":[
     {
       "title":{
@@ -16,21 +16,22 @@
           "image":"resources/view_1/images/s1.png",
           "imageActive":"resources/view_1/images/s1_active.png",        
           "width":"200px",
-          "height":"200px",
+          "height":"300px",
           "rotateX":"0deg",
           "rotateY":"0deg",
-          "translateX":"0px",
-          "translateY":"0px",
-          "translateZ":"0px"
+          "rotateZ":"20deg",
+          "translateX":"450px",
+          "translateY":"300px",
+          "translateZ":"80px"
       },
       "detailImage":{
-          "image":"resources/view_1/images/s1_detail.png",        
+          "image":"resources/view_1/images/s1.png",
           "width":"200px",
           "height":"200px",
           "rotateX":"0deg",
           "rotateY":"0deg",
-          "translateX":"0px",
-          "translateY":"0px",
+          "translateX":"400px",
+          "translateY":"300px",
           "translateZ":"0px"
       },
       "zoomedTransform":{
@@ -46,6 +47,16 @@
           "fileName":"resources/view_1/sounds/sound1.wav"
         }
       ]
+    },
+    {
+      "mainImage":{
+        "image":"resources/view_1/images/s1.png",
+        "width":"200px",
+        "height":"500px",
+        "translateX":"150px",
+        "translateY":"350px",
+        "translateZ":"60px"
+      }
     }
   ]
 }

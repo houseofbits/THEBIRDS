@@ -1,28 +1,60 @@
 
-#appplication{ }
+body{
+    background-color: slategrey;
+}
 
-.main-background{
+#appplication{
+    width:1024px;
+    height:768px;
     position:absolute;
-    background-image: url("/resources/random_bg.png");
-    opacity:0.5;
+    top:0px;
+    left:0px;
+    overflow: hidden;
+}
+.main-screen{
+    position:absolute;
     left:-100px;
     top:-100px;
     width:1224px;
     height:968px;
-    transform-style: preserve-3d;
     perspective: 600px;
+    transform: rotateX(0deg) rotateY(0deg);
+    transform-style: preserve-3d;
+}
+
+.main-background{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1224px;
+    height:968px;
 }
 
 .sector{
-    position:absolute;
+    position: absolute;
+    background-repeat: round;
+    /*
+    height: 300px;
+    width: 100px;
+    border: 5px solid blue;
+    background: cornflowerblue;
+    transform: translate3d(400px, 300px, 40px);
+    */
 }
 
 
+.dev-frame{
+    display:none;
+    border: 5px blue dotted;
+    width:1024px;
+    height:768px;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
 
 
-
-
-#div1 {
+.detail {
     position: absolute;
     height: 300px;
     width: 100px;
