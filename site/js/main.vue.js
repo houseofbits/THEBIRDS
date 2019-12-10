@@ -1,6 +1,6 @@
 
 var app = new Vue({
-    el: '#mainApp',
+    el: '#appplication',
     data: {
         view: null,
         language:'lv',
@@ -11,7 +11,13 @@ var app = new Vue({
                 return this.view.sectors;
             }
             return false;
-        }
+        },
+        backgroundImageUrl:function(){
+            if(typeof this.data.view.background != "undefined"){
+                return this.data.view.background;
+            }
+            return '';
+        },
     },
     methods: {
         // play:function () {
@@ -31,8 +37,10 @@ var app = new Vue({
         },
         onMouseMove:function (e) {
         //    console.log('document mousemove event '+e.clientX+", "+e.clientY);
+            var x = e.clientX;
+            var y = e.clientY;
 
-
+            
 
         },
         onClick:function (e) {

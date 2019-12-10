@@ -1,6 +1,5 @@
 {
   "background":"resources/random_bg.png",
-  "backgroundBlurred":"resources/random_bg.png",  
   "sectors":[
     {
       "title":{
@@ -15,7 +14,6 @@
       },
       "mainImage":{
           "image":"resources/view_1/images/s1.png",
-          "imageBlurred":"resources/view_1/images/s1_blur.png",          
           "imageActive":"resources/view_1/images/s1_active.png",        
           "width":"200px",
           "height":"200px",
@@ -25,7 +23,7 @@
           "translateY":"0px",
           "translateZ":"0px"
       },
-      "detailTransform":{
+      "detailImage":{
           "image":"resources/view_1/images/s1_detail.png",        
           "width":"200px",
           "height":"200px",

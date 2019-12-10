@@ -17,8 +17,6 @@ View 1
 
 
 
-
-
 */
 ?>
 <!DOCTYPE html>
@@ -37,29 +35,25 @@ View 1
 </head>
 <body>
 
-<div id="mainApp" viewid="<?=(isset($_GET['īd'])?intval($_GET['īd']):1)?>">
+<div id="appplication" viewid="<?=(isset($_GET['īd'])?intval($_GET['īd']):1)?>">
 
-    <div ref="mainScreen">
-
-        <div class="mainBackground" :style="{ opacity: mainFadeValue, backgroundImage:0 }"></div>
-
-        <div class="mainBackgroundBlurred" :style="{ opacity: (1 - mainFadeValue), backgroundImage:0 }"></div>
-
+    <div class="main-background" ref="mainScreen" :style="{backgroundImage: 'url(' + require( backgroundImageUrl() ) + ')'}">
         <sector v-for="(sector, index) in sectors" :key="index"></sector>
-
     </div>
 
     <div ref="detailScreen">
-        
 
     </div>
 
 </div>
 
 <script type="text/x-template" id="sector-template">
-    <div class="sector" v-on:mouseenter="animIn" v-on:mouseleave="animOff" v-on:mousemove="updateMove">
-        <div id="div1"></div>
-        <div id="div2"></div>
+    <div class="sector"></div>
+</script>
+<script type="text/x-template" id="detail-template">
+    <div class="detail">
+        <div class="image"></div>
+        <div class="text"></div>
     </div>
 </script>
 
