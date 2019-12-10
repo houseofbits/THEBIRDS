@@ -20,10 +20,7 @@ var app = new Vue({
         },
     },
     methods: {
-        // play:function () {
-        //     if(this.sound.playing())this.sound.stop();
-        //     else this.sound.play();
-        // },
+
         init:function (viewData) {
             this.view = viewData;
 
@@ -36,15 +33,21 @@ var app = new Vue({
             }, function(){});
         },
         onMouseMove:function (e) {
-        //    console.log('document mousemove event '+e.clientX+", "+e.clientY);
-            var x = e.clientX;
-            var y = e.clientY;
 
-            
+            var px = e.clientX;
+            var py = e.clientY;
+
+            var scalex = 0.5 - (px / 1024.0);
+            var scaley = -0.5 + (py / 768.0);
+
+            Velocity(this.$refs.mainScreen, {
+                rotateX:scaley*30,
+                rotateY:scalex*30
+            }, { duration: 10});
 
         },
         onClick:function (e) {
-            console.log('document click event '+e.clientX+", "+e.clientY);
+            //console.log('document click event '+e.clientX+", "+e.clientY);
             this.$emit('test-event', 1);
         },
         selectDetailView:function(id){
@@ -68,10 +71,6 @@ var app = new Vue({
 
         document.addEventListener('mousemove', this.onMouseMove);
         document.addEventListener('click', this.onClick);
-
-        // this.sound = new Howl({
-        //     src: ['views/sound.wav']
-        // });
 
     },
     beforeDestroy: function () {

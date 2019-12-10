@@ -31,8 +31,22 @@ Vue.component('sector', {
         clickEventReceived:function(value){
             console.log('click event received '+value);
         }
+
+        
+        // play:function () {
+        //     if(this.sound.playing())this.sound.stop();
+        //     else this.sound.play();
+        // },
+
+
     },
     mounted:function () {
         this.$parent.$on('test-event', this.clickEventReceived);
+
+
+        // this.sound = new Howl({
+        //     src: ['views/sound.wav']
+        // });
+                
     }
 })
