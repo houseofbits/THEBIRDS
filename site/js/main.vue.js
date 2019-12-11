@@ -77,8 +77,7 @@ var app = new Vue({
 
         },
         onClick:function (e) {
-            this.fade = !this.fade;
-            this.$emit('blur-effect-event', this.fade);
+
         },
         selectDetailView:function(id){
             //1) rotate to focused perspective
@@ -111,13 +110,25 @@ var app = new Vue({
         },
         blurEffectEventReceived:function(on){
             var value = 0;
+            var zoom = 600;
             if(on){
-                value = 2;
+                value = 3;
+                zoom = 300;
             }
             Velocity(this.$refs.mainBackground,{
                 blur:value
             }, { duration: 1000});
-        },    
+
+            Velocity(this.$refs.mainScreen,{
+                perspective:zoom
+            }, { duration: 1000});
+
+        },
+        sectorOnClickEvent:function (index) {
+            console.log("sector on click "+index);
+            this.fade = !this.fade;
+            this.$emit('blur-effect-event', this.fade);
+        }
     },
     mounted:function () {
         this.getView(this.$el.attributes.viewid.value);
@@ -131,6 +142,7 @@ var app = new Vue({
 //        document.addEventListener('touchmove', this.onClick);                
 
         this.$on('blur-effect-event', this.blurEffectEventReceived);
+        this.$on('sector-on-click', this.sectorOnClickEvent);
     },
     beforeDestroy: function () {
         document.removeEventListener('mousemove', this.onMouseMove);

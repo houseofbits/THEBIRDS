@@ -63,7 +63,7 @@ body{
     top:0px;
     left:0px;
     background-color: black;
-    opacity:0.4;
+    opacity:0.5;
 }
 
 .detail-screen .image {
@@ -74,4 +74,12 @@ body{
     background: cornflowerblue;
     transform-style: preserve-3d;
     transform: translate3d(400px, 300px, 40px);
+}
+
+.polygon{
+    fill:yellow;
+    stroke:blue;
+    stroke-width:2px;
+    fill-rule:evenodd;
+    opacity:0.5;
 }

@@ -22,37 +22,14 @@
         <div class="main-background" ref="mainBackground" :style="{backgroundImage: 'url(' + backgroundImageUrl + ')'}"></div>
 
         <sector v-for="(sector, index) in sectors" :key="index" :sector="sector"></sector>
-        
 
-        <!-- https://stackoverflow.com/questions/1998866/how-to-visualise-debug-an-imagemap -->
-        <!--img src = "resources/view_1/images/bg.png" alt = "HTML Map" border = "0" usemap = "#tutorials"/>
-
-        <map name = "tutorials">
-            <area shape="poly" 
-                coords = "74,0,113,29,98,72,52,72,38,27"
-                href = "/perl/index.htm" alt = "Perl Tutorial"
-                target = "_self"
-                onMouseOver = "showTutorial('perl')" 
-                onMouseOut = "showTutorial('')"/>
-
-            <area shape = "rect" 
-                coords = "22,83,126,125"
-                href = "/html/index.htm" alt = "HTML Tutorial" 
-                target = "_self" 
-                onMouseOver = "showTutorial('html')" 
-                onMouseOut = "showTutorial('')"/>
-
-            <area shape = "circle" 
-                coords = "73,168,32"
-                href = "/php/index.htm" alt = "PHP Tutorial"
-                target = "_self" 
-                onMouseOver = "showTutorial('php')" 
-                onMouseOut = "showTutorial('')"/>
-        </map-->
+        <svg width="1024" height="768" style="position:absolute;">
+            <sector_polygon v-for="(sector, index) in sectors" :key="index" :sector="sector"></sector_polygon>
+        </svg>
 
     </div>
 
-    <div class="detail-screen" ref="detailScreen">
+    <!--div class="detail-screen" ref="detailScreen">
 
         <div class="title"></div>
         
@@ -66,7 +43,8 @@
 
         <div class="navigation"></div>
 
-    </div>
+    </div-->
+
 
 </div>
 
@@ -75,11 +53,16 @@
         <div v-if="backgroundImageActiveUrl" class="active" :style="{backgroundImage: 'url(' + backgroundImageActiveUrl + ')'}"></div>
     </div>
 </script>
+<script type="text/x-template" id="sector-polygon-template">
+    <polygon v-if="polygonPoints" :points="polygonPoints" class="polygon"
+        v-on:click="onClick"
+    />
+</script>
 
 <div class="dev-frame"></div>
 
-<!--script src="js/vendor/velocity123.min.js"></script-->
 <script src="js/sector.vue.js"></script>
+<script src="js/sector-polygon.vue.js"></script>
 <script src="js/main.vue.js"></script>
 </body>
 </html>
