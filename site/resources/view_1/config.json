@@ -1,7 +1,9 @@
 {
-  "background":"resources/view_1/images/bg.png",
+  "mainBackground":"resources/view_1/images/bg.png",
+  "detailBackground":"resources/view_1/images/bg.png",
   "sectors":[
     {
+      "comment":"------------------------------------ Brīnais ibiss - aktīvais sektors-----------------------------",
       "title":{
         "lv":"BRŪNAIS IBISS",
         "ru":"КАРАВАЙКА",
@@ -15,31 +17,16 @@
       "mainImage":{
           "image":"resources/view_1/images/s1.png",
           "imageActive":"resources/view_1/images/s1_active.png",        
-          "width":"200px",
-          "height":"300px",
-          "rotateX":"0deg",
-          "rotateY":"0deg",
-          "rotateZ":"20deg",
-          "translateX":"450px",
-          "translateY":"300px",
-          "translateZ":"80px"
+          "position":"450,300,80",
+          "rotation":"0,0,0",
+          "size":"200,300",
+          "maxBlur":"6"
       },
       "detailImage":{
           "image":"resources/view_1/images/s1.png",
-          "width":"200px",
-          "height":"200px",
-          "rotateX":"0deg",
-          "rotateY":"0deg",
-          "translateX":"400px",
-          "translateY":"300px",
-          "translateZ":"0px"
-      },
-      "zoomedTransform":{
-          "rotateX":"0deg",
-          "rotateY":"0deg",
-          "translateX":"0px",  
-          "translateY":"0px",  
-          "translateZ":"0px"
+          "position":"150,350,60",
+          "rotation":"0,0,0",
+          "size":"200,500"   
       },
       "audio":[
         {
@@ -49,13 +36,13 @@
       ]
     },
     {
+      "comment":"------------------------------------- Niedru kušķis #1 --------------------------------------------",
       "mainImage":{
         "image":"resources/view_1/images/s1.png",
-        "width":"200px",
-        "height":"500px",
-        "translateX":"150px",
-        "translateY":"350px",
-        "translateZ":"60px"
+        "position":"150,350,60",
+        "rotation":"0,0,0",
+        "size":"200,500",
+        "maxBlur":"6"      
       }
     }
   ]

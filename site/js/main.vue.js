@@ -1,10 +1,37 @@
 
+class Rectangle {
+  constructor(str) {
+    this.height = 0;
+    this.width = 0;
+    if(str && str.indexOf(',') > 0){
+        var arr = str.split(',');
+        this.width = parseFloat(arr[0]);
+        this.height = parseFloat(arr[1]);        
+    }
+  }
+}
+
+class Vector3 {
+  constructor(str) {
+    this.x = 0;
+    this.y = 0;
+    this.z = 0;
+    if(str && str.indexOf(',') > 0){
+        var arr = str.split(',');
+        this.x = parseFloat(arr[0]);
+        this.y = parseFloat(arr[1]);
+        this.z = parseFloat(arr[2]);                
+    }    
+  }
+}
+
 var app = new Vue({
     el: '#appplication',
     data: {
         view: null,
         language:'lv',
-        faded:false
+        faded:false,
+        selectedDetail:null
     },
     computed:{
         sectors:function () {
@@ -14,11 +41,17 @@ var app = new Vue({
             return false;
         },
         backgroundImageUrl:function(){
-            if(this.view && typeof this.view.background != "undefined"){
-                return this.view.background;
+            if(this.view && typeof this.view.mainBackground != "undefined"){
+                return this.view.mainBackground;
             }
             return '';
         },
+        detailBackgroundImageUrl:function(){
+            if(this.view && typeof this.view.detailBackground != "undefined"){
+                return this.view.detailBackground;
+            }
+            return '';
+        },        
     },
     methods: {
         init:function (viewData) {
@@ -44,24 +77,9 @@ var app = new Vue({
 
         },
         onClick:function (e) {
-
-            if(!this.fade) {
-                Velocity(this.$refs.mainBackground, {
-                    blur: 2
-                }, {duration: 1000});
-
-                this.$emit('blur-effect-event', 5);
-                this.fade = true;
-            }else{
-                Velocity(this.$refs.mainBackground, {
-                    blur: 0
-                }, {duration: 1000});
-
-                this.$emit('blur-effect-event', 0);
-                this.fade = false;
-            }
+            this.fade = !this.fade;
+            this.$emit('blur-effect-event', this.fade);
         },
-
         selectDetailView:function(id){
             //1) rotate to focused perspective
             //2) fade to blurred main images
@@ -76,7 +94,16 @@ var app = new Vue({
         },
         switchLanguage:function(language){
             this.language = language;
-        }
+        },
+        blurEffectEventReceived:function(on){
+            var value = 0;
+            if(on){
+                value = 2;
+            }
+            Velocity(this.$refs.mainBackground,{
+                blur:value
+            }, { duration: 1000});
+        }        
     },
     mounted:function () {
         this.getView(this.$el.attributes.viewid.value);
@@ -84,6 +111,12 @@ var app = new Vue({
         document.addEventListener('mousemove', this.onMouseMove);
         document.addEventListener('click', this.onClick);
 
+//        document.addEventListener('drag', this.onClick);
+//        document.addEventListener('touchstart', this.onClick);
+//        document.addEventListener('touchend', this.onClick);
+//        document.addEventListener('touchmove', this.onClick);                
+
+        this.$on('blur-effect-event', this.blurEffectEventReceived);
     },
     beforeDestroy: function () {
         document.removeEventListener('mousemove', this.onMouseMove);

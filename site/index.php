@@ -1,24 +1,3 @@
-<?php
-
-// 1024 x 768 px
-/*
-View 1
-
-1) Brūnais ibiss
-2) Karošknābis
-3) Nakts gārnis
-4) Mazais dumpis
-5) Mazais baltais gārnis
-6) Lielais baltais gārnis
-7) Lielais dumpis
-8) Zivju gārnis
-9) Baltais stārķis
-10) Melnais stārķis
-
-
-
-*/
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +15,7 @@ View 1
 </head>
 <body>
 
-<div id="appplication" viewid="<?=(isset($_GET['īd'])?intval($_GET['īd']):1)?>">
+<div id="appplication" viewid="<?=(isset($_GET['id'])?intval($_GET['id']):1)?>">
 
     <div class="main-screen" ref="mainScreen">
 
@@ -45,7 +24,19 @@ View 1
         <sector v-for="(sector, index) in sectors" :key="index" :sector="sector"></sector>
     </div>
 
-    <div ref="detailScreen">
+    <div class="detail-screen" ref="detailScreen">
+
+        <div class="title"></div>
+        
+        <div class="description"></div>
+
+        <div class="image"></div>
+
+        <div class="sounds"></div>
+
+        <div class="language"></div>
+
+        <div class="navigation"></div>
 
     </div>
 

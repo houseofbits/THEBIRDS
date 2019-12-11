@@ -19,8 +19,11 @@ Vue.component('sector', {
             }
             return '';
         },
-        blurEffectEventReceived:function(value){
-            //console.log('click event received '+value);
+        blurEffectEventReceived:function(on){
+            var value = 0;    
+            if(on){
+                value = this.getImageProp('maxBlur');        
+            }
             Velocity(this.$el,{
                 blur:value
             }, { duration: 1000});
@@ -30,15 +33,19 @@ Vue.component('sector', {
 
         this.$parent.$on('blur-effect-event', this.blurEffectEventReceived);
 
+        var position = new Vector3(this.getImageProp('position'));
+        var rotation = new Vector3(this.getImageProp('rotation'));
+        var size = new Rectangle(this.getImageProp('size'));
+
         Velocity(this.$el, {
-            translateX:this.getImageProp('translateX'),
-            translateY:this.getImageProp('translateY'),
-            translateZ:this.getImageProp('translateZ'),
-            rotateX:this.getImageProp('rotateX'),
-            rotateY:this.getImageProp('rotateY'),
-            rotateZ:this.getImageProp('rotateZ'),
-            width:this.getImageProp('width'),
-            height:this.getImageProp('height')
+            translateX:position.x,
+            translateY:position.y,
+            translateZ:position.z,
+            rotateX:rotation.x,
+            rotateY:rotation.y,
+            rotateZ:rotation.z,
+            width:size.width,
+            height:size.height
         }, 0);
     }
 })
