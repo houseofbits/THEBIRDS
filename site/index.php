@@ -22,6 +22,7 @@
         <div class="main-background" ref="mainBackground" :style="{backgroundImage: 'url(' + backgroundImageUrl + ')'}"></div>
 
         <sector v-for="(sector, index) in sectors" :key="index" :sector="sector"></sector>
+        
     </div>
 
     <div class="detail-screen" ref="detailScreen">
