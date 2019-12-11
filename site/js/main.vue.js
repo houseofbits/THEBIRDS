@@ -5,8 +5,8 @@ class Rectangle {
     this.width = 0;
     if(str && str.indexOf(',') > 0){
         var arr = str.split(',');
-        this.width = parseFloat(arr[0]);
-        this.height = parseFloat(arr[1]);        
+        if(typeof arr[0] != 'undefined')this.width = parseFloat(arr[0]);
+        if(typeof arr[1] != 'undefined')this.height = parseFloat(arr[1]);        
     }
   }
 }
@@ -18,10 +18,10 @@ class Vector3 {
     this.z = 0;
     if(str && str.indexOf(',') > 0){
         var arr = str.split(',');
-        this.x = parseFloat(arr[0]);
-        this.y = parseFloat(arr[1]);
-        this.z = parseFloat(arr[2]);                
-    }    
+        if(typeof arr[0] != 'undefined')this.x = parseFloat(arr[0]);
+        if(typeof arr[1] != 'undefined')this.y = parseFloat(arr[1]);
+        if(typeof arr[2] != 'undefined')this.z = parseFloat(arr[2]);                
+    }
   }
 }
 
@@ -92,6 +92,20 @@ var app = new Vue({
             //2) fade to sharp images in main view
             //3) move/rotate to normal perspective
         },
+        nextDetailView:function(){
+
+
+        },
+        previousDetailView:function(){
+
+
+        },
+        //Play sound from active detail view
+        playSound:function(soundId){
+
+            
+
+        },
         switchLanguage:function(language){
             this.language = language;
         },
@@ -103,7 +117,7 @@ var app = new Vue({
             Velocity(this.$refs.mainBackground,{
                 blur:value
             }, { duration: 1000});
-        }        
+        },    
     },
     mounted:function () {
         this.getView(this.$el.attributes.viewid.value);

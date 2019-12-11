@@ -23,6 +23,33 @@
 
         <sector v-for="(sector, index) in sectors" :key="index" :sector="sector"></sector>
         
+
+        <!-- https://stackoverflow.com/questions/1998866/how-to-visualise-debug-an-imagemap -->
+        <!--img src = "resources/view_1/images/bg.png" alt = "HTML Map" border = "0" usemap = "#tutorials"/>
+
+        <map name = "tutorials">
+            <area shape="poly" 
+                coords = "74,0,113,29,98,72,52,72,38,27"
+                href = "/perl/index.htm" alt = "Perl Tutorial"
+                target = "_self"
+                onMouseOver = "showTutorial('perl')" 
+                onMouseOut = "showTutorial('')"/>
+
+            <area shape = "rect" 
+                coords = "22,83,126,125"
+                href = "/html/index.htm" alt = "HTML Tutorial" 
+                target = "_self" 
+                onMouseOver = "showTutorial('html')" 
+                onMouseOut = "showTutorial('')"/>
+
+            <area shape = "circle" 
+                coords = "73,168,32"
+                href = "/php/index.htm" alt = "PHP Tutorial"
+                target = "_self" 
+                onMouseOver = "showTutorial('php')" 
+                onMouseOut = "showTutorial('')"/>
+        </map-->
+
     </div>
 
     <div class="detail-screen" ref="detailScreen">
@@ -44,17 +71,12 @@
 </div>
 
 <script type="text/x-template" id="sector-template">
-    <div class="sector" :style="{backgroundImage: 'url(' + backgroundImageUrl + ')'}"></div>
-</script>
-<script type="text/x-template" id="detail-template">
-    <div class="detail">
-        <div class="image"></div>
-        <div class="text"></div>
+    <div class="sector" :style="{backgroundImage: 'url(' + backgroundImageUrl + ')'}">
+        <div v-if="backgroundImageActiveUrl" class="active" :style="{backgroundImage: 'url(' + backgroundImageActiveUrl + ')'}"></div>
     </div>
 </script>
 
 <div class="dev-frame"></div>
-
 
 <!--script src="js/vendor/velocity123.min.js"></script-->
 <script src="js/sector.vue.js"></script>

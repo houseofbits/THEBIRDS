@@ -9,6 +9,9 @@ Vue.component('sector', {
         backgroundImageUrl:function(){
             return this.getImageProp('image');
         },
+        backgroundImageActiveUrl:function(){
+            return this.getImageProp('imageActive');
+        }        
     },
     methods: {
         getImageProp:function(name){
