@@ -23,10 +23,6 @@
 
         <sector v-for="(sector, index) in sectors" :key="index" :sector="sector"></sector>
 
-        <svg width="1024" height="768" style="position:absolute;">
-            <sector_polygon v-for="(sector, index) in sectors" :key="index" :sector="sector"></sector_polygon>
-        </svg>
-
     </div>
 
     <!--div class="detail-screen" ref="detailScreen">
@@ -51,18 +47,15 @@
 <script type="text/x-template" id="sector-template">
     <div class="sector" :style="{backgroundImage: 'url(' + backgroundImageUrl + ')'}">
         <div v-if="backgroundImageActiveUrl" class="active" :style="{backgroundImage: 'url(' + backgroundImageActiveUrl + ')'}"></div>
+        <svg :width="width" :height="height" style="position:absolute;">
+            <polygon v-if="polygonPoints" :points="polygonPoints" class="polygon" v-on:click="onClick"/>
+        </svg>
     </div>
-</script>
-<script type="text/x-template" id="sector-polygon-template">
-    <polygon v-if="polygonPoints" :points="polygonPoints" class="polygon"
-        v-on:click="onClick"
-    />
 </script>
 
 <div class="dev-frame"></div>
 
 <script src="js/sector.vue.js"></script>
-<script src="js/sector-polygon.vue.js"></script>
 <script src="js/main.vue.js"></script>
 </body>
 </html>

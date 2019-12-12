@@ -34,6 +34,7 @@ body{
 .sector{
     position: absolute;
     background-repeat: round;
+    border: dashed blue 1px;
 }
 
 .sector .active{

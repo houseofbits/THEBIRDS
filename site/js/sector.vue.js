@@ -11,9 +11,23 @@ Vue.component('sector', {
         },
         backgroundImageActiveUrl:function(){
             return this.getImageProp('imageActive');
-        }        
+        },
+        width:function(){
+            var size = new Rectangle(this.getImageProp('size'));
+            return size.width;
+        },
+        height:function(){
+            var size = new Rectangle(this.getImageProp('size'));
+            return size.height;
+        },
+        polygonPoints:function(){
+            return this.getImageProp('clipPolygon');
+        }
     },
     methods: {
+        onClick:function(){
+            this.$parent.$emit('sector-on-click', this.$vnode.key);
+        },
         getImageProp:function(name){
             if(this.data && typeof this.data.mainImage != 'undefined'){
                 if(typeof this.data.mainImage[name] != 'undefined'){
