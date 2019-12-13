@@ -25,22 +25,25 @@
 
     </div>
 
-    <!--div class="detail-screen" ref="detailScreen">
+    <div class="detail-screen" ref="detailScreen">
 
-        <div class="title"></div>
-        
-        <div class="description"></div>
+        <div>
 
-        <div class="image"></div>
+            <div class="title"></div>
+            
+            <div class="description"></div>
 
-        <div class="sounds"></div>
+            <div class="image"></div>
+
+            <div class="sounds"></div>
+
+        </div>
 
         <div class="language"></div>
 
         <div class="navigation"></div>
 
-    </div-->
-
+    </div>
 
 </div>
 
@@ -48,7 +51,15 @@
     <div class="sector" :style="{backgroundImage: 'url(' + backgroundImageUrl + ')'}">
         <div v-if="backgroundImageActiveUrl" class="active" :style="{backgroundImage: 'url(' + backgroundImageActiveUrl + ')'}"></div>
         <svg :width="width" :height="height" style="position:absolute;">
-            <polygon v-if="polygonPoints" :points="polygonPoints" class="polygon" v-on:click="onClick"/>
+            <polygon v-if="polygonPoints" :points="polygonPoints" class="polygon" 
+            v-on:click="onClick" 
+            v-on:mousedown="onGrab" 
+            v-on:mouseup="onRelease"
+            v-on:mouseover="onGrab" 
+            v-on:mouseleave="onLeave"
+            v-on:touchstart="onGrab" 
+            v-on:touchend="onRelease"            
+            />
         </svg>
     </div>
 </script>
