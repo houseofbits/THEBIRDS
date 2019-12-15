@@ -1,1 +1,1 @@
-./google-chrome --kiosk --incognito http://thebirds.local
+google-chrome --kiosk --incognito http://thebirds.local
