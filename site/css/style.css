@@ -112,6 +112,10 @@ body{
     z-index: 0;
 }
 
+.clip-region{
+    position: absolute;
+    border: #378de5 dashed 1px;
+}
 
 .polygon{
     fill:yellow;
