@@ -25,15 +25,13 @@ Vue.component('sector', {
         }
     },
     methods: {
-        onClick:function(){
-            this.$parent.$emit('sector-on-click', this.$vnode.key);
-        },
         //mousedown/mouseover or touchstart
-        onGrb:function(){
+        onGrab:function(){
             this.$parent.$emit('sector-grab', this.$vnode.key);
         },
         ///mouseup or touchend
         onRelease(){
+            //console.log(this.$vnode.key);
             this.$parent.$emit('sector-release', this.$vnode.key);
         },
         //mouseout
@@ -49,13 +47,16 @@ Vue.component('sector', {
             return '';
         },
         blurEffect:function(on){
+
+            Velocity(this.$el,"finish");
+
             var value = 0;
             if(on){
                 value = this.getImageProp('maxBlur');
             }
             Velocity(this.$el,{
                 blur:value
-            }, { duration: 1000});
+            }, { duration: 500});
         },
         onBlurEffectOn:function(excludeIndex){
             if (excludeIndex != this.$vnode.key) {

@@ -25,12 +25,14 @@
 
     </div>
 
-    <div class="detail-screen" ref="detailScreen">
+    <div class="detail-screen" ref="detailScreen" :style="{backgroundImage: 'url(' + detailBackgroundImageUrl + ')'}">
 
         <div>
 
-            <div class="title"></div>
-            
+            <div class="title">
+                <span class="gradient-text-shadow" data-text="BRŪNAIS IBISS"></span>
+            </div>
+
             <div class="description"></div>
 
             <div class="image"></div>
@@ -41,7 +43,11 @@
 
         <div class="language"></div>
 
-        <div class="navigation"></div>
+        <div class="navigation">
+            <a href="#" class="dev-button" v-on:click="closeDetailView">Close</a>
+            <a href="#" class="dev-button" v-on:click="closeDetailView">Next</a>
+            <a href="#" class="dev-button" v-on:click="closeDetailView">Prev</a>
+        </div>
 
     </div>
 
@@ -51,8 +57,7 @@
     <div class="sector" :style="{backgroundImage: 'url(' + backgroundImageUrl + ')'}">
         <div v-if="backgroundImageActiveUrl" class="active" :style="{backgroundImage: 'url(' + backgroundImageActiveUrl + ')'}"></div>
         <svg :width="width" :height="height" style="position:absolute;">
-            <polygon v-if="polygonPoints" :points="polygonPoints" class="polygon" 
-            v-on:click="onClick" 
+            <polygon v-if="polygonPoints" :points="polygonPoints" class="polygon"
             v-on:mousedown="onGrab" 
             v-on:mouseup="onRelease"
             v-on:mouseover="onGrab" 

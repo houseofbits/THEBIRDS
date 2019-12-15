@@ -1,6 +1,6 @@
 {
   "mainBackground":"resources/view_1/images/bg.png",
-  "detailBackground":"resources/view_1/images/bg.png",
+  "detailBackground":"resources/view_1/images/detail-bg.png",
   "sectors":[
     {
       "comment":"------------------------------------ Brīnais ibiss - aktīvais sektors-----------------------------",

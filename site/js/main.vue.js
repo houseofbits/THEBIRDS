@@ -30,7 +30,9 @@ var app = new Vue({
     data: {
         view: null,
         language:'lv',
-        selectedDetail:null
+        selectedDetail:null,
+        mouseState:[0, 0, 0, 0, 0, 0, 0, 0, 0],
+        mouseDownCount:0
     },
     computed:{
         sectors:function () {
@@ -57,14 +59,16 @@ var app = new Vue({
             this.view = viewData;
         },
         getView:function (id) {
-            //this.$http.get('api.php?id='+id).then(function(response) {
             this.$http.get('/resources/view_'+id+'/config.json').then(function(response) {
                 this.init(response.body);
             }, function(){});
         },
         onMouseMove:function (e) {
+
             //Move only if main view is selected
-            if(this.selectedDetail == null){
+            if(this.selectedDetail == null
+                && this.mouseDownCount
+            ){
 
                 var px = e.clientX;
                 var py = e.clientY;
@@ -83,7 +87,7 @@ var app = new Vue({
         },
         selectDetailView:function(id){
 
-            console.log("select detail "+index);
+            console.log("select detail "+id);
 
             if (this.selectedDetail != null) {
 
@@ -97,7 +101,7 @@ var app = new Vue({
                 Velocity(this.$refs.detailScreen,{
                     opacity:1
                 }, { duration: 1000,
-                    delay: 500,
+                    delay: 100,
                     display: "block",
                     complete:function(elements){
 
@@ -124,6 +128,8 @@ var app = new Vue({
         },
         closeDetailView: function(){
 
+            var parent = this;
+
             //Fade off detail view background
             Velocity(this.$refs.detailScreen,{
                 opacity:0
@@ -132,10 +138,10 @@ var app = new Vue({
                 complete:function(elements){
 
                     //Fade in main view
-                    this.$emit('blur-effect-event', false);
+                    parent.$emit('blur-effect-event', false);
 
                 } });
-            
+            this.selectedDetail = null;
         },
         getNextDetailViewId:function(){
             if(this.selectedDetail != null){
@@ -165,6 +171,9 @@ var app = new Vue({
             this.language = language;
         },
         blurEffect:function(on){
+
+            Velocity(this.$refs.mainBackground,"finish");
+
             var value = 0;
             var zoom = 600;
             if(on){
@@ -179,21 +188,16 @@ var app = new Vue({
             //     perspective:zoom
             // }, { duration: 1000});
         },
-        onSectorClickEvent:function (index) {
-
-            if(this.selectedDetail == null){
-                this.selectedDetail = index;
-                this.selectDetailView(index);
-            }
-        },
         //Sector is grabbed => hightlight it or blur out rest
         onSectorGrabEvent:function (index) {
+            if(typeof index == 'undefined')return;
             if(this.selectedDetail == null){
                 this.$emit('blur-effect-on', index);
             }
         },
         //Sector is released => activate detail view
         onSectorReleaseEvent:function (index) {
+            if(typeof index == 'undefined')return;
             if(this.selectedDetail == null){
                 this.selectedDetail = index;
                 this.selectDetailView(index);
@@ -201,6 +205,7 @@ var app = new Vue({
         },
         //Sector is left => return to normal state
         onSectorLeaveEvent:function (index) {
+            if(typeof index == 'undefined')return;
             if(this.selectedDetail == null){
                 this.$emit('blur-effect-off');
             }
@@ -210,24 +215,32 @@ var app = new Vue({
         },
         onBlurEffectOff:function(){
             this.blurEffect(false);
-        }         
+        },
+        onMouseDown:function (e) {
+            ++this.mouseState[e.button];
+            ++this.mouseDownCount;
+        },
+        onMouseUp:function (e) {
+            --this.mouseState[e.button];
+            --this.mouseDownCount;
+        }
     },
     mounted:function () {
         this.getView(this.$el.attributes.viewid.value);
 
-        //document.addEventListener('mousemove', this.onMouseMove);
-        //document.addEventListener('click', this.onClick);
-        document.addEventListener('drag', this.onMouseMove);
+        document.addEventListener('mousedown', this.onMouseDown);
+        document.addEventListener('mouseup', this.onMouseUp);
+        document.addEventListener('mousemove', this.onMouseMove);
         document.addEventListener('touchmove', this.onMouseMove);
 
         this.$on('blur-effect-event', this.blurEffect);
-        this.$on('sector-on-click', this.onSectorClickEvent);
+        //this.$on('sector-on-click', this.onSectorClickEvent);
 
-        this.$on('blur-effect-on', this.onBlurEffectEvent);
-        this.$on('blur-effect-off', this.onBlurEffectEvent);
+        this.$on('blur-effect-on', this.onBlurEffectOn);
+        this.$on('blur-effect-off', this.onBlurEffectOff);
         this.$on('sector-grab', this.onSectorGrabEvent);
-        this.$on('sector-release', this.onSectorReleaseEvent);                
-        this.$on('sector-leave', this.onSectorLeavekEvent);
+        this.$on('sector-release', this.onSectorReleaseEvent);
+        this.$on('sector-leave', this.onSectorLeaveEvent);
 
         this.initDetailView();
     },
