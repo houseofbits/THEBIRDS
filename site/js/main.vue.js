@@ -47,6 +47,12 @@ var app = new Vue({
             }
             return '';
         },
+        shadowImageUrl:function(){
+            if(this.view && typeof this.view.mainShadow != "undefined"){
+                return this.view.mainShadow;
+            }
+            return '';
+        },
         detailBackgroundImageUrl:function(){
             if(this.view && typeof this.view.detailBackground != "undefined"){
                 return this.view.detailBackground;
@@ -62,6 +68,13 @@ var app = new Vue({
             this.$http.get('/resources/view_'+id+'/config.json').then(function(response) {
                 this.init(response.body);
             }, function(){});
+        },
+        getSector:function(index){
+            var sect = this.sectors;
+            if(typeof sect[index] != 'undefined'){
+                return sect[index];
+            }
+            return null;
         },
         onMouseMove:function (e) {
 
@@ -101,13 +114,23 @@ var app = new Vue({
                 Velocity(this.$refs.detailScreen,{
                     opacity:1
                 }, { duration: 1000,
-                    delay: 100,
+                    delay: 0,
                     display: "block",
                     complete:function(elements){
 
                         //bring in buttons and content
 
                     } });
+
+                Velocity(this.$refs.shadowBackground, {
+                    opacity: 0,
+                }, {duration:500});
+
+                Velocity(this.$refs.mainScreen, {
+                    perspective: 20,
+                }, {duration:800});
+
+
 
             } else {
 
@@ -136,6 +159,14 @@ var app = new Vue({
             }, { duration: 600, 
                 display: "none",
                 complete:function(elements){
+
+                    Velocity(parent.$refs.shadowBackground, {
+                        opacity: 1,
+                    }, {duration:500});
+
+                    Velocity(parent.$refs.mainScreen, {
+                        perspective: 600,
+                    }, {duration:500});
 
                     //Fade in main view
                     parent.$emit('blur-effect-event', false);

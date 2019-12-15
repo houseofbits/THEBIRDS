@@ -15,10 +15,10 @@ body{
 
 .main-screen{
     position:absolute;
-    left:-100px;
-    top:-100px;
-    width:1224px;
-    height:968px;
+    left:0px;
+    top:0px;
+    width:1024px;
+    height:768px;
     perspective: 600px;
     transform: rotateX(0deg) rotateY(0deg);
     transform-style: preserve-3d;
@@ -26,16 +26,23 @@ body{
 
 .main-background{
     position:absolute;
-    left:0px;
-    top:0px;
-    width:1224px;
-    height:968px;
+    left:-215px;
+    top:-69px;
+    width:1378px;
+    height:868px;
+    background-repeat: round;
+}
+.main-background .shadow-background{
+    position:relative;
+    width:100%;
+    height:100%;
+    background-repeat: round;
 }
 
 .sector{
     position: absolute;
     background-repeat: round;
-    border: dashed blue 1px;
+  /*  border: dashed blue 1px;  */
 }
 
 .sector .active{
@@ -45,7 +52,6 @@ body{
     top:0px;
     left:0px;
     background-repeat: round;
-    opacity:0;
 }
 
 .dev-frame{
@@ -112,7 +118,7 @@ body{
     stroke:blue;
     stroke-width:2px;
     fill-rule:evenodd;
-    opacity:0.5;
+    opacity:0.3;
 }
 
 .detail-screen .navigation {
@@ -144,4 +150,13 @@ body{
 .dev-button:active {
     position:relative;
     top:1px;
+}
+
+.dev-sector{
+    background-color: #378de5;
+    position:absolute;
+    left:10px;
+    top:10px;
+    border:dashed 1px yellow;
+    background-repeat: round;
 }
