@@ -1,6 +1,7 @@
 {
   "mainBackground":"resources/view_1/images/bg.png",
-  "detailBackground":"resources/view_1/images/bg.png",
+  "mainShadow":"resources/view_1/images/bg_shadow.png",
+  "detailBackground":"resources/view_1/images/detail-bg.png",
   "sectors":[
     {
       "comment":"------------------------------------ Brīnais ibiss - aktīvais sektors-----------------------------",
@@ -16,12 +17,12 @@
       },
       "mainImage":{
           "image":"resources/view_1/images/s1.png",
-          "imageActive":"resources/view_1/images/s1_active.png",        
-          "position":"450,300,80",
+          "imageActive2":"resources/view_1/images/s1.png",
+          "position":"444,210,20",
           "rotation":"0,0,0",
-          "size":"200,300",
+          "size":"157,164",
           "maxBlur":"6",
-          "clipPolygon":"100,10 40,198 190,78 10,78 160,198"
+          "clipPolygon":"4,22.3 32,26.3 54.8,53 72,78 88,85.8 91.8,93.3 87.8,115.5 48,121.8 29.3,144.5 52.3,160.3 127.3,159.3 128,132.8 102,110.8 106.8,92 145.3,113.3 153.8,108.3 136.3,70.5 105.8,36.8 41.5,4 21,13"
       },
       "detailImage":{
           "image":"resources/view_1/images/s1.png",
@@ -37,13 +38,93 @@
       ]
     },
     {
-      "comment":"------------------------------------- Niedru kušķis #1 --------------------------------------------",
+      "comment":"------------------------------------- S2 --------------------------------------------",
       "mainImage":{
-        "image":"resources/view_1/images/s1.png",
-        "position":"150,350,60",
+        "image":"resources/view_1/images/s2.png",
+        "position":"531,45,20",
         "rotation":"0,0,0",
-        "size":"200,500",
+        "size":"101,140",
         "maxBlur":"6"      
+      }
+    },
+    {
+      "comment":"------------------------------------- S3 --------------------------------------------",
+      "mainImage":{
+        "image":"resources/view_1/images/s3.png",
+        "position":"210,416,20",
+        "rotation":"0,0,0",
+        "size":"263,328",
+        "maxBlur":"6"
+      }
+    },
+    {
+      "comment":"------------------------------------- S4 --------------------------------------------",
+      "mainImage":{
+        "image":"resources/view_1/images/s4.png",
+        "position":"487,398,20",
+        "rotation":"0,0,0",
+        "size":"216,370",
+        "maxBlur":"6"
+      }
+    },
+    {
+      "comment":"------------------------------------- S5 --------------------------------------------",
+      "mainImage":{
+        "image":"resources/view_1/images/s5.png",
+        "position":"421,466,25",
+        "rotation":"0,0,0",
+        "size":"117,300",
+        "maxBlur":"6"
+      }
+    },
+    {
+      "comment":"------------------------------------- S6 --------------------------------------------",
+      "mainImage":{
+        "image":"resources/view_1/images/s6.png",
+        "position":"561,222,25",
+        "rotation":"0,0,0",
+        "size":"140,202",
+        "maxBlur":"6"
+      }
+    },
+    {
+      "comment":"------------------------------------- S7 --------------------------------------------",
+      "mainImage":{
+        "image":"resources/view_1/images/s7.png",
+        "position":"309,130,25",
+        "rotation":"0,0,0",
+        "size":"130,197",
+        "maxBlur":"6"
+      }
+    },
+    {
+      "comment":"------------------------------------- S8 --------------------------------------------",
+      "mainImage":{
+        "image":"resources/view_1/images/s8.png",
+        "position":"168,246,25",
+        "rotation":"0,0,0",
+        "size":"91,158",
+        "maxBlur":"6"
+      }
+    },
+    {
+      "comment":"------------------------------------- S9 --------------------------------------------",
+      "mainImage":{
+        "image":"resources/view_1/images/s9.png",
+        "position":"10,497,30",
+        "rotation":"0,0,0",
+        "size":"306,268",
+        "maxBlur":"6"
+      }
+    },
+    {
+      "comment":"------------------------------------- S10 --------------------------------------------",
+      "mainImage":{
+        "image":"resources/view_1/images/s10.png",
+        "position":"29,138,30",
+        "rotation":"0,0,0",
+        "size":"159,324",
+        "maxBlur":"6"
       }
     }
   ]

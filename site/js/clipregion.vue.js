@@ -1,17 +1,11 @@
 
-Vue.component('sector', {
+Vue.component('clipregion', {
     props: ['sector'],
-    template:'#sector-template',
+    template:'#clipregion-template',
     data: function () {
         return { data: this.sector }
     },
     computed:{
-        backgroundImageUrl:function(){
-            return this.getImageProp('image');
-        },
-        backgroundImageActiveUrl:function(){
-            return this.getImageProp('imageActive');
-        },
         width:function(){
             var size = new Rectangle(this.getImageProp('size'));
             return size.width;
@@ -46,34 +40,8 @@ Vue.component('sector', {
             }
             return '';
         },
-        blurEffect:function(on){
-
-            Velocity(this.$el,"finish");
-
-            var value = 0;
-            if(on){
-                value = this.getImageProp('maxBlur');
-            }
-            Velocity(this.$el,{
-                blur:value
-            }, { duration: 500});
-        },
-        onBlurEffectOn:function(excludeIndex){
-            if (excludeIndex != this.$vnode.key) {
-                this.blurEffect(true);
-            } else {
-                this.blurEffect(false);
-            }
-        },
-        onBlurEffectOff:function(){
-            this.blurEffect(false);
-        }                        
     },
     mounted:function () {
-
-        this.$parent.$on('blur-effect-event', this.blurEffect);
-        this.$parent.$on('blur-effect-on', this.onBlurEffectOn);
-        this.$parent.$on('blur-effect-off', this.onBlurEffectOff);
 
         var position = new Vector3(this.getImageProp('position'));
         var rotation = new Vector3(this.getImageProp('rotation'));
