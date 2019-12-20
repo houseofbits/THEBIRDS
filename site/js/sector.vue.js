@@ -25,19 +25,19 @@ Vue.component('sector', {
         }
     },
     methods: {
-        //mousedown/mouseover or touchstart
-        onGrab:function(){
-            this.$parent.$emit('sector-grab', this.$vnode.key);
-        },
-        ///mouseup or touchend
-        onRelease(){
-            //console.log(this.$vnode.key);
-            this.$parent.$emit('sector-release', this.$vnode.key);
-        },
-        //mouseout
-        onLeave(){
-            this.$parent.$emit('sector-leave', this.$vnode.key);
-        },
+        // //mousedown/mouseover or touchstart
+        // onGrab:function(){
+        //     this.$parent.$emit('sector-grab', this.$vnode.key);
+        // },
+        // ///mouseup or touchend
+        // onRelease(){
+        //     //console.log(this.$vnode.key);
+        //     this.$parent.$emit('sector-release', this.$vnode.key);
+        // },
+        // //mouseout
+        // onLeave(){
+        //     this.$parent.$emit('sector-leave', this.$vnode.key);
+        // },
         getImageProp:function(name){
             if(this.data && typeof this.data.mainImage != 'undefined'){
                 if(typeof this.data.mainImage[name] != 'undefined'){

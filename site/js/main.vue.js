@@ -95,9 +95,6 @@ var app = new Vue({
                 }, { duration: 10});
             }
         },
-        onClick:function (e) {
-
-        },
         selectDetailView:function(id){
 
             console.log("select detail "+id);
@@ -146,8 +143,9 @@ var app = new Vue({
             Velocity(this.$refs.detailScreen,{ opacity: 0 }, { display: "none" });
 
             //1) Button positions
-            //2) Content positions/opacity?
-
+            //2) Content carousel?
+            //3) 
+            
         },
         closeDetailView: function(){
 
@@ -192,6 +190,7 @@ var app = new Vue({
             }
             return null;
         },
+        
         //Play sound from active detail view
         playSound:function(soundId){
 
@@ -265,8 +264,6 @@ var app = new Vue({
         document.addEventListener('touchmove', this.onMouseMove);
 
         this.$on('blur-effect-event', this.blurEffect);
-        //this.$on('sector-on-click', this.onSectorClickEvent);
-
         this.$on('blur-effect-on', this.onBlurEffectOn);
         this.$on('blur-effect-off', this.onBlurEffectOff);
         this.$on('sector-grab', this.onSectorGrabEvent);

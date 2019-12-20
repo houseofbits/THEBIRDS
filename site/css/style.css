@@ -164,3 +164,22 @@ body{
     border:dashed 1px yellow;
     background-repeat: round;
 }
+
+.detail-carousel{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1024px;
+    height:768px;
+    perspective: 600px;
+    transform: rotateX(0deg) rotateY(0deg);
+    transform-style: preserve-3d;
+}
+.detail-frame{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1024px;
+    height:768px;
+    transform-origin: 50% 50% 3000px;
+}
