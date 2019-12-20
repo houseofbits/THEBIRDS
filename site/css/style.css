@@ -165,15 +165,14 @@ body{
     background-repeat: round;
 }
 
-.detail-carousel{
+.detail-3d{
     position:absolute;
     left:0px;
     top:0px;
     width:1024px;
     height:768px;
-    perspective: 600px;
+    perspective: 300px;
     transform: rotateX(0deg) rotateY(0deg);
-    transform-style: preserve-3d;
 }
 .detail-frame{
     position:absolute;
@@ -181,5 +180,15 @@ body{
     top:0px;
     width:1024px;
     height:768px;
-    transform-origin: 50% 50% 3000px;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    transform-origin: 512px 0 -3000px;
+}
+.detail-element{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1024px;
+    height:768px;
+    transform-origin: 512px 0 -3000px;
 }

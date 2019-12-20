@@ -32,7 +32,8 @@ var app = new Vue({
         language:'lv',
         selectedDetail:null,
         mouseState:[0, 0, 0, 0, 0, 0, 0, 0, 0],
-        mouseDownCount:0
+        mouseDownCount:0,
+        rotationStep:0
     },
     computed:{
         sectors:function () {
@@ -129,11 +130,6 @@ var app = new Vue({
 
 
 
-            } else {
-
-
-                //Slide to next detail coontent view
-
             }
         },
 
@@ -141,6 +137,8 @@ var app = new Vue({
         initDetailView:function(){
             
             Velocity(this.$refs.detailScreen,{ opacity: 0 }, { display: "none" });
+
+            this.rotateDetailView(this.selectedDetail, true);
 
             //1) Button positions
             //2) Content carousel?
@@ -174,8 +172,8 @@ var app = new Vue({
         },
         getNextDetailViewId:function(){
             if(this.selectedDetail != null){
-                if(typeof this.sectors[(this.sectors.size() + 1)] != 'undefined'){
-                    return (this.sectors.size() + 1);
+                if(typeof this.sectors[(this.selectedDetail + 1)] != 'undefined'){
+                    return (this.selectedDetail + 1);
                 }
             }
             return null;
@@ -183,14 +181,52 @@ var app = new Vue({
         getPreviousDetailViewId:function(){
             if(this.selectedDetail != null){
                 if(this.selectedDetail > 0 
-                    && typeof this.sectors[(this.sectors.size() - 1)] != 'undefined'){
+                    && typeof this.sectors[(this.selectedDetail - 1)] != 'undefined'){
                     
-                    return (this.sectors.size() - 1);
+                    return (this.selectedDetail - 1);
                 }
             }
             return null;
         },
-        
+        renderDetailView:function(index){
+            if(this.selectedDetail != null && index == this.selectedDetail)return true;
+
+            var next = this.getNextDetailViewId();
+            if(next != null && index == next)return true;
+
+            var prev = this.getPreviousDetailViewId();
+            if(prev != null && index == prev)return true;
+
+            return false;
+        },
+        rotateDetailView:function(targetIndex, imediate = false){
+            var angle = targetIndex * this.rotationStep;
+            var parent = this;
+            var duration = 650;
+            if(imediate)duration = 0;
+
+            Velocity(this.$refs.detailCarousel,"finish");
+            Velocity(this.$refs.detailCarousel,{
+                rotateY:-angle
+            }, {
+                duration: duration,
+                easing: "ease",
+                complete:function(elements){
+                    parent.selectedDetail = targetIndex;
+                } });
+        },
+        moveNext:function(){
+            var index = this.getNextDetailViewId();
+            if(index != null) {
+                this.rotateDetailView(index);
+            }
+        },
+        movePrev:function(){
+            var index = this.getPreviousDetailViewId();
+            if(index != null) {
+                this.rotateDetailView(index);
+            }
+        },
         //Play sound from active detail view
         playSound:function(soundId){
 
@@ -253,6 +289,9 @@ var app = new Vue({
         onMouseUp:function (e) {
             --this.mouseState[e.button];
             --this.mouseDownCount;
+        },
+        getLanguage:function(){
+            return 'lv';
         }
     },
     mounted:function () {
@@ -271,6 +310,8 @@ var app = new Vue({
         this.$on('sector-leave', this.onSectorLeaveEvent);
 
         this.initDetailView();
+
+        this.rotationStep = 2 * radians_to_degrees(Math.atan((1024/2)/3000));
     },
     beforeDestroy: function () {
         document.removeEventListener('mousemove', this.onMouseMove);

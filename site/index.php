@@ -35,18 +35,18 @@
 
     <div class="detail-screen" ref="detailScreen" :style="{backgroundImage: 'url(' + detailBackgroundImageUrl + ')'}">
 
-        <div class="detail-carousel" ref="detailCarousel">
-            
-            <detail v-for="(sector, index) in sectors" :key="index" :sector="sector"></detail>
-
+        <div class="detail-3d">
+            <div class="detail-frame" ref="detailCarousel">
+                <detail v-for="(sector, index) in sectors" v-if="renderDetailView(index)" :key="index" :sector="sector"></detail>
+            </div>
         </div>
 
         <div class="language"></div>
 
         <div class="navigation">
+            <a href="#" class="dev-button" v-on:click="movePrev">Prev</a>
             <a href="#" class="dev-button" v-on:click="closeDetailView">Close</a>
-            <a href="#" class="dev-button" v-on:click="closeDetailView">Next</a>
-            <a href="#" class="dev-button" v-on:click="closeDetailView">Prev</a>
+            <a href="#" class="dev-button" v-on:click="moveNext">Next</a>
         </div>
 
     </div>
@@ -81,16 +81,16 @@
     </div>
 </script>
 <script type="text/x-template" id="detail-template">
-    <div class="detail-frame">
+    <div class="detail-element">
         <div class="title">
-            <span class="gradient-text-shadow" data-text="BRŪNAIS IBISS"></span>
+            <span class="gradient-text-shadow" :data-text="title"></span>
         </div>
 
         <div class="description"></div>
 
         <div class="image"></div>
 
-        <div class="sounds"></div>    
+        <div class="sounds"></div>
     </div>
 </script>
 
