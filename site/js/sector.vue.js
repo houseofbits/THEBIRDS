@@ -67,6 +67,12 @@ Vue.component('sector', {
         },
         onBlurEffectOff:function(){
             this.blurEffect(false);
+        },
+        onMoveOut:function(){
+
+        },
+        onMoveIn:function(){
+
         }                        
     },
     mounted:function () {
@@ -74,6 +80,8 @@ Vue.component('sector', {
         this.$parent.$on('blur-effect-event', this.blurEffect);
         this.$parent.$on('blur-effect-on', this.onBlurEffectOn);
         this.$parent.$on('blur-effect-off', this.onBlurEffectOff);
+        this.$parent.$on('move-out', this.onMoveOut);
+        this.$parent.$on('move-in', this.onMoveIn);        
 
         var position = new Vector3(this.getImageProp('position'));
         var rotation = new Vector3(this.getImageProp('rotation'));

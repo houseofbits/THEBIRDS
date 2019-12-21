@@ -128,7 +128,7 @@ var app = new Vue({
                     perspective: 20,
                 }, {duration:800});
 
-
+                this.$emit('move-out');
 
             }
         },
@@ -145,7 +145,7 @@ var app = new Vue({
             //3) 
             
         },
-        closeDetailView: function(){
+        closeDetailView:function(){
 
             var parent = this;
 
@@ -164,6 +164,8 @@ var app = new Vue({
                         perspective: 600,
                     }, {duration:500});
 
+                    parent.$emit('move-in');
+                    
                     //Fade in main view
                     parent.$emit('blur-effect-event', false);
 

@@ -75,12 +75,8 @@ body{
 
 .detail-screen .image {
     position: absolute;
-    height: 300px;
-    width: 100px;
-    border: 5px solid blue;
-    background: cornflowerblue;
-    transform-style: preserve-3d;
-    transform: translate3d(400px, 300px, 40px);
+    border: 1px dashed orange;
+    background-repeat: round;    
 }
 
 .title {
@@ -94,6 +90,7 @@ body{
 .gradient-text-shadow:before {
     background: linear-gradient(to top, darkred, orange);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     position:relative;
     content: attr(data-text);

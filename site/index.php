@@ -86,9 +86,15 @@
             <span class="gradient-text-shadow" :data-text="title"></span>
         </div>
 
-        <div class="description"></div>
+        <div class="description">{{description}}</div>
 
-        <div class="image"></div>
+        <div class="image" :style="{
+            width:width + 'px',
+            height:height + 'px',            
+            top:positionY + 'px',            
+            left:positionX + 'px',
+            backgroundImage: 'url(' + imageUrl + ')'                        
+        }"></div>
 
         <div class="sounds"></div>
     </div>

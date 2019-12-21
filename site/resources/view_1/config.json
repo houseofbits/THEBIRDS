@@ -26,9 +26,9 @@
       },
       "detailImage":{
           "image":"resources/view_1/images/s1.png",
-          "position":"150,350,60",
+          "position":"50,50",
           "rotation":"0,0,0",
-          "size":"200,500"   
+          "size":"200,200"   
       },
       "audio":[
         {
