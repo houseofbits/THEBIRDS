@@ -46,7 +46,7 @@ Vue.component('clipregion', {
         var position = new Vector3(this.getImageProp('position'));
         var rotation = new Vector3(this.getImageProp('rotation'));
         var size = new Rectangle(this.getImageProp('size'));
-
+/*
         Velocity(this.$el, {
             translateX:position.x,
             translateY:position.y,
@@ -56,6 +56,6 @@ Vue.component('clipregion', {
             rotateZ:rotation.z,
             width:size.width,
             height:size.height
-        }, 0);
+        }, 0);*/
     }
 })

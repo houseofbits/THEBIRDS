@@ -27,10 +27,10 @@
 
     </div>
 
-    <div class="main-screen">
-
-        <clipregion v-for="(sector, index) in sectors" :key="index" :sector="sector"></clipregion>
-
+    <div class="clip-screen">
+        <svg>
+            <clipregion v-for="(sector, index) in sectors" :key="index" :sector="sector"></clipregion>
+        </svg>
     </div>
 
     <div class="detail-screen" ref="detailScreen" :style="{backgroundImage: 'url(' + detailBackgroundImageUrl + ')'}">
@@ -68,17 +68,14 @@
     </div>
 </script>
 <script type="text/x-template" id="clipregion-template">
-    <div class="clip-region">
-        <svg :width="width" :height="height" style="position:absolute;">
-            <polygon v-if="polygonPoints" :points="polygonPoints" class="polygon"
-            v-on:mousedown="onGrab"
-            v-on:mouseup="onRelease"
-            v-on:mouseover="onGrab"
-            v-on:mouseleave="onLeave"
-            v-on:touchstart="onGrab"
-            v-on:touchend="onRelease"/>
-        </svg>
-    </div>
+    <polygon v-if="polygonPoints" :points="polygonPoints" class="polygon"
+    v-on:mousedown="onGrab"
+    v-on:mouseup="onRelease"
+    v-on:mouseover="onGrab"
+    v-on:mouseleave="onLeave"
+    v-on:touchstart="onGrab"
+    v-on:touchend="onRelease">
+    </polygon>
 </script>
 <script type="text/x-template" id="detail-template">
     <div class="detail-element">
