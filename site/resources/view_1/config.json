@@ -248,6 +248,14 @@
         "lv":"Latvijā samērā parasts ligzdotājs ar niedrēm aizaugušos ezeros un dīķos. Ligzdo 300-500 pāru Vismaz tik pat vai pat vairāk caurceļo. Nelielā skaitā regulāri pārziemo. Kopš 1980-to gadu vidū ziemotāju skaits ir pakāpeniski audzis, sasniedzot dažus desmitus īpatņus. Slēptā dzīves veida dēļ lielais dumpis ir grūti konstatējams.",
         "ru":"Большая выпь является сравнительно обычным гнездящимся видом в сильно заросших тростником озерах и прудах. Гнездится 300-500 пар. Столько же пролетает через Латвию во время миграции. Зимует редко. Начиная с середины 1980-х количество зимующих особей возросло и достигло нескольких десятков птиц. Из-за скрытного образа жизни довольно сложно обнаружить.",
         "en":"Common breeding species in lakes and ponds with extensive reedbeds. 300-500 breeding pairs. At least as many are also present during migration. Some birds can also overwinter. Number of wintering birds has increased since 1980s and it is estimated that now there are few dozen birds present during winter. Great bitterns are difficult to observe due to their secretive way of life."
+      },
+      "mainImage":{
+        "image":"resources/view_1/images/s11.png",
+        "position":"709,497,30",
+        "rotation":"0,0,0",
+        "size":"144,241",
+        "maxBlur":"6",
+        "clipPolygon":"845.7,504.7 820.3,510.7 799,512.7 761,542.7 739.3,561.7 723.7,597.3 724.7,629 735.7,656 738.3,692.7 725.3,708.7 750,713 791.7,732.3 808.7,718.7 790.7,705 788,660.3 795.7,617 777.3,581.3 807.3,548.3 826.3,524.3 849.3,508.3"
       }
     }
   ]

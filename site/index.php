@@ -33,7 +33,7 @@
         </svg>
     </div>
 
-    <div class="detail-screen" ref="detailScreen" :style="{backgroundImage: 'url(' + detailBackgroundImageUrl + ')'}">
+    <div class="detail-screen" ref="detailScreen">
 
         <div class="detail-3d">
             <div class="detail-frame" ref="detailCarousel">
@@ -78,22 +78,27 @@
     </polygon>
 </script>
 <script type="text/x-template" id="detail-template">
-    <div class="detail-element">
-        <div class="title">
-            <span class="gradient-text-shadow" :data-text="title"></span>
+    <div class="detail-element" :style="{backgroundImage: 'url(' + detailBackgroundImageUrl + ')'}">
+        <div class="detail-content">
+            <div class="title">
+                <span class="gradient-text-shadow" :data-text="title"></span>
+            </div>
+            <div class="title-latin">{{titleLatin}}</div>
+
+            <div class="description">
+                <span class="gradient-text-shadow" :data-text="description"></span>
+            </div>
+
+            <div class="image" :style="{
+                width:width + 'px',
+                height:height + 'px',
+                top:positionY + 'px',
+                left:positionX + 'px',
+                backgroundImage: 'url(' + imageUrl + ')'
+            }"></div>
+
+            <div class="sounds"></div>
         </div>
-
-        <div class="description">{{description}}</div>
-
-        <div class="image" :style="{
-            width:width + 'px',
-            height:height + 'px',            
-            top:positionY + 'px',            
-            left:positionX + 'px',
-            backgroundImage: 'url(' + imageUrl + ')'                        
-        }"></div>
-
-        <div class="sounds"></div>
     </div>
 </script>
 

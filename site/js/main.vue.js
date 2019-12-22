@@ -53,15 +53,15 @@ var app = new Vue({
                 return this.view.mainShadow;
             }
             return '';
-        },
+        }
+    },
+    methods: {
         detailBackgroundImageUrl:function(){
             if(this.view && typeof this.view.detailBackground != "undefined"){
                 return this.view.detailBackground;
             }
             return '';
-        },        
-    },
-    methods: {
+        },
         init:function (viewData) {
             this.view = viewData;
         },

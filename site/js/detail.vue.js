@@ -12,7 +12,9 @@ Vue.component('detail', {
         return { data: this.sector }
     },
     computed:{
-
+        detailBackgroundImageUrl:function(){
+            return this.$parent.detailBackgroundImageUrl();
+        },
         title:function(){
             var language = this.$parent.getLanguage();
 
@@ -21,6 +23,12 @@ Vue.component('detail', {
                 return this.data.title[language];
             }
             return 'No title [' + this.$vnode.key + ']';
+        },
+        titleLatin:function(){
+            if(typeof this.data.titleLatin != 'undefined'){
+                return this.data.titleLatin;
+            }
+            return '';
         },
         description:function(){
             var language = this.$parent.getLanguage();
