@@ -47,24 +47,19 @@
             <a href="#" class="dev-button" v-on:click="movePrev">Prev</a>
             <a href="#" class="dev-button" v-on:click="closeDetailView">Close</a>
             <a href="#" class="dev-button" v-on:click="moveNext">Next</a>
+
+            <a href="#" class="dev-button" v-on:click="setLanguage('ru')">RUS</a>
+            <a href="#" class="dev-button" v-on:click="setLanguage('en')">ENG</a>
+            <a href="#" class="dev-button" v-on:click="setLanguage('lv')">LAT</a>
         </div>
 
     </div>
-
-    <!--devsector v-for="(sector, index) in sectors" :key="index" :sector="sector" v-if="index==0"></devsector-->
 
 </div>
 
 <script type="text/x-template" id="sector-template">
     <div class="sector" :style="{backgroundImage: 'url(' + backgroundImageUrl + ')'}">
         <div v-if="backgroundImageActiveUrl" class="active" :style="{backgroundImage: 'url(' + backgroundImageActiveUrl + ')'}"></div>
-    </div>
-</script>
-<script type="text/x-template" id="dev-sector-template">
-    <div class="dev-sector" :style="{backgroundImage: 'url(' + backgroundImageUrl + ')', width:width+'px', height:height+'px'}">
-        <svg :width="width" :height="height" style="position:absolute;">
-            <polygon v-if="polygonPoints" :points="polygonPoints" class="polygon"/>
-        </svg>
     </div>
 </script>
 <script type="text/x-template" id="clipregion-template">
@@ -80,15 +75,6 @@
 <script type="text/x-template" id="detail-template">
     <div class="detail-element" :style="{backgroundImage: 'url(' + detailBackgroundImageUrl + ')'}">
         <div class="detail-content">
-            <div class="title">
-                <span class="gradient-text-shadow" :data-text="title"></span>
-            </div>
-            <div class="title-latin">{{titleLatin}}</div>
-
-            <div class="description">
-                <span class="gradient-text-shadow" :data-text="description"></span>
-            </div>
-
             <div class="image" :style="{
                 width:width + 'px',
                 height:height + 'px',
@@ -96,7 +82,9 @@
                 left:positionX + 'px',
                 backgroundImage: 'url(' + imageUrl + ')'
             }"></div>
-
+            <div class="title"><span>{{title}}</span></div>
+            <div class="title-latin"><span>{{titleLatin}}</span></div>
+            <div class="description"><span>{{description}}</span></div>
             <div class="sounds"></div>
         </div>
     </div>
@@ -107,7 +95,6 @@
 <script src="js/sector.vue.js"></script>
 <script src="js/detail.vue.js"></script>
 <script src="js/clipregion.vue.js"></script>
-<script src="js/devsector.vue.js"></script>
 <script src="js/main.vue.js"></script>
 </body>
 </html>

@@ -69,7 +69,19 @@ Vue.component('detail', {
             return '';
         },
         onCarouselSlideStart:function(currentIndex, targetIndex){
-            
+            if(currentIndex == this.$vnode.key){
+                Velocity(this.$el,{
+                    blur:10
+                }, { duration: 100});
+            }
+            if(targetIndex == this.$vnode.key){
+                Velocity(this.$el,{
+                    blur:10
+                }, 0);
+                Velocity(this.$el,{
+                    blur:0
+                }, { duration: 700});
+            }            
         },
         calculateAngle:function(positionIndex){
             var halfAngle = radians_to_degrees(Math.atan((1024/2)/3000));

@@ -22,6 +22,9 @@ Vue.component('sector', {
         },
         polygonPoints:function(){
             return this.getImageProp('clipPolygon');
+        },
+        position:function(){
+            return new Vector3(this.getImageProp('position'));
         }
     },
     methods: {
@@ -73,7 +76,31 @@ Vue.component('sector', {
         },
         onMoveIn:function(){
 
-        }                        
+        },
+        onShake:function(index){
+            if(index == this.$vnode.key){
+                var parent = this;
+
+                var rotY = 0;   //getRandomArbitrary(-20,20);
+                var mov = getRandomArbitrary(0,50)
+                
+                Velocity(this.$el, {
+                    translateZ:parent.position.z + mov,
+                    rotateY:rotY,
+                }, {
+                    duration: 300,
+                    easing: "swing",
+                    complete:function(elements){
+                                                
+                        Velocity(parent.$el, {
+                            translateZ:parent.position.z,
+                            rotateX:0,
+                            rotateY:0,
+                        },200);
+
+                    } });                
+            }
+        }                  
     },
     mounted:function () {
 
@@ -81,7 +108,8 @@ Vue.component('sector', {
         this.$parent.$on('blur-effect-on', this.onBlurEffectOn);
         this.$parent.$on('blur-effect-off', this.onBlurEffectOff);
         this.$parent.$on('move-out', this.onMoveOut);
-        this.$parent.$on('move-in', this.onMoveIn);        
+        this.$parent.$on('move-in', this.onMoveIn);  
+        this.$parent.$on('shake', this.onShake);    
 
         var position = new Vector3(this.getImageProp('position'));
         var rotation = new Vector3(this.getImageProp('rotation'));
@@ -97,5 +125,6 @@ Vue.component('sector', {
             width:size.width,
             height:size.height
         }, 0);
+        
     }
 })

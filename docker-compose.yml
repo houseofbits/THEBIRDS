@@ -4,7 +4,7 @@ services:
     image: nginx:latest
     container_name: production_nginx
     ports:
-      - 80:80
+      - 81:80
     volumes:
         - ./site:/site
         - ./site.conf:/etc/nginx/conf.d/site.conf

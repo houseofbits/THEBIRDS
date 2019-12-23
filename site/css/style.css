@@ -93,47 +93,56 @@ body{
 
 .detail-screen .image {
     position: absolute;
-    border: 1px dashed orange;
+    /*border: 1px dashed orange;*/
     background-repeat: round;    
 }
-
 .title {
-    position:absolute;
-    top:50px;
-    left:50px;
+    margin-top:50px;
+    margin-left:50px;
     font-size: 60px;
-    width:800px;
+    width:600px;
+    line-height: 60px;
 }
-.gradient-text-shadow:before {
+.title span{
+    display: inline;
     background: linear-gradient(to top, #f5ff81, white);
     -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position:relative;
-    content: attr(data-text);
-    z-index: 1;
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;      
+    filter: drop-shadow(2px 4px 3px #000);     
 }
-.gradient-text-shadow {
-    position:relative;
+.title-latin{
+    margin-top:10px;
+    margin-left:50px;
+    font-size: 40px;
+    width:800px;    
 }
-.gradient-text-shadow:after {
-    background: none;
-    content: attr(data-text);
-    left: 0;
-    position: absolute;
-    text-shadow: 2px -4px 3px #000;
-    top: 0;
-    z-index: 0;
+.title-latin span{
+    display: inline;
+    background: linear-gradient(to top, #e5e5e5, white);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;    
+    filter: drop-shadow(2px 2px 2px #000); 
 }
-
 .description{
+    text-align: justify;
     font-size: 30px;
+    line-height: 35px;
     position:absolute;
-    top:400px;
+    top:300px;
     left:20px;
-    width:960px;
+    width:90%;
+    padding-left: 30px;
 }
-
+.description span{
+    display: inline;
+    background: linear-gradient(to top, #f5ff81, white);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;    
+    filter: drop-shadow(2px 2px 2px #000);    
+}
 .polygon{
     fill:yellow;
     stroke:blue;

@@ -25,6 +25,10 @@ class Vector3 {
   }
 }
 
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+
 var app = new Vue({
     el: '#appplication',
     data: {
@@ -33,7 +37,14 @@ var app = new Vue({
         selectedDetail:null,
         mouseState:[0, 0, 0, 0, 0, 0, 0, 0, 0],
         mouseDownCount:0,
-        rotationStep:0
+        rotationStep:0,
+        currentShakeIndex:0,
+        passiveMode:false,
+        userInputTimer:null,
+        config:{
+            userInputTimeout:5000,
+            detailRotationDuration:650,
+        },
     },
     computed:{
         sectors:function () {
@@ -78,6 +89,8 @@ var app = new Vue({
             return null;
         },
         onMouseMove:function (e) {
+
+            this.userInputActivation();
 
             //Move only if main view is selected
             if(this.selectedDetail == null
@@ -204,10 +217,13 @@ var app = new Vue({
         rotateDetailView:function(targetIndex, imediate = false){
             var angle = targetIndex * this.rotationStep;
             var parent = this;
-            var duration = 650;
+            var duration = this.config.detailRotationDuration;
             if(imediate)duration = 0;
 
             Velocity(this.$refs.detailCarousel,"finish");
+
+            this.$emit('carousel-slide-start', this.selectedDetail, targetIndex);
+
             Velocity(this.$refs.detailCarousel,{
                 rotateY:-angle
             }, {
@@ -293,7 +309,31 @@ var app = new Vue({
             --this.mouseDownCount;
         },
         getLanguage:function(){
-            return 'lv';
+            return this.language;
+        },
+        setLanguage:function(lang){
+            this.language = lang;
+        },
+
+        startShakeNext:function(){
+            if(this.passiveMode){
+                this.currentShakeIndex = (this.currentShakeIndex + 1)%this.sectors.length;
+                this.$emit('shake', this.currentShakeIndex);
+                setTimeout(this.startShakeNext, 500);
+            }
+        },
+        userInputActivation:function(){
+            this.passiveMode = false;
+
+            if(this.userInputTimer){
+                clearTimeout(this.userInputTimer);
+                this.userInputTimer = null;
+            }
+            var parent = this;
+            this.userInputTimer = setTimeout(function(){
+                parent.passiveMode = true;
+                parent.startShakeNext();
+            }, this.config.userInputTimeout);
         }
     },
     mounted:function () {
@@ -314,6 +354,9 @@ var app = new Vue({
         this.initDetailView();
 
         this.rotationStep = 2 * radians_to_degrees(Math.atan((1024/2)/3000));
+
+        this.userInputActivation();
+
     },
     beforeDestroy: function () {
         document.removeEventListener('mousemove', this.onMouseMove);
