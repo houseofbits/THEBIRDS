@@ -11,6 +11,18 @@ class Rectangle {
   }
 }
 
+class Vector2 {
+    constructor(str) {
+        this.x = 0;
+        this.y = 0;
+        if(str && str.indexOf(',') > 0){
+            var arr = str.split(',');
+            if(typeof arr[0] != 'undefined')this.x = parseFloat(arr[0]);
+            if(typeof arr[1] != 'undefined')this.y = parseFloat(arr[1]);
+        }
+    }
+}
+
 class Vector3 {
   constructor(str) {
     this.x = 0;
@@ -89,103 +101,51 @@ var app = new Vue({
             return null;
         },
         onMouseMove:function (e) {
-
             this.userInputActivation();
-
-            //Move only if main view is selected
-            if(this.selectedDetail == null
-                && this.mouseDownCount
-            ){
-
-                var px = e.clientX;
-                var py = e.clientY;
-
-                var scalex = 0.5 - (px / 1024.0);
-                var scaley = -0.5 + (py / 768.0);
-
-                Velocity(this.$refs.mainScreen, {
-                    rotateX:scaley*10,
-                    rotateY:scalex*20
-                }, { duration: 10});
-            }
         },
         selectDetailView:function(id){
-
-            console.log("select detail "+id);
-
             if (this.selectedDetail != null) {
-
                 //Init detail view to default state
                 this.initDetailView();
-                
-                this.$emit('move-out');
-
-                //Fade off main view
-                this.$emit('blur-effect-event', true);
-
+                this.$emit('move-out', id);
                 //Fade in detail view background
                 Velocity(this.$refs.detailScreen,{
                     opacity:1
                 }, { duration: 1000,
-                    delay: 0,
-                    display: "block",
-                    complete:function(elements){
-
-                        //bring in buttons and content
-
-                    } });
-
+                    display: "block"
+                });
                 Velocity(this.$refs.shadowBackground, {
                     opacity: 0,
-                }, {duration:500});
-
-                // Velocity(this.$refs.mainScreen, {
-                //     perspective: 20,
-                // }, {duration:800});
-
-                
-
+                }, {duration:300,delay: 100,});
             }
         },
-
         //Set up default position, visibility and opacity
         initDetailView:function(){
-            
             Velocity(this.$refs.detailScreen,{ opacity: 0 }, { display: "none" });
-
             this.rotateDetailView(this.selectedDetail, true);
-
-            //1) Button positions
-            //2) Content carousel?
-            //3) 
-            
         },
         closeDetailView:function(){
 
             var parent = this;
 
+            parent.$emit('move-in');
+
+            Velocity(parent.$refs.shadowBackground, {
+                opacity: 1,
+            }, {duration:500});
+
+            Velocity(this.$refs.mainBackground,{
+                blur:0
+            }, { duration: 1000});
+
             //Fade off detail view background
             Velocity(this.$refs.detailScreen,{
                 opacity:0
             }, { duration: 600, 
-                display: "none",
-                complete:function(elements){
-
-                    Velocity(parent.$refs.shadowBackground, {
-                        opacity: 1,
-                    }, {duration:500});
-
-                    // Velocity(parent.$refs.mainScreen, {
-                    //     perspective: 600,
-                    // }, {duration:500});
-
-                    parent.$emit('move-in');
-                    
-                    //Fade in main view
-                    parent.$emit('blur-effect-event', false);
-
-                } });
+                display: "none"
+            });
             this.selectedDetail = null;
+            this.userInputActivation();
         },
         getNextDetailViewId:function(){
             if(this.selectedDetail != null){
@@ -318,7 +278,7 @@ var app = new Vue({
         },
 
         startShakeNext:function(){
-            if(this.passiveMode){
+            if(this.passiveMode && !this.selectedDetail){
                 this.currentShakeIndex = (this.currentShakeIndex + 1)%this.sectors.length;
                 this.$emit('shake', this.currentShakeIndex);
                 setTimeout(this.startShakeNext, 500);
@@ -333,6 +293,7 @@ var app = new Vue({
             }
             var parent = this;
             this.userInputTimer = setTimeout(function(){
+                if(this.selectedDetail)return;
                 parent.passiveMode = true;
                 parent.startShakeNext();
             }, this.config.userInputTimeout);

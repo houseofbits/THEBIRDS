@@ -28,19 +28,6 @@ Vue.component('sector', {
         }
     },
     methods: {
-        // //mousedown/mouseover or touchstart
-        // onGrab:function(){
-        //     this.$parent.$emit('sector-grab', this.$vnode.key);
-        // },
-        // ///mouseup or touchend
-        // onRelease(){
-        //     //console.log(this.$vnode.key);
-        //     this.$parent.$emit('sector-release', this.$vnode.key);
-        // },
-        // //mouseout
-        // onLeave(){
-        //     this.$parent.$emit('sector-leave', this.$vnode.key);
-        // },
         getImageProp:function(name){
             if(this.data && typeof this.data.mainImage != 'undefined'){
                 if(typeof this.data.mainImage[name] != 'undefined'){
@@ -71,25 +58,34 @@ Vue.component('sector', {
         onBlurEffectOff:function(){
             this.blurEffect(false);
         },
-        onMoveOut:function(){
-
+        onMoveOut:function(selectedIndex){
             var parent = this;
-
-            var delay = getRandomArbitrary(0,40)
-            
+            var delay = getRandomArbitrary(0,300);
+            var blurValue = this.getImageProp('maxBlur');
+            if(selectedIndex == this.$vnode.key){
+                delay = 0;
+            }
             Velocity(this.$el, {
-                translateZ:parent.position.z + 500,
+                translateZ:parent.position.z + 800,
+                blur:blurValue
             }, {
-                duration: 200,
-            });    
+                delay:delay,
+                duration: 600,
+            });
         },
         onMoveIn:function(){
             var parent = this;
+            var delay = getRandomArbitrary(0,300);
             Velocity(this.$el, {
                 translateZ:parent.position.z,
+                blur:4
             }, {
-                duration: 200,
-            });  
+                delay:delay,
+                duration: 400,
+            });
+            Velocity(this.$el, {
+                blur:0
+            }, 100);
         },
         onShake:function(index){
             if(index == this.$vnode.key){

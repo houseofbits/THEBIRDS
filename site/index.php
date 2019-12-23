@@ -44,13 +44,16 @@
         <div class="language"></div>
 
         <div class="navigation">
-            <a href="#" class="dev-button" v-on:click="movePrev">Prev</a>
-            <a href="#" class="dev-button" v-on:click="closeDetailView">Close</a>
-            <a href="#" class="dev-button" v-on:click="moveNext">Next</a>
 
-            <a href="#" class="dev-button" v-on:click="setLanguage('ru')">RUS</a>
-            <a href="#" class="dev-button" v-on:click="setLanguage('en')">ENG</a>
-            <a href="#" class="dev-button" v-on:click="setLanguage('lv')">LAT</a>
+            <div v-if="getPreviousDetailViewId()" class="button-prev" v-on:click="movePrev"></div>
+            <div v-if="getNextDetailViewId()" class="button-next" v-on:click="moveNext"></div>
+            <div class="button-exit" v-on:click="closeDetailView"></div>
+
+            <div class="language">
+                <div class="flag ru" :class="{active:(getLanguage()=='ru')}" v-on:click="setLanguage('ru')"></div>
+                <div class="flag en" :class="{active:(getLanguage()=='en')}" v-on:click="setLanguage('en')"></div>
+                <div class="flag lv" :class="{active:(getLanguage()=='lv')}" v-on:click="setLanguage('lv')"></div>
+            </div>
         </div>
 
     </div>
@@ -84,7 +87,7 @@
             }"></div>
             <div class="title"><span>{{title}}</span></div>
             <div class="title-latin"><span>{{titleLatin}}</span></div>
-            <div class="description"><span>{{description}}</span></div>
+            <div class="description" :style="{left:descriptionPosition.x+'px',top:descriptionPosition.y+'px'}"><span>{{description}}</span></div>
             <div class="sounds"></div>
         </div>
     </div>

@@ -12,6 +12,14 @@ Vue.component('detail', {
         return { data: this.sector }
     },
     computed:{
+        descriptionPosition:function(){
+            if(typeof this.data.description != 'undefined'
+                && typeof this.data.description.position != 'undefined'){
+                var pos = new Vector2(this.data.description.position);
+                return pos;
+            }
+            return new Vector2(null);
+        },
         detailBackgroundImageUrl:function(){
             return this.$parent.detailBackgroundImageUrl();
         },

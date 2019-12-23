@@ -7,6 +7,7 @@
 body{
     background-color: slategrey;
     font-family: "customFont";
+    overflow: hidden;
 }
 
 #appplication{
@@ -152,8 +153,83 @@ body{
 }
 .detail-screen .navigation {
     position: absolute;
-    top:700px;
-    left:50px;
+    bottom:0px;
+    left:0px;
+    width:1024px;
+    height:80px;
+}
+
+.language{
+    width:100%;
+    position:fixed;
+    bottom:0px;
+    text-align:center;
+    z-index:500;
+}
+.flag{
+    display: inline-block;
+    width:50px;
+    height:37px;
+    background-repeat: round;
+    transition: width 400ms, height 400ms;
+    box-shadow: 0px -4px 8px 1px rgba(0,0,0,0.75);
+    border-radius: 5px;
+}
+.flag.lv{
+    background-image: url("/resources/lv_flag.png");
+}
+.flag.ru{
+    background-image: url("/resources/ru_flag.png");
+}
+.flag.en{
+    background-image: url("/resources/en_flag.png");
+}
+.flag.active{
+    width:90px;
+    height:60px;
+    transition: width 400ms, height 400ms;
+    border-radius: 9px;
+}
+
+.button-prev{
+    position:fixed;
+    left: 0px;
+    bottom:0px;
+    background-image: url("/resources/button_return.png");
+    width:100px;
+    height:100px;
+    background-repeat: round;
+    z-index:999;
+}
+.button-prev:hover{
+    background-image: url("/resources/button_return_on.png");
+}
+.button-next{
+    position:fixed;
+    right: 0px;
+    bottom:0px;
+    background-image: url("/resources/button_return.png");
+    width:100px;
+    height:100px;
+    background-repeat: round;
+    transform: scaleX(-1);
+    z-index:999;
+}
+.button-next:hover{
+    background-image: url("/resources/button_return_on.png");
+}
+.button-exit{
+    position:fixed;
+    right: 0px;
+    top:0px;
+    background-image: url("/resources/button_exit.png");
+    width:100px;
+    height:100px;
+    background-repeat: round;
+    z-index:999;
+}
+.button-exit:hover{
+    background-image: url("/resources/button_exit_on.png");
 }
 
 .dev-button {
