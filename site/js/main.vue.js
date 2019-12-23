@@ -117,6 +117,8 @@ var app = new Vue({
 
                 //Init detail view to default state
                 this.initDetailView();
+                
+                this.$emit('move-out');
 
                 //Fade off main view
                 this.$emit('blur-effect-event', true);
@@ -137,11 +139,11 @@ var app = new Vue({
                     opacity: 0,
                 }, {duration:500});
 
-                Velocity(this.$refs.mainScreen, {
-                    perspective: 20,
-                }, {duration:800});
+                // Velocity(this.$refs.mainScreen, {
+                //     perspective: 20,
+                // }, {duration:800});
 
-                this.$emit('move-out');
+                
 
             }
         },
@@ -173,9 +175,9 @@ var app = new Vue({
                         opacity: 1,
                     }, {duration:500});
 
-                    Velocity(parent.$refs.mainScreen, {
-                        perspective: 600,
-                    }, {duration:500});
+                    // Velocity(parent.$refs.mainScreen, {
+                    //     perspective: 600,
+                    // }, {duration:500});
 
                     parent.$emit('move-in');
                     

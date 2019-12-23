@@ -73,9 +73,23 @@ Vue.component('sector', {
         },
         onMoveOut:function(){
 
+            var parent = this;
+
+            var delay = getRandomArbitrary(0,40)
+            
+            Velocity(this.$el, {
+                translateZ:parent.position.z + 500,
+            }, {
+                duration: 200,
+            });    
         },
         onMoveIn:function(){
-
+            var parent = this;
+            Velocity(this.$el, {
+                translateZ:parent.position.z,
+            }, {
+                duration: 200,
+            });  
         },
         onShake:function(index){
             if(index == this.$vnode.key){
