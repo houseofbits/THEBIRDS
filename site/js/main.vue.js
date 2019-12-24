@@ -87,6 +87,7 @@ var app = new Vue({
         },
         init:function (viewData) {
             this.view = viewData;
+            this.initAudio();
         },
         getView:function (id) {
             this.$http.get('/resources/view_'+id+'/config.json').then(function(response) {
@@ -186,14 +187,14 @@ var app = new Vue({
 
             this.$emit('carousel-slide-start', this.selectedDetail, targetIndex);
 
+            parent.selectedDetail = targetIndex;
+
             Velocity(this.$refs.detailCarousel,{
                 rotateY:-angle
             }, {
                 duration: duration,
-                easing: "ease",
-                complete:function(elements){
-                    parent.selectedDetail = targetIndex;
-                } });
+                easing: "ease"
+            });
         },
         moveNext:function(){
             var index = this.getNextDetailViewId();
@@ -206,12 +207,6 @@ var app = new Vue({
             if(index != null) {
                 this.rotateDetailView(index);
             }
-        },
-        //Play sound from active detail view
-        playSound:function(soundId){
-
-            
-
         },
         switchLanguage:function(language){
             this.language = language;
@@ -278,7 +273,7 @@ var app = new Vue({
         },
 
         startShakeNext:function(){
-            if(this.passiveMode && !this.selectedDetail){
+            if(this.passiveMode && this.selectedDetail == null){
                 this.currentShakeIndex = (this.currentShakeIndex + 1)%this.sectors.length;
                 this.$emit('shake', this.currentShakeIndex);
                 setTimeout(this.startShakeNext, 500);
@@ -293,10 +288,24 @@ var app = new Vue({
             }
             var parent = this;
             this.userInputTimer = setTimeout(function(){
-                if(this.selectedDetail)return;
+                if(this.selectedDetail != null)return;
                 parent.passiveMode = true;
                 parent.startShakeNext();
             }, this.config.userInputTimeout);
+        },
+        initAudio:function(){
+            if(this.view && typeof this.view.sectors != 'undefined'){
+                for(var i=0; i<this.view.sectors.length; i++){
+                    if(typeof this.view.sectors[i].audio != "undefined"){
+                        for(var a=0; a<this.view.sectors[i].audio.length; a++){
+                            var audioFile = this.view.sectors[i].audio[a].fileName;    
+                            this.view.sectors[i].audio[a].sound = new Howl({
+                                src: [audioFile]
+                              });
+                        }
+                    }
+                }
+            }        
         }
     },
     mounted:function () {
@@ -319,6 +328,8 @@ var app = new Vue({
         this.rotationStep = 2 * radians_to_degrees(Math.atan((1024/2)/3000));
 
         this.userInputActivation();
+
+        
 
     },
     beforeDestroy: function () {

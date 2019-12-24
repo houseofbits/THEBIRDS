@@ -35,8 +35,12 @@
       "audio":[
         {
           "title":"Dziesma",
-          "fileName":"resources/view_1/sounds/sound1.wav"
-        }
+          "fileName":"resources/ImperialMarch60.wav"
+        },
+        {
+          "title":"Dziesma",
+          "fileName":"resources/ImperialMarch60.wav"
+        }        
       ]
     },
     {
@@ -109,7 +113,7 @@
         "lv":"Ligzdo pārsvarā kolonijās visā Latvijas teritorijā. Ligzdo ap 1100 - 1500 pāru. Pēdējās desmitgadēs skaits pieaudzis. Samērā parasts caurceļotājs. Pirmais ziemas novērojums reģistrēts 1990. gada janvārī pie Liepājas ezera. Atkarībā no ziemas barguma Latvijā regulāri ziemo no dažiem desmitiem līdz vairākiem simtiem zivju gārņu.",
         "ru":"Серая цапля обычно гнездится группами или колониями на всей территории Латвии. Гнездится около 1100-1500 пар. В последние десятилетия численность возросла. На пролете обычна. Зимовка отмечена начиная с января 1990 года. В зависимости от суровости зимы количество зимующих особей варьирует от нескольких десятков до нескольких сотен.",
         "en":"Common breeding species. They nest in colonies and it is estimated that there are 1100-1500 breeding pairs in Latvia. Population of grey herons has increased in last decades. Also common during migration. First winter record was at Lake Liepāja during January 1990. Now there are few dozen to several hundred grey herons wintering in Latvia depending on the severity of winter.",
-        "position":"20,400"
+        "position":"20,350"
       },
       "mainImage":{
         "image":"resources/view_1/images/s4.png",

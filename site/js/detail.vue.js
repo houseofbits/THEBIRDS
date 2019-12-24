@@ -12,6 +12,12 @@ Vue.component('detail', {
         return { data: this.sector }
     },
     computed:{
+        sounds:function(){
+            if(typeof this.data.audio != 'undefined'){
+                return this.data.audio;
+            }
+            return null;
+        },
         descriptionPosition:function(){
             if(typeof this.data.description != 'undefined'
                 && typeof this.data.description.position != 'undefined'){
@@ -68,6 +74,22 @@ Vue.component('detail', {
         },                
     },
     methods: {
+        playSound:function(index){
+            if(typeof this.sounds[index] != "undefined"){
+                if(this.sounds[index].sound.playing()){
+                    this.sounds[index].sound.stop();
+                }else{
+                    this.sounds[index].sound.play();
+                } 
+            }
+            this.$forceUpdate();
+        },
+        isPlaying:function(index){
+            if(typeof this.sounds[index] != "undefined"){
+                return this.sounds[index].sound.playing();
+            }
+            return false;
+        },        
         getDetailProp:function(name){
             if(this.data && typeof this.data.detailImage != 'undefined'){
                 if(typeof this.data.detailImage[name] != 'undefined'){
@@ -97,7 +119,6 @@ Vue.component('detail', {
         },
     },
     mounted:function () {
-        
         this.$parent.$on('carousel-slide-start', this.onCarouselSlideStart);
 
         Velocity(this.$el, { rotateY:this.calculateAngle(this.$vnode.key) }, 0);

@@ -299,3 +299,15 @@ body{
     width:1024px;
     height:768px;
 }
+
+.sounds div{
+    color: #f5ff81;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    margin-left: 50px;
+    border: #f5ff81 1px solid;
+}
+.sounds .playing{
+    color:red;
+}

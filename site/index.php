@@ -45,8 +45,8 @@
 
         <div class="navigation">
 
-            <div v-if="getPreviousDetailViewId()" class="button-prev" v-on:click="movePrev"></div>
-            <div v-if="getNextDetailViewId()" class="button-next" v-on:click="moveNext"></div>
+            <div v-if="getPreviousDetailViewId()!=null" class="button-prev" v-on:click="movePrev"></div>
+            <div v-if="getNextDetailViewId()!=null" class="button-next" v-on:click="moveNext"></div>
             <div class="button-exit" v-on:click="closeDetailView"></div>
 
             <div class="language">
@@ -88,7 +88,9 @@
             <div class="title"><span>{{title}}</span></div>
             <div class="title-latin"><span>{{titleLatin}}</span></div>
             <div class="description" :style="{left:descriptionPosition.x+'px',top:descriptionPosition.y+'px'}"><span>{{description}}</span></div>
-            <div class="sounds"></div>
+            <div class="sounds">
+                <div v-for="(sound, index) in sounds" :class="{playing:isPlaying(index)}" v-on:click="playSound(index)">{{sound.fileName}}</div>
+            </div>
         </div>
     </div>
 </script>
