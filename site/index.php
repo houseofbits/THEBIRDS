@@ -89,7 +89,16 @@
             <div class="title-latin"><span>{{titleLatin}}</span></div>
             <div class="description" :style="{left:descriptionPosition.x+'px',top:descriptionPosition.y+'px'}"><span>{{description}}</span></div>
             <div class="sounds">
-                <div v-for="(sound, index) in sounds" :class="{playing:isPlaying(index)}" v-on:click="playSound(index)">{{sound.fileName}}</div>
+                <div v-for="(sound, index) in sounds" :class="{playing:isPlaying(index)}" v-on:click="playSound(index)">
+                    <span class="icon"></span>
+                    <span class="title">{{sound.title}}</span>
+                    <div class=waveform>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>                        
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -129,7 +129,19 @@ var app = new Vue({
 
             var parent = this;
 
-            parent.$emit('move-in');
+            //Fade off detail view background
+            Velocity(this.$refs.detailScreen,{
+                opacity:0
+            }, { duration: 600, 
+                display: "none",
+                complete:function(){
+                    parent.selectedDetail = null;
+                }
+            });
+
+            this.$emit('stop-sounds');
+
+            this.$emit('move-in');
 
             Velocity(parent.$refs.shadowBackground, {
                 opacity: 1,
@@ -139,13 +151,6 @@ var app = new Vue({
                 blur:0
             }, { duration: 1000});
 
-            //Fade off detail view background
-            Velocity(this.$refs.detailScreen,{
-                opacity:0
-            }, { duration: 600, 
-                display: "none"
-            });
-            this.selectedDetail = null;
             this.userInputActivation();
         },
         getNextDetailViewId:function(){
@@ -197,12 +202,14 @@ var app = new Vue({
             });
         },
         moveNext:function(){
+            this.$emit('stop-sounds');
             var index = this.getNextDetailViewId();
             if(index != null) {
                 this.rotateDetailView(index);
             }
         },
         movePrev:function(){
+            this.$emit('stop-sounds');
             var index = this.getPreviousDetailViewId();
             if(index != null) {
                 this.rotateDetailView(index);
@@ -300,7 +307,12 @@ var app = new Vue({
                         for(var a=0; a<this.view.sectors[i].audio.length; a++){
                             var audioFile = this.view.sectors[i].audio[a].fileName;    
                             this.view.sectors[i].audio[a].sound = new Howl({
-                                src: [audioFile]
+                                src: [audioFile],
+                                preload:true,
+                                onload:function(){
+                                    this.play();
+                                    this.stop();
+                                }
                               });
                         }
                     }

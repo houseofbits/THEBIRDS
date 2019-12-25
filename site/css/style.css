@@ -98,8 +98,8 @@ body{
     background-repeat: round;    
 }
 .title {
-    margin-top:50px;
-    margin-left:50px;
+    margin-top:20px;
+    margin-left:20px;
     font-size: 60px;
     width:600px;
     line-height: 60px;
@@ -301,13 +301,109 @@ body{
 }
 
 .sounds div{
-    color: #f5ff81;
-    width: 50px;
-    height: 50px;
+    display: block;
+    width: 50%;
+    height: 55px;
     margin: 10px;
     margin-left: 50px;
-    border: #f5ff81 1px solid;
 }
-.sounds .playing{
-    color:red;
+.sounds .icon{
+    display: inline-block;
+    margin:0;
+    width:50px;
+    height:50px;
+    border: #f5ff81 1px solid;    
+}
+.sounds .title{
+    display: inline-block;
+    width:auto;
+    height:50px;
+    margin:0;
+    vertical-align: top;
+    color: #f5ff81;
+    font-size: 25px;
+    line-height: 50px;
+    margin-left: 10px;
+
+    background: linear-gradient(to bottom, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 70%, rgba(248,181,0,1) 71%, rgba(251,223,147,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;    
+    filter: drop-shadow(2px 2px 2px #000);     
+}
+.sounds .waveform{
+    display:none;
+    vertical-align: top;
+    position: relative;
+    width:50px;
+    height:35px;
+    margin:0;
+    margin-left: 5px;
+}
+.sounds .waveform div{
+    position: absolute;
+    margin:0;
+    bottom: 0px;
+    background-color: yellowgreen;
+    width:6px;
+    height: 20px;
+    background: linear-gradient(to bottom, rgba(214,252,0,1) 0%, rgba(117,137,12,1) 100%);
+    filter: drop-shadow(1px 1px 1px #000);   
+    animation-duration: 2s;
+    animation-iteration-count: infinite;      
+}
+.sounds .waveform div:nth-child(1){
+    animation-name: wkf1;
+    left:0px;
+}
+.sounds .waveform div:nth-child(2){
+    animation-name: wkf2;
+    left:10px;
+    height:5px;
+}
+.sounds .waveform div:nth-child(3){
+    animation-name: wkf3;
+    left:20px;
+    height:10px;
+}
+.sounds .waveform div:nth-child(4){
+    animation-name: wkf4;
+    left:30px;
+    height:25px;
+}
+
+@keyframes wkf1 {
+    0%   {height: 35px;}
+    50%   {height: 5px;}    
+    100% {height: 35px;}
+  }
+@keyframes wkf2 {
+    0%   {height: 5px;}
+    50%   {height: 35px;}    
+    100% {height: 5px;}
+  }
+@keyframes wkf3 {
+    0%   {height: 10px;}
+    33%   {height: 35px;}    
+    66%   {height: 5px;}        
+    100% {height: 10px;}
+  }
+@keyframes wkf4 {
+    0%   {height: 25px;}
+    50%   {height: 5px;}    
+    100% {height: 25px;}
+  }      
+
+.sounds .playing .title{
+    background: linear-gradient(to bottom, rgba(214,252,0,1) 0%, rgba(117,137,12,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;    
+    filter: drop-shadow(2px 2px 2px #000);     
+}
+.sounds .playing .icon{
+    border: red 1px solid;    
+}
+.sounds .playing .waveform{
+    display:inline-block;
 }

@@ -75,8 +75,10 @@ Vue.component('detail', {
     },
     methods: {
         playSound:function(index){
+            var isPlaying = this.isPlaying(index);
+            this.$parent.$emit('stop-sounds');
             if(typeof this.sounds[index] != "undefined"){
-                if(this.sounds[index].sound.playing()){
+                if(isPlaying){
                     this.sounds[index].sound.stop();
                 }else{
                     this.sounds[index].sound.play();
@@ -89,7 +91,17 @@ Vue.component('detail', {
                 return this.sounds[index].sound.playing();
             }
             return false;
-        },        
+        },   
+        onStopSound:function(){
+            if(typeof this.sounds != "undefined" && this.sounds){
+                for(var i=0; i<this.sounds.length; i++){
+                    if(typeof this.sounds[i].sound != "undefined"){
+                        this.sounds[i].sound.stop();
+                    }                    
+                }
+            }
+            this.$forceUpdate();            
+        },     
         getDetailProp:function(name){
             if(this.data && typeof this.data.detailImage != 'undefined'){
                 if(typeof this.data.detailImage[name] != 'undefined'){
@@ -120,6 +132,7 @@ Vue.component('detail', {
     },
     mounted:function () {
         this.$parent.$on('carousel-slide-start', this.onCarouselSlideStart);
+        this.$parent.$on('stop-sounds', this.onStopSound);
 
         Velocity(this.$el, { rotateY:this.calculateAngle(this.$vnode.key) }, 0);
     }
