@@ -31,17 +31,7 @@
           "position":"460,-20",
           "rotation":"0,0,0",
           "size":"560,410"
-      },
-      "audio":[
-        {
-          "title":"Dziesma",
-          "fileName":"resources/ImperialMarch60.wav"
-        },
-        {
-          "title":"Dziesma",
-          "fileName":"resources/ImperialMarch60.wav"
-        }        
-      ]
+      }
     },
     {
       "comment":"------------------------------------- S2 --------------------------------------------",
@@ -70,7 +60,13 @@
         "position":"460,-20",
         "rotation":"0,0,0",
         "size":"560,410"
-      }      
+      },
+      "audio":[
+        {
+          "title":"Dziesma",
+          "fileName":"resources/view_1/sounds/mazais_dumpis_dziesma.mp3"
+        }
+      ]
     },
     {
       "comment":"------------------------------------- S3 --------------------------------------------",
@@ -99,7 +95,13 @@
         "position":"460,-20",
         "rotation":"0,0,0",
         "size":"560,410"
-      }    
+      },
+      "audio":[
+        {
+          "title":"Balss ielaižoties ligzdā",
+          "fileName":"resources/view_1/sounds/melnais_starkis_balss_ielaizoties_ligzdaa.mp3"
+        }
+      ]
     },
     {
       "comment":"------------------------------------- S4 --------------------------------------------",
@@ -273,7 +275,17 @@
         "position":"460,-20",
         "rotation":"0,0,0",
         "size":"560,410"
-      }    
+      },
+      "audio":[
+        {
+          "title":"Jaunie putni ligzdā",
+          "fileName":"resources/view_1/sounds/baltais_starkis_jaunie_putni_ligzdaa.mp3"
+        },
+        {
+          "title":"Knābja klabināšana",
+          "fileName":"resources/view_1/sounds/baltais_starkis_knabja_klabinasana.mp3"
+        }
+      ]
     },
     {
       "comment":"------------------------------------- S10 --------------------------------------------",
@@ -331,7 +343,17 @@
         "position":"460,-10",
         "rotation":"0,0,0",
         "size":"560,410"
-      }    
+      },
+      "audio":[
+        {
+          "title":"Migrantu balsis",
+          "fileName":"resources/view_1/sounds/lielais_dumpis_migrantu_balsis.mp3"
+        },
+        {
+          "title":"Riesta balss",
+          "fileName":"resources/view_1/sounds/lielais_dumpis_riesta_balss.mp3"
+        }
+      ]
     }
   ]
 }

@@ -301,6 +301,7 @@ var app = new Vue({
             }, this.config.userInputTimeout);
         },
         initAudio:function(){
+            var parent = this;
             if(this.view && typeof this.view.sectors != 'undefined'){
                 for(var i=0; i<this.view.sectors.length; i++){
                     if(typeof this.view.sectors[i].audio != "undefined"){
@@ -312,8 +313,11 @@ var app = new Vue({
                                 onload:function(){
                                     this.play();
                                     this.stop();
+                                },
+                                onend:function(){
+                                    parent.$emit('stop-sounds');
                                 }
-                              });
+                            });
                         }
                     }
                 }

@@ -8,6 +8,7 @@ body{
     background-color: slategrey;
     font-family: "customFont";
     overflow: hidden;
+    user-select: none;
 }
 
 #appplication{
@@ -304,15 +305,16 @@ body{
     display: block;
     width: 50%;
     height: 55px;
-    margin: 10px;
+    margin: 0px;
     margin-left: 50px;
 }
 .sounds .icon{
     display: inline-block;
     margin:0;
-    width:50px;
-    height:50px;
-    border: #f5ff81 1px solid;    
+    width:60px;
+    height:60px;
+    background-image: url('/resources/button_play.png');
+    background-repeat: round;
 }
 .sounds .title{
     display: inline-block;
@@ -350,7 +352,8 @@ body{
     background: linear-gradient(to bottom, rgba(214,252,0,1) 0%, rgba(117,137,12,1) 100%);
     filter: drop-shadow(1px 1px 1px #000);   
     animation-duration: 2s;
-    animation-iteration-count: infinite;      
+    animation-iteration-count: infinite;
+    border-radius: 2px;
 }
 .sounds .waveform div:nth-child(1){
     animation-name: wkf1;
@@ -402,7 +405,7 @@ body{
     filter: drop-shadow(2px 2px 2px #000);     
 }
 .sounds .playing .icon{
-    border: red 1px solid;    
+    background-image: url('/resources/button_play_on.png');
 }
 .sounds .playing .waveform{
     display:inline-block;
