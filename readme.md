@@ -1,13 +1,13 @@
 [Latvijas Dabas Muzejs](https://www.dabasmuzejs.gov.lv/)
 Ekspozīcija "Latvijas putni"
 
-https://github.com/houseofbits/THEBIRDS
-
 Web app on
-php
-vue.js
-howler.js
-velocity.js
+- php
+- vue.js
+- howler.js
+- velocity.js
+
+https://github.com/houseofbits/THEBIRDS
 
 Krists Pudzens
 2019/2020
