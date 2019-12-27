@@ -201,9 +201,13 @@ body{
     height:100px;
     background-repeat: round;
     z-index:999;
+    opacity: 0.4;
+    transition: opacity 200ms;
 }
 .button-prev:hover{
     background-image: url("/resources/button_return_on.png");
+    opacity: 1;
+    transition: opacity 200ms;
 }
 .button-next{
     position:fixed;
@@ -215,9 +219,13 @@ body{
     background-repeat: round;
     transform: scaleX(-1);
     z-index:999;
+    opacity: 0.4;
+    transition: opacity 200ms;
 }
 .button-next:hover{
     background-image: url("/resources/button_return_on.png");
+    opacity: 1;
+    transition: opacity 200ms;
 }
 .button-exit{
     position:fixed;
@@ -228,9 +236,13 @@ body{
     height:100px;
     background-repeat: round;
     z-index:999;
+    opacity: 0.4;
+    transition: opacity 200ms;
 }
 .button-exit:hover{
     background-image: url("/resources/button_exit_on.png");
+    opacity: 1;
+    transition: opacity 200ms;
 }
 
 .dev-button {
