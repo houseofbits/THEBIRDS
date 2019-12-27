@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-google-chrome --kiosk --incognito http://thebirds.local:81/index.html
+google-chrome --kiosk --incognito http://thebirds.local:81/test.php
