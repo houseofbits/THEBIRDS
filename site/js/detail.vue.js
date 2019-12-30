@@ -19,10 +19,18 @@ Vue.component('detail', {
             return null;
         },
         descriptionPosition:function(){
-            if(typeof this.data.description != 'undefined'
-                && typeof this.data.description.position != 'undefined'){
-                var pos = new Vector2(this.data.description.position);
-                return pos;
+            if(typeof this.data.description != 'undefined'){
+                var language = this.$parent.getLanguage();
+
+                if(typeof this.data.description[language] == "object" && 
+                typeof this.data.description[language].position != "undefined"){
+                    var pos = new Vector2(this.data.description[language].position);
+                    return pos;
+                }
+                if(typeof this.data.description.position != 'undefined'){
+                    var pos = new Vector2(this.data.description.position);
+                    return pos;
+                }
             }
             return new Vector2(null);
         },
@@ -49,6 +57,11 @@ Vue.component('detail', {
 
             if(typeof this.data.description != 'undefined'
                 && typeof this.data.description[language] != 'undefined'){
+
+                if(typeof this.data.description[language] == "object" && 
+                typeof this.data.description[language].text != "undefined"){
+                    return this.data.description[language].text;
+                }
                 return this.data.description[language];
             }
             return '';
@@ -56,24 +69,23 @@ Vue.component('detail', {
         imageUrl:function(){
             return this.getDetailProp('image');
         },
-        width:function(){
-            var size = new Rectangle(this.getDetailProp('size'));
-            return size.width;
-        },
-        height:function(){
-            var size = new Rectangle(this.getDetailProp('size'));
-            return size.height;
+        imageSize:function(){
+            return new Rectangle(this.getDetailProp('size'));
         },        
-        positionX:function(){
-            var size = new Rectangle(this.getDetailProp('position'));
-            return size.width;
-        },
-        positionY:function(){
-            var size = new Rectangle(this.getDetailProp('position'));
-            return size.height;
-        },                
+        imagePosition:function(){
+            return new Vector2(this.getDetailProp('position'));
+        },                        
     },
     methods: {
+        soundTitle:function(index){
+            var language = this.$parent.getLanguage();
+            if(this.sounds[index] != "undefined" 
+                && this.sounds[index].title != "undefined"
+                && this.sounds[index].title[language] != "undefined"){
+                    return this.sounds[index].title[language];
+            }
+            return "";
+        },
         playSound:function(index){
             var isPlaying = this.isPlaying(index);
             this.$parent.$emit('stop-sounds');

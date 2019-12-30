@@ -5,14 +5,17 @@
   "sectors":[
     {
       "comment":"------------------------------------ S1 -----------------------------",
-      "titleLatin":"Nycticorax nycticorax",
+      "titleLatin":"Nycticorax nycticorax",        
       "title":{
         "lv":"NAKTS GĀRNIS",
         "ru":"КВАКВА",
         "en":"BLACK-CROWNED NIGHT-HERON"
       },
       "description":{
-        "lv":"Rets ieceļotājs. Novērots trīs reizes - divi seni novērojumi - 1862. un 1901. gadā, bet trešais 2015. gadā",
+        "lv":{
+          "text":"Rets ieceļotājs. Novērots trīs reizes - divi seni novērojumi - 1862. un 1901. gadā, bet trešais 2015. gadā",
+          "position":"20,400"
+        },
         "ru":"Кваква в Латвии является редким залетным видом. Отмечена 3 раза – в 1862, 1901 и 2015 годах",
         "en":"Rare vagrant. There are only three observations – two are older records from 1862 and 1901. Third, most recent observation was in year 2015",
         "position":"20,400"
@@ -63,7 +66,11 @@
       },
       "audio":[
         {
-          "title":"Dziesma",
+          "title":{
+            "lv":"Dziesma",
+            "ru":"Песня",
+            "en":"Song"
+          },     
           "fileName":"resources/view_1/sounds/mazais_dumpis_dziesma.mp3"
         }
       ]
@@ -80,7 +87,7 @@
         "lv":"Agrāk Latvijā samērā parasts ligzdotājs, bet skaits ir ievērojami samazinājies. Pēdējos gados ligzdo ap 140 pāri. Ziemo Āfrikā.",
         "ru":"В прошлом черный аист являлся обычным гнездящимся видом, но количество значительно сократилось. В наши дни гнездится около 150 пар. Зимует в Африке.",
         "en":"Previously rather common breeding species but nowadays the numbers have significantly decreased. There are only approximately 140 breeding pairs left. Winters in Africa. ",
-        "position":"20,400"
+        "position":"20,420"
       },
       "mainImage":{
         "image":"resources/view_1/images/s3.png",
@@ -93,12 +100,15 @@
       "detailImage":{
         "image":"resources/view_1/images/s3d.png",
         "position":"460,-20",
-        "rotation":"0,0,0",
         "size":"560,410"
       },
       "audio":[
         {
-          "title":"Balss ielaižoties ligzdā",
+          "title":{
+            "lv":"Balss ielaižoties ligzdā",
+            "ru":"Голос при входе в гнездо",
+            "en":"Voice entering the nest"
+          },                              
           "fileName":"resources/view_1/sounds/melnais_starkis_balss_ielaizoties_ligzdaa.mp3"
         }
       ]
@@ -127,8 +137,7 @@
       },
       "detailImage":{
         "image":"resources/view_1/images/s4d.png",
-        "position":"460,-20",
-        "rotation":"0,0,0",
+        "position":"440,-20",
         "size":"560,410"
       }    
     },
@@ -142,8 +151,14 @@
       },
       "description":{
         "lv":"Līdz XX gs. 90-tajiem gadiem Latvijā rets ieceļotājs. XX gs. beigām un XXI gs. sākumā - novērots aizvien biežāk un lielākā skaitā. 1997. un 1999. gadā atzīmēti divi ligzdošanas gadījumi Engures ezerā hibrīdpāri ar zivju gārni Ardea cinerea . Turpat pirmais \"tīra\" pāra ligzdošanas gadījums pierādīts 2000. gadā. Populācija turpināja pieaugt un tagad vērtējama ap 200 pāriem. Pārziemošana pārliecinoši pierādīta sākot ar 2008. gada janvāri. Tagad ziemo regulāri un skaits pieaug",
-        "ru":"До 90-х годов ХХ столетия являлся редким залетным видом. В конце ХХ столетия и начале XXI столетия отмечался чаще и в большем количестве. В 1997 и 1999 годах отмечено гнездование смешанной пары с серой цаплей на озере Энгурес. В 2000 году на том же озере отмечено гнездование \"чистой\" пары.  Количество продолжило увеличиваться и в наши дни достигло 200 пар. Зимовка отмечена начиная с января 2008 года. Сейчас зимует регулярно и количество зимующих особей растет.",
-        "en":"Great egret was considered to be a rare vagrant up until 1990s. Since then their numbers have increased considerably. First breeding attempts in mixed pair with grey heron Ardea cinerea were observed at Lake Engure during years 1997 and 1999. First pure breeding pair of great egrets was found at the same location in 2000. Population is increasing and is estimated to be around 200 breeding pairs. First observations in winter were during January 2008. Since then occurrence of great egrets in winter has became more regular and number of wintering birds is still increasing.",
+        "ru":{
+          "text":"До 90-х годов ХХ столетия являлся редким залетным видом. В конце ХХ столетия и начале XXI столетия отмечался чаще и в большем количестве. В 1997 и 1999 годах отмечено гнездование смешанной пары с серой цаплей на озере Энгурес. В 2000 году на том же озере отмечено гнездование \"чистой\" пары.  Количество продолжило увеличиваться и в наши дни достигло 200 пар. Зимовка отмечена начиная с января 2008 года. Сейчас зимует регулярно и количество зимующих особей растет.",
+          "position":"20,320"
+        },
+        "en":{
+          "text":"Great egret was considered to be a rare vagrant up until 1990s. Since then their numbers have increased considerably. First breeding attempts in mixed pair with grey heron Ardea cinerea were observed at Lake Engure during years 1997 and 1999. First pure breeding pair of great egrets was found at the same location in 2000. Population is increasing and is estimated to be around 200 breeding pairs. First observations in winter were during January 2008. Since then occurrence of great egrets in winter has became more regular and number of wintering birds is still increasing.",
+          "position":"20,310"
+        },
         "position":"20,350"
       },
       "mainImage":{
@@ -156,9 +171,8 @@
       },
       "detailImage":{
         "image":"resources/view_1/images/s5d.png",
-        "position":"460,-20",
-        "rotation":"0,0,0",
-        "size":"560,410"
+        "position":"440,-10",
+        "size":"500,366"
       }    
     },
     {
@@ -214,7 +228,7 @@
       },
       "detailImage":{
         "image":"resources/view_1/images/s7d.png",
-        "position":"460,-20",
+        "position":"440,-20",
         "rotation":"0,0,0",
         "size":"560,410"
       }    
@@ -278,11 +292,19 @@
       },
       "audio":[
         {
-          "title":"Jaunie putni ligzdā",
+          "title":{
+            "lv":"Jaunie putni ligzdā",
+            "ru":"Молодые птицы в гнезде",
+            "en":"Young birds in the nest"
+          },          
           "fileName":"resources/view_1/sounds/baltais_starkis_jaunie_putni_ligzdaa.mp3"
         },
         {
-          "title":"Knābja klabināšana",
+          "title":{
+            "lv":"Knābja klabināšana",
+            "ru":"Хлопая клювом",
+            "en":"Clapping the beak"
+          },                    
           "fileName":"resources/view_1/sounds/baltais_starkis_knabja_klabinasana.mp3"
         }
       ]
@@ -328,7 +350,7 @@
         "lv":"Latvijā samērā parasts ligzdotājs ar niedrēm aizaugušos ezeros un dīķos. Ligzdo 300-500 pāru Vismaz tik pat vai pat vairāk caurceļo. Nelielā skaitā regulāri pārziemo. Kopš 1980-to gadu vidū ziemotāju skaits ir pakāpeniski audzis, sasniedzot dažus desmitus īpatņus. Slēptā dzīves veida dēļ lielais dumpis ir grūti konstatējams.",
         "ru":"Большая выпь является сравнительно обычным гнездящимся видом в сильно заросших тростником озерах и прудах. Гнездится 300-500 пар. Столько же пролетает через Латвию во время миграции. Зимует редко. Начиная с середины 1980-х количество зимующих особей возросло и достигло нескольких десятков птиц. Из-за скрытного образа жизни довольно сложно обнаружить.",
         "en":"Common breeding species in lakes and ponds with extensive reedbeds. 300-500 breeding pairs. At least as many are also present during migration. Some birds can also overwinter. Number of wintering birds has increased since 1980s and it is estimated that now there are few dozen birds present during winter. Great bitterns are difficult to observe due to their secretive way of life.",
-        "position":"20,400"
+        "position":"20,380"
       },
       "mainImage":{
         "image":"resources/view_1/images/s11.png",
@@ -340,17 +362,24 @@
       },
       "detailImage":{
         "image":"resources/view_1/images/s11d.png",
-        "position":"460,-10",
-        "rotation":"0,0,0",
+        "position":"420,0",
         "size":"560,410"
       },
       "audio":[
         {
-          "title":"Migrantu balsis",
+          "title":{
+            "lv":"Migrantu balsis",
+            "ru":"Голос мигрантов",
+            "en":"The voice of migrants"
+          },
           "fileName":"resources/view_1/sounds/lielais_dumpis_migrantu_balsis.mp3"
         },
         {
-          "title":"Riesta balss",
+          "title":{
+            "lv":"Riesta balss",
+            "ru":"Голос колеи",
+            "en":"The voice of the rut"
+          },
           "fileName":"resources/view_1/sounds/lielais_dumpis_riesta_balss.mp3"
         }
       ]

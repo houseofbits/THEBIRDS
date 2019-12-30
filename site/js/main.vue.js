@@ -41,6 +41,8 @@ function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
   }
 
+/* https://travishorn.com/getting-started-with-vue-single-file-components-f29765a771a3 */
+
 var app = new Vue({
     el: '#appplication',
     data: {

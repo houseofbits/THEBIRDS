@@ -1,0 +1,28 @@
+{
+  "name": "THEBIRDS",
+  "version": "1.0.0",
+  "description": "[Latvijas Dabas Muzejs](https://www.dabasmuzejs.gov.lv/) Ekspozīcija \"Latvijas putni\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vue-cli-service build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/houseofbits/THEBIRDS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/houseofbits/THEBIRDS/issues"
+  },
+  "homepage": "https://github.com/houseofbits/THEBIRDS#readme",
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^4.1.2",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
