@@ -4,7 +4,6 @@ Ekspozīcija "Latvijas putni"
 Web app built on
 - vue
 - vue-resource
-- vue-route
 - howler
 - velocity-animate
 
