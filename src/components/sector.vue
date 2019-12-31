@@ -50,11 +50,12 @@ export default {
 
             var value = 0;
             if(on){
-                value = this.getImageProp('maxBlur');
+                value = 5;  //this.getImageProp('maxBlur');
             }
+
             Velocity(this.$el,{
                 blur:value
-            }, { duration: 500});
+            }, 500);
         },
         onBlurEffectOn:function(excludeIndex){
             if (excludeIndex != this.$vnode.key) {
@@ -121,6 +122,13 @@ export default {
         }        
     },
     mounted:function () {
+
+        this.$parent.$on('blur-effect-event', this.blurEffect);
+        this.$parent.$on('blur-effect-on', this.onBlurEffectOn);
+        this.$parent.$on('blur-effect-off', this.onBlurEffectOff);
+        this.$parent.$on('move-out', this.onMoveOut);
+        this.$parent.$on('move-in', this.onMoveIn);
+        this.$parent.$on('shake', this.onShake);
 
         var position = new Vector3(this.getImageProp('position'));
         var rotation = new Vector3(this.getImageProp('rotation'));

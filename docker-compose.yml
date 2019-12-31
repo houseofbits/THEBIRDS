@@ -6,7 +6,7 @@ services:
     ports:
       - 81:80
     volumes:
-        - ./site:/site
+        - ./dist:/site
         - ./site.conf:/etc/nginx/conf.d/site.conf
     links:
         - php
@@ -14,4 +14,4 @@ services:
   php:
     image: php:7-fpm
     volumes:
-        - ./site:/site
+        - ./dist:/site

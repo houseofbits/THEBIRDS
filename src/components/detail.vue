@@ -61,7 +61,7 @@ export default {
             return new Vector2(null);
         },
         detailBackgroundImageUrl:function(){
-            return this.$parent.detailBackgroundImageUrl();
+            return this.$parent.detailBackgroundImageUrl;
         },
         title:function(){
             var language = this.$parent.getLanguage();
@@ -139,7 +139,7 @@ export default {
                 }
             }
             this.$forceUpdate();            
-        },     
+        },
         getDetailProp:function(name){
             if(this.data && typeof this.data.detailImage != 'undefined'){
                 if(typeof this.data.detailImage[name] != 'undefined'){
@@ -164,7 +164,7 @@ export default {
             }            
         },
         calculateAngle:function(positionIndex){
-            var halfAngle = radians_to_degrees(Math.atan((1024/2)/3000));
+            var halfAngle = radiansToDegrees(Math.atan((1024/2)/3000));
             return ((halfAngle * 2) * positionIndex);
         },
     },

@@ -35,7 +35,7 @@ Vue.component('detail', {
             return new Vector2(null);
         },
         detailBackgroundImageUrl:function(){
-            return this.$parent.detailBackgroundImageUrl();
+            return this.$parent.detailBackgroundImageUrl;
         },
         title:function(){
             var language = this.$parent.getLanguage();

@@ -11,8 +11,22 @@
             <clipregion v-for="(sector, index) in sectors" :key="index" :sector="sector"></clipregion>
         </svg>
     </div>
-    <div class="detail-screen" ref="detailScreen">    
-
+    <div class="detail-screen" ref="detailScreen">
+        <div class="detail-3d">
+            <div class="detail-frame" ref="detailCarousel">
+                <detail v-for="(sector, index) in sectors" v-if="renderDetailView(index)" :key="index" :sector="sector"></detail>
+            </div>
+        </div>
+        <div class="navigation">
+            <div v-if="getPreviousDetailViewId()!=null" class="button-prev" v-on:click="movePrev"></div>
+            <div v-if="getNextDetailViewId()!=null" class="button-next" v-on:click="moveNext"></div>
+            <div class="button-exit" v-on:click="closeDetailView"></div>
+            <div class="language">
+                <div class="flag ru" :class="{active:(getLanguage()=='ru')}" v-on:click="setLanguage('ru')"></div>
+                <div class="flag en" :class="{active:(getLanguage()=='en')}" v-on:click="setLanguage('en')"></div>
+                <div class="flag lv" :class="{active:(getLanguage()=='lv')}" v-on:click="setLanguage('lv')"></div>
+            </div>
+        </div>
     </div>
   </div>
 </template>
@@ -21,6 +35,7 @@
 import sector from './components/sector.vue'
 import clipregion from './components/clipregion.vue'
 import detail from './components/detail.vue'
+import {radiansToDegrees} from './components/common.js'
 
 export default {
     name: 'app',
@@ -63,8 +78,13 @@ export default {
                 return this.view.mainShadow;
             }
             return '';
-        }        
-
+        },
+        detailBackgroundImageUrl:function(){
+            if(this.view && typeof this.view.detailBackground != "undefined"){
+                return this.view.detailBackground;
+            }
+            return '';
+        }
     },
     methods:{
         init:function () {
@@ -73,11 +93,144 @@ export default {
             id = parseInt(path[1]);
             this.$http.get('/resources/view_'+id+'/config.json').then(function(response) {
                 this.view = response.body;
+                this.initAudio();
             }, function(){});
+        },
+        selectDetailView:function(id){
+            if (this.selectedDetail != null) {
+                //Init detail view to default state
+                this.initDetailView();
+                this.$emit('move-out', id);
+                //Fade in detail view background
+                Velocity(this.$refs.detailScreen,{
+                    opacity:1
+                }, { duration: 1000,
+                    display: "block"
+                });
+                Velocity(this.$refs.shadowBackground, {
+                    opacity: 0,
+                }, {duration:300,delay: 100,});
+            }
+        },
+        //Set up default position, visibility and opacity
+        initDetailView:function(){
+            Velocity(this.$refs.detailScreen,{ opacity: 0 }, { display: "none" });
+            this.rotateDetailView(this.selectedDetail, true);
+        },
+        closeDetailView:function(){
+
+            var parent = this;
+
+            //Fade off detail view background
+            Velocity(this.$refs.detailScreen,{
+                opacity:0
+            }, { duration: 600,
+                display: "none",
+                complete:function(){
+                    parent.selectedDetail = null;
+                }
+            });
+
+            this.$emit('stop-sounds');
+
+            this.$emit('move-in');
+
+            Velocity(parent.$refs.shadowBackground, {
+                opacity: 1,
+            }, {duration:500});
+
+            Velocity(this.$refs.mainBackground,{
+                blur:0
+            }, { duration: 1000});
+
+            this.userInputActivation();
+        },
+        getNextDetailViewId:function(){
+            if(this.selectedDetail != null){
+                if(typeof this.sectors[(this.selectedDetail + 1)] != 'undefined'){
+                    return (this.selectedDetail + 1);
+                }
+            }
+            return null;
+        },
+        getPreviousDetailViewId:function(){
+            if(this.selectedDetail != null){
+                if(this.selectedDetail > 0
+                    && typeof this.sectors[(this.selectedDetail - 1)] != 'undefined'){
+
+                    return (this.selectedDetail - 1);
+                }
+            }
+            return null;
+        },
+        renderDetailView:function(index){
+            if(this.selectedDetail != null && index == this.selectedDetail)return true;
+
+            var next = this.getNextDetailViewId();
+            if(next != null && index == next)return true;
+
+            var prev = this.getPreviousDetailViewId();
+            if(prev != null && index == prev)return true;
+
+            return false;
+        },
+        rotateDetailView:function(targetIndex, imediate = false){
+            var angle = targetIndex * this.rotationStep;
+            var parent = this;
+            var duration = this.config.detailRotationDuration;
+            if(imediate)duration = 0;
+
+            Velocity(this.$refs.detailCarousel,"finish");
+
+            this.$emit('carousel-slide-start', this.selectedDetail, targetIndex);
+
+            parent.selectedDetail = targetIndex;
+
+            Velocity(this.$refs.detailCarousel,{
+                rotateY:-angle
+            }, {
+                duration: duration,
+                easing: "ease"
+            });
+        },
+        moveNext:function(){
+            this.$emit('stop-sounds');
+            var index = this.getNextDetailViewId();
+            if(index != null) {
+                this.rotateDetailView(index);
+            }
+        },
+        movePrev:function(){
+            this.$emit('stop-sounds');
+            var index = this.getPreviousDetailViewId();
+            if(index != null) {
+                this.rotateDetailView(index);
+            }
+        },
+        switchLanguage:function(language){
+            this.language = language;
+        },
+        blurEffect:function(on){
+
+            Velocity(this.$refs.mainBackground,"finish");
+
+            var value = 0;
+            var zoom = 600;
+            if(on){
+                value = 3;
+                zoom = 300;
+            }
+            Velocity(this.$refs.mainBackground,{
+                blur:value
+            }, { duration: 1000});
+
+            // Velocity(this.$refs.mainScreen,{
+            //     perspective:zoom
+            // }, { duration: 1000});
         },
         //Sector is grabbed => hightlight it or blur out rest
         onSectorGrabEvent:function (index) {
-            console.log('grab ' + index);
+        //    console.log('grab '+index);
             if(typeof index == 'undefined')return;
             if(this.selectedDetail == null){
                 this.$emit('blur-effect-on', index);
@@ -88,34 +241,113 @@ export default {
             if(typeof index == 'undefined')return;
             if(this.selectedDetail == null){
                 this.selectedDetail = index;
-            //    this.selectDetailView(index);
+                this.selectDetailView(index);
             }
         },
         //Sector is left => return to normal state
         onSectorLeaveEvent:function (index) {
+        //    console.log('leave '+index);
             if(typeof index == 'undefined')return;
             if(this.selectedDetail == null){
                 this.$emit('blur-effect-off');
             }
         },
+        onBlurEffectOn:function(excludeIndex){
+            this.blurEffect(true);
+        },
+        onBlurEffectOff:function(){
+            this.blurEffect(false);
+        },
+        onMouseDown:function (e) {
+            ++this.mouseState[e.button];
+            ++this.mouseDownCount;
+        },
+        onMouseUp:function (e) {
+            --this.mouseState[e.button];
+            --this.mouseDownCount;
+        },
+        getLanguage:function(){
+            return this.language;
+        },
+        setLanguage:function(lang){
+            this.language = lang;
+        },
 
+        startShakeNext:function(){
+            if(this.passiveMode && this.selectedDetail == null){
+                this.currentShakeIndex = (this.currentShakeIndex + 1)%this.sectors.length;
+                this.$emit('shake', this.currentShakeIndex);
+                setTimeout(this.startShakeNext, 500);
+            }
+        },
+        userInputActivation:function(){
 
+            this.passiveMode = false;
+
+            if(this.userInputTimer){
+                clearTimeout(this.userInputTimer);
+                this.userInputTimer = null;
+            }
+            var parent = this;
+            this.userInputTimer = setTimeout(function(){
+                if(this.selectedDetail != null)return;
+                parent.passiveMode = true;
+                parent.startShakeNext();
+            }, this.config.userInputTimeout);
+        },
+        initAudio:function(){
+            var parent = this;
+            if(this.view && typeof this.view.sectors != 'undefined'){
+                for(var i=0; i<this.view.sectors.length; i++){
+                    if(typeof this.view.sectors[i].audio != "undefined"){
+                        for(var a=0; a<this.view.sectors[i].audio.length; a++){
+                            var audioFile = this.view.sectors[i].audio[a].fileName;
+                            this.view.sectors[i].audio[a].sound = new Howl({
+                                src: [audioFile],
+                                preload:true,
+                                onload:function(){
+                                    this.play();
+                                    this.stop();
+                                },
+                                onend:function(){
+                                    parent.$emit('stop-sounds');
+                                }
+                            });
+                        }
+                    }
+                }
+            }
+        },
+        onMouseMove:function (e) {
+            this.userInputActivation();
+        },
     },
     mounted:function(){
 
+        this.init();
+
+        document.addEventListener('mousedown', this.onMouseDown);
+        document.addEventListener('mouseup', this.onMouseUp);
+        document.addEventListener('mousemove', this.onMouseMove);
+        document.addEventListener('touchmove', this.onMouseMove);
+
+        this.$on('blur-effect-event', this.blurEffect);
+        this.$on('blur-effect-on', this.onBlurEffectOn);
+        this.$on('blur-effect-off', this.onBlurEffectOff);
         this.$on('sector-grab', this.onSectorGrabEvent);
         this.$on('sector-release', this.onSectorReleaseEvent);
         this.$on('sector-leave', this.onSectorLeaveEvent);
 
-        //console.log(this.$http);
+        this.initDetailView();
 
-        // Velocity(this.$refs.mainScreen,{
-        //     blur:5
-        // }, { duration: 1600});
+        this.rotationStep = 2 * radiansToDegrees(Math.atan((1024/2)/3000));
 
-        this.init();
-
-    }
+        this.userInputActivation();
+    },
+    beforeDestroy: function () {
+        document.removeEventListener('mousemove', this.onMouseMove);
+        document.removeEventListener('click', this.onClick);
+    },
 }
 </script>
 <style>
@@ -180,7 +412,6 @@ export default {
         top:0px;
         left:0px;
         background-repeat: round;
-        display: none;
     }
     .detail-3d{
         position:absolute;
@@ -225,6 +456,8 @@ export default {
         box-shadow: 0px -4px 8px 1px rgba(0,0,0,0.75);
         border-radius: 5px;
         opacity:0.5;
+        margin-left:3px;
+        mergin-right:3px;
     }
     .flag.lv{
         background-image: url("/resources/lv_flag.png");
