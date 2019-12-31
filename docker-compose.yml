@@ -8,10 +8,10 @@ services:
     volumes:
         - ./dist:/site
         - ./site.conf:/etc/nginx/conf.d/site.conf
-    links:
-        - php
+#    links:
+#        - php
 
-  php:
-    image: php:7-fpm
-    volumes:
-        - ./dist:/site
+#  php:
+#    image: php:7-fpm
+#    volumes:
+#        - ./dist:/site
