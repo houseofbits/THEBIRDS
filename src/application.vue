@@ -90,7 +90,9 @@ export default {
         init:function () {
             var id = 1;
             var path = window.location.pathname.split('/');
+
             id = parseInt(path[1]);
+
             this.$http.get('/resources/view_'+id+'/config.json').then(function(response) {
                 this.view = response.body;
                 this.initAudio();
