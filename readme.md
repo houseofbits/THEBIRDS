@@ -1,4 +1,5 @@
 ## [The Latvian Museum of Natural History ](https://www.dabasmuzejs.gov.lv/) - Birds of Latvia
+Web application for 1024x768 touchscreen device. Complementing Bids of Latvija showcase with various information provided for each species of birds.
 
 **Set up development environment**
 1) Install docker, docker-compose, Node.js/npm
@@ -31,7 +32,7 @@ docker-compose up -d
 3) Enjoy some of the finest birds found on planet:  http://thebirds.local:81/1
 4) Test 1024x768 iframe'd window: http://thebirds.local:81/test.htm
 
-**App built using**
+**Dependencies**
 - vue
 - vue-resource
 - howler
