@@ -1,4 +1,4 @@
-## [Latvijas Dabas Muzejs](https://www.dabasmuzejs.gov.lv/) Ekspozīcija "Latvijas putni"
+## [The Latvian Museum of Natural History ](https://www.dabasmuzejs.gov.lv/) - Birds of Latvia
 
 **Set up development environment**
 1) Install docker, docker-compose, Node.js/npm
