@@ -1,7 +1,7 @@
 ## [The Latvian Museum of Natural History ](https://www.dabasmuzejs.gov.lv/) - Birds of Latvia
 Web application for 1024x768 touchscreen device. Complementing Bids of Latvija showcase with various information provided for each species of birds.
 
-How to set up and build thi project:
+How to set up and build this project:
 
 **Set up development environment**
 1) Install docker, docker-compose, Node.js/npm
