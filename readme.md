@@ -10,7 +10,7 @@ git clone https://github.com/houseofbits/THEBIRDS thebirds
 ```
 npm install
 ```
-4) Create hosts file entry (optional)
+4) Create hosts file entry
 ```
 0.0.0.0 thebirds.local
 ```
