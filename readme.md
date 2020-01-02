@@ -28,7 +28,7 @@ npm run build
 ```
 docker-compose up -d
 ```
-3) Enjoy at http://thebirds.local:81/1
+3) Enjoy some of the finest birds found on planet:  http://thebirds.local:81/1
 4) Test 1024x768 iframe'd window: http://thebirds.local:81/test.htm
 
 **App built using**
