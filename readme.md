@@ -24,12 +24,12 @@ npm run serve
 ```
 npm run build
 ```
-2) Start docker container (http://thebirds.local:81)
+2) Start docker container
 ```
 docker-compose up -d
 ```
-3) Test 1024x768 iframe'd: (http://thebirds.local:81/test.html)
-
+3) Enjoy at http://thebirds.local:81/1
+4) Test 1024x768 iframe'd window: http://thebirds.local:81/test.htm
 
 **App built using**
 - vue
