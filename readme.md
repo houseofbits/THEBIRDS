@@ -1,5 +1,5 @@
 ## [The Latvian Museum of Natural History ](https://www.dabasmuzejs.gov.lv/) - Birds of Latvia
-Web application for 1024x768 touchscreen device. Complementing Bids of Latvija showcase with various information provided for each species of birds.
+Web application for 1024x768 touchscreen device. Complementing Birds of Latvija showcase with various information provided for each species of birds.
 
 How to set up and build this project:
 
