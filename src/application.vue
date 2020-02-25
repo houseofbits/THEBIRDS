@@ -7,6 +7,9 @@
         <sector v-for="(sector, index) in sectors" :key="index" :sector="sector"></sector>
     </div>
     <div class="clip-screen">
+        <svg v-if="divisions&&!selectedDivision">
+            <divisionregion v-for="(sector, index) in sectors" :key="index" :sector="sector"></divisionregion>
+        </svg>
         <svg>
             <clipregion v-for="(sector, index) in sectors" :key="index" :sector="sector"></clipregion>
         </svg>
@@ -35,6 +38,7 @@
 import sector from './components/sector.vue'
 import clipregion from './components/clipregion.vue'
 import detail from './components/detail.vue'
+import divisionregion from './components/divisionregion.vue'
 import {radiansToDegrees} from './components/common.js'
 
 export default {
@@ -53,14 +57,21 @@ export default {
                 userInputTimeout:5000,
                 detailRotationDuration:650,
             },
+            hasDivisions:false,
+            selectedDivision:null
         }
     },    
     components: {
         sector,
         clipregion,
-        detail
+        detail,
+        divisionregion
     },
     computed:{
+        divisions:function(){
+
+            return false;
+        },
         sectors:function () {
             if(this.view && typeof this.view.sectors != 'undefined'){
                 return this.view.sectors;
@@ -345,6 +356,12 @@ export default {
         this.rotationStep = 2 * radiansToDegrees(Math.atan((1024/2)/3000));
 
         this.userInputActivation();
+
+        // Velocity(this.$refs.mainScreen, {
+        //     translateX:'-150px',            
+        //     translateY:'-150px',
+        //     translateZ:'150px'
+        // }, 0);
     },
     beforeDestroy: function () {
         document.removeEventListener('mousemove', this.onMouseMove);
@@ -371,6 +388,10 @@ export default {
         left:0px;
         overflow: hidden;
         display:block;
+        perspective: 600px;
+        transform: rotateX(0deg) rotateY(0deg);
+        transform-style: preserve-3d;
+
     }
     .main-screen{
         position:absolute;
@@ -378,9 +399,7 @@ export default {
         top:0px;
         width:1024px;
         height:768px;
-        perspective: 600px;
-        transform: rotateX(0deg) rotateY(0deg);
-        transform-style: preserve-3d;
+
     }
     .main-background{
         position:absolute;
