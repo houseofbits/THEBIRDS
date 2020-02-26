@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div v-if="!view" class="error-message">No view data found!</div>  
     <div class="main-screen" ref="mainScreen">
         <div class="main-background" ref="mainBackground" :style="{backgroundImage: 'url(' + backgroundImageUrl + ')'}">
             <div class="shadow-background" ref="shadowBackground" :style="{backgroundImage: 'url(' + shadowImageUrl + ')'}"></div>
@@ -99,15 +100,24 @@ export default {
     },
     methods:{
         init:function () {
-            var id = 1;
-            var path = window.location.pathname.split('/');
-
-            id = parseInt(path[1]);
-
-            this.$http.get('/resources/view_'+id+'/config.json').then(function(response) {
-                this.view = response.body;
-                this.initAudio();
-            }, function(){});
+            var id = null;            
+            if (typeof window.location.search != 'undefined'
+               && window.location.search.length > 0
+            ) {
+                var result = window.location.search.match(/\?id=(\d+)/);                
+                if(typeof result[1] != 'undefined') {                
+                    id = result[1];
+                }
+            } else {
+                var path = window.location.pathname.split('/');
+                id = parseInt(path[1]);
+            }
+            if (id != null) {
+                this.$http.get('/resources/view_'+id+'/config.json').then(function(response) {
+                    this.view = response.body;
+                    this.initAudio();
+                }, function(){});
+            }
         },
         selectDetailView:function(id){
             if (this.selectedDetail != null) {
@@ -375,7 +385,7 @@ export default {
         src: url("/resources/font.ttf");
     }
     body{
-        background-color: slategrey;
+        background-color: rgb(48, 48, 48);
         font-family: "customFont";
         overflow: hidden;
         user-select: none;
@@ -548,5 +558,10 @@ export default {
         background-image: url("/resources/button_exit_on.png");
         opacity: 1;
         transition: opacity 200ms;
+    }
+    .error-message{
+        margin:20px;
+        color: rgb(221, 0, 0);
+        font-size: 30px;
     }    
 </style>
