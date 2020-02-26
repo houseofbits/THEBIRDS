@@ -202,6 +202,7 @@ export default {
         margin-top:10px;
         margin-left:50px;
         font-size: 40px;
+        font-style: italic;
         width:800px;    
     }
     .title-latin span{

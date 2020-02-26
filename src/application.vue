@@ -368,9 +368,9 @@ export default {
         this.userInputActivation();
 
         // Velocity(this.$refs.mainScreen, {
-        //     translateX:'-150px',            
-        //     translateY:'-150px',
-        //     translateZ:'150px'
+        //     translateX:'250px',            
+        //     translateY:'-50px',
+        //     translateZ:'1000px'
         // }, 0);
     },
     beforeDestroy: function () {
@@ -398,10 +398,8 @@ export default {
         left:0px;
         overflow: hidden;
         display:block;
-        perspective: 600px;
-        transform: rotateX(0deg) rotateY(0deg);
+        perspective: 4000px;
         transform-style: preserve-3d;
-
     }
     .main-screen{
         position:absolute;
@@ -409,7 +407,9 @@ export default {
         top:0px;
         width:1024px;
         height:768px;
-
+        perspective: 600px;
+        transform: rotateX(0deg) rotateY(0deg);
+        transform-style: preserve-3d;
     }
     .main-background{
         position:absolute;
