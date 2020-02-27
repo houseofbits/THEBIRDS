@@ -48,6 +48,6 @@ export default {
         stroke:blue;
         stroke-width:2px;
         fill-rule:evenodd;
-        opacity:0.0;
+        opacity:0.3;
     }
 </style>
