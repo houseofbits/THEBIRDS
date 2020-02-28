@@ -61,7 +61,7 @@ export default {
             hasDivisions:false,
             selectedDivision:null
         }
-    },    
+    },
     components: {
         sector,
         clipregion,

@@ -22,6 +22,9 @@
                         <div></div>                        
                     </div>
                 </div>
+
+                <sound v-for="(sound, soundIndex) in sounds" :key="soundComponentKey(soundIndex)" :sound="sound"></sound>
+
             </div>
         </div>
     </div>
@@ -30,6 +33,7 @@
 <script>
 
 import {Vector3, Vector2, Rectangle, getRandomArbitrary, radiansToDegrees} from './common.js'
+import sound from './sound.vue'
 
 export default {
     props: ['sector'],
@@ -37,6 +41,9 @@ export default {
     data: function () {
         return { data: this.sector }
     },
+    components: {
+        sound
+    },    
     computed:{
         sounds:function(){
             if(typeof this.data.audio != 'undefined'){
@@ -103,6 +110,9 @@ export default {
         },                        
     },
     methods: {
+        soundComponentKey:function(key){
+            return (this.$vnode.key * 30) + key;
+        },                
         soundTitle:function(index){
             var language = this.$parent.getLanguage();
             if(this.sounds[index] != "undefined" 
