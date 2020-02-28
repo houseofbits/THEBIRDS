@@ -12,19 +12,7 @@
             <div class="title-latin"><span>{{titleLatin}}</span></div>
             <div class="description" :style="{left:descriptionPosition.x+'px',top:descriptionPosition.y+'px'}"><span>{{description}}</span></div>
             <div class="sounds">
-                <div v-for="(sound, index) in sounds" :key="index" :class="{playing:isPlaying(index)}" v-on:click="playSound(index)">
-                    <span class="icon"></span>
-                    <span class="title">{{soundTitle(index)}}</span>
-                    <div class=waveform>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>                        
-                    </div>
-                </div>
-
-                <sound v-for="(sound, soundIndex) in sounds" :key="soundComponentKey(soundIndex)" :sound="sound"></sound>
-
+                <sound v-for="(sound, soundIndex) in data.audio" :key="soundComponentKey(soundIndex)" :sound="sound"></sound>
             </div>
         </div>
     </div>
@@ -45,12 +33,6 @@ export default {
         sound
     },    
     computed:{
-        sounds:function(){
-            if(typeof this.data.audio != 'undefined'){
-                return this.data.audio;
-            }
-            return null;
-        },
         descriptionPosition:function(){
             if(typeof this.data.description != 'undefined'){
                 var language = this.$parent.getLanguage();
@@ -113,43 +95,6 @@ export default {
         soundComponentKey:function(key){
             return (this.$vnode.key * 30) + key;
         },                
-        soundTitle:function(index){
-            var language = this.$parent.getLanguage();
-            if(this.sounds[index] != "undefined" 
-                && this.sounds[index].title != "undefined"
-                && this.sounds[index].title[language] != "undefined"){
-                    return this.sounds[index].title[language];
-            }
-            return "";
-        },
-        playSound:function(index){
-            var isPlaying = this.isPlaying(index);
-            this.$parent.$emit('stop-sounds');
-            if(typeof this.sounds[index] != "undefined"){
-                if(isPlaying){
-                    this.sounds[index].sound.stop();
-                }else{
-                    this.sounds[index].sound.play();
-                } 
-            }
-            this.$forceUpdate();
-        },
-        isPlaying:function(index){
-            if(typeof this.sounds[index] != "undefined"){
-                return this.sounds[index].sound.playing();
-            }
-            return false;
-        },   
-        onStopSound:function(){
-            if(typeof this.sounds != "undefined" && this.sounds){
-                for(var i=0; i<this.sounds.length; i++){
-                    if(typeof this.sounds[i].sound != "undefined"){
-                        this.sounds[i].sound.stop();
-                    }                    
-                }
-            }
-            this.$forceUpdate();            
-        },
         getDetailProp:function(name){
             if(this.data && typeof this.data.detailImage != 'undefined'){
                 if(typeof this.data.detailImage[name] != 'undefined'){
@@ -180,8 +125,6 @@ export default {
     },
     mounted:function () {
         this.$parent.$on('carousel-slide-start', this.onCarouselSlideStart);
-        this.$parent.$on('stop-sounds', this.onStopSound);
-
         Velocity(this.$el, { rotateY:this.calculateAngle(this.$vnode.key) }, 0);
     }
 }
@@ -257,118 +200,8 @@ export default {
         width:1024px;
         height:768px;
     }
-
+    
     .sounds{
         margin-top: 40px;
     }
-
-    .sounds div{
-        display: block;
-        width: 50%;
-        height: 55px;
-        margin: 0px;
-        margin-left: 50px;
-    }
-    .sounds .icon{
-        display: inline-block;
-        margin:0;
-        width:60px;
-        height:60px;
-        background-image: url('/resources/button_play.png');
-        background-repeat: round;
-    }
-    .sounds .title{
-        display: inline-block;
-        width:auto;
-        height:50px;
-        margin:0;
-        vertical-align: top;
-        color: #f5ff81;
-        font-size: 25px;
-        line-height: 50px;
-        margin-left: 10px;
-
-        background: linear-gradient(to bottom, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 70%, rgba(248,181,0,1) 71%, rgba(251,223,147,1) 100%);
-        -webkit-background-clip: text;
-        background-clip: text; 
-        -webkit-text-fill-color: transparent;    
-        filter: drop-shadow(2px 2px 2px #000);     
-    }
-    .sounds .waveform{
-        display:none;
-        vertical-align: top;
-        position: relative;
-        width:50px;
-        height:35px;
-        margin:0;
-        margin-left: 5px;
-    }
-    .sounds .waveform div{
-        position: absolute;
-        margin:0;
-        bottom: 0px;
-        background-color: yellowgreen;
-        width:6px;
-        height: 20px;
-        background: linear-gradient(to bottom, rgba(214,252,0,1) 0%, rgba(117,137,12,1) 100%);
-        filter: drop-shadow(1px 1px 1px #000);   
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        border-radius: 2px;
-    }
-    .sounds .waveform div:nth-child(1){
-        animation-name: wkf1;
-        left:0px;
-    }
-    .sounds .waveform div:nth-child(2){
-        animation-name: wkf2;
-        left:10px;
-        height:5px;
-    }
-    .sounds .waveform div:nth-child(3){
-        animation-name: wkf3;
-        left:20px;
-        height:10px;
-    }
-    .sounds .waveform div:nth-child(4){
-        animation-name: wkf4;
-        left:30px;
-        height:25px;
-    }
-
-    @keyframes wkf1 {
-        0%   {height: 35px;}
-        50%   {height: 5px;}    
-        100% {height: 35px;}
-    }
-    @keyframes wkf2 {
-        0%   {height: 5px;}
-        50%   {height: 35px;}    
-        100% {height: 5px;}
-    }
-    @keyframes wkf3 {
-        0%   {height: 10px;}
-        33%   {height: 35px;}    
-        66%   {height: 5px;}        
-        100% {height: 10px;}
-    }
-    @keyframes wkf4 {
-        0%   {height: 25px;}
-        50%   {height: 5px;}    
-        100% {height: 25px;}
-    }      
-
-    .sounds .playing .title{
-        background: linear-gradient(to bottom, rgba(214,252,0,1) 0%, rgba(117,137,12,1) 100%);
-        -webkit-background-clip: text;
-        background-clip: text; 
-        -webkit-text-fill-color: transparent;    
-        filter: drop-shadow(2px 2px 2px #000);     
-    }
-    .sounds .playing .icon{
-        background-image: url('/resources/button_play_on.png');
-    }
-    .sounds .playing .waveform{
-        display:inline-block;
-    }    
 </style>

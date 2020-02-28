@@ -1,5 +1,5 @@
 <template>
-    <div class="sound">
+    <div class="sound" :class="{playing:isPlaying()}" v-on:click="playSound()">
         <span class="icon"></span>
         <span class="title">{{title}}</span>
         <div class=waveform>
@@ -16,16 +16,10 @@
 export default {
     props: ['sound'],
     template:'#sound-template',
-    // data: function () {
-    //     return { data: this.sound }    
-    // },
-    computed:{
-    //     sounds:function(){
-    //         if(typeof this.data.audio != 'undefined'){
-    //             return this.data.audio;
-    //         }
-    //         return null;
-    //     },                       
+    data: function () {
+        return { data: this.sound }    
+    },
+    computed:{                    
         title:function(){
             var language = this.$parent.$parent.getLanguage();
             if(this.data.title != "undefined"
@@ -36,28 +30,26 @@ export default {
         },    
     },
     methods: {
-    //     playSound:function(){
-    //         // var isPlaying = this.isPlaying(index);
-    //         // this.$parent.$emit('stop-sounds');
-    //         // if(typeof this.sounds[index] != "undefined"){
-    //         //     if(isPlaying){
-    //         //         this.sounds[index].sound.stop();
-    //         //     }else{
-    //         //         this.sounds[index].sound.play();
-    //         //     } 
-    //         // }
-    //         this.$forceUpdate();
-    //     },
-    //     isPlaying:function(){
-    //         return this.sound.playing();
-    //     },   
-    //     onStopSound:function(){
-    //         this.sound.stop();
-    //         this.$forceUpdate();            
-    //     },
+        playSound:function(){
+            var isPlaying = this.isPlaying();
+            this.$parent.$parent.$emit('stop-sounds');
+            if(isPlaying){
+                this.data.sound.stop();
+            }else{
+                this.data.sound.play();
+            } 
+            this.$forceUpdate();
+        },
+        isPlaying:function(){
+            return this.data.sound.playing();
+        },   
+        onStopSound:function(){
+            this.data.sound.stop();
+            this.$forceUpdate();            
+        },
     },
     mounted:function () {
-    ///    this.$parent.$on('stop-sounds', this.onStopSound);
+        this.$parent.$parent.$on('stop-sounds', this.onStopSound);
     }
 }
 
@@ -137,6 +129,40 @@ export default {
         animation-name: wkf4;
         left:30px;
         height:25px;
+    }
+    @keyframes wkf1 {
+        0%   {height: 35px;}
+        50%   {height: 5px;}    
+        100% {height: 35px;}
+    }
+    @keyframes wkf2 {
+        0%   {height: 5px;}
+        50%   {height: 35px;}    
+        100% {height: 5px;}
+    }
+    @keyframes wkf3 {
+        0%   {height: 10px;}
+        33%   {height: 35px;}    
+        66%   {height: 5px;}        
+        100% {height: 10px;}
+    }
+    @keyframes wkf4 {
+        0%   {height: 25px;}
+        50%   {height: 5px;}    
+        100% {height: 25px;}
+    } 
+    .playing .title{
+        background: linear-gradient(to bottom, rgba(214,252,0,1) 0%, rgba(117,137,12,1) 100%);
+        -webkit-background-clip: text;
+        background-clip: text; 
+        -webkit-text-fill-color: transparent;    
+        filter: drop-shadow(2px 2px 2px #000);     
+    }
+    .playing .icon{
+        background-image: url('/resources/button_play_on.png');
+    }
+    .playing .waveform{
+        display:inline-block;
     }
 
 </style>
