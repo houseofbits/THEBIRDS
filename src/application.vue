@@ -488,7 +488,7 @@ export default {
         border-radius: 5px;
         opacity:0.5;
         margin-left:3px;
-        mergin-right:3px;
+        margin-right:3px;
     }
     .flag.lv{
         background-image: url("/resources/lv_flag.png");
