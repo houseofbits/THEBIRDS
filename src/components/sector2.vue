@@ -1,44 +1,92 @@
 <template>
     <div :style="computeTransform()" class="sector">
-
-        <!--div class="blurred-bg-mask">
-            <div class="blurred-bg"></div>
-        </div-->
-        
-        <div class="icon"></div>
-        <div class="title"></div>
-
+        <div class="icon" :style="iconStyle"></div>
+        <div class="icon-shadow" :style="iconStyleShadow"></div>
+        <div class="title"><span>{{title}}</span></div>
+        <div class="title-shadow"><span>{{title}}</span></div>
+        <div class="shadow"></div>
+        <div class="circle"></div>
     </div>
 </template>
 
 <script>
 
-    import {Vector3, Vector2, Rectangle, getRandomArbitrary, radiansToDegrees} from './common.js'    
+    import {Vector3, Vector2, Rectangle, getRandomArbitrary, radiansToDegrees} from './common.js'
+
+    function exponentialEasing (x, a){
+
+        var epsilon = 0.00001;
+        var min_param_a = epsilon;
+        var max_param_a = 1.0 - epsilon;
+        a = Math.max(min_param_a, Math.min(max_param_a, a));
+
+        if (a < 0.5){
+            // emphasis
+            a = 2.0*(a);
+            var y = Math.pow(x, a);
+            return y;
+        } else {
+            // de-emphasis
+            a = 2.0*(a-0.5);
+            var y = Math.pow(x, 1.0/(1-a));
+            return y;
+        }
+    }
 
     export default {
         name: "app",
         props: ['sector'],
         data: function(){ return { data: this.sector }},
-        methods: {
-            computeTransform: function () {
-                var rotation = 0;
-                return {                  
-                    transform:'translateX('+this.data.position[0]+'px)'
-                    +' translateY('+this.data.position[1]+'px)'
-                    +' translateZ('+this.data.position[2]+'px)'
-                    +' rotateY('+rotation+'deg)'
+        computed:{
+            title:function(){
+                return this.data.title;
+            },
+            iconStyle:function(){
+                return {
+                    backgroundImage: 'url(' + this.data.iconImage + ')',
+                    width:this.data.iconSize[0]+'px',
+                    height:this.data.iconSize[1]+'px',
+                    left:this.data.iconPos[0]+'px',
+                    top:this.data.iconPos[1]+'px',
                 };
             },
-            init:function(){
+            iconStyleShadow:function(){
+                return {
+                    backgroundImage: 'url(' + this.data.iconShadow + ')',
+                    width:this.data.iconSize[0]+'px',
+                    height:this.data.iconSize[1]+'px',
+                    left:this.data.iconPos[0]+'px',
+                    top:this.data.iconPos[1]+'px',
+                };
+            }
+        },
+        methods: {
+            computeTransform: function () {
+                let globalAngle = parseFloat(this.$parent._data.angle);
+                let angle = globalAngle + parseFloat(this.data.angle);
+                let limit = 8.0;
+                let exponent = 0.6;
 
-                //1) calculate rotation angle from global position
-                //2) set rotation angle
-                //3) set x translation = 0
+                let unitAngle = 1.0 - Math.abs(angle / limit);
+                unitAngle = 1.0 - exponentialEasing(unitAngle, exponent);
+                if(angle < 0)unitAngle = -unitAngle;
 
+                angle = (unitAngle * limit) - parseFloat(this.$parent._data.angle);
+
+                //console.log(angle);
+
+                return {
+                    transform:'translateX('+512+'px)'
+                    +' translateY('+this.data.position[0]+'px)'
+                    +' translateZ('+this.data.position[1]+'px)'
+                    +' rotateY('+angle+'deg)',
+                    width:this.data.diameter+'px',
+                    height:this.data.diameter+'px',
+                };
             }
         },
         mounted:function() {
-            this.inint();
+
         }
     }
 </script>
@@ -46,53 +94,96 @@
 <style scoped>
     .sector{
         position: absolute;
-        left: 0px;
-        top:0px;
-        width:100px;
-        height:100px;
-        background-color: chartreuse;
-        border-radius: 30px;
-        transform:translateZ(60px);
+        width:200px;
+        height:200px;
         transform-style: preserve-3d;
-    /*    transform-origin: 512px 0 -3000px;*/
+        transform-origin: 512px 0 -6000px;
+    /*    border: 1px dashed yellow; */
+    }
+    .sector .shadow{
+        position: absolute;
+        width:100%;
+        height:100%;
+        transform-style: preserve-3d;
+        transform:translateZ(-30px);
+        background-repeat: round;
+        background-image: url('/resources/segment_shadow.png');
+        /*border: 1px dashed dodgerblue;*/
+    }
+    .sector .circle{
+        position: absolute;
+        width:100%;
+        height:100%;
+        transform-style: preserve-3d;
+        background-repeat: round;
+        background-image: url('/resources/segment_circle.png');
     }
     .sector .icon{
         position: absolute;
         left: 30px;
         top:-30px;
-        width:20px;
+        width:100px;
         height:150px;
-        background-color: burlywood;
-        border-radius: 30px;
+        transform:translateZ(30px);
+        transform-style: preserve-3d;
+        background-repeat: round;
+    /*    border: 1px dashed dodgerblue;*/
+    }
+    .sector .icon-shadow{
+        position: absolute;
+        left: 30px;
+        top:-30px;
+        width:100px;
+        height:150px;
         transform:translateZ(20px);
         transform-style: preserve-3d;
+        background-repeat: round;
+    /*    border: 1px dashed dodgerblue;*/
     }
-    .sector .title{
-        position: absolute;
-        left: -30px;
-        top:90px;
-        width:150px;
-        height:20px;
-        background-color: cadetblue;
-        border-radius: 30px;
+    .sector .title {
+        position:absolute;
+        text-align: center;
+        font-size: 35px;
+        width:100%;
+        bottom: 35px;
+        line-height: 30px;
         transform:translateZ(40px);
         transform-style: preserve-3d;
+    /*    border: 1px dashed yellowgreen;*/
     }
-    /*
-    .blurred-bg-mask{
-        position:relative;
+    .sector .title span{
+        display: inline;
+        background: linear-gradient(to top, #f5ff81, white);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    /*    filter: drop-shadow(2px 4px 3px #000);*/
+    }
+    .sector .title-shadow {
+        position:absolute;
+        text-align: center;
+        font-size: 35px;
         width:100%;
-        height:100%;
-        overflow: hidden;    
-        border-radius: 30px;
+        bottom: 35px;
+        line-height: 30px;
+        transform:translateZ(30px);
+        transform-style: preserve-3d;
+    /*    border: 1px dashed yellowgreen; */
     }
-    .blurred-bg{        
-        position: absolute;
-        left:0;
-        top:0;
-        width:1024px;
-        height:768px;
-        background-image: url("/resources/en_flag.png");
+    .sector .title-shadow span{
+        display: inline;
+        color: rgba(0,0,0,1);
+        filter:blur(3px);
     }
-    */
+
+    .sector.dev{
+        border: 1px dashed dodgerblue;
+    }
+    .sector.dev .icon{
+        border: 1px dashed yellowgreen;
+    }
+    .sector.dev .title{
+        border: 1px dashed red;
+    }
+
 </style>
