@@ -35,12 +35,12 @@
 
     export default {
         name: "app",
-        props: ['sector'],
+        props: ['sector', 'title'],
         data: function(){ return { data: this.sector }},
         computed:{
-            title:function(){
-                return this.data.title;
-            },
+            // title:function(){
+            //     return this.data.title;
+            // },
             iconStyle:function(){
                 return {
                     backgroundImage: 'url(' + this.data.iconImage + ')',
@@ -64,8 +64,8 @@
             computeTransform: function () {
                 let globalAngle = parseFloat(this.$parent._data.angle);
                 let angle = globalAngle + parseFloat(this.data.angle);
-                let limit = 8.0;
-                let exponent = 0.6;
+                let limit = 5.0;
+                let exponent = 0.7;
 
                 let unitAngle = 1.0 - Math.abs(angle / limit);
                 unitAngle = 1.0 - exponentialEasing(unitAngle, exponent);
@@ -73,13 +73,17 @@
 
                 angle = (unitAngle * limit) - parseFloat(this.$parent._data.angle);
 
-                //console.log(angle);
+                angle = this.data.angle;
+
+                let posx = 512 - (this.data.diameter * 0.5);
+
+                console.log(posx);
 
                 return {
-                    transform:'translateX('+512+'px)'
-                    +' translateY('+this.data.position[0]+'px)'
-                    +' translateZ('+this.data.position[1]+'px)'
-                    +' rotateY('+angle+'deg)',
+                    transform:'translateX('+posx+'px)'
+                    +' translateY('+this.data.position[1]+'px)'
+                    +' translateZ('+this.data.position[2]+'px)'
+                    +' rotateY('+this.data.position[0]+'deg)',
                     width:this.data.diameter+'px',
                     height:this.data.diameter+'px',
                 };
@@ -97,8 +101,7 @@
         width:200px;
         height:200px;
         transform-style: preserve-3d;
-        transform-origin: 512px 0 -6000px;
-    /*    border: 1px dashed yellow; */
+        transform-origin: 512px 0 -2000px;
     }
     .sector .shadow{
         position: absolute;
@@ -127,7 +130,6 @@
         transform:translateZ(30px);
         transform-style: preserve-3d;
         background-repeat: round;
-    /*    border: 1px dashed dodgerblue;*/
     }
     .sector .icon-shadow{
         position: absolute;
@@ -138,7 +140,6 @@
         transform:translateZ(20px);
         transform-style: preserve-3d;
         background-repeat: round;
-    /*    border: 1px dashed dodgerblue;*/
     }
     .sector .title {
         position:absolute;
@@ -149,7 +150,6 @@
         line-height: 30px;
         transform:translateZ(40px);
         transform-style: preserve-3d;
-    /*    border: 1px dashed yellowgreen;*/
     }
     .sector .title span{
         display: inline;
@@ -157,7 +157,6 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-    /*    filter: drop-shadow(2px 4px 3px #000);*/
     }
     .sector .title-shadow {
         position:absolute;
@@ -168,7 +167,6 @@
         line-height: 30px;
         transform:translateZ(30px);
         transform-style: preserve-3d;
-    /*    border: 1px dashed yellowgreen; */
     }
     .sector .title-shadow span{
         display: inline;
