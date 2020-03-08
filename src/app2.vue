@@ -1,15 +1,14 @@
 <template>
     <div id="app">
 
+        <div class="background-slider" :style="backgroundSliderStyle" ref="backgroundSlider"></div>
+
         <div class="sector-frame" ref="sectorFrame" :style="computeTransform()" >
             <sector2 v-for="(sector, index) in sectors" :key="index" :sector="sector.main" :title="title(index)"></sector2>
         </div>
 
 
         <div class="navigation">
-            <!--div v-if="getPreviousDetailViewId()!=null" class="button-prev" v-on:click="movePrev"></div>
-            <div v-if="getNextDetailViewId()!=null" class="button-next" v-on:click="moveNext"></div>
-            <div class="button-exit" v-on:click="closeDetailView"></div-->
             <div class="language">
                 <div class="flag ru" :class="{active:(getLanguage()=='ru')}" v-on:click="setLanguage('ru')"></div>
                 <div class="flag en" :class="{active:(getLanguage()=='en')}" v-on:click="setLanguage('en')"></div>
@@ -30,7 +29,8 @@
                 view: null,
                 angle:0,
                 prevx:null,
-                language:'lv'
+                language:'lv',
+                backgroundSliderPos:0
             }
         },
         components: {
@@ -43,6 +43,15 @@
                 }
                 return false;
             },
+            backgroundSliderStyle:function(){
+                if(this.view) {
+                    return {
+                        backgroundImage: 'url(' + this.view.mainBackground + ')',
+                        right: this.backgroundSliderPos + 'px'
+                    };
+                }
+                return {};
+            }
         },
         methods: {
             init:function () {
@@ -95,7 +104,10 @@
                 if(e.buttons == 1) {
                     this.angle += (diff * 0.01);
                 }
-                //console.log(angle);
+
+                let displacement = this.angle * 20;
+                this.backgroundSliderPos = displacement;
+
                 this.prevx = e.x;
             },
         },
@@ -118,9 +130,9 @@
         user-select: none;
     }
     #app {
-        /*background-color: rgb(48, 48, 48);*/
+        /*background-color: rgb(48, 48, 48);
         background-repeat: round;
-        background-image: url('/resources/view_1/images/bg2.png');
+        background-image: url('/resources/view_1/images/bg2.png');*/
         width:1024px;
         height:768px;
         position:absolute;
@@ -131,6 +143,12 @@
         perspective: 400px;
         transform-style: preserve-3d;
         border: 1px dashed yellow;
+    }
+    .background-slider{
+        width:2240px;
+        height:768px;
+        position:absolute;
+        top:0;
     }
     .sector-frame{
         transform-style: preserve-3d;

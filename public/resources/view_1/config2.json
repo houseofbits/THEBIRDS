@@ -1,6 +1,5 @@
 {
-  "mainBackground": "resources/view_1/images/bg.png",
-  "mainShadow": "resources/view_1/images/bg_shadow.png",
+  "mainBackground": "resources/view_1/images/bg2.png",
   "detailBackground": "resources/view_1/images/detail-bg.png",
   "sectors": [
     {
@@ -21,7 +20,7 @@
         "position":"20,400"
       },
       "main":{
-        "position":[8,360,50],
+        "position":[-10,360,10],
         "diameter":280,
         "iconSize":[300,200],
         "iconPos":[50,20],
@@ -89,7 +88,7 @@
         "position":"20,420"
       },
       "main":{
-        "position":[0,360,50],
+        "position":[10,360,50],
         "diameter":280,
         "iconSize":[300,200],
         "iconPos":[50,20],
@@ -127,7 +126,7 @@
         "position":"20,350"
       },
       "main":{
-        "position":[0,360,50],
+        "position":[20,360,50],
         "diameter":280,
         "iconSize":[300,200],
         "iconPos":[50,20],
@@ -161,7 +160,7 @@
         "position":"20,350"
       },
       "main":{
-        "position":[0,360,50],
+        "position":[30,360,50],
         "diameter":280,
         "iconSize":[300,200],
         "iconPos":[50,20],
@@ -189,7 +188,7 @@
         "position":"20,400"
       },
       "main":{
-        "position":[0,360,50],
+        "position":[-5,100,50],
         "diameter":280,
         "iconSize":[300,200],
         "iconPos":[50,20],
@@ -218,7 +217,7 @@
         "position":"20,400"
       },
       "main":{
-        "position":[0,360,50],
+        "position":[5,100,50],
         "diameter":280,
         "iconSize":[300,200],
         "iconPos":[50,20],
@@ -247,7 +246,7 @@
         "position":"20,400"
       },
       "main":{
-        "position":[0,360,50],
+        "position":[15,100,50],
         "diameter":280,
         "iconSize":[300,200],
         "iconPos":[50,20],
@@ -276,7 +275,7 @@
         "position":"20,400"
       },
       "main":{
-        "position":[0,360,50],
+        "position":[25,100,50],
         "diameter":280,
         "iconSize":[300,200],
         "iconPos":[50,20],
@@ -323,7 +322,7 @@
         "position":"20,400"
       },
       "main":{
-        "position":[0,360,50],
+        "position":[35,100,50],
         "diameter":280,
         "iconSize":[300,200],
         "iconPos":[50,20],
@@ -352,7 +351,7 @@
         "position":"20,380"
       },
       "main":{
-        "position":[0,360,50],
+        "position":[45,100,50],
         "diameter":280,
         "iconSize":[300,200],
         "iconPos":[50,20],

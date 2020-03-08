@@ -1,5 +1,5 @@
 <template>
-    <div :style="computeTransform()" class="sector">
+    <div :style="computeTransform()" class="sector dev">
         <div class="icon" :style="iconStyle"></div>
         <div class="icon-shadow" :style="iconStyleShadow"></div>
         <div class="title"><span>{{title}}</span></div>
@@ -38,9 +38,6 @@
         props: ['sector', 'title'],
         data: function(){ return { data: this.sector }},
         computed:{
-            // title:function(){
-            //     return this.data.title;
-            // },
             iconStyle:function(){
                 return {
                     backgroundImage: 'url(' + this.data.iconImage + ')',
@@ -75,9 +72,10 @@
 
                 angle = this.data.angle;
 
-                let posx = 512 - (this.data.diameter * 0.5);
+                let posx = 512;//parseFloat(this.data.diameter) * 0.9;//512 - (this.data.diameter * 0.5);
 
-                console.log(posx);
+                let half = -parseFloat(this.data.diameter) * 0.5;
+                //console.log(posx);
 
                 return {
                     transform:'translateX('+posx+'px)'
@@ -86,6 +84,7 @@
                     +' rotateY('+this.data.position[0]+'deg)',
                     width:this.data.diameter+'px',
                     height:this.data.diameter+'px',
+                    transformOrigin: half + 'px 0 -2000px'
                 };
             }
         },
