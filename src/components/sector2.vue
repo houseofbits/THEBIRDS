@@ -1,7 +1,9 @@
 <template>
-    <div :style="computeTransform()" class="sector dev">
-        <div class="icon" :style="iconStyle"></div>
-        <div class="icon-shadow" :style="iconStyleShadow"></div>
+    <div :style="computeTransform()" class="sector">
+        <div class="icon-wrap">
+            <div class="icon" :style="iconStyle"></div>
+            <div class="icon-shadow" :style="iconStyleShadow"></div>
+        </div>
         <div class="title"><span>{{title}}</span></div>
         <div class="title-shadow"><span>{{title}}</span></div>
         <div class="shadow"></div>
@@ -60,31 +62,39 @@
         methods: {
             computeTransform: function () {
                 let globalAngle = parseFloat(this.$parent._data.angle);
-                let angle = globalAngle + parseFloat(this.data.angle);
-                let limit = 5.0;
-                let exponent = 0.7;
+                let angle = globalAngle + parseFloat(this.data.position[0]);
+                let limit = 15.0;
+                let exponent = 0.6;
 
-                let unitAngle = 1.0 - Math.abs(angle / limit);
-                unitAngle = 1.0 - exponentialEasing(unitAngle, exponent);
-                if(angle < 0)unitAngle = -unitAngle;
+                let unitAngle = Math.min(Math.abs(angle / limit), 1);
+                unitAngle = exponentialEasing(unitAngle, exponent);
 
-                angle = (unitAngle * limit) - parseFloat(this.$parent._data.angle);
+                let zpos = this.data.position[2] - (unitAngle * 150) + 50;
 
-                angle = this.data.angle;
+               // this.data.position[3] = zpos;
 
-                let posx = 512;//parseFloat(this.data.diameter) * 0.9;//512 - (this.data.diameter * 0.5);
 
-                let half = -parseFloat(this.data.diameter) * 0.5;
-                //console.log(posx);
+                // if(angle < 0)unitAngle = -unitAngle;
+                //
+                // angle = (unitAngle * limit) - parseFloat(this.$parent._data.angle);
+                //
+                // angle = this.data.angle;
+
+                //let posx = 0;//512;//parseFloat(this.data.diameter) * 0.9;//512 - (this.data.diameter * 0.5);
+
+                let opacity = 1;//1 - Math.min(0.5, unitAngle);
 
                 return {
-                    transform:'translateX('+posx+'px)'
+                    opacity:opacity,
+                    transform:
+                     'translateX(512px)'
                     +' translateY('+this.data.position[1]+'px)'
-                    +' translateZ('+this.data.position[2]+'px)'
-                    +' rotateY('+this.data.position[0]+'deg)',
+                    +' translateZ('+zpos+'px)'
+                    +' rotateY('+this.data.position[0]+'deg)'
+                    ,
                     width:this.data.diameter+'px',
                     height:this.data.diameter+'px',
-                    transformOrigin: half + 'px 0 -2000px'
+                    transformOrigin: '0 0 -2000px'
                 };
             }
         },
@@ -97,13 +107,12 @@
 <style scoped>
     .sector{
         position: absolute;
-        width:200px;
-        height:200px;
         transform-style: preserve-3d;
         transform-origin: 512px 0 -2000px;
     }
     .sector .shadow{
         position: absolute;
+        left:-50%;
         width:100%;
         height:100%;
         transform-style: preserve-3d;
@@ -114,14 +123,23 @@
     }
     .sector .circle{
         position: absolute;
+        left:-50%;
         width:100%;
         height:100%;
         transform-style: preserve-3d;
         background-repeat: round;
         background-image: url('/resources/segment_circle.png');
     }
-    .sector .icon{
+    .sector .icon-wrap{
         position: absolute;
+        left: -50%;
+        width:100%;
+        height:100%;
+        transform-style: preserve-3d;
+    }
+    .icon-wrap .icon{
+        position: absolute;
+       /* filter: brightness(50%); */
         left: 30px;
         top:-30px;
         width:100px;
@@ -130,7 +148,7 @@
         transform-style: preserve-3d;
         background-repeat: round;
     }
-    .sector .icon-shadow{
+    .icon-wrap .icon-shadow{
         position: absolute;
         left: 30px;
         top:-30px;
@@ -141,6 +159,8 @@
         background-repeat: round;
     }
     .sector .title {
+    /*    filter: brightness(50%); */
+        left:-50%;
         position:absolute;
         text-align: center;
         font-size: 35px;
@@ -158,6 +178,7 @@
         -webkit-text-fill-color: transparent;
     }
     .sector .title-shadow {
+        left:-50%;
         position:absolute;
         text-align: center;
         font-size: 35px;

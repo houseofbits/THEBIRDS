@@ -3,36 +3,50 @@
   "detailBackground": "resources/view_1/images/detail-bg.png",
   "sectors": [
     {
-      "comment":"------------------------------------ S1 -----------------------------",
-      "titleLatin":"Nycticorax nycticorax",
+      "comment":"------------------------------------- S11 --------------------------------------------",
+      "titleLatin":"Botaurus stellaris",
       "title":{
-        "lv":"NAKTS GĀRNIS",
-        "ru":"КВАКВА",
-        "en":"BLACK-CROWNED NIGHT-HERON"
+        "lv":"LIELAIS DUMPIS",
+        "ru":"БОЛЬШАЯ ВЫПЬ",
+        "en":"GREAT BITTERN"
       },
       "description":{
-        "lv":{
-          "text":"Rets ieceļotājs. Novērots trīs reizes - divi seni novērojumi - 1862. un 1901. gadā, bet trešais 2015. gadā",
-          "position":"20,400"
-        },
-        "ru":"Кваква в Латвии является редким залетным видом. Отмечена 3 раза – в 1862, 1901 и 2015 годах",
-        "en":"Rare vagrant. There are only three observations – two are older records from 1862 and 1901. Third, most recent observation was in year 2015",
-        "position":"20,400"
+        "lv":"Latvijā samērā parasts ligzdotājs ar niedrēm aizaugušos ezeros un dīķos. Ligzdo 300-500 pāru Vismaz tik pat vai pat vairāk caurceļo. Nelielā skaitā regulāri pārziemo. Kopš 1980-to gadu vidū ziemotāju skaits ir pakāpeniski audzis, sasniedzot dažus desmitus īpatņus. Slēptā dzīves veida dēļ lielais dumpis ir grūti konstatējams.",
+        "ru":"Большая выпь является сравнительно обычным гнездящимся видом в сильно заросших тростником озерах и прудах. Гнездится 300-500 пар. Столько же пролетает через Латвию во время миграции. Зимует редко. Начиная с середины 1980-х количество зимующих особей возросло и достигло нескольких десятков птиц. Из-за скрытного образа жизни довольно сложно обнаружить.",
+        "en":"Common breeding species in lakes and ponds with extensive reedbeds. 300-500 breeding pairs. At least as many are also present during migration. Some birds can also overwinter. Number of wintering birds has increased since 1980s and it is estimated that now there are few dozen birds present during winter. Great bitterns are difficult to observe due to their secretive way of life.",
+        "position":"20,380"
       },
       "main":{
-        "position":[-10,360,10],
+        "position":[-10,360,50],
         "diameter":280,
         "iconSize":[300,200],
         "iconPos":[50,20],
-        "iconImage":"resources/view_1/images/s1d.png",
-        "iconShadow":"resources/view_1/images/s1d.png"
+        "iconImage":"resources/view_1/images/s11d.png",
+        "iconShadow":"resources/view_1/images/s11d.png"
       },
       "detailImage":{
-        "image":"resources/view_1/images/s1d.png",
-        "position":"460,-20",
-        "rotation":"0,0,0",
+        "image":"resources/view_1/images/s11d.png",
+        "position":"420,0",
         "size":"560,410"
-      }
+      },
+      "audio":[
+        {
+          "title":{
+            "lv":"Migrantu balsis",
+            "ru":"Голос мигрантов",
+            "en":"The voice of migrants"
+          },
+          "fileName":"resources/view_1/sounds/lielais_dumpis_migrantu_balsis.mp3"
+        },
+        {
+          "title":{
+            "lv":"Riesta balss",
+            "ru":"Голос колеи",
+            "en":"The voice of the rut"
+          },
+          "fileName":"resources/view_1/sounds/lielais_dumpis_riesta_balss.mp3"
+        }
+      ]
     },
     {
       "comment":"------------------------------------- S2 --------------------------------------------",
@@ -335,52 +349,6 @@
         "rotation":"0,0,0",
         "size":"560,410"
       }
-    },
-    {
-      "comment":"------------------------------------- S11 --------------------------------------------",
-      "titleLatin":"Botaurus stellaris",
-      "title":{
-        "lv":"LIELAIS DUMPIS",
-        "ru":"БОЛЬШАЯ ВЫПЬ",
-        "en":"GREAT BITTERN"
-      },
-      "description":{
-        "lv":"Latvijā samērā parasts ligzdotājs ar niedrēm aizaugušos ezeros un dīķos. Ligzdo 300-500 pāru Vismaz tik pat vai pat vairāk caurceļo. Nelielā skaitā regulāri pārziemo. Kopš 1980-to gadu vidū ziemotāju skaits ir pakāpeniski audzis, sasniedzot dažus desmitus īpatņus. Slēptā dzīves veida dēļ lielais dumpis ir grūti konstatējams.",
-        "ru":"Большая выпь является сравнительно обычным гнездящимся видом в сильно заросших тростником озерах и прудах. Гнездится 300-500 пар. Столько же пролетает через Латвию во время миграции. Зимует редко. Начиная с середины 1980-х количество зимующих особей возросло и достигло нескольких десятков птиц. Из-за скрытного образа жизни довольно сложно обнаружить.",
-        "en":"Common breeding species in lakes and ponds with extensive reedbeds. 300-500 breeding pairs. At least as many are also present during migration. Some birds can also overwinter. Number of wintering birds has increased since 1980s and it is estimated that now there are few dozen birds present during winter. Great bitterns are difficult to observe due to their secretive way of life.",
-        "position":"20,380"
-      },
-      "main":{
-        "position":[45,100,50],
-        "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[50,20],
-        "iconImage":"resources/view_1/images/s11d.png",
-        "iconShadow":"resources/view_1/images/s11d.png"
-      },
-      "detailImage":{
-        "image":"resources/view_1/images/s11d.png",
-        "position":"420,0",
-        "size":"560,410"
-      },
-      "audio":[
-        {
-          "title":{
-            "lv":"Migrantu balsis",
-            "ru":"Голос мигрантов",
-            "en":"The voice of migrants"
-          },
-          "fileName":"resources/view_1/sounds/lielais_dumpis_migrantu_balsis.mp3"
-        },
-        {
-          "title":{
-            "lv":"Riesta balss",
-            "ru":"Голос колеи",
-            "en":"The voice of the rut"
-          },
-          "fileName":"resources/view_1/sounds/lielais_dumpis_riesta_balss.mp3"
-        }
-      ]
     }
   ]
 }

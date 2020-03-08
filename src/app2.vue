@@ -30,7 +30,7 @@
                 angle:0,
                 prevx:null,
                 language:'lv',
-                backgroundSliderPos:0
+                backgroundSliderPos:100
             }
         },
         components: {
@@ -105,8 +105,8 @@
                     this.angle += (diff * 0.01);
                 }
 
-                let displacement = this.angle * 20;
-                this.backgroundSliderPos = displacement;
+                let displacement = this.angle * 10;
+                this.backgroundSliderPos = displacement - 100;
 
                 this.prevx = e.x;
             },
@@ -130,9 +130,6 @@
         user-select: none;
     }
     #app {
-        /*background-color: rgb(48, 48, 48);
-        background-repeat: round;
-        background-image: url('/resources/view_1/images/bg2.png');*/
         width:1024px;
         height:768px;
         position:absolute;
