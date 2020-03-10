@@ -1,13 +1,13 @@
 <template>
     <div :style="computeTransform()" class="sector">
         <div class="icon-wrap">
-            <div class="icon" :style="iconStyle"></div>
+            <div class="icon" :style="iconStyle()" v-on:click="onClick"></div>
             <div class="icon-shadow" :style="iconStyleShadow"></div>
         </div>
-        <div class="title"><span>{{title}}</span></div>
+        <div class="title" :style="titleStyle()"><span>{{title}}</span></div>
         <div class="title-shadow"><span>{{title}}</span></div>
         <div class="shadow"></div>
-        <div class="circle"></div>
+        <div class="circle" :style="circleStyle"></div>
     </div>
 </template>
 
@@ -37,18 +37,9 @@
 
     export default {
         name: "app",
-        props: ['sector', 'title'],
+        props: ['sector', 'title', 'circleUrl'],
         data: function(){ return { data: this.sector }},
         computed:{
-            iconStyle:function(){
-                return {
-                    backgroundImage: 'url(' + this.data.iconImage + ')',
-                    width:this.data.iconSize[0]+'px',
-                    height:this.data.iconSize[1]+'px',
-                    left:this.data.iconPos[0]+'px',
-                    top:this.data.iconPos[1]+'px',
-                };
-            },
             iconStyleShadow:function(){
                 return {
                     backgroundImage: 'url(' + this.data.iconShadow + ')',
@@ -57,9 +48,31 @@
                     left:this.data.iconPos[0]+'px',
                     top:this.data.iconPos[1]+'px',
                 };
+            },
+            circleStyle:function(){
+                return {
+                    backgroundImage: 'url(' + this.circleUrl + ')',                    
+                };
             }
         },
         methods: {
+            iconStyle:function(){
+                let val = this.data.opacity * 110;
+                return {
+                    backgroundImage: 'url(' + this.data.iconImage + ')',
+                    width:this.data.iconSize[0]+'px',
+                    height:this.data.iconSize[1]+'px',
+                    left:this.data.iconPos[0]+'px',
+                    top:this.data.iconPos[1]+'px',
+                    filter:'brightness('+val+'%)'
+                };
+            },
+            titleStyle:function(){
+                let val = this.data.opacity * 100;
+                return {
+                    filter:'brightness('+val+'%)'
+                };
+            },            
             computeTransform: function () {
                 let globalAngle = parseFloat(this.$parent._data.angle);
                 let angle = globalAngle + parseFloat(this.data.position[0]);
@@ -71,21 +84,11 @@
 
                 let zpos = this.data.position[2] - (unitAngle * 150) + 50;
 
-               // this.data.position[3] = zpos;
+                let opacity = 1 - Math.min(0.5, unitAngle);
 
-
-                // if(angle < 0)unitAngle = -unitAngle;
-                //
-                // angle = (unitAngle * limit) - parseFloat(this.$parent._data.angle);
-                //
-                // angle = this.data.angle;
-
-                //let posx = 0;//512;//parseFloat(this.data.diameter) * 0.9;//512 - (this.data.diameter * 0.5);
-
-                let opacity = 1;//1 - Math.min(0.5, unitAngle);
+                this.data.opacity = opacity;
 
                 return {
-                    opacity:opacity,
                     transform:
                      'translateX(512px)'
                     +' translateY('+this.data.position[1]+'px)'
@@ -94,9 +97,11 @@
                     ,
                     width:this.data.diameter+'px',
                     height:this.data.diameter+'px',
-                    transformOrigin: '0 0 -2000px'
                 };
-            }
+            },
+            onClick:function(){
+                this.$parent.$emit('detail-select', this.$vnode.key);                
+            },
         },
         mounted:function() {
 
@@ -108,7 +113,7 @@
     .sector{
         position: absolute;
         transform-style: preserve-3d;
-        transform-origin: 512px 0 -2000px;
+        transform-origin: 0 0 -2000px;
     }
     .sector .shadow{
         position: absolute;
@@ -119,7 +124,6 @@
         transform:translateZ(-30px);
         background-repeat: round;
         background-image: url('/resources/segment_shadow.png');
-        /*border: 1px dashed dodgerblue;*/
     }
     .sector .circle{
         position: absolute;
@@ -128,7 +132,6 @@
         height:100%;
         transform-style: preserve-3d;
         background-repeat: round;
-        background-image: url('/resources/segment_circle.png');
     }
     .sector .icon-wrap{
         position: absolute;
@@ -139,7 +142,7 @@
     }
     .icon-wrap .icon{
         position: absolute;
-       /* filter: brightness(50%); */
+        filter: brightness(60%);
         left: 30px;
         top:-30px;
         width:100px;
