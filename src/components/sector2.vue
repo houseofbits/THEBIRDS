@@ -4,10 +4,10 @@
             <div class="icon" :style="iconStyle()" v-on:click="onClick"></div>
             <div class="icon-shadow" :style="iconStyleShadow"></div>
         </div>
-        <div class="title" :style="titleStyle()"><span>{{title}}</span></div>
+        <div class="title" :style="titleStyle()"><span :style="titleTextStyle()">{{title}}</span></div>
         <div class="title-shadow"><span>{{title}}</span></div>
         <div class="shadow"></div>
-        <div class="circle" :style="circleStyle"></div>
+        <div class="circle" :style="circleStyle()"></div>
     </div>
 </template>
 
@@ -49,13 +49,19 @@
                     top:this.data.iconPos[1]+'px',
                 };
             },
+        },
+        methods: {
             circleStyle:function(){
                 return {
                     backgroundImage: 'url(' + this.circleUrl + ')',                    
+                    filter:'blur('+this.data.blur+'px)'                    
                 };
-            }
-        },
-        methods: {
+            },            
+            titleTextStyle:function(){
+                return {
+                    filter:'blur('+this.data.blur+'px)'                    
+                };
+            },
             iconStyle:function(){
                 let val = this.data.opacity * 110;
                 return {
@@ -64,7 +70,7 @@
                     height:this.data.iconSize[1]+'px',
                     left:this.data.iconPos[0]+'px',
                     top:this.data.iconPos[1]+'px',
-                    filter:'brightness('+val+'%)'
+                    filter:'brightness('+val+'%) blur('+this.data.blur+'px)'
                 };
             },
             titleStyle:function(){
@@ -99,12 +105,57 @@
                     height:this.data.diameter+'px',
                 };
             },
+            blur:function(blurVal){            
+                
+                 let parent = this;
+                // let brightness = " brightness(" + (parent.data.opacity * 100) + "%)";
+
+                // let refs = [
+                //     this.$refs.icon, 
+                //     this.$refs.circle,
+                //     this.$refs.title
+                // ];
+
+                // Velocity(refs,"finish");                
+
+                // Velocity(refs,{
+                //     blur:blurVal,
+                //     brightness:'50%',
+                // }, { duration: 1000});                
+
+               Velocity(this.$el,{
+                    vueBlur:blurVal,
+                }, { 
+                    duration: 1000,    
+                    progress: function(elements, complete, remaining, start, tweenValue) {
+                        // parent.$refs.icon.style.filter += brightness;
+                        // parent.$refs.title.style.filter += brightness;   
+                        //parent.data.opacity = complete;        
+                        //console.log(complete * blurVal);                                                             
+                        parent.data.blur = complete * blurVal;
+                        parent.$forceUpdate();
+                    },
+                    // complete: function(elements) { 
+                    //     parent.$refs.icon.style.filter = brightness;
+                    //     parent.$refs.title.style.filter = brightness;                                                
+                    // }
+                });                
+            },
             onClick:function(){
                 this.$parent.$emit('detail-select', this.$vnode.key);                
+                //this.blur(4);
             },
+            onDetailSelect:function(index){
+                this.blur(4);
+            },
+            onDetailClose:function(index){
+                this.blur(0);
+            },            
         },
         mounted:function() {
-
+            this.data.blur = 0;
+            this.$parent.$on('detail-select', this.onDetailSelect);
+            this.$parent.$on('detail-close', this.onDetailClose);
         }
     }
 </script>
@@ -142,7 +193,6 @@
     }
     .icon-wrap .icon{
         position: absolute;
-        filter: brightness(60%);
         left: 30px;
         top:-30px;
         width:100px;

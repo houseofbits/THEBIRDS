@@ -30,8 +30,8 @@
                 <div class="flag ru" :class="{active:(getLanguage()=='ru')}" v-on:click="setLanguage('ru')"></div>
                 <div class="flag en" :class="{active:(getLanguage()=='en')}" v-on:click="setLanguage('en')"></div>
                 <div class="flag lv" :class="{active:(getLanguage()=='lv')}" v-on:click="setLanguage('lv')"></div>
-                <div v-if="getPreviousDetailViewId()!=null" class="button-prev" v-on:click="movePrev"></div>
-                <div v-if="getNextDetailViewId()!=null" class="button-next" v-on:click="moveNext"></div>
+                <!--div class="button-prev" v-on:click="movePrev"></div>
+                <div class="button-next" v-on:click="moveNext"></divp-->
             </div>
         </div>
 
@@ -135,6 +135,8 @@
 
                 var parent = this;
 
+                this.$emit('detail-close', this.selectedDetail);
+
                 //Fade off detail view background
                 Velocity(this.$refs.detailScreen,{
                     opacity:0
@@ -145,17 +147,9 @@
                     }
                 });
 
-                this.$emit('stop-sounds');
-
-                // this.$emit('move-in');
-
-                // Velocity(parent.$refs.shadowBackground, {
-                //     opacity: 1,
-                // }, {duration:500});
-
-                // Velocity(this.$refs.mainBackground,{
-                //     blur:0
-                // }, { duration: 1000});
+                Velocity(this.$refs.backgroundSlider,{
+                    blur:0
+                }, { duration: 1000});
 
                 // this.userInputActivation();
             },  
@@ -170,11 +164,9 @@
 //                    this.$emit('move-out', id);
                     //Fade in detail view background
 
-
-                    // Velocity(this.$refs.sectorFrame,{
-                    //     blur:5
-                    // }, { duration: 1000});
-
+                    Velocity(this.$refs.backgroundSlider,{
+                        blur:5
+                    }, { duration: 1000});
 
                     Velocity(this.$refs.detailScreen,{
                         opacity:1
