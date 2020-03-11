@@ -30,8 +30,8 @@
                 <div class="flag ru" :class="{active:(getLanguage()=='ru')}" v-on:click="setLanguage('ru')"></div>
                 <div class="flag en" :class="{active:(getLanguage()=='en')}" v-on:click="setLanguage('en')"></div>
                 <div class="flag lv" :class="{active:(getLanguage()=='lv')}" v-on:click="setLanguage('lv')"></div>
-                <div class="button-prev" v-on:click="rotateLeft"></div>
-                <div class="button-next" v-on:click="rotateRight"></div>
+                <div class="button-prev" v-if="!isDetailViewVisible" v-on:click="autoRotate(10)"></div>
+                <div class="button-next" v-if="!isDetailViewVisible" v-on:click="autoRotate(-10)"></div>
             </div>
         </div>
 
@@ -54,6 +54,7 @@
                 selectedDetail:null,
                 backgroundSliderPos:100,
                 angleMinMax:[0,0],
+                isAutoRotating:false,
                 rotationStep:0,
                 config:{
                     userInputTimeout:5000,
@@ -65,6 +66,9 @@
             sector2, detail
         },
         computed: {
+            isDetailViewVisible:function(){
+                return (this.selectedDetail !== null);
+            },
             circleUrl:function(){
                 if(this.view) {
                     return this.view.circleBackground;
@@ -209,7 +213,7 @@
                     //     opacity: 0,
                     // }, {duration:300,delay: 100,});
                 }
-            },                      
+            },
             getNextDetailViewId:function(){
                 if(this.selectedDetail != null){
                     if(typeof this.sectors[(this.selectedDetail + 1)] != 'undefined'){
@@ -235,8 +239,6 @@
                 if(imediate)duration = 0;
 
                 Velocity(this.$refs.detailCarousel,"finish");
-
-//                this.$emit('carousel-slide-start', this.selectedDetail, targetIndex);
 
                 parent.selectedDetail = targetIndex;
 
@@ -307,13 +309,15 @@
             },
             onDrag:function (e) {
 
+                if(this.selectedDetail !== null)return;
+
                 if(this.prevx==null){
                     this.prevx = e.x;
                     return;
                 }
-                var diff = e.x - this.prevx;
-                if(e.buttons == 1) {
-                    this.angle += (diff * 0.01);
+                let diff = e.x - this.prevx;
+                if(e.buttons > 0) {
+                    this.angle += (diff * 0.03);
                     if(-this.angle < this.angleMinMax[0]){
                         this.angle = -this.angleMinMax[0]
                     }
@@ -327,28 +331,43 @@
 
                 this.prevx = e.x;
             },
-            onTouchMove:function(e){
+            autoRotate:function(step){
 
+                if(this.selectedDetail !== null || this.isAutoRotating)return;
 
+                let parent = this;
+                let angleStart = this.angle;
 
-            },
-            rotateLeft:function(){
+                this.isAutoRotating = true;
 
-
-            },
-            rotateRight:function(){
-
-
+                Velocity(this.$el,{vueRotate:step}, {
+                    duration: 500,
+                    progress: function(elements, complete, remaining, start, tweenValue) {
+                        parent.angle = angleStart + (step * complete);
+                        if(-parent.angle < parent.angleMinMax[0]){
+                            parent.angle = -parent.angleMinMax[0]
+                        }
+                        if(-parent.angle > parent.angleMinMax[1]){
+                            parent.angle = -parent.angleMinMax[1]
+                        }
+                        let displacement = parent.angle * 10;
+                        parent.backgroundSliderPos = displacement - 100;
+                        parent.$forceUpdate();
+                    },
+                    complete:function(){
+                        parent.isAutoRotating = false;
+                    }
+                });
             },
         },
         mounted:function() {
             this.init();
             document.addEventListener('mousemove', this.onDrag);
 
-            document.addEventListener('touchstart', this.onTouchMove, false);
-            document.addEventListener('touchmove', this.onTouchMove, false);
-            document.addEventListener('touchcancel', this.onTouchMove, false);
-            document.addEventListener('touchend', this.onTouchMove, false);
+            // document.addEventListener('touchstart', this.onTouchMove, false);
+            // document.addEventListener('touchmove', this.onTouchMove, false);
+            // document.addEventListener('touchcancel', this.onTouchMove, false);
+            // document.addEventListener('touchend', this.onTouchMove, false);
 
             this.initDetailView();
 

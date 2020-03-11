@@ -90,13 +90,16 @@
 
                 let zpos = this.data.position[2] - (unitAngle * 150) + 50;
 
-                let opacity = 1 - Math.min(0.5, unitAngle);
+                let opacity = 1 - Math.min(0.3, unitAngle);
 
                 this.data.opacity = opacity;
 
-                this.data.blurCircle = (1 - opacity) * 10;
-                this.data.blurIcon = (1 - opacity) * 8;
-                this.data.blurTitle = (1 - opacity) * 4;
+                unitAngle = Math.min(Math.abs(angle / limit), 1);
+                unitAngle = exponentialEasing(unitAngle, 0.9);
+
+                this.data.blurCircle = unitAngle * 10;
+                this.data.blurIcon = unitAngle * 8;
+                this.data.blurTitle = unitAngle * 4;
 
                 return {
                     transform:

@@ -185,7 +185,7 @@ export default {
         filter: drop-shadow(2px 2px 2px #000);    
     }
     .detail-element{
-        border: 1px dashed orange;
+        /*border: 1px dashed orange;*/
         position:absolute;
         left:0px;
         top:-100px;
