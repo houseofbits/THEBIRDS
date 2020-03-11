@@ -1,16 +1,10 @@
 <template>
     <div class="detail-element" :style="{backgroundImage: 'url(' + detailBackgroundImageUrl + ')'}">
         <div class="detail-content">
-            <div class="image" :style="{
-                width:imageSize.width + 'px',
-                height:imageSize.height + 'px',
-                top:imagePosition.y + 'px',
-                left:imagePosition.x + 'px',
-                backgroundImage: 'url(' + imageUrl + ')'
-            }"></div>
+            <div class="image" :style="imageStyle"></div>
             <div class="title"><span>{{title}}</span></div>
             <div class="title-latin"><span>{{titleLatin}}</span></div>
-            <div class="description" :style="{left:descriptionPosition.x+'px',top:descriptionPosition.y+'px'}"><span>{{description}}</span></div>
+            <div class="description" :style="descriptionStyle"><span>{{description}}</span></div>
             <div class="sounds">
                 <sound v-for="(sound, soundIndex) in data.audio" :key="soundComponentKey(soundIndex)" :sound="sound"></sound>
             </div>
@@ -23,6 +17,25 @@
 import {Vector3, Vector2, Rectangle, getRandomArbitrary, radiansToDegrees} from './common.js'
 import sound from './sound.vue'
 
+/**
+ *
+ *  Data structure:
+ *      description{
+ *          lv,ru,en:"string"
+ *          transform:[left, top, fontSize]
+ *          transform:{
+ *              lv,ru,en:[left, top, fontSize]
+ *          }
+ *      }
+ *      detailImage{
+ *          image:url
+ *          transform:[width,height,left,top]
+ *          transform:{
+ *              lv,ru,en:[width,height,left,top]
+ *          }
+ *      }
+ *
+ */
 export default {
     props: ['sector'],
     template:'#detail-template',
@@ -33,21 +46,24 @@ export default {
         sound
     },    
     computed:{
-        descriptionPosition:function(){
-            if(typeof this.data.description != 'undefined'){
-                var language = this.$parent.getLanguage();
-
-                if(typeof this.data.description[language] == "object" && 
-                typeof this.data.description[language].position != "undefined"){
-                    var pos = new Vector2(this.data.description[language].position);
-                    return pos;
-                }
-                if(typeof this.data.description.position != 'undefined'){
-                    var pos = new Vector2(this.data.description.position);
-                    return pos;
-                }
-            }
-            return new Vector2(null);
+        imageStyle:function(){
+            let ts = this.getImageTransform();
+            return {
+                width:ts[0] + 'px',
+                height:ts[1] + 'px',
+                top:ts[3] + 'px',
+                left:ts[2] + 'px',
+                backgroundImage: 'url(' + this.getDetailProp('image') + ')'
+            };
+        },
+        descriptionStyle:function(){
+            let ts = this.getDescriptionTransform();
+            return {
+                left:ts[0]+'px',
+                top:ts[1]+'px',
+                fontSize:ts[2]+'px',
+                lineHeight:(ts[2] * 1.2)+'px'
+            };
         },
         detailBackgroundImageUrl:function(){
             return this.$parent.detailBackgroundImageUrl;
@@ -92,6 +108,30 @@ export default {
         },                        
     },
     methods: {
+        getDescriptionTransform:function(){
+            if(typeof this.data.description != 'undefined'){
+                var language = this.$parent.getLanguage();
+                if(typeof this.data.description.transform != 'undefined'){
+                    if(typeof this.data.description.transform[language] != "undefined") {
+                        return this.data.description.transform[language]
+                    }
+                    return this.data.description.transform;
+                }
+            }
+            return [0,0,0];
+        },
+        getImageTransform:function(){
+            if(typeof this.data.detailImage != 'undefined'){
+                var language = this.$parent.getLanguage();
+                if(typeof this.data.detailImage.transform != 'undefined'){
+                    if(typeof this.data.detailImage.transform[language] != "undefined") {
+                        return this.data.detailImage.transform[language]
+                    }
+                    return this.data.detailImage.transform;
+                }
+            }
+            return [0,0,0,0];
+        },
         soundComponentKey:function(key){
             return (this.$vnode.key * 30) + key;
         },                

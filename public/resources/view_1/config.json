@@ -15,20 +15,19 @@
         "lv":"Latvijā samērā parasts ligzdotājs ar niedrēm aizaugušos ezeros un dīķos. Ligzdo 300-500 pāru Vismaz tik pat vai pat vairāk caurceļo. Nelielā skaitā regulāri pārziemo. Kopš 1980-to gadu vidū ziemotāju skaits ir pakāpeniski audzis, sasniedzot dažus desmitus īpatņus. Slēptā dzīves veida dēļ lielais dumpis ir grūti konstatējams.",
         "ru":"Большая выпь является сравнительно обычным гнездящимся видом в сильно заросших тростником озерах и прудах. Гнездится 300-500 пар. Столько же пролетает через Латвию во время миграции. Зимует редко. Начиная с середины 1980-х количество зимующих особей возросло и достигло нескольких десятков птиц. Из-за скрытного образа жизни довольно сложно обнаружить.",
         "en":"Common breeding species in lakes and ponds with extensive reedbeds. 300-500 breeding pairs. At least as many are also present during migration. Some birds can also overwinter. Number of wintering birds has increased since 1980s and it is estimated that now there are few dozen birds present during winter. Great bitterns are difficult to observe due to their secretive way of life.",
-        "position":"20,380"
+        "transform":[20,380,30]
       },
       "main":{
         "position":[-10,360,50],
         "diameter":280,
         "iconSize":[300,200],
-        "iconPos":[50,20],
+        "iconPos":[50,40],
         "iconImage":"resources/view_1/images/s11d.png",
         "iconShadow":"resources/view_1/images/s11s.png"
       },
       "detailImage":{
         "image":"resources/view_1/images/s11d.png",
-        "position":"420,0",
-        "size":"560,410"
+        "transform":[560,410, 420,0]
       },
       "audio":[
         {
@@ -61,21 +60,19 @@
         "lv":"Mazais dumpis Latvijā ir rets ligzdotājs zivju dīķos, ezeros un applūdušos aizaugošos karjeros. Biežāk  sastopams valsts dienvidaustrumu daļā. Skaits Latvijā pieaug. Ligzdojošo pāru skaits vērtējams ap 60-80",
         "ru":"Волчок в Латвии является редким гнездящимся видом. Гнездится на рыбоводных прудах, озерах и заросших карьерах. Чаще встречается на юго-востоке страны. Численность возрастает. Гнездится около 60-80 пар",
         "en":"Little bittern is a rare breeding species that is associated with fish ponds, lakes and flooded, overgrown quarries. Mostly found in SE part of Latvia. Population is increasing. It is estimated that there are 60-80 breeding pairs",
-        "position":"20,400"
+        "transform":[20,400,30]
       },
       "main":{
         "position":[0,320,50],
         "diameter":280,
         "iconSize":[300,200],
-        "iconPos":[10,25],
+        "iconPos":[5,25],
         "iconImage":"resources/view_1/images/s2d.png",
         "iconShadow":"resources/view_1/images/s2s.png"
       },
       "detailImage":{
         "image":"resources/view_1/images/s2d.png",
-        "position":"460,-20",
-        "rotation":"0,0,0",
-        "size":"560,410"
+        "transform":[560,410, 460,-20]
       },
       "audio":[
         {
@@ -100,20 +97,19 @@
         "lv":"Agrāk Latvijā samērā parasts ligzdotājs, bet skaits ir ievērojami samazinājies. Pēdējos gados ligzdo ap 140 pāri. Ziemo Āfrikā.",
         "ru":"В прошлом черный аист являлся обычным гнездящимся видом, но количество значительно сократилось. В наши дни гнездится около 150 пар. Зимует в Африке.",
         "en":"Previously rather common breeding species but nowadays the numbers have significantly decreased. There are only approximately 140 breeding pairs left. Winters in Africa. ",
-        "position":"20,420"
+        "transform":[20,420,30]
       },
       "main":{
         "position":[10,340,50],
         "diameter":280,
         "iconSize":[300,200],
-        "iconPos":[30,20],
+        "iconPos":[30,35],
         "iconImage":"resources/view_1/images/s3d.png",
         "iconShadow":"resources/view_1/images/s3s.png"
       },
       "detailImage":{
         "image":"resources/view_1/images/s3d.png",
-        "position":"460,-20",
-        "size":"560,410"
+        "transform":[560,410, 460,-20]
       },
       "audio":[
         {
@@ -138,20 +134,19 @@
         "lv":"Ligzdo pārsvarā kolonijās visā Latvijas teritorijā. Ligzdo ap 1100 - 1500 pāru. Pēdējās desmitgadēs skaits pieaudzis. Samērā parasts caurceļotājs. Pirmais ziemas novērojums reģistrēts 1990. gada janvārī pie Liepājas ezera. Atkarībā no ziemas barguma Latvijā regulāri ziemo no dažiem desmitiem līdz vairākiem simtiem zivju gārņu.",
         "ru":"Серая цапля обычно гнездится группами или колониями на всей территории Латвии. Гнездится около 1100-1500 пар. В последние десятилетия численность возросла. На пролете обычна. Зимовка отмечена начиная с января 1990 года. В зависимости от суровости зимы количество зимующих особей варьирует от нескольких десятков до нескольких сотен.",
         "en":"Common breeding species. They nest in colonies and it is estimated that there are 1100-1500 breeding pairs in Latvia. Population of grey herons has increased in last decades. Also common during migration. First winter record was at Lake Liepāja during January 1990. Now there are few dozen to several hundred grey herons wintering in Latvia depending on the severity of winter.",
-        "position":"20,350"
+        "transform":[20,350,30]
       },
       "main":{
         "position":[20,335,50],
         "diameter":280,
         "iconSize":[300,200],
-        "iconPos":[-30,30],
+        "iconPos":[-30,40],
         "iconImage":"resources/view_1/images/s4d.png",
         "iconShadow":"resources/view_1/images/s4s.png"
       },
       "detailImage":{
         "image":"resources/view_1/images/s4d.png",
-        "position":"440,-20",
-        "size":"560,410"
+        "transform":[560,410, 440,-20]
       }
     },
     {
@@ -164,15 +159,14 @@
       },
       "description":{
         "lv":"Līdz XX gs. 90-tajiem gadiem Latvijā rets ieceļotājs. XX gs. beigām un XXI gs. sākumā - novērots aizvien biežāk un lielākā skaitā. 1997. un 1999. gadā atzīmēti divi ligzdošanas gadījumi Engures ezerā hibrīdpāri ar zivju gārni Ardea cinerea . Turpat pirmais \"tīra\" pāra ligzdošanas gadījums pierādīts 2000. gadā. Populācija turpināja pieaugt un tagad vērtējama ap 200 pāriem. Pārziemošana pārliecinoši pierādīta sākot ar 2008. gada janvāri. Tagad ziemo regulāri un skaits pieaug",
-        "ru":{
-          "text":"До 90-х годов ХХ столетия являлся редким залетным видом. В конце ХХ столетия и начале XXI столетия отмечался чаще и в большем количестве. В 1997 и 1999 годах отмечено гнездование смешанной пары с серой цаплей на озере Энгурес. В 2000 году на том же озере отмечено гнездование \"чистой\" пары.  Количество продолжило увеличиваться и в наши дни достигло 200 пар. Зимовка отмечена начиная с января 2008 года. Сейчас зимует регулярно и количество зимующих особей растет.",
-          "position":"20,320"
-        },
-        "en":{
-          "text":"Great egret was considered to be a rare vagrant up until 1990s. Since then their numbers have increased considerably. First breeding attempts in mixed pair with grey heron Ardea cinerea were observed at Lake Engure during years 1997 and 1999. First pure breeding pair of great egrets was found at the same location in 2000. Population is increasing and is estimated to be around 200 breeding pairs. First observations in winter were during January 2008. Since then occurrence of great egrets in winter has became more regular and number of wintering birds is still increasing.",
-          "position":"20,310"
-        },
-        "position":"20,350"
+        "ru":"До 90-х годов ХХ столетия являлся редким залетным видом. В конце ХХ столетия и начале XXI столетия отмечался чаще и в большем количестве. В 1997 и 1999 годах отмечено гнездование смешанной пары с серой цаплей на озере Энгурес. В 2000 году на том же озере отмечено гнездование \"чистой\" пары.  Количество продолжило увеличиваться и в наши дни достигло 200 пар. Зимовка отмечена начиная с января 2008 года. Сейчас зимует регулярно и количество зимующих особей растет.",
+        "en":"Great egret was considered to be a rare vagrant up until 1990s. Since then their numbers have increased considerably. First breeding attempts in mixed pair with grey heron Ardea cinerea were observed at Lake Engure during years 1997 and 1999. First pure breeding pair of great egrets was found at the same location in 2000. Population is increasing and is estimated to be around 200 breeding pairs. First observations in winter were during January 2008. Since then occurrence of great egrets in winter has became more regular and number of wintering birds is still increasing.",
+        "transform":{
+          "lv":[20,350,30],
+          "ru":[20,320,30],
+          "en":[20,310,30]
+        }
+
       },
       "main":{
         "position":[30,360,50],
@@ -184,8 +178,7 @@
       },
       "detailImage":{
         "image":"resources/view_1/images/s5d.png",
-        "position":"440,-10",
-        "size":"500,366"
+        "transform":[500,366, 440,-20]
       }
     },
     {
@@ -200,21 +193,19 @@
         "lv":"Rets ieceļotājs. Novērots trīs reizes - divi seni novērojumi - 1862. un 1901. gadā, bet trešais 2015. gadā",
         "ru":"Кваква в Латвии является редким залетным видом. Отмечена 3 раза – в 1862, 1901 и 2015 годах",
         "en":"Rare vagrant. There are only three observations – two are older records from 1862 and 1901. Third, most recent observation was in year 2015",
-        "position":"20,400"
+        "transform":[20,400,30]
       },
       "main":{
         "position":[-5,100,50],
         "diameter":280,
         "iconSize":[300,200],
-        "iconPos":[-20,40],
+        "iconPos":[-20,30],
         "iconImage":"resources/view_1/images/s6d.png",
         "iconShadow":"resources/view_1/images/s6s.png"
       },
       "detailImage":{
         "image":"resources/view_1/images/s6d.png",
-        "position":"460,-20",
-        "rotation":"0,0,0",
-        "size":"560,410"
+        "transform":[560,410, 460,-20]
       }
     },
     {
@@ -229,21 +220,19 @@
         "lv":"Latvijā rets ieceļotājs. Vismaz 10 novērojumi",
         "ru":"Малая белая цапля в Латвии является редким залетным видом. Отмечена 10 раз",
         "en":"Rare vagrant. There are 10 observations of this species in Latvia",
-        "position":"20,400"
+        "transform":[20,400,30]
       },
       "main":{
         "position":[5,100,50],
         "diameter":280,
         "iconSize":[300,200],
-        "iconPos":[-40,40],
+        "iconPos":[-40,30],
         "iconImage":"resources/view_1/images/s7d.png",
         "iconShadow":"resources/view_1/images/s7s.png"
       },
       "detailImage":{
         "image":"resources/view_1/images/s7d.png",
-        "position":"440,-20",
-        "rotation":"0,0,0",
-        "size":"560,410"
+        "transform":[560,410, 440,-20]
       }
     },
     {
@@ -258,7 +247,7 @@
         "lv":"Brūnais ibiss Latvijā rets ieceļotājs. Vismaz vienpadsmit novērojumi",
         "ru":"Каравайка в Латвии является редким залетным видом. Отмечена 11 раз",
         "en":"Rare vagrant. There are 11 observations of this species in Latvia",
-        "position":"20,400"
+        "transform":[20,400,30]
       },
       "main":{
         "position":[15,100,50],
@@ -270,9 +259,7 @@
       },
       "detailImage":{
         "image":"resources/view_1/images/s8d.png",
-        "position":"460,-20",
-        "rotation":"0,0,0",
-        "size":"560,410"
+        "transform":[560,410, 460,-20]
       }
     },
     {
@@ -287,21 +274,19 @@
         "lv":"Latvijā parasts un izplatīts ligzdotājs. Skaits pieaudzis līdz 12 000 pāriem.  Pēcligzdošanas laikā jūlijā un augustā  vienkopus var novērot līdz pat 400 īpatņiem. Ziemo Āfrikā. ",
         "ru":"Белый аист в Латвии является обычным и распространенным гнездящимся видом. Количество гнездящихся пар достигает 12 000.  В после гнездовой период в июле и августе можно наблюдать большие скопления до 400 особей одновременно. Зимует в Африке.",
         "en":"Common and widespread breeding species. Number of breeding pairs has increased to 12000 pairs. It can be possible to observe flocks with up to 400 birds during post breeding period in July and August. Winters in Africa.",
-        "position":"20,400"
+        "transform":[20,400,30]
       },
       "main":{
         "position":[25,100,50],
         "diameter":280,
         "iconSize":[300,200],
-        "iconPos":[30,40],
+        "iconPos":[30,30],
         "iconImage":"resources/view_1/images/s9d.png",
         "iconShadow":"resources/view_1/images/s9s.png"
       },
       "detailImage":{
         "image":"resources/view_1/images/s9d.png",
-        "position":"460,-20",
-        "rotation":"0,0,0",
-        "size":"560,410"
+        "transform":[560,410, 460,-20]
       },
       "audio":[
         {
@@ -334,7 +319,7 @@
         "lv":"Latvijā rets ieceļotājs. Vismaz septiņi novērojumi",
         "ru":"Колпица в Латвии является редким залетным видом. Отмечена 7 раз",
         "en":"Rare vagrant. There are 7 observations of this species in Latvia",
-        "position":"20,400"
+        "transform":[20,400,30]
       },
       "main":{
         "position":[35,100,50],
@@ -346,9 +331,7 @@
       },
       "detailImage":{
         "image":"resources/view_1/images/s10d.png",
-        "position":"460,-20",
-        "rotation":"0,0,0",
-        "size":"560,410"
+        "transform":[560,410, 460,-20]
       }
     }
   ]
