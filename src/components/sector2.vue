@@ -54,12 +54,12 @@
             circleStyle:function(){
                 return {
                     backgroundImage: 'url(' + this.circleUrl + ')',                    
-                    filter:'blur('+this.data.blur+'px)'                    
+                    filter:'blur('+this.data.blurCircle+'px)'
                 };
             },            
             titleTextStyle:function(){
                 return {
-                    filter:'blur('+this.data.blur+'px)'                    
+                    filter:'blur('+this.data.blurTitle+'px)'
                 };
             },
             iconStyle:function(){
@@ -70,7 +70,7 @@
                     height:this.data.iconSize[1]+'px',
                     left:this.data.iconPos[0]+'px',
                     top:this.data.iconPos[1]+'px',
-                    filter:'brightness('+val+'%) blur('+this.data.blur+'px)'
+                    filter:'brightness('+val+'%) blur('+this.data.blurIcon+'px)'
                 };
             },
             titleStyle:function(){
@@ -93,6 +93,10 @@
                 let opacity = 1 - Math.min(0.5, unitAngle);
 
                 this.data.opacity = opacity;
+
+                this.data.blurCircle = (1 - opacity) * 10;
+                this.data.blurIcon = (1 - opacity) * 8;
+                this.data.blurTitle = (1 - opacity) * 4;
 
                 return {
                     transform:
@@ -128,17 +132,9 @@
                 }, { 
                     duration: 1000,    
                     progress: function(elements, complete, remaining, start, tweenValue) {
-                        // parent.$refs.icon.style.filter += brightness;
-                        // parent.$refs.title.style.filter += brightness;   
-                        //parent.data.opacity = complete;        
-                        //console.log(complete * blurVal);                                                             
                         parent.data.blur = complete * blurVal;
                         parent.$forceUpdate();
                     },
-                    // complete: function(elements) { 
-                    //     parent.$refs.icon.style.filter = brightness;
-                    //     parent.$refs.title.style.filter = brightness;                                                
-                    // }
                 });                
             },
             onClick:function(){
@@ -146,14 +142,17 @@
                 //this.blur(4);
             },
             onDetailSelect:function(index){
-                this.blur(4);
+             //   this.blur(4);
             },
             onDetailClose:function(index){
-                this.blur(0);
+            //    this.blur(0);
             },            
         },
         mounted:function() {
             this.data.blur = 0;
+            this.data.blurCircle = 0;
+            this.data.blurIcon = 0;
+            this.data.blurText = 0;
             this.$parent.$on('detail-select', this.onDetailSelect);
             this.$parent.$on('detail-close', this.onDetailClose);
         }

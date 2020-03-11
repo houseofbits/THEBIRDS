@@ -30,8 +30,8 @@
                 <div class="flag ru" :class="{active:(getLanguage()=='ru')}" v-on:click="setLanguage('ru')"></div>
                 <div class="flag en" :class="{active:(getLanguage()=='en')}" v-on:click="setLanguage('en')"></div>
                 <div class="flag lv" :class="{active:(getLanguage()=='lv')}" v-on:click="setLanguage('lv')"></div>
-                <!--div class="button-prev" v-on:click="movePrev"></div>
-                <div class="button-next" v-on:click="moveNext"></divp-->
+                <div class="button-prev" v-on:click="rotateLeft"></div>
+                <div class="button-next" v-on:click="rotateRight"></div>
             </div>
         </div>
 
@@ -108,12 +108,44 @@
                     id = parseInt(path[1]);
                 }
                 if (id != null) {
-                    this.$http.get('/resources/view_'+id+'/config2.json').then(function(response) {
+                    this.$http.get('/resources/view_'+id+'/config.json').then(function(response) {
                         this.view = response.body;
+                        this.calculateAutoAngles();
                         this.calculateMinMaxAngle();
                         this.initAudio();
                     }, function(){});
                 }
+            },
+            calculateAutoAngles:function(){
+                let initTop = -10;
+                let initBottom = -5;
+                let topNum = Math.ceil(this.view.sectors.length / 2);
+                for(let i=0; i<this.view.sectors.length; i++){
+                    if(i < topNum){
+                        this.view.sectors[i].main.position[0] = initTop;
+                        this.view.sectors[i].main.position[1] = 100;
+                        initTop += 10;
+                    }else{
+                        this.view.sectors[i].main.position[0] = initBottom;
+                        this.view.sectors[i].main.position[1] = 330;
+                        initBottom += 10;
+                    }
+                }
+            },
+            calculateMinMaxAngle:function(){
+                this.angleMinMax[0] = 360; //Min
+                this.angleMinMax[1] = -360; //Max
+                for(let i=0; i<this.view.sectors.length; i++){
+                    let s = this.view.sectors[i];
+                    if(s.main.position[0] < this.angleMinMax[0]){
+                        this.angleMinMax[0] = s.main.position[0];
+                    }
+                    if(s.main.position[0] > this.angleMinMax[1]){
+                        this.angleMinMax[1] = s.main.position[0];
+                    }
+                }
+                this.angleMinMax[0] += 4;
+                this.angleMinMax[1] -= 4;
             },
             //Set up default position, visibility and opacity
             initDetailView:function(){
@@ -229,21 +261,6 @@
                     this.rotateDetailView(index);
                 }
             },
-            calculateMinMaxAngle:function(){
-                this.angleMinMax[0] = 360; //Min
-                this.angleMinMax[1] = -360; //Max
-                for(let i=0; i<this.view.sectors.length; i++){
-                    let s = this.view.sectors[i];
-                    if(s.main.position[0] < this.angleMinMax[0]){
-                        this.angleMinMax[0] = s.main.position[0];
-                    }
-                    if(s.main.position[0] > this.angleMinMax[1]){
-                        this.angleMinMax[1] = s.main.position[0];
-                    }                    
-                }
-                this.angleMinMax[0] += 9;
-                this.angleMinMax[1] -= 9;
-            },
             initAudio:function(){
                 var parent = this;
                 if(this.view && typeof this.view.sectors != 'undefined'){
@@ -289,6 +306,7 @@
                 };
             },
             onDrag:function (e) {
+
                 if(this.prevx==null){
                     this.prevx = e.x;
                     return;
@@ -309,10 +327,29 @@
 
                 this.prevx = e.x;
             },
+            onTouchMove:function(e){
+
+
+
+            },
+            rotateLeft:function(){
+
+
+            },
+            rotateRight:function(){
+
+
+            },
         },
         mounted:function() {
             this.init();
             document.addEventListener('mousemove', this.onDrag);
+
+            document.addEventListener('touchstart', this.onTouchMove, false);
+            document.addEventListener('touchmove', this.onTouchMove, false);
+            document.addEventListener('touchcancel', this.onTouchMove, false);
+            document.addEventListener('touchend', this.onTouchMove, false);
+
             this.initDetailView();
 
             this.rotationStep = 2 * radiansToDegrees(Math.atan((1024/2)/3000));
