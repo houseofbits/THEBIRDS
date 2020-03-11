@@ -214,11 +214,10 @@
         background-repeat: round;
     }
     .sector .title {
-    /*    filter: brightness(50%); */
         left:-50%;
         position:absolute;
         text-align: center;
-        font-size: 35px;
+        font-size: 30px;
         width:100%;
         bottom: 35px;
         line-height: 30px;
@@ -236,7 +235,7 @@
         left:-50%;
         position:absolute;
         text-align: center;
-        font-size: 35px;
+        font-size: 30px;
         width:100%;
         bottom: 35px;
         line-height: 30px;

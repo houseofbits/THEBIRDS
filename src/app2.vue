@@ -3,6 +3,8 @@
 
         <div class="background-slider" :style="backgroundSliderStyle" ref="backgroundSlider"></div>
 
+        <div class="background-v-grad"></div>
+
         <div v-if="!detailViewOpen" class="sector-frame" ref="sectorFrame" :style="computeTransform()" >
             <sector2 v-for="(sector, index) in sectors" 
             :key="index" 
@@ -30,8 +32,8 @@
                 <div class="flag ru" :class="{active:(getLanguage()=='ru')}" v-on:click="setLanguage('ru')"></div>
                 <div class="flag en" :class="{active:(getLanguage()=='en')}" v-on:click="setLanguage('en')"></div>
                 <div class="flag lv" :class="{active:(getLanguage()=='lv')}" v-on:click="setLanguage('lv')"></div>
-                <div class="button-prev" v-if="!isDetailViewVisible" v-on:click="autoRotate(10)"></div>
-                <div class="button-next" v-if="!isDetailViewVisible" v-on:click="autoRotate(-10)"></div>
+                <div class="button-prev" v-if="!detailViewOpen" v-on:click="autoRotate(10)"></div>
+                <div class="button-next" v-if="!detailViewOpen" v-on:click="autoRotate(-10)"></div>
             </div>
         </div>
 
@@ -156,6 +158,7 @@
             initDetailView:function(){
                 if(typeof this.$refs.detailScreen != 'undefined') {
                     Velocity(this.$refs.detailScreen, {opacity: 0}, {display: "none"});
+                    Velocity(this.$refs.detailScreen,"finish");
                     this.rotateDetailView(this.selectedDetail, true);
                 }
             },
@@ -416,6 +419,13 @@
         height:768px;
         position:absolute;
         top:0;
+    }
+    .background-v-grad{
+        width:2240px;
+        height:768px;
+        position:absolute;
+        background: rgb(2,0,36);
+        background: linear-gradient(180deg, rgba(0,0,0,0.6838936258096988) 0%, rgba(0,0,0,0.3785714969581583) 5%, rgba(0,0,0,0) 11%, rgba(0,0,0,0) 27%, rgba(0,0,0,0.4289916650253851) 44%, rgba(0,0,0,0) 61%, rgba(0,0,0,0) 87%, rgba(0,0,0,0.4598039899553571) 95%, rgba(0,0,0,0.5382353625043768) 100%);
     }
     .sector-frame{
         transform-style: preserve-3d;
