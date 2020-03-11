@@ -3,7 +3,7 @@
 
         <div class="background-slider" :style="backgroundSliderStyle" ref="backgroundSlider"></div>
 
-        <div class="sector-frame" ref="sectorFrame" :style="computeTransform()" >
+        <div v-if="!detailViewOpen" class="sector-frame" ref="sectorFrame" :style="computeTransform()" >
             <sector2 v-for="(sector, index) in sectors" 
             :key="index" 
             :sector="sector.main" 
@@ -52,6 +52,7 @@
                 prevx:null,
                 language:'lv',
                 selectedDetail:null,
+                detailViewOpen:false,
                 backgroundSliderPos:100,
                 angleMinMax:[0,0],
                 isAutoRotating:false,
@@ -153,10 +154,15 @@
             },
             //Set up default position, visibility and opacity
             initDetailView:function(){
-                Velocity(this.$refs.detailScreen,{ opacity: 0 }, { display: "none" });
-                this.rotateDetailView(this.selectedDetail, true);
+                if(typeof this.$refs.detailScreen != 'undefined') {
+                    Velocity(this.$refs.detailScreen, {opacity: 0}, {display: "none"});
+                    this.rotateDetailView(this.selectedDetail, true);
+                }
             },
             renderDetailView:function(index){
+
+                if(this.selectedDetail == null)return false;
+
                 if(this.selectedDetail != null && index == this.selectedDetail)return true;
 
                 var next = this.getNextDetailViewId();
@@ -173,6 +179,8 @@
 
                 this.$emit('detail-close', this.selectedDetail);
 
+                this.detailViewOpen = false;
+
                 //Fade off detail view background
                 Velocity(this.$refs.detailScreen,{
                     opacity:0
@@ -183,35 +191,36 @@
                     }
                 });
 
-                Velocity(this.$refs.backgroundSlider,{
-                    blur:0
-                }, { duration: 1000});
+                // Velocity(this.$refs.backgroundSlider,{
+                //     blur:0
+                // }, { duration: 1000});
 
                 // this.userInputActivation();
             },  
             selectDetailView:function(id){
-                
+
                 this.selectedDetail = id;
-                
+
                 if (this.selectedDetail != null) {
-                    
-                    //Init detail view to default state
+
+                    let parent = this;
+
                     this.initDetailView();
 //                    this.$emit('move-out', id);
                     //Fade in detail view background
 
-                    Velocity(this.$refs.backgroundSlider,{
-                        blur:5
-                    }, { duration: 1000});
+                    // Velocity(this.$refs.backgroundSlider,{
+                    //     blur:5
+                    // }, { duration: 1000});
 
                     Velocity(this.$refs.detailScreen,{
                         opacity:1
                     }, { duration: 1000,
-                        display: "block"
+                        display: "block",
+                        complete:function () {
+                            parent.detailViewOpen = true;
+                        }
                     });
-                    // Velocity(this.$refs.shadowBackground, {
-                    //     opacity: 0,
-                    // }, {duration:300,delay: 100,});
                 }
             },
             getNextDetailViewId:function(){
