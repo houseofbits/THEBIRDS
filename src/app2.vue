@@ -128,6 +128,7 @@
                 let initBottom = -5;
                 let topNum = Math.ceil(this.view.sectors.length / 2);
                 for(let i=0; i<this.view.sectors.length; i++){
+                    this.view.sectors[i].main.position = [0,0,0];
                     if(i < topNum){
                         this.view.sectors[i].main.position[0] = initTop;
                         this.view.sectors[i].main.position[1] = 100;
@@ -137,6 +138,7 @@
                         this.view.sectors[i].main.position[1] = 330;
                         initBottom += 10;
                     }
+                    this.view.sectors[i].main.position[2] = 50;
                 }
             },
             calculateMinMaxAngle:function(){

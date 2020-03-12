@@ -29,9 +29,9 @@ import sound from './sound.vue'
  *      }
  *      detailImage{
  *          image:url
- *          transform:[width,height,left,top]
+ *          transform:[width,left,top]
  *          transform:{
- *              lv,ru,en:[width,height,left,top]
+ *              lv,ru,en:[width,left,top]
  *          }
  *      }
  *
@@ -40,19 +40,22 @@ export default {
     props: ['sector'],
     template:'#detail-template',
     data: function () {
-        return { data: this.sector }
+        return {
+            data: this.sector,
+            imageAspect:1
+        }
     },
     components: {
         sound
-    },    
+    },
     computed:{
         imageStyle:function(){
             let ts = this.getImageTransform();
             return {
                 width:ts[0] + 'px',
-                height:ts[1] + 'px',
-                top:ts[3] + 'px',
-                left:ts[2] + 'px',
+                height:(ts[0] * this.imageAspect) + 'px',
+                top:ts[2] + 'px',
+                left:ts[1] + 'px',
                 backgroundImage: 'url(' + this.getDetailProp('image') + ')'
             };
         },
@@ -164,6 +167,13 @@ export default {
         },
     },
     mounted:function () {
+        let parent = this;
+        let img = new Image();
+        img.src = this.getDetailProp('image');
+        img.onload = function () {
+            parent.imageAspect = this.height / this.width;
+        }
+
         this.$parent.$on('carousel-slide-start', this.onCarouselSlideStart);
         Velocity(this.$el, { rotateY:this.calculateAngle(this.$vnode.key) }, 0);
     }

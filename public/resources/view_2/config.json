@@ -22,19 +22,17 @@
         }
       },
       "main":{
-        "position":[-10,100,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[50,20],
+        "iconTransform":[330,-10,25],
         "iconImage":"resources/view_2/images/s5d.png",
         "iconShadow":"resources/view_2/images/s5s.png"
       },
       "detailImage":{
         "image":"resources/view_2/images/s5d.png",
         "transform":{
-          "lv":[560,410, 420,0],
-          "ru":[560,410, 420,-20],
-          "en":[560,410, 420,-20]
+          "lv":[560,420,0],
+          "ru":[560,420,-20],
+          "en":[560,420,-20]
         }
       }
     },
@@ -53,16 +51,14 @@
         "transform":[20,380]
       },
       "main":{
-        "position":[0,100,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[50,20],
+        "iconTransform":[320,-5,30],
         "iconImage":"resources/view_2/images/s8d.png",
         "iconShadow":"resources/view_2/images/s8s.png"
       },
       "detailImage":{
         "image":"resources/view_2/images/s8d.png",
-        "transform":[560,410, 420,0]
+        "transform":[560,420,0]
       }
     },
     {
@@ -80,16 +76,14 @@
         "transform":[20,380]
       },
       "main":{
-        "position":[10,100,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[50,20],
+        "iconTransform":[300,0,30],
         "iconImage":"resources/view_2/images/s1d.png",
         "iconShadow":"resources/view_2/images/s1s.png"
       },
       "detailImage":{
         "image":"resources/view_2/images/s1d.png",
-        "transform":[560,410, 420,0]
+        "transform":[560,420,0]
       }
     },
     {
@@ -107,16 +101,14 @@
         "transform":[20,380]
       },
       "main":{
-        "position":[20,100,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[50,20],
+        "iconTransform":[300,-10,20],
         "iconImage":"resources/view_2/images/s7d.png",
         "iconShadow":"resources/view_2/images/s7s.png"
       },
       "detailImage":{
         "image":"resources/view_2/images/s7d.png",
-        "transform":[560,410, 420,0]
+        "transform":[560,420,0]
       }
     },
     {
@@ -134,16 +126,14 @@
         "transform":[20,380]
       },
       "main":{
-        "position":[30,100,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[50,20],
+        "iconTransform":[360,15,10],
         "iconImage":"resources/view_2/images/s9d.png",
         "iconShadow":"resources/view_2/images/s9s.png"
       },
       "detailImage":{
         "image":"resources/view_2/images/s9d.png",
-        "transform":[560,410, 420,0]
+        "transform":[560,420,0]
       }
     },
     {
@@ -161,16 +151,14 @@
         "transform":[20,380]
       },
       "main":{
-        "position":[-5,335,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[50,20],
+        "iconTransform":[300,-5,20],
         "iconImage":"resources/view_2/images/s2d.png",
         "iconShadow":"resources/view_2/images/s2s.png"
       },
       "detailImage":{
         "image":"resources/view_2/images/s2d.png",
-        "transform":[560,410, 420,0]
+        "transform":[560,420,0]
       }
     },
     {
@@ -188,16 +176,14 @@
         "transform":[20,380]
       },
       "main":{
-        "position":[5,335,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[50,20],
+        "iconTransform":[300,0,30],
         "iconImage":"resources/view_2/images/s4d.png",
         "iconShadow":"resources/view_2/images/s4s.png"
       },
       "detailImage":{
         "image":"resources/view_2/images/s4d.png",
-        "transform":[560,410, 420,0]
+        "transform":[560,420,0]
       }
     },
     {
@@ -215,16 +201,14 @@
         "transform":[20,380]
       },
       "main":{
-        "position":[15,335,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[50,20],
+        "iconTransform":[220,10,30],
         "iconImage":"resources/view_2/images/s3d.png",
         "iconShadow":"resources/view_2/images/s3s.png"
       },
       "detailImage":{
         "image":"resources/view_2/images/s3d.png",
-        "transform":[560,410, 420,0]
+        "transform":[560,420,0]
       }
     },
     {
@@ -242,16 +226,14 @@
         "transform":[20,380]
       },
       "main":{
-        "position":[25,335,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[50,20],
+        "iconTransform":[220,30,10],
         "iconImage":"resources/view_2/images/s6d.png",
         "iconShadow":"resources/view_2/images/s6s.png"
       },
       "detailImage":{
         "image":"resources/view_2/images/s6d.png",
-        "transform":[560,410, 420,0]
+        "transform":[560,420,0]
       }
     }
   ]

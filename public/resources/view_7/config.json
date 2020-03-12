@@ -15,20 +15,17 @@
         "lv":"",
         "ru":"",
         "en":"",
-        "position":"20,380"
+        "transform":[20,380]
       },
       "main":{
-        "position":[-10,360,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[50,20],
+        "iconTransform":[300,50,20],
         "iconImage":"resources/view_1/images/s11d.png",
         "iconShadow":"resources/view_1/images/s11s.png"
       },
       "detailImage":{
         "image":"resources/view_1/images/s11d.png",
-        "position":"420,0",
-        "size":"560,410"
+        "transform":[560,420,0]
       }
     }
 

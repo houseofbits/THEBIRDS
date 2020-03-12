@@ -38,15 +38,18 @@
     export default {
         name: "app",
         props: ['sector', 'title', 'circleUrl'],
-        data: function(){ return { data: this.sector }},
+        data: function(){ return {
+            data: this.sector ,
+            iconHeight:1
+        }},
         computed:{
             iconStyleShadow:function(){
                 return {
                     backgroundImage: 'url(' + this.data.iconShadow + ')',
-                    width:this.data.iconSize[0]+'px',
-                    height:this.data.iconSize[1]+'px',
-                    left:this.data.iconPos[0]+'px',
-                    top:this.data.iconPos[1]+'px',
+                    width:this.data.iconTransform[0]+'px',
+                    height:this.iconHeight+'px',
+                    left:this.data.iconTransform[1]+'px',
+                    top:this.data.iconTransform[2]+'px',
                 };
             },
         },
@@ -66,10 +69,10 @@
                 let val = this.data.opacity * 110;
                 return {
                     backgroundImage: 'url(' + this.data.iconImage + ')',
-                    width:this.data.iconSize[0]+'px',
-                    height:this.data.iconSize[1]+'px',
-                    left:this.data.iconPos[0]+'px',
-                    top:this.data.iconPos[1]+'px',
+                    width:this.data.iconTransform[0]+'px',
+                    height:this.iconHeight+'px',
+                    left:this.data.iconTransform[1]+'px',
+                    top:this.data.iconTransform[2]+'px',
                     filter:'brightness('+val+'%) blur('+this.data.blurIcon+'px)'
                 };
             },
@@ -152,6 +155,13 @@
             },            
         },
         mounted:function() {
+            let parent = this;
+            let img = new Image();
+            img.src = this.data.iconImage;
+            img.onload = function () {
+                parent.iconHeight = parent.data.iconTransform[0] * (this.height / this.width);
+            }
+
             this.data.blur = 0;
             this.data.blurCircle = 0;
             this.data.blurIcon = 0;

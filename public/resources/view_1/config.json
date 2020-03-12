@@ -18,16 +18,14 @@
         "transform":[20,380,30]
       },
       "main":{
-        "position":[-10,360,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[50,40],
+        "iconTransform":[340,50,30],
         "iconImage":"resources/view_1/images/s11d.png",
         "iconShadow":"resources/view_1/images/s11s.png"
       },
       "detailImage":{
         "image":"resources/view_1/images/s11d.png",
-        "transform":[560,410, 420,0]
+        "transform":[560,420,0]
       },
       "audio":[
         {
@@ -63,16 +61,14 @@
         "transform":[20,400,30]
       },
       "main":{
-        "position":[0,320,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[5,25],
+        "iconTransform":[300,5,25],
         "iconImage":"resources/view_1/images/s2d.png",
         "iconShadow":"resources/view_1/images/s2s.png"
       },
       "detailImage":{
         "image":"resources/view_1/images/s2d.png",
-        "transform":[560,410, 460,-20]
+        "transform":[560,460,-20]
       },
       "audio":[
         {
@@ -100,16 +96,14 @@
         "transform":[20,420,30]
       },
       "main":{
-        "position":[10,340,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[30,35],
+        "iconTransform":[300,30,35],
         "iconImage":"resources/view_1/images/s3d.png",
         "iconShadow":"resources/view_1/images/s3s.png"
       },
       "detailImage":{
         "image":"resources/view_1/images/s3d.png",
-        "transform":[560,410, 460,-20]
+        "transform":[560,460,-20]
       },
       "audio":[
         {
@@ -137,16 +131,14 @@
         "transform":[20,350,30]
       },
       "main":{
-        "position":[20,335,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[-30,40],
+        "iconTransform":[300,-30,40],
         "iconImage":"resources/view_1/images/s4d.png",
         "iconShadow":"resources/view_1/images/s4s.png"
       },
       "detailImage":{
         "image":"resources/view_1/images/s4d.png",
-        "transform":[560,410, 440,-20]
+        "transform":[560,440,-20]
       }
     },
     {
@@ -169,16 +161,14 @@
 
       },
       "main":{
-        "position":[30,360,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[-50,30],
+        "iconTransform":[300,-50,30],
         "iconImage":"resources/view_1/images/s5d.png",
         "iconShadow":"resources/view_1/images/s5s.png"
       },
       "detailImage":{
         "image":"resources/view_1/images/s5d.png",
-        "transform":[500,366, 440,-20]
+        "transform":[500,440,-20]
       }
     },
     {
@@ -196,16 +186,14 @@
         "transform":[20,400,30]
       },
       "main":{
-        "position":[-5,100,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[-20,30],
+        "iconTransform":[300,-20,30],
         "iconImage":"resources/view_1/images/s6d.png",
         "iconShadow":"resources/view_1/images/s6s.png"
       },
       "detailImage":{
         "image":"resources/view_1/images/s6d.png",
-        "transform":[560,410, 460,-20]
+        "transform":[560,460,-20]
       }
     },
     {
@@ -223,16 +211,14 @@
         "transform":[20,400,30]
       },
       "main":{
-        "position":[5,100,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[-40,30],
+        "iconTransform":[300,-40,30],
         "iconImage":"resources/view_1/images/s7d.png",
         "iconShadow":"resources/view_1/images/s7s.png"
       },
       "detailImage":{
         "image":"resources/view_1/images/s7d.png",
-        "transform":[560,410, 440,-20]
+        "transform":[560,440,-20]
       }
     },
     {
@@ -250,16 +236,14 @@
         "transform":[20,400,30]
       },
       "main":{
-        "position":[15,100,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[25,40],
+        "iconTransform":[300,25,40],
         "iconImage":"resources/view_1/images/s8d.png",
         "iconShadow":"resources/view_1/images/s8s.png"
       },
       "detailImage":{
         "image":"resources/view_1/images/s8d.png",
-        "transform":[560,410, 460,-20]
+        "transform":[560,460,-20]
       }
     },
     {
@@ -277,16 +261,14 @@
         "transform":[20,400,30]
       },
       "main":{
-        "position":[25,100,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[30,30],
+        "iconTransform":[300,30,30],
         "iconImage":"resources/view_1/images/s9d.png",
         "iconShadow":"resources/view_1/images/s9s.png"
       },
       "detailImage":{
         "image":"resources/view_1/images/s9d.png",
-        "transform":[560,410, 460,-20]
+        "transform":[560,460,-20]
       },
       "audio":[
         {
@@ -322,16 +304,14 @@
         "transform":[20,400,30]
       },
       "main":{
-        "position":[35,100,50],
         "diameter":280,
-        "iconSize":[300,200],
-        "iconPos":[30,40],
+        "iconTransform":[340,20,30],
         "iconImage":"resources/view_1/images/s10d.png",
         "iconShadow":"resources/view_1/images/s10s.png"
       },
       "detailImage":{
         "image":"resources/view_1/images/s10d.png",
-        "transform":[560,410, 460,-20]
+        "transform":[560,460,-20]
       }
     }
   ]
