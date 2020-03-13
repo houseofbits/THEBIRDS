@@ -250,8 +250,7 @@ export default {
         top:100px;
         width:1024px;
         height:768px;
-    }
-    
+    }    
     .sounds{
         margin-top: 40px;
     }

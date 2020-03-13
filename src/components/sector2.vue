@@ -1,7 +1,12 @@
 <template>
     <div :style="computeTransform()" class="sector">
         <div class="icon-wrap">
-            <div class="icon" :style="iconStyle()" v-on:click="onClick"></div>
+            <div class="icon" :style="iconStyle()" 
+                v-on:click="onClick" 
+                v-on:mousedown="onMouseDown"
+                v-on:mouseup="onMouseLeave"
+                v-on:mouseleave="onMouseLeave"></div>
+
             <div class="icon-shadow" :style="iconStyleShadow"></div>
         </div>
         <div class="title" :style="titleStyle()"><span :style="titleTextStyle()">{{title}}</span></div>
@@ -13,34 +18,15 @@
 
 <script>
 
-    import {Vector3, Vector2, Rectangle, getRandomArbitrary, radiansToDegrees} from './common.js'
-
-    function exponentialEasing (x, a){
-
-        var epsilon = 0.00001;
-        var min_param_a = epsilon;
-        var max_param_a = 1.0 - epsilon;
-        a = Math.max(min_param_a, Math.min(max_param_a, a));
-
-        if (a < 0.5){
-            // emphasis
-            a = 2.0*(a);
-            var y = Math.pow(x, a);
-            return y;
-        } else {
-            // de-emphasis
-            a = 2.0*(a-0.5);
-            var y = Math.pow(x, 1.0/(1-a));
-            return y;
-        }
-    }
+    import {Vector3, Vector2, Rectangle, getRandomArbitrary, radiansToDegrees, exponentialEasing} from './common.js'
 
     export default {
         name: "app",
         props: ['sector', 'title', 'circleUrl'],
         data: function(){ return {
             data: this.sector ,
-            iconHeight:1
+            iconHeight:1,
+            isSelected:false
         }},
         computed:{
             iconStyleShadow:function(){
@@ -55,9 +41,13 @@
         },
         methods: {
             circleStyle:function(){
+                let bright = '';
+                if(this.isSelected){
+                    bright = 'brightness(200%) ';
+                }
                 return {
-                    backgroundImage: 'url(' + this.circleUrl + ')',                    
-                    filter:'blur('+this.data.blurCircle+'px)'
+                    backgroundImage: 'url(' + this.circleUrl + ')',
+                    filter:bright + 'blur('+this.data.blurCircle+'px)'
                 };
             },            
             titleTextStyle:function(){
@@ -95,6 +85,11 @@
 
                 let opacity = 1 - Math.min(0.3, unitAngle);
 
+                if(this.isSelected){
+                    zpos = (this.data.position[2] + 10) - (unitAngle * 150) + 50;   
+                    opacity = 1.4; 
+                }                
+
                 this.data.opacity = opacity;
 
                 unitAngle = Math.min(Math.abs(angle / limit), 1);
@@ -115,43 +110,22 @@
                     height:this.data.diameter+'px',
                 };
             },
-            blur:function(blurVal){            
-                
-                 let parent = this;
-                // let brightness = " brightness(" + (parent.data.opacity * 100) + "%)";
-
-                // let refs = [
-                //     this.$refs.icon, 
-                //     this.$refs.circle,
-                //     this.$refs.title
-                // ];
-
-                // Velocity(refs,"finish");                
-
-                // Velocity(refs,{
-                //     blur:blurVal,
-                //     brightness:'50%',
-                // }, { duration: 1000});                
-
-               Velocity(this.$el,{
-                    vueBlur:blurVal,
-                }, { 
-                    duration: 1000,    
-                    progress: function(elements, complete, remaining, start, tweenValue) {
-                        parent.data.blur = complete * blurVal;
-                        parent.$forceUpdate();
-                    },
-                });                
-            },
             onClick:function(){
                 this.$parent.$emit('detail-select', this.$vnode.key);                
-                //this.blur(4);
             },
+            onMouseDown:function(){
+                this.isSelected = true;
+            },   
+            onMouseLeave:function(){
+                this.isSelected = false;                 
+            },                        
             onDetailSelect:function(index){
-             //   this.blur(4);
+                if(this.$vnode.key == index){
+                    this.isSelected = true;   
+                }
             },
             onDetailClose:function(index){
-            //    this.blur(0);
+                this.isSelected = false;   
             },            
         },
         mounted:function() {

@@ -47,3 +47,23 @@ export class Rectangle {
      var pi = Math.PI;
      return radians * (180/pi);
  }   
+
+ export function exponentialEasing (x, a){
+
+  var epsilon = 0.00001;
+  var min_param_a = epsilon;
+  var max_param_a = 1.0 - epsilon;
+  a = Math.max(min_param_a, Math.min(max_param_a, a));
+
+  if (a < 0.5){
+      // emphasis
+      a = 2.0*(a);
+      var y = Math.pow(x, a);
+      return y;
+  } else {
+      // de-emphasis
+      a = 2.0*(a-0.5);
+      var y = Math.pow(x, 1.0/(1-a));
+      return y;
+  }
+}

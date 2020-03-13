@@ -184,6 +184,8 @@
 
                 this.$emit('detail-close', this.selectedDetail);
 
+                this.$emit('stop-sounds');
+
                 this.detailViewOpen = false;
 
                 //Fade off detail view background
@@ -193,14 +195,9 @@
                     display: "none",
                     complete:function(){
                         parent.selectedDetail = null;
+                        parent.detailViewOpen = false;
                     }
                 });
-
-                // Velocity(this.$refs.backgroundSlider,{
-                //     blur:0
-                // }, { duration: 1000});
-
-                // this.userInputActivation();
             },  
             selectDetailView:function(id){
 
@@ -211,12 +208,6 @@
                     let parent = this;
 
                     this.initDetailView();
-//                    this.$emit('move-out', id);
-                    //Fade in detail view background
-
-                    // Velocity(this.$refs.backgroundSlider,{
-                    //     blur:5
-                    // }, { duration: 1000});
 
                     Velocity(this.$refs.detailScreen,{
                         opacity:1
