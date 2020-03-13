@@ -1,0 +1,333 @@
+{
+  "mainBackground": "resources/view_1/images/bg2.png",
+  "detailBackground":"resources/view_1/images/detail-bg.png",
+  "circleBackground": "resources/segment_circle.png",
+  "sectors":[
+    {
+      "comment":"------------------------------------- S1 --------------------------------------------",
+      "titleLatin":"Glaucidium passerinum",
+      "title":{
+        "lv":"APODZIŅŠ",
+        "ru":"ВОРОБЬИНЫЙ СЫЧ",
+        "en":"EURASIAN PYGMY-OWL"
+      },
+      "description":{
+        "lv":"Apodziņš ir vismazākais no pūču dzimtas putniem, kas dzīvo Eiropā. Latvijā samērā parasts ligzdotājs un nometnieks, bet slēptā dzīvesveida dēļ maz novērots. Parasti ir aktīvs krēslas stundās, agri no rīta un saulrieta laikā. Aktīvs arī dienas laikā, bet naktī ir mazaktīvs. Sastopams jauktu koku un skujkoku mežos, kur ligzdošanai pieejami dzeņu dobumi, daudz retāk ligzdošanai izmanto putnu būrīšus. Ziemā salīdzinoši bieži uzturas apdzīvotās vietās, kur medī zīlītes un zvirbuļus pie putnu barotavām.",
+        "ru":"Воробьиный сыч самая маленькая птица семейства сов в Европе. В Латвии сравнительно обычная гнездящаяся оседлая птица, но из–за скрытного образа жизни её редко можно увидеть. Обычно активная в сумерках, рано утром и на закате солнца. Активна также в дневное время, но малоактивна ночью. Встречается в смешанных и хвойных лесах, где для гнездования использует дупла дятлов. Реже для гнездования использует птичьи домики. Зимой сравнительно часто держится в населенных пунктах, где охотится на синиц и воробьёв у кормушек.",
+        "en":"The Eurasian pygmy owl is the smallest owl species living in Europe. A relatively common breeding, non-migratory bird, but due to its secretive lifestyle and small size, it is observed rather rarely. Usually active at dusk and dawn, and sometimes also during the day; not very active at night. Lives in mixed and coniferous forests where cavities made by woodpeckers are available for nesting. Can also use nest boxes. Eurasian pygmy owls can also be seen close to populated areas during winter, hunting small birds near bird feeders.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[230,40,5],
+        "iconImage":"resources/view_3/images/s1d.png",
+        "iconShadow":"resources/view_3/images/s1s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_3/images/s1d.png",
+        "transform":[560,420,0]
+      }
+    },
+    {
+      "comment":"------------------------------------- S9 --------------------------------------------",
+      "titleLatin":"Asio flammeus",
+      "title":{
+        "lv":"PURVA PŪCE",
+        "ru":"БОЛОТНАЯ СОВА",
+        "en":"SHORT-EARED OWL"
+      },
+      "description":{
+        "lv":"Latvijā reta ligzdotāja. Sastopama dažādās atklātās vietās – palieņu pļavās, zemajos purvos un līdzīgās vietās. Ligzdu ierīko uz zemes. Migrācijas laikā biežāk sastopama migrantu koncentrācijas vietās Kolkā (pavasarī) un Papē (rudenī). Gājputns. Pārziemo Rietumeiropā un Dienvideiropā. Regulāri, bet nelielā skaitā ziemo arī Latvijā.",
+        "ru":"В Латвии редкая гнездящаяся птица. Встречается на различных открытых местах – пойменных лугах, низинных болотах. Гнёзда устраивает на земле. Во время перелётов часто собирается в местах сосредоточения других мигрирующих птиц - у Колки (весной) и в Папе (осенью). Перелётная птица. Зимует в Западной и Южной Европе. Регулярно, но в небольшом количестве зимует также в Латвии.",
+        "en":"Very rare breeding species in Latvia. Mostly found in open areas – floodplains, mires, fields and similar areas. Builds its nest on the ground. Short-eared owls are more common during migration periods, when they sometimes can be observed in popular bird migration hotspots – Cape Kolka in spring and Pape in autumn.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[200,40,30],
+        "iconImage":"resources/view_3/images/s9d.png",
+        "iconShadow":"resources/view_3/images/s9s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_3/images/s9d.png",
+        "transform":[560,420,0]
+      }
+    },
+    {
+      "comment":"------------------------------------- S8 --------------------------------------------",
+      "titleLatin":"Tyto alba",
+      "title":{
+        "lv":"PLĪVURPŪCE",
+        "ru":"ОБЫКНОВЕННАЯ СИПУХА",
+        "en":"BARN OWL"
+      },
+      "description":{
+        "lv":"Pēdējais zināmais ligzdošanas gadījums atzīmēts 1951. gadā. Pēc tam novērota vienu reizi 1962. gadā, un vairāk nekā 30 gadus plīvurpūce Latvijā netika konstatēta. Domājams, ka šajā periodā plīvurpūces areāls bija sašaurinājies un attālinājies no Latvijas. Kopš tā laika pirmais novērojums bija 1996. gadā un vēl viens 1997. gadā. Savukārt 21. gs. pirmajā pusē zināmi 10 novērojumi. Ligzdo ēku bēniņos, mūru drupās, nišās, baznīcu torņos, arī vecu koku dobumos. Nometnieks, bet pirmajā dzīves gadā klejo. To apliecina arī fakts, ka trīs no 12 pēdējiem konstatētajiem putniem bija gredzenoti Vācijā, kas pierāda to ieklejošanu no izplatības areāla dienvidrietumiem.",
+        "ru":"Последний случай гнездования отмечен в 1951 году. После этого однократно наблюдалась в 1962 году, после чего более 30 лет обыкновенная сипуха в Латвии не отмечалась. Возможно, что в этот период ареал проживания обыкновенной сипухи сузился и отдалился от Латвии. Последующее наблюдение обыкновенной сипухи было в 1996 году, и ещё одно в 1997 году. В свою очередь в первой половине 21 века известны 10 наблюдений. Гнездится на чердаках зданий, в развалинах, нишах, башнях церквей, а также в дуплах старых деревьев. Оседлая птица, но в первый год жизни кочует. Об этом говорит тот факт, что три из 12 последних констатированных птиц были окольцованы в Германии, что свидетельствует о перемещении птиц с юго–запада ареала.",
+        "en":"Very rare breeding species in Latvia; the last breeding case was recorded in 1951. Often breeds in man-made structures – attics, ruins, cavities in walls, and church towers, but in tree cavities as well. After a recorded sighting of a single bird in 1962, there was a period of more than 30 years during which not a single barn owls was seen in Latvia. It is assumed that during this period, the European breeding range of the barn owl had contracted, with its northern edge moving southward. The next sightings of the barn owl were in 1996 and 1997, and 10 more have occurred since 2000. Barn owls are sedentary, non-migratory birds, but in their first year, young birds may venture afield for quite long distances. It has been confirmed that 3 of the last 12 birds recorded in Latvia were ringed in Germany.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[200,40,20],
+        "iconImage":"resources/view_3/images/s8d.png",
+        "iconShadow":"resources/view_3/images/s8s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_3/images/s8d.png",
+        "transform":[560,420,0]
+      }
+    },
+    {
+      "comment":"------------------------------------- S5 --------------------------------------------",
+      "titleLatin":"Bubo bubo",
+      "title":{
+        "lv":"ŪPIS",
+        "ru":"ОБЫКНОВЕННЫЙ ФИЛИН",
+        "en":"EURASIAN EAGLE-OWL"
+      },
+      "description":{
+        "lv":"Ūpis ir vislielākais no Latvijas pūču dzimtas putniem. Latvijā rets ligzdotājs un nometnieks. Ligzdo ap 40–50 pāru. Sastopams pārsvarā skujkoku vai jauktu koku mežos gar jūras piekrasti, pie lielākiem ezeriem un piepilsētu mežos. Ūpis ligzdo uz zemes, visbiežāk pie koka saknēm. Dažreiz ūpis ligzdo arī citu putnu ligzdās. Ūpis ir aktīvs krēslas un nakts stundās. Pārsvarā medī zīdītājus, piemēram, peles, žurkas, zaķus, ka arī putnus, piemēram, vārnas, pīles, zosis.",
+        "ru":"Филин самая большая в Латвии птица семейства сов. Оседлый; редкий гнездящийся вид. Отмечено 40 – 50 гнездящихся пар. Встречается в основном в приморских хвойных или смешанных лесах, у больших озёр, а также в пригородных лесах. Гнездится на земле, чаще у корней деревьев, иногда в гнёздах других птиц. Активен в сумерках и ночью. В основном охотится на млекопитающих - мышей, крыс, зайцев, а также на птиц, например, ворон, уток, гусей.",
+        "en":"The Eurasian eagle-owl is the largest owl species in Latvia. It is a rare breeding, non-migratory bird with an estimated 40-50 breeding pairs. They mostly live in coniferous or mixed forests along the sea coast, near large lakes, or close to large cities. Builds its nest on the ground, but sometimes also above ground in nests made by other large birds. Mostly active at dusk and night. The diet of the eagle-owl consists of small mammals, such as mice, rats and hares, but it can also prey on birds like crows, ducks and geese.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[200,40,20],
+        "iconImage":"resources/view_3/images/s12d.png",
+        "iconShadow":"resources/view_3/images/s12s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_3/images/s12d.png",
+        "transform":[560,420,0]
+      }
+    },
+    {
+      "comment":"------------------------------------- S7 --------------------------------------------",
+      "titleLatin":"Strix aluco",
+      "title":{
+        "lv":"MEŽA PŪCE",
+        "ru":"СЕРАЯ НЕЯСЫТЬ",
+        "en":"TAWNY OWL"
+      },
+      "description":{
+        "lv":"Parasta ligzdotāja un nometniece. Latvijā visbiežāk sastopamā pūču suga. Apdzīvo dažādus mežus, apdzīvotas vietas, parkus, kapsētas. Visbiežāk sastopama kultūrainavā, kur lauki mijas ar viensētām un mazām mežaudzēm vai atsevišķiem veciem kokiem. Ligzdo koku dobumos, cauros stumbros, piemērotos būros, dažkārt ēku spraugās, pažobelēs vai ēku drupās. Meža pūce ir aktīva naktī. Retos gadījumos medī arī dienā. Pārsvarā medī grauzējus, arī citus nelielus dzīvniekus, ieskaitot putnus, vardes, ķirzakas, vaboles un sliekas.",
+        "ru":"Обычная гнездящаяся оседлая птица Латвии; наиболее часто встречающийся вид сов. Живёт в различных лесах, обжитых местах, парках, на кладбищах. В наибольшей численности встречается в окультуренных ландшафтах, где поля сменяются хуторами, небольшими рощами или отдельными старыми деревьями. Гнездится в дуплах деревьев, полых стволах, «совешниках», иногда в щелях зданий, под карнизами, в развалинах. Серая неясыть активна в ночное время, но в редких случаях и в дневное время. Охотится в основном на грызунов и других небольших животных, в том числе птиц, лягушек, ящериц, жуков и червей.",
+        "en":"A common breeding, non-migratory bird in Latvia. The most widespread owl species in Latvia. Lives in different types of forests, but also in parks and cemeteries located in urban areas. Prefers open, sometimes agricultural landscapes with smaller patches of forests, farmsteads, or even single groups of old trees. Builds its nest in large tree cavities and hollow tree stumps, as well as in suitable nest boxes; less often in suitable cavities in man-made structures. The tawny owl is active during night – very rarely does it hunt in daytime. Its diet consists mainly of small rodents, but it also preys on other small animals – birds, frogs, lizards, beetles and earthworms.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[200,40,30],
+        "iconImage":"resources/view_3/images/s7d.png",
+        "iconShadow":"resources/view_3/images/s7s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_3/images/s7d.png",
+        "transform":[560,420,0]
+      }
+    },
+    {
+      "comment":"------------------------------------- S2 --------------------------------------------",
+      "titleLatin":"Asio otus",
+      "title":{
+        "lv":"AUSAINĀ PŪCE",
+        "ru":"УШАСТАЯ СОВА",
+        "en":"LONG-EARED OWL"
+      },
+      "description":{
+        "lv":"Latvijā samērā parasta ligzdotāja. Parasta rudens migrācijas laikā, īpaši Latvijas rietumu daļā. Skaits gadu no gada svārstās. Sastopama lauku ainavā ar mežu puduriem, koku ieskautās viensētās, retāk lielākos mežos, parasti izcirtumu tuvumā. Ligzdo galvenokārt vārnu, retāk žagatu vai klijānu vecajās ligzdās. Aktīva nakts laikā. Pārsvarā medī sīkos grauzējus. Gājputns. Pārziemo citviet Eiropā. Bieži paliek ziemot arī Latvijā, bet bargās ziemās daudzas iet bojā. Ziemas periodā bieži uzturas grupās.",
+        "ru":"В Латвии сравнительно обычная гнездящаяся птица. Обычна осенью на перелетах, особенно в западной части Латвии. Встречается в сельской местности c рощами, возле хуторов, окруженных деревьями, реже больших лесах, главным образом вблизи вырубок. Гнездится преимущественно в старых гнёздах ворон, реже сорок или канюков. Активна в ночное время. Охотится в основном на мелких грызунов. Перелётная птица. Зимует в других частях Европы. Нередко остается на зимовку в Латвии, однако в суровые зимы много птиц погибает. В зимний период часто держатся группами.",
+        "en":"A common breeding species in Latvia. Also common during the autumn migration period, especially in western Latvia. Numbers can fluctuate from year to year. Inhabits rural landscapes with fields and small patches of forests, and farmsteads with groups of trees. Much rarer in larger forests near clear-cuts or other open areas. Uses old nests built by crows, magpies or buzzards. Active only at night. Its diet consists mainly of small rodents. The long-eared owl is a migratory bird that winters in Europe. Sometimes it overwinters in Latvia, but many can perish in severe winters. Can roost in large flocks during the winter months.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[200,50,20],
+        "iconImage":"resources/view_3/images/s2d.png",
+        "iconShadow":"resources/view_3/images/s2s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_3/images/s2d.png",
+        "transform":[560,420,0]
+      }
+    },
+    {
+      "comment":"------------------------------------- S4 --------------------------------------------",
+      "titleLatin":"Aegolius funereus",
+      "title":{
+        "lv":"BIKŠAINAIS APOGS",
+        "ru":"МОХНОНОГИЙ СЫЧ",
+        "en":"BOREAL OWL"
+      },
+      "description":{
+        "lv":"Latvijā samērā parasts ligzdotājs un nometnieks. Rudenī daļa ceļo uz dienvidiem. Sastopams galvenokārt lielākos skujkoku mežu masīvos, kur apdzīvo vecas un vidēja vecuma audzes. Ligzdo galvenokārt melnās dzilnas dobumos, arī piemērotos būros. Aktīvs naktī. Medī pārsvarā sīkos grauzējus.",
+        "ru":"В Латвии сравнительно обычная гнездящаяся оседлая птица. Осенью часть птиц улетает на юг. Встречается главным образом в больших массивах хвойных лесов старого и среднего возраста. Гнездится птица главным образом в дуплах желны, а также в «совешниках».  Активна ночью. Охотится в основном на мелких грызунов.",
+        "en":"A relatively common breeding species in Latvia. Partly migratory – many migrate south in autumn. Inhabits larger areas of coniferous forests, usually in inner areas and aged stands. Builds its nest predominantly in cavities made by the black woodpecker, but sometimes uses suitable nest boxes. Active at night. Its diet consists mainly of small rodents.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[200,40,30],
+        "iconImage":"resources/view_3/images/s4d.png",
+        "iconShadow":"resources/view_3/images/s4s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_3/images/s4d.png",
+        "transform":[560,420,0]
+      }
+    },
+    {
+      "comment":"------------------------------------- S6 --------------------------------------------",
+      "titleLatin":"Athene noctua",
+      "title":{
+        "lv":"MĀJAS APOGS",
+        "ru":"ДОМОВЫЙ СЫЧ",
+        "en":"LITTLE OWL"
+      },
+      "description":{
+        "lv":"19. gs. beigās un 20. gs. sākumā suga bija bieži sastopama Latvijā. Kopš 1986. gada zināmi tikai trīs novērojumi. Mūsdienās ligzdošana ir maz ticama. Sastopams lauku ainavā ar ēkām un lieliem, veciem kokiem. Ligzdo ēku sienu un jumtu spraugās, vecu koku dobumos. Nometnieks.",
+        "ru":"В Латвии эта птица часто встречалась в конце 19 - начале 20 столетий. После 1986 года имеется только три достоверных наблюдения. В настоящее время гнездование маловероятно. Встречается в сельских ландшафтах со строениями и большими старыми деревьями. Гнездится в щелях стен и крыш, дуплах старых деревьев. Оседлый вид.",
+        "en":"Previously a relatively common species in Latvia, at least up until the end of the 19th century and the beginning of the 20th. Now very rare with only three recorded sightings since 1986. Unlikely to currently be present as a breeding species in Latvia. Inhabits open, rural landscapes with man-made structures and old trees. Builds its nest in cavities in building walls and roofs, or in old hollow trees. The little owl is a non-migratory bird.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[200,40,20],
+        "iconImage":"resources/view_3/images/s6d.png",
+        "iconShadow":"resources/view_3/images/s6s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_3/images/s6d.png",
+        "transform":[560,420,0]
+      }
+    },
+    {
+      "comment":"------------------------------------- S13 --------------------------------------------",
+      "titleLatin":"Strix nebulosa",
+      "title":{
+        "lv":"ZIEMEĻPŪCE",
+        "ru":"БОРОДАТАЯ НЕЯСЫТЬ",
+        "en":"GREAT GREY OWL"
+      },
+      "description":{
+        "lv":"Latvija ir Eirāzijas populācijas izplatības areāla dienvidrietumi. Agrāk, 19. gs., bijusi reta ieceļotāja, tomēr no šī perioda zināms tikai viens novērojums – viens īpatnis nošauts Lielvārdes apkārtnē 1873. gada 24. februārī. Vēl divi īpatņi nošauti 20. gs. sākumā – 1903. gada augustā Jaunbrenguļu muižas mežos Valmieras apkārtnē un 1910. gada 20. aprīlī Lubānas apkārtnē. Latvijas Dabas muzejā atrodas pirmā un trešā putna izbāžņi. Pēc tam ziemeļpūce Latvijā nav konstatēta, līdz 2006. gadā atkal bijuši divi novērojumi Austrumlatvijā. Visi pēdējie novērojumi bijuši Austrumlatvijā, gar Krievijas robežu. Iespējams, ka ziemeļpūces atgriežanās Latvijā saistīta ar sugas areāla paplašināšanos uz rietumiem vai arī augusi novērotāju aktivitāte, to speciāli meklējot.",
+        "ru":"Латвия является юго–западной периферией ареала вида в Евразии. До 19 века была редкой залетной птицей, но конкретно известен только один случай, когда одна особь была застрелена в окрестностях Лиелварде 24 февраля 1873 года. Ещё две особи были застрелены в начале 20 столетия – в августе 1903 года в лесах поместья Яунбренгулю в окрестностях Валмиеры и 20 апреля 1910 года в окрестностях Лубаны. В Латвийском музее природы находятся чучела первой и третьей птиц. После этого бородатая неясыть в Латвии не наблюдалась, однако в 2006 года отмечена дважды. Эти наблюдения были в Восточной Латвии у границы с Россией. Возможно, «возвращение» бородатой неясыти связано с распространением птиц на запад или активизацией целенаправленных поисков орнитологов.",
+        "en":"Latvia is located at the south-western edge of the species’ breeding range. The great grey owl was considered a rare vagrant species during the 19th century, but there is only a single known observation from that period – one bird was shot near Lielvārde on February 24, 1873. Two more birds were shot in the early 20th century – near Valmiera in the forests of Jaunbrenguļi manor in August 1903, and near Lubāna on April 20, 1910. Specimens of the first and third bird mentioned above are in the collection of the Latvian Museum of Natural History. The great grey owl had not been observed in Latvia up until 2006, when two sightings were made in eastern Latvia. All subsequent sightings have also been in the east along the Russian border. It is possible that the return of the great grey owl to Latvia is related to a westward expansion of the species’ breeding range, but it is also possibly just a result of increased observer activity and targeted searches for the species.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[200,40,30],
+        "iconImage":"resources/view_3/images/s13d.png",
+        "iconShadow":"resources/view_3/images/s13s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_3/images/s13d.png",
+        "transform":[560,420,0]
+      }
+    },
+    {
+      "comment":"------------------------------------- S11 --------------------------------------------",
+      "titleLatin":"Strix uralensis",
+      "title":{
+        "lv":"URĀLPŪCE",
+        "ru":"ДЛИННОХВОСТАЯ НЕЯСЫТЬ",
+        "en":"URAL OWL"
+      },
+      "description":{
+        "lv":"Latvijas austrumu daļā samērā parasta ligzdotāja un nometniece. Daugavas kreisā krasta mežos reta, bet Kurzemē līdz 2010. gadam novērojumi nebija zināmi. Latvijā atrodas urālpūces Eiropas izplatības areāla dienvidu robeža, aiz kuras suga ir sastopama ļoti reti. Piemēram, Lietuvā urālpūce ir rets putns. Ziemās, kad barošanās ir apgrūtināta, urālpūces mēdz klejot un reti, bet regulāri ieklīst arī Rīgā. Sastopama jauktu koku mežos, parasti izcirtumu un citu klajumu tuvumā. Ligzdo lielos koku dobumos, pusdobumos, lielās citu putnu ligzdās, arī piemērotos būros.",
+        "ru":"В Восточной части Латвии сравнительно обычная гнездящаяся оседлая птица.  На левобережье Даугавы редкая птица в лесах, а в Курземе не наблюдалась до 2010 года. По Латвии проходит южная граница ареала длиннохвостой неясыти в Европе, вне которой вид встречается очень редко. Например, в Литве длиннохвостая неясыть очень редкая птица. Зимой, когда с питанием становится трудно, птица начинает мигрировать и залетает даже в Ригу. Встречается в смешанных лесах, обычно по вырубкам и другим открытых пространствам. Гнездится чаще в дуплах больших деревьев, гнёздах других крупных птиц, а также искусственных гнездовьях – «совешниках».",
+        "en":"A common breeding species in eastern Latvia. Much rarer south of the Daugava River and very rare in Kurzeme, where it was first observed in 2010. Latvia is at the south-western edge of the species’ range, and even in Lithuania it is already a very rare bird. In harsh winters, when it is difficult to find food, Ural owls are forced to venture far afield, although rarely they may be spotted in Riga. Ural owls generally live in mixed forests, usually near forest glades and clear-cuts. They nest in large tree cavities and stumps, in nests made by other birds, or suitable nest boxes.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[200,45,20],
+        "iconImage":"resources/view_3/images/s11d.png",
+        "iconShadow":"resources/view_3/images/s11s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_3/images/s11d.png",
+        "transform":[560,420,0]
+      }
+    },
+    {
+      "comment":"------------------------------------- S3 --------------------------------------------",
+      "titleLatin":"Bubo scandiacus",
+      "title":{
+        "lv":"BALTĀ PŪCE",
+        "ru":"БЕЛАЯ СОВА",
+        "en":"SNOWY OWL"
+      },
+      "description":{
+        "lv":"Agrāk, 19. gs., Latvijā bijusi biežāk sastopama, tagad ļoti reta ieceļotāja rudenī un ziemā. Kopš 1975. gada zināmi astoņi novērojumi. Iespējams, baltā pūce sasniedz Latviju galvenokārt invāziju gados. Latvijai tuvākās baltās pūces ligzdošanas vietas ir Skandināvijas ziemeļos un Krievijas tundrā.",
+        "ru":"В Латвии до 19 века встречалась чаще, в настоящее время очень редкий залетный вид осенью и зимой. С 1975 года известно восемь наблюдений. Возможно, белая сова достигает территории Латвии в периоды инвазий. Ближайшие к Латвии места гнездования белой совы - на севере Скандинавии и в тундрах России.",
+        "en":"The snowy owl was more common in Latvia during the 19th century; nowadays it is a very rare vagrant species in autumn and winter periods, with only 8 observations since 1975. It is most likely that snowy owls reach Latvia only in irruption years. Its closest breeding areas to Latvia are in northern Scandinavia and the Russian tundra.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[200,45,20],
+        "iconImage":"resources/view_3/images/s3d.png",
+        "iconShadow":"resources/view_3/images/s3s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_3/images/s3d.png",
+        "transform":[560,420,0]
+      }
+    },
+    {
+      "comment":"------------------------------------- S10 --------------------------------------------",
+      "titleLatin":"Surnia ulula",
+      "title":{
+        "lv":"SVĪTRAINĀ PŪCE",
+        "ru":"ЯСТРЕБИНАЯ СОВА",
+        "en":"NORTHERN HAWK OWL"
+      },
+      "description":{
+        "lv":"19. gs. svītrainā pūce Latvijā bijusi ligzdojoša suga, taču mūsdienās kā ligzdotāja vairs nav sastopama. Pēdējās desmitgadēs Latvijā sastopama kā reta, bet regulāra ieceļotāja un ziemotāja, turklāt tieši pēdējos gados svītrainās pūces tiek novērotas katru ziemu. Ligzdo Norvēģijā, Zviedrijā, Somijā un Krievijas ziemeļrietumos.",
+        "ru":"В 19 столетии ястребиная сова в Латвии была гнездящейся птицей, однако в настоящее время больше не гнездится. Таким образом Латвия и Эстония являются единственными государствами в Европе, где ястребиная сова исчезла как гнездящаяся птица (в Эстонии в последний раз гнездование наблюдали в 1974 году). В последние десятилетия в Латвии редко, но регулярно залетает и зимует, причем в последние годы эту птицу можно наблюдать каждую зиму. В Европе гнездится в Норвегии, Швеции, Финляндии и северо–западе России.",
+        "en":"The northern hawk owl was a breeding species in Latvia in the 19th century, but there are no known breeding cases today. Together with Estonia, where the last breeding case was noted in 1974, Latvia is one of two countries in Europe where the northern hawk owl has become extinct as a breeding species. In Europe, it remains a breeding species in Norway, Sweden, Finland and northwestern Russia. It is now a rare but regular vagrant in autumn and winter, with at least one recorded sighting per year in Latvia.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[200,40,20],
+        "iconImage":"resources/view_3/images/s10d.png",
+        "iconShadow":"resources/view_3/images/s10s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_3/images/s10d.png",
+        "transform":[560,420,0]
+      }
+    },
+    {
+      "comment":"------------------------------------- S5 --------------------------------------------",
+      "titleLatin":"Otus scops",
+      "title":{
+        "lv":"MAZĀ AUSAINĀ PŪCĪTE",
+        "ru":"СПЛЮШКА",
+        "en":"EURASIAN SCOPS-OWL"
+      },
+      "description":{
+        "lv":"Latvijā vienīgais novērojums 1920. gada 20. augustā, kad viens īpatnis iegūts Rembates apkārtnē. Tā putna izbāzni Jūs redzat vitrīnā. Sastopama Eiropas dienvidos, Kaukāzā, Rietumsibīrijas dienvidos, Vidusāzijā, Tuvajos Austrumos un Ziemeļrietumāfrikā.",
+        "ru":"В Латвии известно единственное наблюдение, когда 20 августа 1920 года одну особь добыли в окрестностях Рембате. Чучело этой птицы в настоящее время находится в витрине. Встречается на Юге Европы, Кавказе, юге Западной Сибири, Средней Азии, Ближнем Востоке и Северо–Западной части Африки.",
+        "en":"One observation in Latvia – a single bird was obtained in august 20, 1920, in the Rembate area. This specimen is on display here. The Eurasian scops owl’s breeding range covers southern Europe, the Caucasus, the southern part of western Siberia, the Middle East, and northern Africa.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[200,40,20],
+        "iconImage":"resources/view_3/images/s5d.png",
+        "iconShadow":"resources/view_3/images/s5s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_3/images/s5d.png",
+        "transform":[560,420,0]
+      }
+    }
+
+  ]
+}

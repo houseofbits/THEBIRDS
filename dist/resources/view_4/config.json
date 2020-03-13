@@ -1,0 +1,183 @@
+{
+  "mainBackground": "resources/view_1/images/bg2.png",
+  "detailBackground":"resources/view_1/images/detail-bg.png",
+  "circleBackground": "resources/segment_circle.png",
+  "sectors":[
+    {
+      "comment":"------------------------------------- S3 --------------------------------------------",
+      "titleLatin":"Tetrao urogallus",
+      "title":{
+        "lv":"MEDNIS",
+        "ru":"ГЛУХАРЬ",
+        "en":"CAPERCAILLIE"
+      },
+      "description":{
+        "lv":"Klusos priežu mežos, mazāk jauktu koku mežos vai augstajos purvos ir samērā parasts ligzdotājs un nometnieks. Medņus negatīvi ietekmē kailcirtes. Tās rada lielus robus starp medņu apdzīvotajām teritorijām, jo sadrumstalo tās sīkās vienībās. Populāciju ietekmē arī dabiskie ienaidnieki (plēsēji) un cilvēku aktivitātes (ogotāji). 2002. gadā Latvijā bija 412 medņu riesti ar 2096 gaiļiem un 2561 vistu.",
+        "ru":"Сравнительно обычный гнездящийся оседлый вид. Населяет сосновые, реже смешанные леса или верховые болота. Вырубки негативно влияют на численность глухаря. Они создают большие разрывы между гнездовыми территориями и фрагментируют их. Сборщики ягод и хищники также оказывают негативное воздействие на численность вида. В 2002 году в Латвии насчитывалось 412 токовища с 2096 самцами и 2561 самкой.",
+        "en":"A locally relatively common breeding species in undisturbed wet pine forests, or more rarely, in mixed forests or raised bogs. Non-migratory. The capercaillie is negatively affected by forest clear-cutting in that the activity creates large gaps between territories inhabited by the bird, leading to a very fragmented population that is vulnerable to other disturbances like predators and other human activities.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[300,5,20],
+        "iconImage":"resources/view_4/images/s3d.png",
+        "iconShadow":"resources/view_4/images/s3s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_4/images/s3d.png",
+        "transform":[560,420,0]
+      }
+    },
+    {
+      "comment":"------------------------------------- S7 --------------------------------------------",
+      "titleLatin":"Tetrao tetrix",
+      "title":{
+        "lv":"RUBENIS (TETERIS)",
+        "ru":"ТЕТЕРЕВ",
+        "en":"BLACK GROUSE"
+      },
+      "description":{
+        "lv":"Latvijā vietām samērā parasts ligzdotājs un nometnieks. 20. gs. 90. gados Latvijā ligzdoja 5000–10 000 pāru. Par faktoriem, kas nosaka skaita samazināšanos, uzskata biotopu degradāciju (īpaši purvu nosusināšanu) un plēsīgo dzīvnieku (piemēram, lapsu, jenotsuņu un caunu) savairošanos.",
+        "ru":"В Латвии местами является обычным гнездящимся оседлым видом. В девяностых годах 20 века в Латвии гнездилось 5000-10000 пар. Факторами, влияющими на сокращение численности считаются деградация биотопов (особенно осушение болот) и увеличение количества хищных животных (например, лис, енотовидных собак и куниц).",
+        "en":"Locally common breeding, non-migratory species in Latvia. There were 5000-10000 breeding pairs at the end of the 20th century. Habitat degradation, particularly the draining of peatlands, and an increased number of predators (foxes, raccoon dogs and martens) affect black grouse numbers.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[300,0,30],
+        "iconImage":"resources/view_4/images/s7d.png",
+        "iconShadow":"resources/view_4/images/s7s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_4/images/s7d.png",
+        "transform":[560,420,0]
+      }
+    },
+    {
+      "comment":"------------------------------------- S1 --------------------------------------------",
+      "titleLatin":"Lagopus lagopus",
+      "title":{
+        "lv":"BALTIRBE",
+        "ru":"БЕЛАЯ КУРОПАТКА",
+        "en":"WILLOW GROUSE"
+      },
+      "description":{
+        "lv":"Ļoti reta ligzdotāja un nometniece. Sastopama Latvijas ziemeļu un austrumu daļas purvos. Pēdējos gados konkrētu ziņu par sugas sastopamību nav. Siltu un bezsniega ziemu dēļ, iespējams, ir pilnībā izzudusi no Latvijas teritorijas.",
+        "ru":"Очень редкий гнездящийся оседлый вид. Встречается на болотах в северной и восточной частях Латвии. В последние годы никаких достоверных сведений о встречаемости вида нет. Из-за теплых и бесснежных зим, возможно, полностью исчезла с территории Латвии.",
+        "en":"Very rare breeding, non-migratory species in raised bogs in N and NE parts of the country. There have been no confirmed sightings in recent years. Due to warmer winters with reduced snow cover, it is possible that the willow grouse has become extinct in Latvia.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[300,-15,25],
+        "iconImage":"resources/view_4/images/s1d.png",
+        "iconShadow":"resources/view_4/images/s1s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_4/images/s1d.png",
+        "transform":[560,420,0]
+      }
+    },
+    {
+      "comment":"------------------------------------- S2 --------------------------------------------",
+      "titleLatin":"Perdix perdix",
+      "title":{
+        "lv":"LAUKIRBE",
+        "ru":"СЕРАЯ КУРОПАТКА",
+        "en":"GREY PARTRIDGE"
+      },
+      "description":{
+        "lv":"Latvijā samērā reta ligzdotāja un nometniece. Biežāk sastopama lauku ainavā, retāk pilsētu un ciemu nomalēs. Pēc bargām ziemām skaits var ievērojami samazināties. Slēptā dzīvesveida dēļ laukirbi ir grūti novērot un tāpēc, iespējams, ka to Latvijā ir vairāk.",
+        "ru":"В Латвии сравнительно редкий гнездящийся оседлый вид. Чаще встречаются в сельской местности, реже на окраинах городов и поселков. После суровых зим количество может значительно сократиться. Из-за скрытного образа жизни куропаток сложно обнаружить и, возможно, она в Латвии встречается чаще, чем считается.",
+        "en":"A relatively rare breeding, non-migratory species. Inhabits mostly farmland, less often the outskirts of villages and cities. Their numbers can significantly decrease after severe winters. They are difficult to observe due to their secretive behaviour, and it is quite possible that they are actually more widespread in Latvia than indicated.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[300,5,20],
+        "iconImage":"resources/view_4/images/s2d.png",
+        "iconShadow":"resources/view_4/images/s2s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_4/images/s2d.png",
+        "transform":[560,420,0]
+      }
+    },
+    {
+      "comment":"------------------------------------- S4 --------------------------------------------",
+      "titleLatin":"Bonasa bonasia",
+      "title":{
+        "lv":"MEŽIRBE",
+        "ru":"РЯБЧИК",
+        "en":"HAZEL GROUSE"
+      },
+      "description":{
+        "lv":"Latvijas mežos parasta ligzdotāja un nometniece, kas sastopama dažādu mežu tipos. Pēdējos gados skaits ir samazinājies.",
+        "ru":"В латвийских лесах обычный гнездящийся оседлый вид, обитающий в разных типах леса. В последние годы численность сократилась.",
+        "en":"A common breeding, non-migratory species. Inhabits different types of forests. In recent years the number of breeding pairs has declined.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[300,5,20],
+        "iconImage":"resources/view_4/images/s4d.png",
+        "iconShadow":"resources/view_4/images/s4s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_4/images/s4d.png",
+        "transform":[560,420,0]
+      }
+    },
+    {
+      "comment":"------------------------------------- S5 --------------------------------------------",
+      "titleLatin":"Coturnix coturnix",
+      "title":{
+        "lv":"PAIPALA",
+        "ru":"ПЕРЕПЕЛ",
+        "en":"COMMON QUAIL"
+      },
+      "description":{
+        "lv":"Latvijā skaits ievērojami svārstās pa gadiem. Dažos gados var būt reta ligzdotāja, bet citos – samērā bieža. Paipalu ir ļoti grūti novērot, jo tā cenšas noslēpties garajā zālē. Lai izvairītos no plēsējiem, tā skrien, nevis lido. Tomēr viegli konstatējama un nav sajaucama pēc raksturīgās dziesmas. Parasti dzirdama vakaros un naktīs. Pārziemo.",
+        "ru":"В Латвии количество значительно колеблется по годам. В некоторые года может гнездиться в малом, а в других – в довольно большом количестве. Перепела очень трудно увидить, так как он при опасности старается спрятаться в высокой растительности. Чтобы избежать встречи c хищниками, старается убегать, а не взлетать. Однако вид легко обнаружить по характерной песне по вечерам и ночью. Зимует в Африке.",
+        "en":"The number of breeding birds can fluctuate significantly from year to year – some years the common quail is relatively widespread in Latvia, while in other years it is very rare. They are difficult to observe as they live and hide in long grass and escape potential danger by running, not flying, away. The bird’s characteristic song, which can be head in the late evening and at night, is the easiest way to detect the presence of the species. The common quail is migratory and winters in Africa.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[300,-5,20],
+        "iconImage":"resources/view_4/images/s5d.png",
+        "iconShadow":"resources/view_4/images/s5s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_4/images/s5d.png",
+        "transform":[560,420,0]
+      }
+    },
+    {
+      "comment":"------------------------------------- S6 --------------------------------------------",
+      "titleLatin":"Tetrao urogallus x Tetrao tetrix",
+      "title":{
+        "lv":"RAĶELIS",
+        "ru":"МЕЖНЯК",
+        "en":"RACKELWILD"
+      },
+      "description":{
+        "lv":"Raķelis ir divu sugu – medņa un rubeņa –  krustojums jeb hibrīds. Biežāk rodas, ja sapārojas medņa mātīte ar rubeņa tēviņu. Raķelis ir neauglīgs. Tā ārējā izskatā ir gan medņa, gan rubeņa raksturīgākās pazīmes. Raķeļi sastopami ļoti reti. Tos izdodas pamanīt tikai rubeņu vai medņu riesta laikā un vietā.",
+        "ru":"Межняк – природный гибрид тетерева и глухаря, не способный к репродукции. Встречаются довольно редко. Среди гибридов преобладают самцы, среди которых некоторые больше похожи на глухарей, другие - на тетеревов. Сходство с каким-либо из этих двух видов зависит от того, к какому виду принадлежала самка.",
+        "en":"The rackelwild is a very rare hybrid between the capercaillie and the black grouse. In most cases it is a result of a capercaillie female mating with a black grouse male. This hybrid is infertile and unable to produce offspring. In appearance, the rackelwild has features of both parent species. They are found around capercaillie or black grouse courting grounds.",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[340,-15,25],
+        "iconImage":"resources/view_4/images/s6d.png",
+        "iconShadow":"resources/view_4/images/s6s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_4/images/s6d.png",
+        "transform":[560,420,0]
+      }
+    }
+
+  ]
+}

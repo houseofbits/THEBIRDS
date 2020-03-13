@@ -1,0 +1,35 @@
+{
+  "mainBackground": "resources/view_1/images/bg2.png",
+  "detailBackground":"resources/view_1/images/detail-bg.png",
+  "circleBackground": "resources/segment_circle.png",
+  "sectors": [
+    {
+      "comment":"------------------------------------- S1 --------------------------------------------",
+      "titleLatin":"",
+      "title":{
+        "lv":"",
+        "ru":"",
+        "en":""
+      },
+      "description":{
+        "lv":"",
+        "ru":"",
+        "en":"",
+        "transform":[20,380]
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[300,50,20],
+        "iconImage":"resources/view_1/images/s11d.png",
+        "iconShadow":"resources/view_1/images/s11s.png"
+      },
+      "detailImage":{
+        "image":"resources/view_1/images/s11d.png",
+        "transform":[560,420,0]
+      }
+    }
+
+
+
+  ]
+}
