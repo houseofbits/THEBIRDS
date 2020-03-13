@@ -1,35 +1,439 @@
 {
   "mainBackground": "resources/view_1/images/bg2.png",
-  "detailBackground":"resources/view_1/images/detail-bg.png",
+  "detailBackground": "resources/view_1/images/detail-bg.png",
   "circleBackground": "resources/segment_circle.png",
   "sectors": [
-    {
-      "comment":"------------------------------------- S1 --------------------------------------------",
-      "titleLatin":"",
-      "title":{
-        "lv":"",
-        "ru":"",
-        "en":""
+      {
+          "comment": "----------------------- S1 ------------------------------",
+          "titleLatin": "",
+          "title": {
+              "lv": "",
+              "ru": "",
+              "en": ""
+          },
+          "description": {
+              "lv": "",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  50,
+                  20
+              ],
+              "iconImage": "resources/view_5/images/s1d.png",
+              "iconShadow": "resources/view_5/images/s1s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_5/images/s1d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          }
       },
-      "description":{
-        "lv":"",
-        "ru":"",
-        "en":"",
-        "transform":[20,380]
+      {
+          "comment": "----------------------- S2 ------------------------------",
+          "titleLatin": "",
+          "title": {
+              "lv": "",
+              "ru": "",
+              "en": ""
+          },
+          "description": {
+              "lv": "",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  50,
+                  20
+              ],
+              "iconImage": "resources/view_5/images/s2d.png",
+              "iconShadow": "resources/view_5/images/s2s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_5/images/s2d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          }
       },
-      "main":{
-        "diameter":280,
-        "iconTransform":[300,50,20],
-        "iconImage":"resources/view_1/images/s11d.png",
-        "iconShadow":"resources/view_1/images/s11s.png"
+      {
+          "comment": "----------------------- S3 ------------------------------",
+          "titleLatin": "",
+          "title": {
+              "lv": "",
+              "ru": "",
+              "en": ""
+          },
+          "description": {
+              "lv": "",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  50,
+                  20
+              ],
+              "iconImage": "resources/view_5/images/s3d.png",
+              "iconShadow": "resources/view_5/images/s3s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_5/images/s3d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          }
       },
-      "detailImage":{
-        "image":"resources/view_1/images/s11d.png",
-        "transform":[560,420,0]
+      {
+          "comment": "----------------------- S4 ------------------------------",
+          "titleLatin": "",
+          "title": {
+              "lv": "",
+              "ru": "",
+              "en": ""
+          },
+          "description": {
+              "lv": "",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  50,
+                  20
+              ],
+              "iconImage": "resources/view_5/images/s4d.png",
+              "iconShadow": "resources/view_5/images/s4s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_5/images/s4d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          }
+      },
+      {
+          "comment": "----------------------- S5 ------------------------------",
+          "titleLatin": "",
+          "title": {
+              "lv": "",
+              "ru": "",
+              "en": ""
+          },
+          "description": {
+              "lv": "",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  50,
+                  20
+              ],
+              "iconImage": "resources/view_5/images/s5d.png",
+              "iconShadow": "resources/view_5/images/s5s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_5/images/s5d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          }
+      },
+      {
+          "comment": "----------------------- S6 ------------------------------",
+          "titleLatin": "",
+          "title": {
+              "lv": "",
+              "ru": "",
+              "en": ""
+          },
+          "description": {
+              "lv": "",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  50,
+                  20
+              ],
+              "iconImage": "resources/view_5/images/s6d.png",
+              "iconShadow": "resources/view_5/images/s6s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_5/images/s6d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          }
+      },
+      {
+          "comment": "----------------------- S7 ------------------------------",
+          "titleLatin": "",
+          "title": {
+              "lv": "",
+              "ru": "",
+              "en": ""
+          },
+          "description": {
+              "lv": "",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  50,
+                  20
+              ],
+              "iconImage": "resources/view_5/images/s7d.png",
+              "iconShadow": "resources/view_5/images/s7s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_5/images/s7d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          }
+      },
+      {
+          "comment": "----------------------- S8 ------------------------------",
+          "titleLatin": "",
+          "title": {
+              "lv": "",
+              "ru": "",
+              "en": ""
+          },
+          "description": {
+              "lv": "",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  50,
+                  20
+              ],
+              "iconImage": "resources/view_5/images/s8d.png",
+              "iconShadow": "resources/view_5/images/s8s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_5/images/s8d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          }
+      },
+      {
+          "comment": "----------------------- S9 ------------------------------",
+          "titleLatin": "",
+          "title": {
+              "lv": "",
+              "ru": "",
+              "en": ""
+          },
+          "description": {
+              "lv": "",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  50,
+                  20
+              ],
+              "iconImage": "resources/view_5/images/s9d.png",
+              "iconShadow": "resources/view_5/images/s9s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_5/images/s9d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          }
+      },
+      {
+          "comment": "----------------------- S10 ------------------------------",
+          "titleLatin": "",
+          "title": {
+              "lv": "",
+              "ru": "",
+              "en": ""
+          },
+          "description": {
+              "lv": "",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  50,
+                  20
+              ],
+              "iconImage": "resources/view_5/images/s10d.png",
+              "iconShadow": "resources/view_5/images/s10s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_5/images/s10d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          }
+      },
+      {
+          "comment": "----------------------- S11 ------------------------------",
+          "titleLatin": "",
+          "title": {
+              "lv": "",
+              "ru": "",
+              "en": ""
+          },
+          "description": {
+              "lv": "",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  50,
+                  20
+              ],
+              "iconImage": "resources/view_5/images/s11d.png",
+              "iconShadow": "resources/view_5/images/s11s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_5/images/s11d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          }
+      },
+      {
+          "comment": "----------------------- S12 ------------------------------",
+          "titleLatin": "",
+          "title": {
+              "lv": "",
+              "ru": "",
+              "en": ""
+          },
+          "description": {
+              "lv": "",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  50,
+                  20
+              ],
+              "iconImage": "resources/view_5/images/s12d.png",
+              "iconShadow": "resources/view_5/images/s12s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_5/images/s12d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          }
       }
-    }
-
-
-
   ]
 }

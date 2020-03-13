@@ -1,7 +1,7 @@
 <?php 
 
 $viewId = 5;
-$numIcons = 10;
+$numIcons = 12;
 
 $data = [
     "mainBackground" => "resources/view_1/images/bg2.png",
@@ -10,7 +10,7 @@ $data = [
     'sectors' => [],
 ];
 
-for($i=0; $i<$numIcons; $i++){
+for($i=1; $i<=$numIcons; $i++){
     $data['sectors'][] = [
         'comment' => '----------------------- S'.$i.' ------------------------------',
         'titleLatin' => '',
@@ -38,5 +38,5 @@ for($i=0; $i<$numIcons; $i++){
     ];
 }
 
-echo json_encode($data, JSON_PRETTY_PRINT);
+echo json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 

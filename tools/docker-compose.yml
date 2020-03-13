@@ -1,0 +1,11 @@
+#####################################################
+# Tools php
+# docker-compose exec php php generate.php
+#####################################################
+version: '3'
+services:
+  php:
+    image: php:7-fpm
+    volumes:
+       - ./php:/var/www/html
+
