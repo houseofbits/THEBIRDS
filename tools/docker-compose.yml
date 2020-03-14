@@ -7,5 +7,5 @@ services:
   php:
     image: php:7-fpm
     volumes:
-       - ./php:/var/www/html
+       - ./:/var/www/html
 

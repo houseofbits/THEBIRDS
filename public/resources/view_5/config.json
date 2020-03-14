@@ -5,14 +5,14 @@
   "sectors": [
       {
           "comment": "----------------------- S1 ------------------------------",
-          "titleLatin": "",
+          "titleLatin": "Merops apiaster",
           "title": {
-              "lv": "",
-              "ru": "",
-              "en": ""
+              "lv": "BIŠU DZENIS",
+              "ru": "ЗОЛОТИСТАЯ ЩУРКА",
+              "en": "EUROPEAN BEE-EATER"
           },
           "description": {
-              "lv": "",
+              "lv": "Latvijā rets ligzdotājs. Ligzdošana pirmo reizi pierādīta Saraiķu–Ziemupes apkārtnē 2003. gada jūlijā. Vismaz viens vai daži pāri šajā apkārtnē ligzdoja arī turpmākajos gados, ieskaitot 2019. gadu. Otra ligzdošanas vieta atklāta 2014. gadā Lodes māla karjerā. Trešā ligzdošanas vieta atrasta 2015. gadā Vaidavas pagastā, Gaujas stāvkrastā pie „Caunītēm”, kas ir netālu no Lodes māla karjera. Kā jau putna nosaukums liecina, bišu dzenis pamatā barojas ar bitēm, lapsenēm un sirseņiem, bet arī ar citiem kukaiņiem, īpaši lielajiem – spārēm, vabolēm un citiem. Bišu dzenis vienmēr medī lidojumā. Bieži medījumu gaida, vērojot apkārtni no vadiem, koka zara vai staba gala. Ligzdo stāvkrastos. Gājputns. Ziemo Āfrikā.",
               "ru": "",
               "en": "",
               "transform": [

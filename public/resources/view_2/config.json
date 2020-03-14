@@ -16,9 +16,9 @@
         "ru":"В Латвию редкая залетная птица; в некоторых местах, однако, живут по нескольку лет, например, в Лиепае и Мерсраге. В 2007 году в Мерсраге, впервые в истории орнитологии Латвии, было замечено гнездо смешанной пары - чёрной и серой ворон. Чёрную ворону часто путают с молодыми грачами, поэтому идентифицировать птицу можно только по фотографиям. Ближайшие к Латвии гнездования находятся в Западной Европе, включая Западную Германию, Чехию, Словакию и Австрию.",
         "en":"A rare vagrant species in Latvia. Sometimes birds that have arrived in Latvia remain in the same area for a long period (e.g. in the city of Liepāja and in Mērsrags). The first breeding case was recorded in 2007 in Mērsrags, where a carrion crow nested in a mixed pair with a hooded crow. It is often very difficult to identify carrion crows from young rooks, so it is necessary to take a photo to make a proper recording of the sighting. Its closest breeding areas to Latvia are in western Europe – in the western part of Germany, the Czech Republic, Slovakia and Austria.",
         "transform":{
-          "lv":[20,380,30],
-          "ru":[20,350,30],
-          "en":[20,350,30]
+          "lv":[20,370,30],
+          "ru":[20,370,28],
+          "en":[20,370,28]
         }
       },
       "main":{
@@ -29,12 +29,18 @@
       },
       "detailImage":{
         "image":"resources/view_2/images/s5d.png",
-        "transform":{
-          "lv":[560,420,0],
-          "ru":[560,420,-20],
-          "en":[560,420,-20]
+        "transform":[560,420,0]
+      },
+      "audio":[
+        {
+          "title":{
+            "lv":"Balss",
+            "ru":"Balss",
+            "en":"Balss"
+          },
+          "fileName":"resources/view_2/sounds/melnā_vārna_balss.mp3"
         }
-      }
+      ]
     },
     {
       "comment":"------------------------------------- S8 --------------------------------------------",
@@ -48,7 +54,11 @@
         "lv":"Latvijā parasts un izplatīts ligzdotājs un nometnieks. Periodiskas rudens invāzijas. Visbiežāk sastopams skujkoku vai jauktu koku mežos, parkos, arī pilsētu ielu apstādījumos. Mežā ligzdu būvē labi paslēptu, piemēram, eglē, pilsētā – atsevišķi augošos kokos, ēku sienu spraugās. Sīlis ir slavens ar spēju atdarināt citu putnu dziesmas, tādēļ to dabā pēc balss ir grūti atpazīt. Tas var atdarināt plēsīgo putnu kliedzienus, arī suņu rejas, durvju čīkstēšanu, metāla klaudzēšanu, pat cilvēka balsi. Sīlis ir skaļš un trokšņains putns, izņemot ligzdošanas laiku. Visēdājs.",
         "ru":"В Латвии обычная и распространённая гнездящаяся оседлая птица. Периодически осенью наблюдаются инвазии. Чаще всего встречается в хвойных и смешанных лесах, парках, насаждениях вдоль городских улиц. В лесах гнёзда устраивает в укромных местах, в городах - на отдельно растущих деревьях, щелях стен зданий и других подобных местах. Сойка славится своим умением подражать голосам других птиц, поэтому по голосу в природе её трудно опознать. Она может подражать крику хищных птиц, лаю собак, скрипу двери, стуку металла, голосу человека. За исключением периода гнездования, сойка громкая и шумная птица. Всеядна.",
         "en":"A common breeding species in Latvia. Usually non-migratory, although autumn irruptions can occur. Inhabits coniferous or mixed forests, but can also be found in populated places – parks and other suitable green spaces. Its well-camouflaged nest is built between the branches of young spruces, but it can also use cavities in building walls or other similar spots when nesting in an urban landscape. Jays are well known for their ability to imitate the sounds of other birds, especially birds of prey, so it is often difficult to recognize it by its calls. It can also masterfully imitate dog barks, squeaking doors, various metallic sounds, and even human voices. Outside of their breeding period they are generally vocal and noisy birds. Omnivorous.",
-        "transform":[20,380]
+        "transform": {
+          "lv":[20,320,30],
+          "ru":[20,320,28],
+          "en":[20,320,26]
+        }
       },
       "main":{
         "diameter":280,
@@ -58,8 +68,26 @@
       },
       "detailImage":{
         "image":"resources/view_2/images/s8d.png",
-        "transform":[560,420,0]
-      }
+        "transform":[500,480,5]
+      },
+      "audio":[
+        {
+          "title":{
+            "lv":"Balss",
+            "ru":"Balss",
+            "en":"Balss"
+          },
+          "fileName":"resources/view_2/sounds/sīlis_balss.mp3"
+        },
+        {
+          "title":{
+            "lv":"Balss",
+            "ru":"Balss",
+            "en":"Balss"
+          },
+          "fileName":"resources/view_2/sounds/sīlis_balss_2.mp3"
+        }
+      ]
     },
     {
       "comment":"------------------------------------- S1 --------------------------------------------",
@@ -73,7 +101,7 @@
         "lv":"Latvijā rets ieceļotājs, 20. gs. zināmi tikai trīs novērojumi. Latvijai tuvākās ligzdošanas vietas atrodas Norvēģijā, Zviedrijā, Somijā un Krievijā. Ziemo ligzdošanas areālā, reizēm veicot nelielus klejojumus. Visēdājs.",
         "ru":"В Латвии редкая залетная птица. В 20 столетии известны только три наблюдения.  Ближайшие к Латвии места гнездования расположены в Норвегии, Швеции, Финляндии и России. Зимует в районах гнездования, иногда совершая небольшие кочевки. Всеядна.",
         "en":"Very rare vagrant species in Latvia with just three observations in the 20th century. Its closest breeding areas to Latvia are in Norway, Sweden, Finland and Russia. Usually a non-migratory bird that winters in its breeding range, but occasionally some birds venture further south. Omnivorous. ",
-        "transform":[20,380]
+        "transform":[20,400,30]
       },
       "main":{
         "diameter":280,
@@ -83,8 +111,18 @@
       },
       "detailImage":{
         "image":"resources/view_2/images/s1d.png",
-        "transform":[560,420,0]
-      }
+        "transform":[560,470,0]
+      },
+      "audio":[
+        {
+          "title":{
+            "lv":"Jaunais putns",
+            "ru":"Jaunais putns",
+            "en":"Jaunais putns"
+          },
+          "fileName":"resources/view_2/sounds/bēdrozis_jaunais_putns_prasa_barību_pieaugušam_putnam.mp3"
+        }
+      ]
     },
     {
       "comment":"------------------------------------- S7 --------------------------------------------",
@@ -98,7 +136,7 @@
         "lv":"Latvijā samērā biežs ligzdotājs un nometnieks. Periodiskas rudens invāzijas. Sastopams skujkoku un jauktu koku mežos ar bagātīgu pamežu, kuros pārsvarā ir egles. Samērā lielu ligzdu, kas sastāv no egļu vai bērza prauliem, zemes, lūkiem, zariem un sūnām, būvē augstu eglē pie stumbra. Barojas ar bezmugurkaulniekiem, rudeņos labprāt arī ar riekstiem, zīlēm un ogām.",
         "ru":"В Латвии сравнительно часто гнездящаяся оседлая птица. Осенью периодически наблюдаются инвазии. Встречается в хвойных и смешанных лесах с богатым еловым подлеском. Гнездо сравнительно крупное, сооружается из еловой и берёзовой трухи, земли, лыка, веток и мха, размещает на высоких елях у ствола. Питается беспозвоночными, осенью также орехами, желудями и ягодами.",
         "en":"A relatively common breeding species in Latvia. Usually non-migratory, although sometimes autumn irruptions can occur. Inhabits coniferous or mixed forests with spruce thickets and rich undergrowth. Its nest is built from spruce or birch snags and branches, tree bark, soil and mosses, and usually placed high in a spruce, next to the trunk. Its diet mainly consists of invertebrates, but it also feeds on nuts, acorns and berries in autumn.",
-        "transform":[20,380]
+        "transform":[20,380,30]
       },
       "main":{
         "diameter":280,
@@ -109,7 +147,17 @@
       "detailImage":{
         "image":"resources/view_2/images/s7d.png",
         "transform":[560,420,0]
-      }
+      },
+      "audio":[
+        {
+          "title":{
+            "lv":"Balss",
+            "ru":"Balss",
+            "en":"Balss"
+          },
+          "fileName":"resources/view_2/sounds/riekstrozis_balss.mp3"
+        }
+      ]
     },
     {
       "comment":"------------------------------------- S9 --------------------------------------------",
@@ -123,7 +171,7 @@
         "lv":"Latvijā parasta ligzdotāja un nometniece. Sastopama krūmājos, jaunaudzēs, mežmalās, pilsētās, arī dārzos, parkos, ielu apstādījumos. Ligzda masīva, veidota no žagariem un dubļiem, ar jumtu. To visbiežāk būvē krūmā vai bērza galotnes daļā. Parasti katru gadu būvē jaunu ligzdu. Žagatai ļoti patīk spīdīgi priekšmeti, kurus tā pie iespējas savāc un noslēpj. Visēdāja.",
         "ru":"В Латвии обычная гнездящаяся оседлая птица. Встречается в кустарниках, молодых насаждениях, на опушках лесов, городах, садах, парках, аллеях. Массивные гнёзда с крышей сооружаются из веток и грязи; чаще всего устраиваются в кустах или на верхушках берёз. Обычно каждый год строит новое гнездо. Сорок привлекают блестящие предметы, которые она, если находит, подбирает и прячет. Всеядна.",
         "en":"A common breeding, non-migratory bird in Latvia. Inhabits scrubs, young forest stands and forest margins, but also populated places, gardens, parks and city green spaces. It builds its large roofed nest from twigs and mud. The nest is usually placed in the top section of a bush or a birch tree. A new nest is built each year. Magpies are attracted to shiny objects which they like to collect and hide. Omnivorous.",
-        "transform":[20,380]
+        "transform":[20,380,30]
       },
       "main":{
         "diameter":280,
@@ -134,7 +182,17 @@
       "detailImage":{
         "image":"resources/view_2/images/s9d.png",
         "transform":[560,420,0]
-      }
+      },
+      "audio":[
+        {
+          "title":{
+            "lv":"Balss",
+            "ru":"Balss",
+            "en":"Balss"
+          },
+          "fileName":"resources/view_2/sounds/zagata_balss.mp3"
+        }
+      ]
     },
     {
       "comment":"------------------------------------- S2 --------------------------------------------",
@@ -148,7 +206,7 @@
         "lv":"Latvijā parasts ligzdotājs un nometnieks. Sastopams pilsētās un apdzīvotās vietās, kā arī to apkārtnē, parkos, vecās ceļmalu alejās, kapsētās. Sabiedrisks. Bieži ligzdo kolonijās. Ligzdu būvē koku dobumos, drupās, skursteņos, arī būros. Kovārņi ir ļoti sociāli putni un parasti ir redzami baros. Visēdājs. Nometnieks, bet daļa Latvijas putnu pārziemo citviet Eiropā, savukārt Latvijā ierodas putni no ziemeļiem un austrumiem. Bieži sastopams migrācijas laikā.",
         "ru":"В Латвии обычная гнездящаяся оседлая птица. Встречается в городах и других населенных пунктах, а также их окрестностях, парках, старых аллеях вдоль дорог, кладбищах. Общественная птица и часто гнездится колониями. Гнёзда строит в дуплах деревьев, развалинах, дымовых трубах, а также скворечниках. Галки очень социальные птицы и обычно их можно видеть в стаях. Всеядна. Часть птиц из Латвии перезимовывает в других местах Европы, а к нам прилетают птицы с севера и востока.",
         "en":"A common breeding species in Latvia. Inhabits cities and other populated areas, including parks, cemeteries, old tree alleys, etc. Gregarious – often nests in colonies. Builds its nest in hollow tree cavities, building ruins, chimneys, nest boxes, or other suitable spaces. Jackdaws often gather in large flocks. Omnivorous. A partly migratory bird with many birds leaving Latvia to overwinter further southwest in Europe. They are replaced with birds from the north and east that overwinter here.",
-        "transform":[20,380]
+        "transform":[20,380,30]
       },
       "main":{
         "diameter":280,
@@ -173,7 +231,7 @@
         "lv":"Latvijā piemērotās vietās samērā parasts ligzdotājs. Latvijā ligzdo 7000–9000 pāru. Sastopams parkos, kapos, dažādos apdzīvotu vietu apstādījumos, arī pilsētās. Ligzdo kolonijās, vienā kokā parasti vairākas ligzdas, ko ik gadu atjauno. Ligzdošanas kolonijas Latvijā izvietotas galvenokārt valsts dienvidu un dienvidaustrumu daļā. Sabiedrisks gan ligzdošanas vietās, gan barojoties. Pie ligzdas ļoti trokšņains. Pārtiek no sliekām, graudiem, bezmugurkaulniekiem, bet kopumā visēdājs. Cilvēka pārtikas atkritumus izmanto daudz mazāk nekā citi vārnveidīgie. Gājputns. Pārziemo Centrāleiropā un Rietumeiropā. Nelielā skaitā regulāri ziemo arī Latvijā.",
         "ru":"В Латвии сравнительно обычный гнездящийся вид. Гнездится 7000 – 9000 пар. Встречается в парках, дюнах, насаждениях населённых пунктов, а также городах. Гнездится колониями, на одном дереве обычно несколько гнёзд, которые каждый год обновляются. Колонии в Латвии главным образом встречаются на юге и юго–востоке. Общественная птица при гнездовании, а также при кормлении. У гнёзд всегда очень шумно. Всеядная - питается зерном, дождевыми червями и другими беспозвоночными. Однако пищевые отбросы использует меньше, чем другие врановые птицы. Перелётная птица. Зимует в Центральной и Западной Европе. В небольшой численности зимует и в Латвии.",
         "en":"A common breeding species in suitable habitats in Latvia. It is estimated that there are 7000-9000 breeding pairs in Latvia. Inhabits parks, cemeteries and other green spaces in villages and cities. Nests in colonies where there can be several nests in a single tree. The nest is repaired each year. They are very noisy at their nesting sites. Such breeding colonies are mostly located in southern and south-eastern Latvia. They are gregarious also outside of the breeding season. Their diet mainly consists of invertebrates, especially earthworms, but also grains and seeds; is generally considered omnivorous. Searches rubbish and waste for food less than other corvids do.",
-        "transform":[20,380]
+        "transform":[20,310,27]
       },
       "main":{
         "diameter":280,
@@ -183,8 +241,18 @@
       },
       "detailImage":{
         "image":"resources/view_2/images/s4d.png",
-        "transform":[560,420,0]
-      }
+        "transform":[550,440,-10]
+      },
+      "audio":[
+        {
+          "title":{
+            "lv":"Balss",
+            "ru":"Balss",
+            "en":"Balss"
+          },
+          "fileName":"resources/view_2/sounds/krauķis_balsis_ligzdojošā_kolonijā.mp3"
+        }
+      ]
     },
     {
       "comment":"------------------------------------- S3 --------------------------------------------",
@@ -198,7 +266,7 @@
         "lv":"Latvijā parasts ligzdotājs un nometnieks. Sastopams vecu skujkoku un jauktu koku mežos, arī kultūrainavā un apdzīvotās vietās. Ligzdu būvē galvenokārt priedēs klajumu tuvumā, kultūrainavā nereti arī augstprieduma elektrolīniju stabos un līdzīgās vietās. Visēdājs. Pēcligzdošanas laikā mēdz koncentrēties piemērotās barošanās vietās – izgāztuvēs, fermu, lauku saimniecību tuvumā, arī jūras piekrastē. Šajā laikā klejo baros. Ziemā Latvijā ieceļo kraukļi no ziemeļiem un austrumiem.",
         "ru":"В Латвии обычная гнездящаяся оседлая птица. Встречается в старых хвойных лесах и лесах смешанного типа, культурном ландшафте и населённых пунктах. Гнёзда в основном стоит на соснах вблизи открытых мест, нередко на столбах линий электропередач. После периода гнездования собираются в местах, где можно прокормиться – на свалках, вблизи ферм и на побережье моря. В это время кочуют стаями. Зимой в Латвию прилетают особи с севера и востока.",
         "en":"A common breeding and wintering species in Latvia. Inhabits old coniferous and mixed forests but can also be found in rural landscapes and near populated areas. Builds its nest in pine trees growing near open areas, on power line towers, or on similar man-made structures in rural areas. Omnivorous. Outside of the breeding season it can gather in flocks near areas with a sufficient food supply, e.g. rubbish tips, farms, or along the coastline. Sometimes these flocks roam in search of food.  Those birds that winter in Latvia also include ravens from the north and east.",
-        "transform":[20,380]
+        "transform":[20,340,30]
       },
       "main":{
         "diameter":280,
@@ -208,8 +276,18 @@
       },
       "detailImage":{
         "image":"resources/view_2/images/s3d.png",
-        "transform":[560,420,0]
-      }
+        "transform":[410,490,-20]
+      },
+      "audio":[
+        {
+          "title":{
+            "lv":"Balss",
+            "ru":"Balss",
+            "en":"Balss"
+          },
+          "fileName":"resources/view_2/sounds/krauklis_balss.mp3"
+        }
+      ]
     },
     {
       "comment":"------------------------------------- S6 --------------------------------------------",
@@ -223,7 +301,7 @@
         "lv":"Latvijā parasta ligzdotāja. Sastopama nelielos mežos, parkos, dārzos, alejās, pilsētu apstādījumos, arī augstajos purvos. Pelēkā vārna ligzdo gan skujkokos, gan lapu kokos, pat atsevišķos kokos lauka vidū. Visēdāja. Daļa ir gājputni, kas pārziemo Rietumeiropā, bet daļa ir nometnieces. Daļa putnu rudenī un ziemā Latvijā ieceļo no ziemeļiem un austrumiem.",
         "ru":"В Латвии обычная гнездящаяся птица. Встречается в небольших лесах, парках, садах, аллеях, городских насаждениях, верховых болотах. Серая ворона гнездится как на хвойных, так и на лиственных деревьях, на отдельных деревьях в полях. Всеядна. Частично перелётные птицы, зимующие в Западной Европе, частично оседлые. Осенью и зимой в Латвию прилетают особи с северных и восточных районов Европы.",
         "en":"A common breeding species in Latvia. Inhabits small patches of forest, parks, gardens, tree alleys, city green spaces and also raised bogs. Builds its nest in a variety of trees – both deciduous and coniferous. Sometimes even a single tree in an open field can be used for nesting. Omnivorous. A partly migratory bird with part of the population wintering in western Europe. Those birds that winter in Latvia include both local breeding birds and hooded crows from northern and eastern populations.",
-        "transform":[20,380]
+        "transform":[20,380,30]
       },
       "main":{
         "diameter":280,
@@ -233,8 +311,18 @@
       },
       "detailImage":{
         "image":"resources/view_2/images/s6d.png",
-        "transform":[560,420,0]
-      }
+        "transform":[410,500,0]
+      },
+      "audio":[
+        {
+          "title":{
+            "lv":"Balss",
+            "ru":"Balss",
+            "en":"Balss"
+          },
+          "fileName":"resources/view_2/sounds/Pelēkā_vārna_balss.mp3"
+        }
+      ]
     }
   ]
 }
