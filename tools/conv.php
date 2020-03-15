@@ -1,21 +1,15 @@
 <?php
 
-$files = scandir("names");
-$fileIndex = [];
-if($files){
-    $index = 0;
-    foreach($files as $file){
-        if($file != '.' && $file != '..'){
-            $fileIndex[$index] = mb_strtolower($file);
-        }
-    }
-}
+$descrFile="desc/vitr10.xhtml";
+$mappingFileName = 'list.txt';
 
-$content = file_get_contents('vitr7.xhtml');
+$fileIndex = file($mappingFileName, FILE_IGNORE_NEW_LINES);
+$content = file_get_contents($descrFile);
 
-preg_match_all('/(<span\s+class\=\"T1\">(.*?)<\/span>)|(<span\s+class\=\"T\d\">(.*?)<\/span>)/', $content, $matches);
+preg_match_all('/(<span\s+class\=\"T1\">(.*?)<\/span>)|(<span\s+class\=\"T\d+\">(.*?)<\/span>)/', $content, $matches);
 
 if(isset($matches[2])){
+    $failedIndices = 0;
     $data = [];
     $pos = 0;
     $index = 0;
@@ -23,23 +17,27 @@ if(isset($matches[2])){
         if(!empty($matches[2][$i])){
             $pos++;
             $data[$pos] = [];
-            $data[$pos]['id'] = 0;
+            $data[$pos]['id'] = -1;
             $data[$pos]['title'] = trim($matches[2][$i]);
             $index = 1;
-
-            foreach($fileIndex as $key=>$name){
-                if($name == mb_strtolower($data[$pos]['title'])){
-                    $data[$pos]['id'] = $key;                        
-                    break;
-                }
-            }
-
         }else{
             if(!empty(trim($matches[4][$i]))){
                 $str = trim($matches[4][$i]);
                 switch($index){
                     case 1:
                         $data[$pos]['latin'] = $str;
+
+                        $name = strtolower(str_replace(' ','_'<$str));
+                        if($fileIndex){
+                            foreach($fileIndex as $key=>$filename){
+                                if(strpos($filename, $name) !== false){
+                                    $data[$pos]['id'] = $key;                        
+                                }
+                            }              
+                        }          
+                        if($data[$pos]['id'] < 0){
+                            $failedIndices++;
+                        }
                         $index++;                                            
                     break;
                     case 2:
@@ -63,10 +61,12 @@ if(isset($matches[2])){
         }
 
     }
-    
-    //print_r($data);
 
     echo json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+    echo "\n\n";
+    echo "Entries ".count($data)."\n";    
+    echo "Failed indices ".$failedIndices."\n";
 
 }
 
