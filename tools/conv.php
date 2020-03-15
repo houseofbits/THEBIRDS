@@ -1,12 +1,12 @@
 <?php
 
-$descrFile="desc/vitr10.xhtml";
-$mappingFileName = 'list.txt';
+$descrFile="desc/5.xhtml";
+$mappingFileName = 'desc/5.txt';
 
 $fileIndex = file($mappingFileName, FILE_IGNORE_NEW_LINES);
 $content = file_get_contents($descrFile);
 
-preg_match_all('/(<span\s+class\=\"T1\">(.*?)<\/span>)|(<span\s+class\=\"T\d+\">(.*?)<\/span>)/', $content, $matches);
+preg_match_all('/(<h3\s+class\=\"(.*?)\">(.*?)<\/h3>)|(<p\s+class\=\"Standard\">(.*?)<\/p>)/', $content, $matches);
 
 if(isset($matches[2])){
     $failedIndices = 0;
@@ -27,17 +27,17 @@ if(isset($matches[2])){
                     case 1:
                         $data[$pos]['latin'] = $str;
 
-                        $name = strtolower(str_replace(' ','_'<$str));
-                        if($fileIndex){
-                            foreach($fileIndex as $key=>$filename){
-                                if(strpos($filename, $name) !== false){
-                                    $data[$pos]['id'] = $key;                        
-                                }
-                            }              
-                        }          
-                        if($data[$pos]['id'] < 0){
-                            $failedIndices++;
-                        }
+                        // $name = strtolower(str_replace(' ','_', $str));
+                        // if($fileIndex){
+                        //     foreach($fileIndex as $key=>$filename){
+                        //         if(strpos($filename, $name) !== false){
+                        //             $data[$pos]['id'] = $key;                        
+                        //         }
+                        //     }              
+                        // }          
+                        // if($data[$pos]['id'] < 0){
+                        //     $failedIndices++;
+                        // }
                         $index++;                                            
                     break;
                     case 2:
