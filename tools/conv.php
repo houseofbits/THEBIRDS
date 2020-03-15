@@ -1,5 +1,16 @@
 <?php
 
+$files = scandir("names");
+$fileIndex = [];
+if($files){
+    $index = 0;
+    foreach($files as $file){
+        if($file != '.' && $file != '..'){
+            $fileIndex[$index] = mb_strtolower($file);
+        }
+    }
+}
+
 $content = file_get_contents('vitr7.xhtml');
 
 preg_match_all('/(<span\s+class\=\"T1\">(.*?)<\/span>)|(<span\s+class\=\"T\d\">(.*?)<\/span>)/', $content, $matches);
@@ -15,6 +26,14 @@ if(isset($matches[2])){
             $data[$pos]['id'] = 0;
             $data[$pos]['title'] = trim($matches[2][$i]);
             $index = 1;
+
+            foreach($fileIndex as $key=>$name){
+                if($name == mb_strtolower($data[$pos]['title'])){
+                    $data[$pos]['id'] = $key;                        
+                    break;
+                }
+            }
+
         }else{
             if(!empty(trim($matches[4][$i]))){
                 $str = trim($matches[4][$i]);
@@ -45,7 +64,9 @@ if(isset($matches[2])){
 
     }
     
-    print_r($data);
+    //print_r($data);
+
+    echo json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
 }
 
