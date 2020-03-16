@@ -1,439 +1,439 @@
 {
-  "mainBackground": "resources/view_1/images/bg2.png",
-  "detailBackground": "resources/view_1/images/detail-bg.png",
-  "circleBackground": "resources/segment_circle.png",
-  "sectors": [
-      {
-          "comment": "----------------------- S1 ------------------------------",
-          "titleLatin": "Merops apiaster",
-          "title": {
-              "lv": "BIŠU DZENIS",
-              "ru": "ЗОЛОТИСТАЯ ЩУРКА",
-              "en": "EUROPEAN BEE-EATER"
-          },
-          "description": {
-              "lv": "Latvijā rets ligzdotājs. Ligzdošana pirmo reizi pierādīta Saraiķu–Ziemupes apkārtnē 2003. gada jūlijā. Vismaz viens vai daži pāri šajā apkārtnē ligzdoja arī turpmākajos gados, ieskaitot 2019. gadu. Otra ligzdošanas vieta atklāta 2014. gadā Lodes māla karjerā. Trešā ligzdošanas vieta atrasta 2015. gadā Vaidavas pagastā, Gaujas stāvkrastā pie „Caunītēm”, kas ir netālu no Lodes māla karjera. Kā jau putna nosaukums liecina, bišu dzenis pamatā barojas ar bitēm, lapsenēm un sirseņiem, bet arī ar citiem kukaiņiem, īpaši lielajiem – spārēm, vabolēm un citiem. Bišu dzenis vienmēr medī lidojumā. Bieži medījumu gaida, vērojot apkārtni no vadiem, koka zara vai staba gala. Ligzdo stāvkrastos. Gājputns. Ziemo Āfrikā.",
-              "ru": "",
-              "en": "",
-              "transform": [
-                  20,
-                  380
-              ]
-          },
-          "main": {
-              "diameter": 280,
-              "iconTransform": [
-                  300,
-                  50,
-                  20
-              ],
-              "iconImage": "resources/view_5/images/s1d.png",
-              "iconShadow": "resources/view_5/images/s1s.png"
-          },
-          "detailImage": {
-              "image": "resources/view_5/images/s1d.png",
-              "transform": [
-                  560,
-                  420,
-                  0
-              ]
-          }
-      },
-      {
-          "comment": "----------------------- S2 ------------------------------",
-          "titleLatin": "",
-          "title": {
-              "lv": "",
-              "ru": "",
-              "en": ""
-          },
-          "description": {
-              "lv": "",
-              "ru": "",
-              "en": "",
-              "transform": [
-                  20,
-                  380
-              ]
-          },
-          "main": {
-              "diameter": 280,
-              "iconTransform": [
-                  300,
-                  50,
-                  20
-              ],
-              "iconImage": "resources/view_5/images/s2d.png",
-              "iconShadow": "resources/view_5/images/s2s.png"
-          },
-          "detailImage": {
-              "image": "resources/view_5/images/s2d.png",
-              "transform": [
-                  560,
-                  420,
-                  0
-              ]
-          }
-      },
-      {
-          "comment": "----------------------- S3 ------------------------------",
-          "titleLatin": "",
-          "title": {
-              "lv": "",
-              "ru": "",
-              "en": ""
-          },
-          "description": {
-              "lv": "",
-              "ru": "",
-              "en": "",
-              "transform": [
-                  20,
-                  380
-              ]
-          },
-          "main": {
-              "diameter": 280,
-              "iconTransform": [
-                  300,
-                  50,
-                  20
-              ],
-              "iconImage": "resources/view_5/images/s3d.png",
-              "iconShadow": "resources/view_5/images/s3s.png"
-          },
-          "detailImage": {
-              "image": "resources/view_5/images/s3d.png",
-              "transform": [
-                  560,
-                  420,
-                  0
-              ]
-          }
-      },
-      {
-          "comment": "----------------------- S4 ------------------------------",
-          "titleLatin": "",
-          "title": {
-              "lv": "",
-              "ru": "",
-              "en": ""
-          },
-          "description": {
-              "lv": "",
-              "ru": "",
-              "en": "",
-              "transform": [
-                  20,
-                  380
-              ]
-          },
-          "main": {
-              "diameter": 280,
-              "iconTransform": [
-                  300,
-                  50,
-                  20
-              ],
-              "iconImage": "resources/view_5/images/s4d.png",
-              "iconShadow": "resources/view_5/images/s4s.png"
-          },
-          "detailImage": {
-              "image": "resources/view_5/images/s4d.png",
-              "transform": [
-                  560,
-                  420,
-                  0
-              ]
-          }
-      },
-      {
-          "comment": "----------------------- S5 ------------------------------",
-          "titleLatin": "",
-          "title": {
-              "lv": "",
-              "ru": "",
-              "en": ""
-          },
-          "description": {
-              "lv": "",
-              "ru": "",
-              "en": "",
-              "transform": [
-                  20,
-                  380
-              ]
-          },
-          "main": {
-              "diameter": 280,
-              "iconTransform": [
-                  300,
-                  50,
-                  20
-              ],
-              "iconImage": "resources/view_5/images/s5d.png",
-              "iconShadow": "resources/view_5/images/s5s.png"
-          },
-          "detailImage": {
-              "image": "resources/view_5/images/s5d.png",
-              "transform": [
-                  560,
-                  420,
-                  0
-              ]
-          }
-      },
-      {
-          "comment": "----------------------- S6 ------------------------------",
-          "titleLatin": "",
-          "title": {
-              "lv": "",
-              "ru": "",
-              "en": ""
-          },
-          "description": {
-              "lv": "",
-              "ru": "",
-              "en": "",
-              "transform": [
-                  20,
-                  380
-              ]
-          },
-          "main": {
-              "diameter": 280,
-              "iconTransform": [
-                  300,
-                  50,
-                  20
-              ],
-              "iconImage": "resources/view_5/images/s6d.png",
-              "iconShadow": "resources/view_5/images/s6s.png"
-          },
-          "detailImage": {
-              "image": "resources/view_5/images/s6d.png",
-              "transform": [
-                  560,
-                  420,
-                  0
-              ]
-          }
-      },
-      {
-          "comment": "----------------------- S7 ------------------------------",
-          "titleLatin": "",
-          "title": {
-              "lv": "",
-              "ru": "",
-              "en": ""
-          },
-          "description": {
-              "lv": "",
-              "ru": "",
-              "en": "",
-              "transform": [
-                  20,
-                  380
-              ]
-          },
-          "main": {
-              "diameter": 280,
-              "iconTransform": [
-                  300,
-                  50,
-                  20
-              ],
-              "iconImage": "resources/view_5/images/s7d.png",
-              "iconShadow": "resources/view_5/images/s7s.png"
-          },
-          "detailImage": {
-              "image": "resources/view_5/images/s7d.png",
-              "transform": [
-                  560,
-                  420,
-                  0
-              ]
-          }
-      },
-      {
-          "comment": "----------------------- S8 ------------------------------",
-          "titleLatin": "",
-          "title": {
-              "lv": "",
-              "ru": "",
-              "en": ""
-          },
-          "description": {
-              "lv": "",
-              "ru": "",
-              "en": "",
-              "transform": [
-                  20,
-                  380
-              ]
-          },
-          "main": {
-              "diameter": 280,
-              "iconTransform": [
-                  300,
-                  50,
-                  20
-              ],
-              "iconImage": "resources/view_5/images/s8d.png",
-              "iconShadow": "resources/view_5/images/s8s.png"
-          },
-          "detailImage": {
-              "image": "resources/view_5/images/s8d.png",
-              "transform": [
-                  560,
-                  420,
-                  0
-              ]
-          }
-      },
-      {
-          "comment": "----------------------- S9 ------------------------------",
-          "titleLatin": "",
-          "title": {
-              "lv": "",
-              "ru": "",
-              "en": ""
-          },
-          "description": {
-              "lv": "",
-              "ru": "",
-              "en": "",
-              "transform": [
-                  20,
-                  380
-              ]
-          },
-          "main": {
-              "diameter": 280,
-              "iconTransform": [
-                  300,
-                  50,
-                  20
-              ],
-              "iconImage": "resources/view_5/images/s9d.png",
-              "iconShadow": "resources/view_5/images/s9s.png"
-          },
-          "detailImage": {
-              "image": "resources/view_5/images/s9d.png",
-              "transform": [
-                  560,
-                  420,
-                  0
-              ]
-          }
-      },
-      {
-          "comment": "----------------------- S10 ------------------------------",
-          "titleLatin": "",
-          "title": {
-              "lv": "",
-              "ru": "",
-              "en": ""
-          },
-          "description": {
-              "lv": "",
-              "ru": "",
-              "en": "",
-              "transform": [
-                  20,
-                  380
-              ]
-          },
-          "main": {
-              "diameter": 280,
-              "iconTransform": [
-                  300,
-                  50,
-                  20
-              ],
-              "iconImage": "resources/view_5/images/s10d.png",
-              "iconShadow": "resources/view_5/images/s10s.png"
-          },
-          "detailImage": {
-              "image": "resources/view_5/images/s10d.png",
-              "transform": [
-                  560,
-                  420,
-                  0
-              ]
-          }
-      },
-      {
-          "comment": "----------------------- S11 ------------------------------",
-          "titleLatin": "",
-          "title": {
-              "lv": "",
-              "ru": "",
-              "en": ""
-          },
-          "description": {
-              "lv": "",
-              "ru": "",
-              "en": "",
-              "transform": [
-                  20,
-                  380
-              ]
-          },
-          "main": {
-              "diameter": 280,
-              "iconTransform": [
-                  300,
-                  50,
-                  20
-              ],
-              "iconImage": "resources/view_5/images/s11d.png",
-              "iconShadow": "resources/view_5/images/s11s.png"
-          },
-          "detailImage": {
-              "image": "resources/view_5/images/s11d.png",
-              "transform": [
-                  560,
-                  420,
-                  0
-              ]
-          }
-      },
-      {
-          "comment": "----------------------- S12 ------------------------------",
-          "titleLatin": "",
-          "title": {
-              "lv": "",
-              "ru": "",
-              "en": ""
-          },
-          "description": {
-              "lv": "",
-              "ru": "",
-              "en": "",
-              "transform": [
-                  20,
-                  380
-              ]
-          },
-          "main": {
-              "diameter": 280,
-              "iconTransform": [
-                  300,
-                  50,
-                  20
-              ],
-              "iconImage": "resources/view_5/images/s12d.png",
-              "iconShadow": "resources/view_5/images/s12s.png"
-          },
-          "detailImage": {
-              "image": "resources/view_5/images/s12d.png",
-              "transform": [
-                  560,
-                  420,
-                  0
-              ]
-          }
-      }
-  ]
+    "mainBackground": "resources/view_1/images/bg2.png",
+    "detailBackground": "resources/view_1/images/detail-bg.png",
+    "circleBackground": "resources/segment_circle.png",
+    "sectors": [
+        {
+            "comment": "----------------------- S1 ------------------------------",
+            "titleLatin": "Merops apiaster",
+            "title": {
+                "lv": "BIŠU DZENIS",
+                "ru": "ЗОЛОТИСТАЯ ЩУРКА",
+                "en": "EUROPEAN BEE-EATER"
+            },
+            "description": {
+                "lv": "Latvijā rets ligzdotājs. Ligzdošana pirmo reizi pierādīta Saraiķu–Ziemupes apkārtnē 2003. gada  jūlijā. Vismaz viens vai daži pāri šajā apkārtnē ligzdoja arī turpmākajos gados, ieskaitot 2019. gadu. Otra  ligzdošanas vieta atklāta 2014. gadā Lodes māla karjerā. Trešā ligzdošanas vieta atrasta 2015. gadā Vaidavas  pagastā, Gaujas stāvkrastā pie „Caunītēm”, kas ir netālu no Lodes māla karjera. Kā jau putna nosaukums liecina,  bišu dzenis pamatā barojas ar bitēm, lapsenēm un sirseņiem, bet arī ar citiem kukaiņiem, īpaši lielajiem –  spārēm, vabolēm un citiem. Bišu dzenis vienmēr medī lidojumā. Bieži medījumu gaida, vērojot apkārtni no vadiem,  koka zara vai staba gala. Ligzdo stāvkrastos.Gājputns. Ziemo Āfrikā. ",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_5/images/s1d.png",
+                "iconShadow": "resources/view_5/images/s1s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_5/images/s1d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S2 ------------------------------",
+            "titleLatin": "Cuculus canorus",
+            "title": {
+                "lv": "DZEGUZE",
+                "ru": "КУКУШКА",
+                "en": "COMMON CUCKOO"
+            },
+            "description": {
+                "lv": "Latvijā parasta ligzdotāja. Dzeguzes ir ligzdošanas parazīti, kas nozīmē, ka olas tās dēj citu  putnu sugu ligzdās, kur citi putni tās izperē. Katra mātīte dēj olas noteiktu putnu sugu ligzdās, attiecīga ir  arī to olu krāsa – zilas (lukstu čakstītēm, erickiņiem), pelēkraibas (cielavām, čipstēm), raibas uz gaiša pamata  (sarkanrīklītēm, ķauķiem). Dzeguzes mazuļa attīstība olā ilgst īsāku laiku nekā saimniekputnu mazuliem. Jau  pirmajā dienā pēc izšķilšanās aklais, vēl neapspalvotais dzeguzēns sāk instinktīvi uzstutēt sev uz muguras un  izmest no ligzdas visu, kas tajā atrodas, tādējādi tas ligzdā paliek vienīgais aprūpējamais putnēns.Gājputns. Pārziemo Āfrikā.",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_5/images/s2d.png",
+                "iconShadow": "resources/view_5/images/s2s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_5/images/s2d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S3 ------------------------------",
+            "titleLatin": "Streptopelia decaocto",
+            "title": {
+                "lv": "GREDZENŪBELE",
+                "ru": "КОЛЬЧАТАЯ ГОРЛИЦА",
+                "en": "EURASIAN COLLARED-DOVE"
+            },
+            "description": {
+                "lv": "Latvijā samērā reta ligzdotāja un nometniece. Vairāk Latvijas rietumu un dienvidu daļas pilsētās  un apdzīvotās vietās. Ligzda ir vienkārša, no žagariem vai salmiem vaļīgi sakrauta platforma. Retos gadījumos tā  oderēta ar mīkstu zāli. Atrodas kādā kokā vai biezā krūmā.  ",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_5/images/s3d.png",
+                "iconShadow": "resources/view_5/images/s3s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_5/images/s3d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S4 ------------------------------",
+            "titleLatin": "Columba palumbus",
+            "title": {
+                "lv": "LAUKU BALODIS",
+                "ru": "ВЯХИРЬ",
+                "en": "COMMON WOOD-PIGEON"
+            },
+            "description": {
+                "lv": "Latvijā parasts caurceļotājs un ligzdotājs. Lauku balodis ligzdo dažāda veida mežos, sastopams  arī parkos un dārzos apdzīvotu vietu tuvumā. Lauku balodis parasti barojas uz lauka, tīrumā vai dārzā.Gājputns. Pārziemo Rietumeiropā un Dienvideiropā. Pēdējos gados atsevišķi īpatņi aizvien biežāk  pārziemo arī Latvijā.  ",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_5/images/s4d.png",
+                "iconShadow": "resources/view_5/images/s4s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_5/images/s4d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S5 ------------------------------",
+            "titleLatin": "Columba oenas",
+            "title": {
+                "lv": "MEŽA BALODIS",
+                "ru": "КЛИНТУХ",
+                "en": "STOCK DOVE"
+            },
+            "description": {
+                "lv": "Latvijā samērā rets ligzdotājs. Ligzdo vecos mežos, kur atrodami dobumaini koki, visbiežāk  priedēs un apsēs. Labprāt ligzdošanai izmanto melnās dzilnas dobumus, retāk arī piemērotus putnu būrus. Rudenī  bieži veido jauktus barus ar lauku baložiem. Gājputns. Pārziemo Rietumeiropā un Dienvideiropā. Pēdējos gados Latvijā samērā regulāri  novērojams arī ziemas mēnešos.  ",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_5/images/s5d.png",
+                "iconShadow": "resources/view_5/images/s5s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_5/images/s5d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S6 ------------------------------",
+            "titleLatin": "Streptopelia turtur",
+            "title": {
+                "lv": "PARASTĀ ŪBELE",
+                "ru": "ОБЫКНОВЕННАЯ ГОРЛИЦА",
+                "en": "EUROPEAN TURTLE-DOVE"
+            },
+            "description": {
+                "lv": "Latvijā diezgan parasta ligzdotājā. Līdzīgi kā meža balodis, parastā ūbele pamatā uzturas mežos,  un apdzīvotās vietās to var novērot reti. Parastā ūbele ir mazākā no Latvijā sastopamajiem baložu dzimtas  putniem. Visbiežāk to var redzēt tupam ceļmalās uz vadiem. Pēdējos gados populācija samazinājusies.Gājputns. Pārziemo Āfrikā. ",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_5/images/s6d.png",
+                "iconShadow": "resources/view_5/images/s6s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_5/images/s6d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S7 ------------------------------",
+            "titleLatin": "Upupa epops",
+            "title": {
+                "lv": "PUPUĶIS",
+                "ru": "УДОД",
+                "en": "EURASIAN HOOPOE"
+            },
+            "description": {
+                "lv": "Latvijā rets ligzdotājs. Ligzdo ap 250 pāru. Pupuķi ligzdo koku dobumos, ēku šķirbās, arī ēku  drupās. Mēdz aizņemt putnu būrīšus. Pārtiek no lielākiem kukaiņiem, to kāpuriem un kūniņām. Barojas galvenokārt  uz zemes, barību ar knābi izvelkot no augsnes. Regulāri meklē kukaiņus dzīvnieku mēslos. Barībā bieži priekšroku  dod zemesvēžiem un maijvaboļu kāpuriem. Gājputns. Ziemo Āfrikā.   ",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_5/images/s7d.png",
+                "iconShadow": "resources/view_5/images/s7s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_5/images/s7d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S8 ------------------------------",
+            "titleLatin": "Syrrhaptes paradoxus",
+            "title": {
+                "lv": "STEPES SMILŠVISTIŅA",
+                "ru": "САДЖА",
+                "en": "PALLAS’S SANDGROUSE"
+            },
+            "description": {
+                "lv": "Latvijā reta ieceļotāja no centrālās Āzijas. Biežāk novērota 19. gs. beigās – 20. gs. sākumā.  Skaita samazināšanās dēļ mūsdienās ieceļo ļoti reti. 20. gs. otrajā pusē Latvijā novērota vienu reizi, kā arī  tikai vienu reizi 21. gs. sākumā. ",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_5/images/s8d.png",
+                "iconShadow": "resources/view_5/images/s8s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_5/images/s8d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S9 ------------------------------",
+            "titleLatin": "Apus apus",
+            "title": {
+                "lv": "SVĪRE",
+                "ru": "ЧЁРНЫЙ СТРИЖ",
+                "en": "COMMON SWIFT"
+            },
+            "description": {
+                "lv": "Latvijā tā ir parasta ligzdotāja. Svīre ir slavena ar savu lidotprasmi, tās vārpstveida ķermenis  tam ir lieliski piemērots. No visiem putniem pasaulē visvairāk laika gaisā pavada svīre, tā visu laiku ir  spārnos. Svīre nolaižas tikai, lai perētu un pabarotu mazuļus. Bieži ligzdo cilvēku celtās būvēs. Svīre labprāt  ligzdo arī putnu būrīšos. Lidojumā, nepieskaroties zemei, tā spēj veikt lielāko daļu dzīvībai nepieciešamo  funkciju – ēst, gulēt, dzert un pāroties. Gājputns. Pārziemo Āfrikā.  ",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_5/images/s9d.png",
+                "iconShadow": "resources/view_5/images/s9s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_5/images/s9d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S10 ------------------------------",
+            "titleLatin": "Caprimulgus europaeus",
+            "title": {
+                "lv": "VAKARLĒPIS",
+                "ru": "КОЗОДОЙ",
+                "en": "EURASIAN NIGHTJAR"
+            },
+            "description": {
+                "lv": "Tautā bieži tiek saukts arī par lēli. Grūti novērojams putns, jo aktīvs tikai krēslā un naktīs,  kad gaisā ķer kukaiņus. Dienā nekustīgi sēž uz zemes daļēji apēnotā vietā vai cieši piekļāvies koka zaram tā  garenvirzienā. Reizēm nekustīgi tup zemu stabiņu (celmu) galos. Latvijā parasti sastopams sausos mežos ar  izcirtumiem un laucēm, retāk lauksaimniecības teritorijās. Vasaras naktīs un migrācijas laikā pavasarī un rudenī  (arī tikai vakaros un naktīs) bieži var iztraucēt no šosejām un lauku ceļiem. Gājputns, ziemo Āfrikā.  ",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_5/images/s10d.png",
+                "iconShadow": "resources/view_5/images/s10s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_5/images/s10d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S11 ------------------------------",
+            "titleLatin": "Coracias garrulus",
+            "title": {
+                "lv": "ZAĻĀ VĀRNA",
+                "ru": "СИЗОВОРОНКА",
+                "en": "EUROPEAN ROLLER"
+            },
+            "description": {
+                "lv": "Agrāk Latvijā parasta ligzdotāja, bet kopš 1960. gadiem skaits ir strauji samazinājies, un  šobrīd ligzdo mazāk nekā 30 pāru. Galvenais ligzdošanas rajons atrodas austrumos no Rīgas – Garkalnes, Ādažu un  Silakroga apkārtnes priežu mežos. Ārpus ligzdošanas sezonas zaļā vārna dažkārt tiek novērota arī citviet  Latvijā, tomēr ļoti reti.Līdz 19. gs. beigām zaļo vārnu Latvijā dēvēja par zilo vārnu. Tikai 20. gs. 30. gados to sāka  saukt arī par zaļo vārnu. Kādu laiku valodā lietoja abus nosaukumus, tomēr nosaukums “zaļā vārna” izkonkurēja  nosaukumu “zilā vārna”. Nosaukuma maiņai nav saprotama pamatojuma, jo putna apspalvojums izskatās gaiši zils,  nevis zaļš. 18. gs. zaļo vārnu sauca ne tikai par zilo vārnu, bet arī par Kurzemes papagaili. Gājputns. Ziemo Āfrikā. ",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_5/images/s11d.png",
+                "iconShadow": "resources/view_5/images/s11s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_5/images/s11d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S12 ------------------------------",
+            "titleLatin": "Alcedo atthis",
+            "title": {
+                "lv": "ZIVJU DZENĪTIS",
+                "ru": "ОБЫКНОВЕННЫЙ ЗИМОРОДОК",
+                "en": "COMMON KINGFISHER"
+            },
+            "description": {
+                "lv": "Latvijā piemērotās vietās, pie upēm un kanāliem ar stāvkrastiem, parasts ligzdotājs. Ūdenstilpju  stāvkrastos izrok alas, kurās ligzdo. Zivju dzenītis medī zivis no paaugstinājuma. Zem ūdens tā spārni ir  atvērti, acis aizsargā caurspīdīga plēvīte. Ar medījumu tas atgriežas savā novērošanas postenī. Turot zivi tuvu  pie astes, zivju dzenītis to vairākas reizes sit pret cietu pamatni, līdz tā ir mirusi. Zivs pēc tam tiek norīta  ar galvu pa priekšu.Gājputns. Pārziemo citviet Eiropā. Nereti paliek ziemot arī Latvijā pie vaļējiem ūdeņiem.  Aukstās ziemās daudzi iet bojā.",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_5/images/s12d.png",
+                "iconShadow": "resources/view_5/images/s12s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_5/images/s12d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        }
+    ]
 }

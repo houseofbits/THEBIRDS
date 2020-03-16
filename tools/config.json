@@ -1,0 +1,1267 @@
+{
+    "mainBackground": "resources/view_1/images/bg2.png",
+    "detailBackground": "resources/view_1/images/detail-bg.png",
+    "circleBackground": "resources/segment_circle.png",
+    "sectors": [
+        {
+            "comment": "----------------------- S1 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s1d.png",
+                "iconShadow": "resources/view_10/images/s1s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s1d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S2 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s2d.png",
+                "iconShadow": "resources/view_10/images/s2s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s2d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S3 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s3d.png",
+                "iconShadow": "resources/view_10/images/s3s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s3d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S4 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s4d.png",
+                "iconShadow": "resources/view_10/images/s4s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s4d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S5 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s5d.png",
+                "iconShadow": "resources/view_10/images/s5s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s5d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S6 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s6d.png",
+                "iconShadow": "resources/view_10/images/s6s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s6d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S7 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s7d.png",
+                "iconShadow": "resources/view_10/images/s7s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s7d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S8 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s8d.png",
+                "iconShadow": "resources/view_10/images/s8s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s8d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S9 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s9d.png",
+                "iconShadow": "resources/view_10/images/s9s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s9d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S10 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s10d.png",
+                "iconShadow": "resources/view_10/images/s10s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s10d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S11 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s11d.png",
+                "iconShadow": "resources/view_10/images/s11s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s11d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S12 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s12d.png",
+                "iconShadow": "resources/view_10/images/s12s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s12d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S13 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s13d.png",
+                "iconShadow": "resources/view_10/images/s13s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s13d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S14 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s14d.png",
+                "iconShadow": "resources/view_10/images/s14s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s14d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S15 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s15d.png",
+                "iconShadow": "resources/view_10/images/s15s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s15d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S16 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s16d.png",
+                "iconShadow": "resources/view_10/images/s16s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s16d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S17 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s17d.png",
+                "iconShadow": "resources/view_10/images/s17s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s17d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S18 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s18d.png",
+                "iconShadow": "resources/view_10/images/s18s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s18d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S19 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s19d.png",
+                "iconShadow": "resources/view_10/images/s19s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s19d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S20 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s20d.png",
+                "iconShadow": "resources/view_10/images/s20s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s20d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S21 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s21d.png",
+                "iconShadow": "resources/view_10/images/s21s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s21d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S22 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s22d.png",
+                "iconShadow": "resources/view_10/images/s22s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s22d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S23 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s23d.png",
+                "iconShadow": "resources/view_10/images/s23s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s23d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S24 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s24d.png",
+                "iconShadow": "resources/view_10/images/s24s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s24d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S25 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s25d.png",
+                "iconShadow": "resources/view_10/images/s25s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s25d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S26 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s26d.png",
+                "iconShadow": "resources/view_10/images/s26s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s26d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S27 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s27d.png",
+                "iconShadow": "resources/view_10/images/s27s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s27d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S28 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s28d.png",
+                "iconShadow": "resources/view_10/images/s28s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s28d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S29 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s29d.png",
+                "iconShadow": "resources/view_10/images/s29s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s29d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S30 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s30d.png",
+                "iconShadow": "resources/view_10/images/s30s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s30d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S31 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s31d.png",
+                "iconShadow": "resources/view_10/images/s31s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s31d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S32 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s32d.png",
+                "iconShadow": "resources/view_10/images/s32s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s32d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S33 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s33d.png",
+                "iconShadow": "resources/view_10/images/s33s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s33d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S34 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s34d.png",
+                "iconShadow": "resources/view_10/images/s34s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s34d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        },
+        {
+            "comment": "----------------------- S35 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_10/images/s35d.png",
+                "iconShadow": "resources/view_10/images/s35s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_10/images/s35d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            }
+        }
+    ]
+}

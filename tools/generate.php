@@ -1,7 +1,7 @@
 <?php 
 
-$viewId = 5;
-$numIcons = 12;
+$viewId = 10;
+$numIcons = 35;
 
 $data = [
     "mainBackground" => "resources/view_1/images/bg2.png",

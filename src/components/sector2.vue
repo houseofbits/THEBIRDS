@@ -1,5 +1,5 @@
 <template>
-    <div :style="computeTransform()" class="sector">
+    <div :style="computeTransform()" class="sector" v-if="isVisible()">
         <div class="icon-wrap">
             <div class="icon" :style="iconStyle()" 
                 v-on:click="onClick" 
@@ -40,6 +40,14 @@
             },
         },
         methods: {
+            isVisible:function(){
+                let globalAngle = parseFloat(this.$parent._data.angle);
+                let angle = globalAngle + parseFloat(this.data.position[0]);
+
+                if(angle < -25 || angle > 25)return false;
+
+                return true;
+            },
             circleStyle:function(){
                 let bright = '';
                 if(this.isSelected){
