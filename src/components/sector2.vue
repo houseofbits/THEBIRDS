@@ -1,17 +1,16 @@
 <template>
-    <div :style="computeTransform()" class="sector" v-if="isVisible()">
+    <div :style="computeTransform()" class="sector">
         <div class="icon-wrap">
-            <div class="icon" :style="iconStyle()" 
+            <div class="icon" :style="iconStyle()"
                 v-on:click="onClick" 
                 v-on:mousedown="onMouseDown"
                 v-on:mouseup="onMouseLeave"
                 v-on:mouseleave="onMouseLeave"></div>
-
-            <div class="icon-shadow" :style="iconStyleShadow"></div>
+            <div class="icon-shadow" :style="iconStyleShadow()"></div>
         </div>
         <div class="title" :style="titleStyle()"><span :style="titleTextStyle()">{{title}}</span></div>
-        <div class="title-shadow"><span>{{title}}</span></div>
-        <div class="shadow"></div>
+        <div class="title-shadow" :style="{transform: 'translateZ('+(this.calculateZPos() + 30)+'px)'}"><span>{{title}}</span></div>
+        <div class="shadow" :style="{transform: 'translateZ('+(this.calculateZPos() - 30)+'px)'}"></div>
         <div class="circle" :style="circleStyle()"></div>
     </div>
 </template>
@@ -22,22 +21,14 @@
 
     export default {
         name: "app",
-        props: ['sector', 'title', 'circleUrl'],
+        props: ['sector', 'title', 'circleUrl', 'curve'],
         data: function(){ return {
-            data: this.sector ,
+            data: this.sector,
             iconHeight:1,
-            isSelected:false
+            isSelected:false,
         }},
         computed:{
-            iconStyleShadow:function(){
-                return {
-                    backgroundImage: 'url(' + this.data.iconShadow + ')',
-                    width:this.data.iconTransform[0]+'px',
-                    height:this.iconHeight+'px',
-                    left:this.data.iconTransform[1]+'px',
-                    top:this.data.iconTransform[2]+'px',
-                };
-            },
+
         },
         methods: {
             isVisible:function(){
@@ -55,12 +46,13 @@
                 }
                 return {
                     backgroundImage: 'url(' + this.circleUrl + ')',
-                    filter:bright + 'blur('+this.data.blurCircle+'px)'
+                    filter:bright + 'blur('+(this.curve.blurCurve * 10)+'px)',
+                    transform: 'translateZ('+this.calculateZPos()+'px)',
                 };
-            },            
+            },
             titleTextStyle:function(){
                 return {
-                    filter:'blur('+this.data.blurTitle+'px)'
+                    filter:'blur('+(this.curve.blurCurve * 4)+'px)'
                 };
             },
             iconStyle:function(){
@@ -71,52 +63,50 @@
                     height:this.iconHeight+'px',
                     left:this.data.iconTransform[1]+'px',
                     top:this.data.iconTransform[2]+'px',
-                    filter:'brightness('+val+'%) blur('+this.data.blurIcon+'px)'
+                    filter:'brightness('+val+'%) blur('+(this.curve.blurCurve * 8)+'px)',
+                    transform: 'translateZ('+(this.calculateZPos()+30)+'px)',
+                };
+            },
+            iconStyleShadow:function(){
+                return {
+                    backgroundImage: 'url(' + this.data.iconShadow + ')',
+                    width:this.data.iconTransform[0]+'px',
+                    height:this.iconHeight+'px',
+                    left:this.data.iconTransform[1]+'px',
+                    top:this.data.iconTransform[2]+'px',
+                    transform: 'translateZ('+(this.calculateZPos()+20)+'px)',
                 };
             },
             titleStyle:function(){
                 let val = this.data.opacity * 100;
                 return {
-                    filter:'brightness('+val+'%)'
+                    filter:'brightness('+val+'%)',
+                    transform: 'translateZ('+(this.calculateZPos()+40)+'px)',
                 };
-            },            
+            },
             computeTransform: function () {
-                let globalAngle = parseFloat(this.$parent._data.angle);
-                let angle = globalAngle + parseFloat(this.data.position[0]);
-                let limit = 15.0;
-                let exponent = 0.6;
-
-                let unitAngle = Math.min(Math.abs(angle / limit), 1);
-                unitAngle = exponentialEasing(unitAngle, exponent);
-
-                let zpos = this.data.position[2] - (unitAngle * 150) + 50;
-
-                let opacity = 1 - Math.min(0.3, unitAngle);
-
+                let opacity = 1 - Math.min(0.3, this.curve.sliderCurve);
                 if(this.isSelected){
-                    zpos = (this.data.position[2] + 10) - (unitAngle * 150) + 50;   
-                    opacity = 1.4; 
-                }                
-
+                    opacity = 1.4;
+                }
                 this.data.opacity = opacity;
-
-                unitAngle = Math.min(Math.abs(angle / limit), 1);
-                unitAngle = exponentialEasing(unitAngle, 0.9);
-
-                this.data.blurCircle = unitAngle * 10;
-                this.data.blurIcon = unitAngle * 8;
-                this.data.blurTitle = unitAngle * 4;
 
                 return {
                     transform:
                      'translateX(512px)'
                     +' translateY('+this.data.position[1]+'px)'
-                    +' translateZ('+zpos+'px)'
+                    +' translateZ(0px)'
                     +' rotateY('+this.data.position[0]+'deg)'
                     ,
                     width:this.data.diameter+'px',
                     height:this.data.diameter+'px',
                 };
+            },
+            calculateZPos:function(){
+                if(this.isSelected){
+                    return (this.data.position[2] + 10) - (this.curve.sliderCurve * 150) + 50;
+                }
+                return this.data.position[2] - (this.curve.sliderCurve * 150) + 50;
             },
             onClick:function(){
                 this.$parent.$emit('detail-select', this.$vnode.key);                
@@ -125,15 +115,15 @@
                 this.isSelected = true;
             },   
             onMouseLeave:function(){
-                this.isSelected = false;                 
-            },                        
+                this.isSelected = false;
+            },
             onDetailSelect:function(index){
                 if(this.$vnode.key == index){
                     this.isSelected = true;   
                 }
             },
             onDetailClose:function(index){
-                this.isSelected = false;   
+                this.isSelected = false;
             },            
         },
         mounted:function() {
@@ -143,11 +133,6 @@
             img.onload = function () {
                 parent.iconHeight = parent.data.iconTransform[0] * (this.height / this.width);
             }
-
-            this.data.blur = 0;
-            this.data.blurCircle = 0;
-            this.data.blurIcon = 0;
-            this.data.blurText = 0;
             this.$parent.$on('detail-select', this.onDetailSelect);
             this.$parent.$on('detail-close', this.onDetailClose);
         }

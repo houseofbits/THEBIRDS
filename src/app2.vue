@@ -1,16 +1,21 @@
 <template>
     <div id="app">
 
-        <div class="background-slider" :style="backgroundSliderStyle" ref="backgroundSlider"></div>
+        <div class="background-slider" :style="backgroundSliderStyle()" ref="backgroundSlider"></div>
 
         <div class="background-v-grad"></div>
 
+        <div class="pos-bg">
+            <div class="pos-slider" :style="posSliderStyle()"></div>
+        </div>
+
         <div v-if="!detailViewOpen" class="sector-frame" ref="sectorFrame" :style="computeTransform()" >
-            <sector2 v-for="(sector, index) in sectors" 
+            <sector2 v-for="(sector, index) in sectors" v-if="isVisible(sector.main.position[0])"
             :key="index" 
-            :sector="sector.main" 
+            :sector="sector.main"
             :title="title(index)" 
-            :circleUrl="circleUrl" 
+            :circleUrl="circleUrl"
+            :curve="calculateUnitAngle(sector.main.position[0])"
             ></sector2>
         </div>
 
@@ -32,8 +37,8 @@
                 <div class="flag ru" :class="{active:(getLanguage()=='ru')}" v-on:click="setLanguage('ru')"></div>
                 <div class="flag en" :class="{active:(getLanguage()=='en')}" v-on:click="setLanguage('en')"></div>
                 <div class="flag lv" :class="{active:(getLanguage()=='lv')}" v-on:click="setLanguage('lv')"></div>
-                <div class="button-prev" v-if="!detailViewOpen" v-on:click="autoRotate(10)"></div>
-                <div class="button-next" v-if="!detailViewOpen" v-on:click="autoRotate(-10)"></div>
+                <div class="button-prev" v-if="!detailViewOpen" v-on:click="autoRotate(-10)"></div>
+                <div class="button-next" v-if="!detailViewOpen" v-on:click="autoRotate(10)"></div>
             </div>
         </div>
 
@@ -42,7 +47,7 @@
 
 <script>
 
-    import {Vector3, Vector2, Rectangle, getRandomArbitrary, radiansToDegrees} from './components/common.js'
+    import {Vector3, Vector2, Rectangle, getRandomArbitrary, radiansToDegrees, exponentialEasing} from './components/common.js'
     import sector2 from './components/sector2.vue'
     import detail from './components/detail.vue'
 
@@ -55,7 +60,7 @@
                 language:'lv',
                 selectedDetail:null,
                 detailViewOpen:false,
-                backgroundSliderPos:100,
+                backgroundSliderPos:0,
                 angleMinMax:[0,0],
                 isAutoRotating:false,
                 rotationStep:0,
@@ -83,15 +88,6 @@
                     return this.view.sectors;
                 }
                 return false;
-            },
-            backgroundSliderStyle:function(){
-                if(this.view) {
-                    return {
-                        backgroundImage: 'url(' + this.view.mainBackground + ')',
-                        left: this.backgroundSliderPos + 'px'
-                    };
-                }
-                return {};
             },
             detailBackgroundImageUrl:function(){
                 if(this.view && typeof this.view.detailBackground != "undefined"){
@@ -122,6 +118,38 @@
                         this.initAudio();
                     }, function(){});
                 }
+            },
+            isVisible:function(localAngle){
+                let angle = this.angle + localAngle;
+                return  (angle > -25 && angle < 25);
+            },
+            calculateUnitAngle:function(localAngle){
+                if(!this.isVisible(localAngle))return 0;
+                let angle = this.angle + localAngle;
+                let unitAngle = Math.min(Math.abs(angle / 15), 1);
+                return {
+                    sliderCurve: exponentialEasing(unitAngle, 0.6),
+                    blurCurve:exponentialEasing(unitAngle, 0.9)
+                };
+            },
+            posSliderStyle:function(){
+                let absWidth = Math.abs(this.angleMinMax[0]) + Math.abs(this.angleMinMax[1]);
+                let width = Math.min((10000 / absWidth), 512);
+                let angle = Math.abs(this.angle + this.angleMinMax[0]);
+                let pos = (angle * (1024 - width)) / absWidth;
+                return {
+                    'right':pos+'px',
+                    'width':width+'px'
+                };
+            },
+            backgroundSliderStyle:function(){
+                if(this.view) {
+                    return {
+                        backgroundImage: 'url(' + this.view.mainBackground + ')',
+                        left: this.backgroundSliderPos + 'px'
+                    };
+                }
+                return {};
             },
             calculateAutoAngles:function(){
                 let initTop = -10;
@@ -334,6 +362,8 @@
                 let displacement = this.angle * 10;
                 this.backgroundSliderPos = displacement - 100;
 
+                //this.$forceUpdate();
+
                 this.prevx = e.x;
             },
             autoRotate:function(step){
@@ -357,7 +387,7 @@
                         }
                         let displacement = parent.angle * 10;
                         parent.backgroundSliderPos = displacement - 100;
-                        parent.$forceUpdate();
+                       // parent.$forceUpdate();
                     },
                     complete:function(){
                         parent.isAutoRotating = false;
@@ -419,6 +449,19 @@
         position:absolute;
         background: rgb(2,0,36);
         background: linear-gradient(180deg, rgba(0,0,0,0.6838936258096988) 0%, rgba(0,0,0,0.3785714969581583) 5%, rgba(0,0,0,0) 11%, rgba(0,0,0,0) 27%, rgba(0,0,0,0.4289916650253851) 44%, rgba(0,0,0,0) 61%, rgba(0,0,0,0) 87%, rgba(0,0,0,0.4598039899553571) 95%, rgba(0,0,0,0.5382353625043768) 100%);
+    }
+
+    .pos-bg{
+        position:absolute;
+        width:1024px;
+        height:10px;
+        background-color: rgba(255,255,255,0.3);
+    }
+    .pos-slider{
+        position:absolute;
+        width:50px;
+        height:10px;
+        background-color: rgba(0,255,0,0.5);
     }
     .sector-frame{
         transform-style: preserve-3d;
