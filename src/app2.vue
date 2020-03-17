@@ -37,8 +37,8 @@
                 <div class="flag ru" :class="{active:(getLanguage()=='ru')}" v-on:click="setLanguage('ru')"></div>
                 <div class="flag en" :class="{active:(getLanguage()=='en')}" v-on:click="setLanguage('en')"></div>
                 <div class="flag lv" :class="{active:(getLanguage()=='lv')}" v-on:click="setLanguage('lv')"></div>
-                <div class="button-prev" v-if="!detailViewOpen" v-on:click="autoRotate(-10)"></div>
-                <div class="button-next" v-if="!detailViewOpen" v-on:click="autoRotate(10)"></div>
+                <div class="button-prev" v-if="!detailViewOpen" v-on:click="autoRotate(10)"></div>
+                <div class="button-next" v-if="!detailViewOpen" v-on:click="autoRotate(-10)"></div>
             </div>
         </div>
 

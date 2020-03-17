@@ -26,27 +26,25 @@
             data: this.sector,
             iconHeight:1,
             isSelected:false,
+            angleOnMouseDown:0
         }},
         computed:{
 
         },
         methods: {
-            isVisible:function(){
-                let globalAngle = parseFloat(this.$parent._data.angle);
-                let angle = globalAngle + parseFloat(this.data.position[0]);
-
-                if(angle < -25 || angle > 25)return false;
-
-                return true;
-            },
             circleStyle:function(){
-                let bright = '';
+                let filterVal = null;
                 if(this.isSelected){
-                    bright = 'brightness(200%) ';
+                    filterVal = 'brightness(200%) ';
+                }
+                let blur = (this.curve.blurCurve * 10);
+                if(blur > 2){
+                    if(filterVal == null)filterVal = '';
+                    filterVal += ' blur('+blur+'px)';
                 }
                 return {
                     backgroundImage: 'url(' + this.circleUrl + ')',
-                    filter:bright + 'blur('+(this.curve.blurCurve * 10)+'px)',
+                    filter:filterVal,
                     transform: 'translateZ('+this.calculateZPos()+'px)',
                 };
             },
@@ -56,7 +54,14 @@
                 };
             },
             iconStyle:function(){
+                let filterVal = null;
                 let val = this.data.opacity * 110;
+                let blur = (this.curve.blurCurve * 8);
+
+                if(blur > 1){
+                    if(filterVal == null)filterVal = '';
+                    filterVal += ' blur('+blur+'px)';
+                }
                 return {
                     backgroundImage: 'url(' + this.data.iconImage + ')',
                     width:this.data.iconTransform[0]+'px',
@@ -109,16 +114,19 @@
                 return this.data.position[2] - (this.curve.sliderCurve * 150) + 50;
             },
             onClick:function(){
-                this.$parent.$emit('detail-select', this.$vnode.key);                
+                let diff = Math.abs(this.angleOnMouseDown - this.$parent.angle);
+                if(diff > 0.3)return;
+                this.$parent.$emit('detail-select', this.$vnode.key);
             },
             onMouseDown:function(){
                 this.isSelected = true;
+                this.angleOnMouseDown = this.$parent.angle;
             },   
             onMouseLeave:function(){
                 this.isSelected = false;
             },
             onDetailSelect:function(index){
-                if(this.$vnode.key == index){
+                if(this.$vnode.key === index){
                     this.isSelected = true;   
                 }
             },
