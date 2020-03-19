@@ -23,9 +23,9 @@
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    330,
+                    10,
+                    30
                 ],
                 "iconImage": "resources/view_5/images/s1d.png",
                 "iconShadow": "resources/view_5/images/s1s.png"
@@ -60,8 +60,8 @@
                 "diameter": 280,
                 "iconTransform": [
                     300,
-                    50,
-                    20
+                    0,
+                    30
                 ],
                 "iconImage": "resources/view_5/images/s2d.png",
                 "iconShadow": "resources/view_5/images/s2s.png"
@@ -95,9 +95,9 @@
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    320,
+                    0,
+                    40
                 ],
                 "iconImage": "resources/view_5/images/s3d.png",
                 "iconShadow": "resources/view_5/images/s3s.png"
@@ -131,8 +131,8 @@
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
+                    320,
+                    -20,
                     20
                 ],
                 "iconImage": "resources/view_5/images/s4d.png",
@@ -168,8 +168,8 @@
                 "diameter": 280,
                 "iconTransform": [
                     300,
-                    50,
-                    20
+                    10,
+                    30
                 ],
                 "iconImage": "resources/view_5/images/s5d.png",
                 "iconShadow": "resources/view_5/images/s5s.png"
@@ -203,8 +203,8 @@
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
+                    330,
+                    -10,
                     20
                 ],
                 "iconImage": "resources/view_5/images/s6d.png",
@@ -239,9 +239,9 @@
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    250,
+                    10,
+                    10
                 ],
                 "iconImage": "resources/view_5/images/s7d.png",
                 "iconShadow": "resources/view_5/images/s7s.png"
@@ -275,8 +275,8 @@
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
+                    320,
+                    20,
                     20
                 ],
                 "iconImage": "resources/view_5/images/s8d.png",

@@ -1,17 +1,22 @@
 <template>
     <div :style="computeTransform()" class="sector">
         <div class="icon-wrap">
-            <div class="icon" :style="iconStyle()"
-                v-on:click="onClick" 
-                v-on:mousedown="onMouseDown"
-                v-on:mouseup="onMouseLeave"
-                v-on:mouseleave="onMouseLeave"></div>
+            <div class="icon" :style="iconStyle()"></div>
             <div class="icon-shadow" :style="iconStyleShadow()"></div>
         </div>
-        <div class="title" :style="titleStyle()"><span :style="titleTextStyle()">{{title}}</span></div>
-        <div class="title-shadow" :style="{transform: 'translateZ('+(this.calculateZPos() + 30)+'px)'}"><span>{{title}}</span></div>
+        <div class="title" :style="titleStyle()">
+            <span :style="titleTextStyle()">{{title}}</span></div>
+        <div class="title-shadow" :style="titleShadowStyle()"><span>{{title}}</span></div>
         <div class="shadow" :style="{transform: 'translateZ('+(this.calculateZPos() - 30)+'px)'}"></div>
         <div class="circle" :style="circleStyle()"></div>
+        <div class="active-circle"
+             :style="activeCircleStyle()"
+             v-on:click="onClick"
+             v-on:mousedown="onMouseDown"
+             v-on:mouseup="onMouseLeave"
+             v-on:mousemove="onMouseMove"
+             v-on:mouseleave="onMouseLeave"
+             v-on:mouseenter="onMouseEnter"></div>
     </div>
 </template>
 
@@ -32,6 +37,11 @@
 
         },
         methods: {
+            activeCircleStyle:function(){
+                return {
+                    transform: 'translateZ('+(this.calculateZPos()+30)+'px)',
+                };
+            },
             circleStyle:function(){
                 let filterVal = null;
                 if(this.isSelected){
@@ -53,10 +63,19 @@
                     filter:'blur('+(this.curve.blurCurve * 4)+'px)'
                 };
             },
+            titleShadowStyle:function(){
+                let cc = (1-this.curve.iconCurve) * 20;
+                return {
+                    transform: 'translateZ('+(this.calculateZPos() + 20+cc)+'px)',
+                    filter:'blur('+(this.curve.blurCurve * 4)+'px)'
+                };
+            },
             iconStyle:function(){
                 let filterVal = null;
                 let val = this.data.opacity * 110;
                 let blur = (this.curve.blurCurve * 8);
+
+                let cc = (1-this.curve.iconCurve) * 20;
 
                 if(blur > 1){
                     if(filterVal == null)filterVal = '';
@@ -69,7 +88,7 @@
                     left:this.data.iconTransform[1]+'px',
                     top:this.data.iconTransform[2]+'px',
                     filter:'brightness('+val+'%) blur('+(this.curve.blurCurve * 8)+'px)',
-                    transform: 'translateZ('+(this.calculateZPos()+30)+'px)',
+                    transform: 'translateZ('+(this.calculateZPos()+20 + cc)+'px)',
                 };
             },
             iconStyleShadow:function(){
@@ -79,14 +98,14 @@
                     height:this.iconHeight+'px',
                     left:this.data.iconTransform[1]+'px',
                     top:this.data.iconTransform[2]+'px',
-                    transform: 'translateZ('+(this.calculateZPos()+20)+'px)',
+                    transform: 'translateZ('+(this.calculateZPos()+10)+'px)',
                 };
             },
             titleStyle:function(){
                 let val = this.data.opacity * 100;
                 return {
                     filter:'brightness('+val+'%)',
-                    transform: 'translateZ('+(this.calculateZPos()+40)+'px)',
+                    transform: 'translateZ('+(this.calculateZPos()+43)+'px)',
                 };
             },
             computeTransform: function () {
@@ -107,7 +126,14 @@
                     height:this.data.diameter+'px',
                 };
             },
-            calculateZPos:function(){
+            calculateZPos:function(min, max){
+                if(typeof min == 'undefined'){
+                    let min  = 0;
+                }
+                if(typeof max == 'undefined'){
+                    let max  = 0;
+                }
+
                 if(this.isSelected){
                     return (this.data.position[2] + 10) - (this.curve.sliderCurve * 150) + 50;
                 }
@@ -121,9 +147,21 @@
             onMouseDown:function(){
                 this.isSelected = true;
                 this.angleOnMouseDown = this.$parent.angle;
-            },   
+            },
+            onMouseMove:function(){
+                let diff = Math.abs(this.angleOnMouseDown - this.$parent.angle);
+                if(diff > 0.3){
+                    this.isSelected = false;
+                }
+            },
             onMouseLeave:function(){
                 this.isSelected = false;
+            },
+            onMouseEnter:function(e){
+                // if(e.buttons > 0) {
+                //     this.isSelected = true;
+                //     this.angleOnMouseDown = this.$parent.angle;
+                // }
             },
             onDetailSelect:function(index){
                 if(this.$vnode.key === index){
@@ -164,6 +202,7 @@
         background-image: url('/resources/segment_shadow.png');
     }
     .sector .circle{
+        pointer-events: none;
         position: absolute;
         left:-50%;
         width:100%;
@@ -171,7 +210,19 @@
         transform-style: preserve-3d;
         background-repeat: round;
     }
+    .sector .active-circle{
+        pointer-events: auto;
+        position: absolute;
+        left:-50%;
+        width:100%;
+        height:100%;
+        border-radius: 50%;
+        transform-style: preserve-3d;
+        /*border: 1px dashed yellowgreen;*/
+        /*background-color: rgba(255,255,255,0.2);*/
+    }
     .sector .icon-wrap{
+        pointer-events: none;
         position: absolute;
         left: -50%;
         width:100%;
@@ -179,6 +230,7 @@
         transform-style: preserve-3d;
     }
     .icon-wrap .icon{
+        pointer-events: none;
         position: absolute;
         left: 30px;
         top:-30px;
@@ -189,6 +241,7 @@
         background-repeat: round;
     }
     .icon-wrap .icon-shadow{
+        pointer-events: none;
         position: absolute;
         left: 30px;
         top:-30px;
@@ -199,6 +252,7 @@
         background-repeat: round;
     }
     .sector .title {
+        pointer-events: none;
         left:-50%;
         position:absolute;
         text-align: center;
@@ -210,6 +264,7 @@
         transform-style: preserve-3d;
     }
     .sector .title span{
+        pointer-events: none;
         display: inline;
         background: linear-gradient(to top, #f5ff81, white);
         -webkit-background-clip: text;
@@ -217,6 +272,7 @@
         -webkit-text-fill-color: transparent;
     }
     .sector .title-shadow {
+        pointer-events: none;
         left:-50%;
         position:absolute;
         text-align: center;
@@ -228,6 +284,7 @@
         transform-style: preserve-3d;
     }
     .sector .title-shadow span{
+        pointer-events: none;
         display: inline;
         color: rgba(0,0,0,1);
         filter:blur(3px);

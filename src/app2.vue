@@ -5,7 +5,7 @@
 
         <div class="background-v-grad"></div>
 
-        <div class="pos-bg">
+        <div class="pos-bg" v-if="!detailViewOpen">
             <div class="pos-slider" :style="posSliderStyle()"></div>
         </div>
 
@@ -40,7 +40,12 @@
                 <div class="button-prev" v-if="!detailViewOpen" v-on:click="autoRotate(10)"></div>
                 <div class="button-next" v-if="!detailViewOpen" v-on:click="autoRotate(-10)"></div>
             </div>
+            <div class="pos-page-bg" v-if="detailViewOpen">
+                <div v-for="(sector, index) in sectors" class="pos-page" :style="posPageStyle(index)"></div>
+            </div>
         </div>
+
+        <div class="info-overlay" :class="{infoOverlayOpacity:!passiveMode}"></div>
 
     </div>
 </template>
@@ -65,9 +70,12 @@
                 isAutoRotating:false,
                 rotationStep:0,
                 config:{
-                    userInputTimeout:5000,
+                    userInputTimeout:20000,
                     detailRotationDuration:650,
-                },                
+                },
+                isDraging:false,
+                userInputTimer:null,
+                passiveMode:false,
             }
         },
         components: {
@@ -119,6 +127,20 @@
                     }, function(){});
                 }
             },
+            userInputActivation:function(){
+
+                this.passiveMode = false;
+
+                if(this.userInputTimer){
+                    clearTimeout(this.userInputTimer);
+                    this.userInputTimer = null;
+                }
+                let parent = this;
+                this.userInputTimer = setTimeout(function(){
+                    if(parent.selectedDetail != null)parent.closeDetailView();
+                    parent.passiveMode = true;
+                }, this.config.userInputTimeout);
+            },
             isVisible:function(localAngle){
                 let angle = this.angle + localAngle;
                 return  (angle > -25 && angle < 25);
@@ -128,8 +150,21 @@
                 let angle = this.angle + localAngle;
                 let unitAngle = Math.min(Math.abs(angle / 15), 1);
                 return {
+                    iconCurve: exponentialEasing(unitAngle, 0.4),
                     sliderCurve: exponentialEasing(unitAngle, 0.6),
                     blurCurve:exponentialEasing(unitAngle, 0.9)
+                };
+            },
+            posPageStyle:function(index){
+                let w = 1024 / this.sectors.length;
+                let color = 'rgba(255,255,255,0.2)';
+                if(index == this.selectedDetail){
+                    color = 'rgba(0,255,0,0.4)';
+                }
+                return {
+                    width:(w-2)+'px',
+                    left:((w+1)*index)+'px',
+                    backgroundColor: color
                 };
             },
             posSliderStyle:function(){
@@ -154,12 +189,13 @@
             calculateAutoAngles:function(){
                 let initTop = -10;
                 let initBottom = -5;
-                let topNum = Math.ceil(this.view.sectors.length / 2);
+                //let topNum = Math.ceil(this.view.sectors.length / 2);
+                let updown=true;
                 for(let i=0; i<this.view.sectors.length; i++){
                     this.view.sectors[i].main.position = [0,0,0];
-                    if(i < topNum){
+                    if(updown){
                         this.view.sectors[i].main.position[0] = initTop;
-                        this.view.sectors[i].main.position[1] = 100;
+                        this.view.sectors[i].main.position[1] = 110;
                         initTop += 10;
                     }else{
                         this.view.sectors[i].main.position[0] = initBottom;
@@ -167,6 +203,7 @@
                         initBottom += 10;
                     }
                     this.view.sectors[i].main.position[2] = 50;
+                    updown = !updown;
                 }
             },
             calculateMinMaxAngle:function(){
@@ -198,17 +235,19 @@
 
                 if(this.selectedDetail != null && index == this.selectedDetail)return true;
 
-                var next = this.getNextDetailViewId();
+                let next = this.getNextDetailViewId();
                 if(next != null && index == next)return true;
 
-                var prev = this.getPreviousDetailViewId();
+                let prev = this.getPreviousDetailViewId();
                 if(prev != null && index == prev)return true;
 
                 return false;
             },
             closeDetailView:function(){
 
-                var parent = this;
+                if(this.selectedDetail == null)return;
+
+                let parent = this;
 
                 this.$emit('detail-close', this.selectedDetail);
 
@@ -226,6 +265,7 @@
                         parent.detailViewOpen = false;
                     }
                 });
+                this.userInputActivation();
             },  
             selectDetailView:function(id){
 
@@ -342,6 +382,8 @@
             },
             onDrag:function (e) {
 
+                this.userInputActivation();
+
                 if(this.selectedDetail !== null)return;
 
                 if(this.prevx==null){
@@ -350,6 +392,7 @@
                 }
                 let diff = e.x - this.prevx;
                 if(e.buttons > 0) {
+                    this.isDraging = true;
                     this.angle += (diff * 0.03);
                     if(-this.angle < this.angleMinMax[0]){
                         this.angle = -this.angleMinMax[0]
@@ -365,6 +408,10 @@
                 //this.$forceUpdate();
 
                 this.prevx = e.x;
+            },
+            onMouseUp:function(){
+                this.isDraging = false;
+                this.userInputActivation();
             },
             autoRotate:function(step){
 
@@ -398,6 +445,7 @@
         mounted:function() {
             this.init();
             document.addEventListener('mousemove', this.onDrag);
+            document.addEventListener('mouseup', this.onMouseUp);
 
             // document.addEventListener('touchstart', this.onTouchMove, false);
             // document.addEventListener('touchmove', this.onTouchMove, false);
@@ -410,6 +458,7 @@
 
             this.$on('detail-select', this.selectDetailView);
 
+            this.userInputActivation();
         }
     }
 </script>
@@ -455,13 +504,26 @@
         position:absolute;
         width:1024px;
         height:10px;
-        background-color: rgba(255,255,255,0.3);
+        bottom:0px;
+        background-color: rgba(255,255,255,0.2);
     }
     .pos-slider{
         position:absolute;
         width:50px;
         height:10px;
-        background-color: rgba(0,255,0,0.5);
+        background-color: rgba(0,255,0,0.4);
+    }
+    .pos-page-bg{
+        position:absolute;
+        width:1024px;
+        height:10px;
+        bottom:0px;
+    }
+    .pos-page{
+        position:absolute;
+        width:50px;
+        height:10px;
+        background-color: rgba(255,255,255,0.2);
     }
     .sector-frame{
         transform-style: preserve-3d;
@@ -479,7 +541,7 @@
     .language{
         width:100%;
         position:fixed;
-        bottom:0px;
+        bottom:10px;
         text-align:center;
         z-index:500;
     }
@@ -549,7 +611,7 @@
     .button-prev{
         position:fixed;
         left: 0px;
-        bottom:0px;
+        bottom:10px;
         background-image: url("/resources/button_return.png");
         width:100px;
         height:100px;
@@ -566,7 +628,7 @@
     .button-next{
         position:fixed;
         right: 0px;
-        bottom:0px;
+        bottom:10px;
         background-image: url("/resources/button_return.png");
         width:100px;
         height:100px;
@@ -597,5 +659,25 @@
         background-image: url("/resources/button_exit_on.png");
         opacity: 1;
         transition: opacity 200ms;
-    }    
+    }
+    .info-overlay{
+        visibility: visible;
+        width:1024px;
+        height:768px;
+        position:absolute;
+        top:0;
+        left:0;
+        display:block;
+        background-image: url("/resources/finger_icon.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        opacity: 1;
+        transition: opacity 400ms, visibility 400ms;
+    }
+    .infoOverlayOpacity{
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 400ms, visibility 400ms;
+    }
 </style>
