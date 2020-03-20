@@ -17,15 +17,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    200,
+                    70,
+                    -20
                 ],
                 "iconImage": "resources/view_6/images/s1d.png",
                 "iconShadow": "resources/view_6/images/s1s.png"
@@ -53,15 +54,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    320,
+                    -10,
+                    10
                 ],
                 "iconImage": "resources/view_6/images/s2d.png",
                 "iconShadow": "resources/view_6/images/s2s.png"
@@ -89,15 +91,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
                     300,
-                    50,
-                    20
+                    10,
+                    30
                 ],
                 "iconImage": "resources/view_6/images/s3d.png",
                 "iconShadow": "resources/view_6/images/s3s.png"
@@ -125,15 +128,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
                     300,
-                    50,
-                    20
+                    -10,
+                    60
                 ],
                 "iconImage": "resources/view_6/images/s4d.png",
                 "iconShadow": "resources/view_6/images/s4s.png"
@@ -161,15 +165,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    260,
+                    0,
+                    10
                 ],
                 "iconImage": "resources/view_6/images/s5d.png",
                 "iconShadow": "resources/view_6/images/s5s.png"
@@ -197,14 +202,15 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
+                    330,
+                    -20,
                     20
                 ],
                 "iconImage": "resources/view_6/images/s6d.png",
@@ -233,14 +239,15 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
                     300,
-                    50,
+                    -20,
                     20
                 ],
                 "iconImage": "resources/view_6/images/s7d.png",
@@ -269,14 +276,15 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
+                    330,
+                    0,
                     20
                 ],
                 "iconImage": "resources/view_6/images/s8d.png",
@@ -305,15 +313,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    270,
+                    20,
+                    0
                 ],
                 "iconImage": "resources/view_6/images/s9d.png",
                 "iconShadow": "resources/view_6/images/s9s.png"
@@ -341,14 +350,15 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
+                    330,
+                    0,
                     20
                 ],
                 "iconImage": "resources/view_6/images/s10d.png",
@@ -377,14 +387,15 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
+                    330,
+                    10,
                     20
                 ],
                 "iconImage": "resources/view_6/images/s11d.png",
@@ -413,15 +424,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    340,
+                    -10,
+                    30
                 ],
                 "iconImage": "resources/view_6/images/s12d.png",
                 "iconShadow": "resources/view_6/images/s12s.png"
@@ -449,15 +461,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    220,
+                    30,
+                    10
                 ],
                 "iconImage": "resources/view_6/images/s13d.png",
                 "iconShadow": "resources/view_6/images/s13s.png"
@@ -485,14 +498,15 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
+                    320,
+                    0,
                     20
                 ],
                 "iconImage": "resources/view_6/images/s14d.png",
@@ -521,15 +535,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    180,
+                    40,
+                    10
                 ],
                 "iconImage": "resources/view_6/images/s15d.png",
                 "iconShadow": "resources/view_6/images/s15s.png"
@@ -557,14 +572,15 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
+                    320,
+                    -20,
                     20
                 ],
                 "iconImage": "resources/view_6/images/s16d.png",
@@ -593,15 +609,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    200,
+                    30,
+                    0
                 ],
                 "iconImage": "resources/view_6/images/s17d.png",
                 "iconShadow": "resources/view_6/images/s17s.png"
@@ -629,15 +646,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    200,
+                    30,
+                    -20
                 ],
                 "iconImage": "resources/view_6/images/s18d.png",
                 "iconShadow": "resources/view_6/images/s18s.png"

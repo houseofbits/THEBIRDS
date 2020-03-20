@@ -17,14 +17,15 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
+                    330,
+                    0,
                     20
                 ],
                 "iconImage": "resources/view_9/images/s1d.png",
@@ -53,15 +54,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    350,
+                    0,
+                    10
                 ],
                 "iconImage": "resources/view_9/images/s2d.png",
                 "iconShadow": "resources/view_9/images/s2s.png"
@@ -89,15 +91,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    380,
+                    -30,
+                    30
                 ],
                 "iconImage": "resources/view_9/images/s3d.png",
                 "iconShadow": "resources/view_9/images/s3s.png"
@@ -125,15 +128,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    230,
+                    30,
+                    0
                 ],
                 "iconImage": "resources/view_9/images/s4d.png",
                 "iconShadow": "resources/view_9/images/s4s.png"
@@ -161,15 +165,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    290,
+                    -10,
+                    30
                 ],
                 "iconImage": "resources/view_9/images/s5d.png",
                 "iconShadow": "resources/view_9/images/s5s.png"
@@ -197,15 +202,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    350,
+                    -10,
+                    10
                 ],
                 "iconImage": "resources/view_9/images/s6d.png",
                 "iconShadow": "resources/view_9/images/s6s.png"
@@ -233,14 +239,15 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
                     300,
-                    50,
+                    0,
                     20
                 ],
                 "iconImage": "resources/view_9/images/s7d.png",
@@ -269,15 +276,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    320,
+                    0,
+                    30
                 ],
                 "iconImage": "resources/view_9/images/s8d.png",
                 "iconShadow": "resources/view_9/images/s8s.png"
@@ -305,15 +313,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    240,
+                    20,
+                    -20
                 ],
                 "iconImage": "resources/view_9/images/s9d.png",
                 "iconShadow": "resources/view_9/images/s9s.png"
@@ -341,15 +350,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    330,
+                   -20,
+                    10
                 ],
                 "iconImage": "resources/view_9/images/s10d.png",
                 "iconShadow": "resources/view_9/images/s10s.png"
@@ -377,14 +387,15 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
+                    320,
+                    0,
                     20
                 ],
                 "iconImage": "resources/view_9/images/s11d.png",
@@ -413,14 +424,15 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
+                    360,
+                    -20,
                     20
                 ],
                 "iconImage": "resources/view_9/images/s12d.png",
@@ -449,15 +461,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    240,
+                    20,
+                    0
                 ],
                 "iconImage": "resources/view_9/images/s13d.png",
                 "iconShadow": "resources/view_9/images/s13s.png"
@@ -485,15 +498,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    330,
+                    -30,
+                    30
                 ],
                 "iconImage": "resources/view_9/images/s14d.png",
                 "iconShadow": "resources/view_9/images/s14s.png"
@@ -521,15 +535,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
                     300,
-                    50,
-                    20
+                    0,
+                    30
                 ],
                 "iconImage": "resources/view_9/images/s15d.png",
                 "iconShadow": "resources/view_9/images/s15s.png"
@@ -557,15 +572,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    290,
+                    0,
+                    10
                 ],
                 "iconImage": "resources/view_9/images/s16d.png",
                 "iconShadow": "resources/view_9/images/s16s.png"
@@ -593,14 +609,15 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
+                    320,
+                    -40,
                     20
                 ],
                 "iconImage": "resources/view_9/images/s17d.png",
@@ -629,14 +646,15 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    380,
+                    30
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
+                    330,
+                    -20,
                     20
                 ],
                 "iconImage": "resources/view_9/images/s18d.png",

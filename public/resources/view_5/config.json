@@ -17,7 +17,8 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    270,
+                    28
                 ]
             },
             "main": {
@@ -33,11 +34,21 @@
             "detailImage": {
                 "image": "resources/view_5/images/s1d.png",
                 "transform": [
-                    560,
-                    420,
-                    0
+                    520,
+                    450,
+                    -20
                 ]
-            }
+            },
+            "audio":[
+              {
+                "title":{
+                  "lv":"Sauciens lidojumā",
+                  "ru":"Sauciens lidojumā",
+                  "en":"Sauciens lidojumā"
+                },
+                "fileName":"resources/view_5/sounds/bišu_dzenis_sauciens_lidojumā.mp3"
+              }
+            ]
         },
         {
             "comment": "----------------------- S2 ------------------------------",
@@ -53,14 +64,15 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    320,
+                    28
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    0,
+                    340,
+                    -20,
                     30
                 ],
                 "iconImage": "resources/view_5/images/s2d.png",
@@ -69,11 +81,21 @@
             "detailImage": {
                 "image": "resources/view_5/images/s2d.png",
                 "transform": [
-                    560,
+                    540,
                     420,
                     0
                 ]
-            }
+            },
+            "audio":[
+              {
+                "title":{
+                  "lv":"Dziesma",
+                  "ru":"Dziesma",
+                  "en":"Dziesma"
+                },
+                "fileName":"resources/view_5/sounds/dzeguze_dziesma.mp3"
+              }
+            ]
         },
         {
             "comment": "----------------------- S3 ------------------------------",
@@ -106,10 +128,20 @@
                 "image": "resources/view_5/images/s3d.png",
                 "transform": [
                     560,
-                    420,
+                    450,
                     0
                 ]
-            }
+            },
+            "audio":[
+              {
+                "title":{
+                  "lv":"Dziesma",
+                  "ru":"Dziesma",
+                  "en":"Dziesma"
+                },
+                "fileName":"resources/view_5/sounds/gredzenūbele_dziesma.mp3"
+              }
+            ]
         },
         {
             "comment": "----------------------- S4 ------------------------------",
@@ -145,7 +177,17 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"Dziesma",
+                        "ru":"Dziesma",
+                        "en":"Dziesma"
+                    },
+                    "fileName":"resources/view_5/sounds/lauku_balodis_dziesma.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S5 ------------------------------",
@@ -181,7 +223,17 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"Dziesma",
+                        "ru":"Dziesma",
+                        "en":"Dziesma"
+                    },
+                    "fileName":"resources/view_5/sounds/meža_balodis_dziesma.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S6 ------------------------------",
@@ -214,10 +266,20 @@
                 "image": "resources/view_5/images/s6d.png",
                 "transform": [
                     560,
-                    420,
+                    450,
                     0
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"Dziesma",
+                        "ru":"Dziesma",
+                        "en":"Dziesma"
+                    },
+                    "fileName":"resources/view_5/sounds/parastā_ūbele_dziesma.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S7 ------------------------------",
@@ -233,7 +295,8 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    390,
+                    30
                 ]
             },
             "main": {
@@ -249,11 +312,29 @@
             "detailImage": {
                 "image": "resources/view_5/images/s7d.png",
                 "transform": [
-                    560,
-                    420,
+                    410,
+                    500,
                     0
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"Dziesma",
+                        "ru":"Dziesma",
+                        "en":"Dziesma"
+                    },
+                    "fileName":"resources/view_5/sounds/pupuķis_dziesma.mp3"
+                },
+                {
+                    "title":{
+                        "lv":"Sauciens",
+                        "ru":"Sauciens",
+                        "en":"Sauciens"
+                    },
+                    "fileName":"resources/view_5/sounds/pupuķis_sauciens.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S8 ------------------------------",
@@ -285,9 +366,9 @@
             "detailImage": {
                 "image": "resources/view_5/images/s8d.png",
                 "transform": [
-                    560,
-                    420,
-                    0
+                    580,
+                    460,
+                    30
                 ]
             }
         },
@@ -311,8 +392,8 @@
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
+                    320,
+                    10,
                     20
                 ],
                 "iconImage": "resources/view_5/images/s9d.png",
@@ -322,10 +403,20 @@
                 "image": "resources/view_5/images/s9d.png",
                 "transform": [
                     560,
-                    420,
+                    470,
                     0
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"Balsis ligzdošanas vietā",
+                        "ru":"Balsis ligzdošanas vietā",
+                        "en":"Balsis ligzdošanas vietā"
+                    },
+                    "fileName":"resources/view_5/sounds/svīre_vairāku_putnu_balsis_ligzdošanas_vietā.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S10 ------------------------------",
@@ -347,9 +438,9 @@
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    330,
+                    -20,
+                    30
                 ],
                 "iconImage": "resources/view_5/images/s10d.png",
                 "iconShadow": "resources/view_5/images/s10s.png"
@@ -361,7 +452,33 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"Balss",
+                        "ru":"Balss",
+                        "en":"Balss"
+                    },
+                    "fileName":"resources/view_5/sounds/vakarlēpis_balss.mp3"
+                },
+                {
+                    "title":{
+                        "lv":"Balss",
+                        "ru":"Balss",
+                        "en":"Balss"
+                    },
+                    "fileName":"resources/view_5/sounds/vakarlēpis_balss_2.mp3"
+                },
+                {
+                    "title":{
+                        "lv":"Dziesma",
+                        "ru":"Dziesma",
+                        "en":"Dziesma"
+                    },
+                    "fileName":"resources/view_5/sounds/vakarlēpis_dziesma.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S11 ------------------------------",
@@ -377,15 +494,16 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    310,
+                    26
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
-                    20
+                    330,
+                    -20,
+                    40
                 ],
                 "iconImage": "resources/view_5/images/s11d.png",
                 "iconShadow": "resources/view_5/images/s11s.png"
@@ -393,11 +511,29 @@
             "detailImage": {
                 "image": "resources/view_5/images/s11d.png",
                 "transform": [
-                    560,
-                    420,
+                    520,
+                    470,
                     0
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"Balss",
+                        "ru":"Balss",
+                        "en":"Balss"
+                    },
+                    "fileName":"resources/view_5/sounds/zaļā_vārna_balss.mp3"
+                },
+                {
+                    "title":{
+                        "lv":"Balss",
+                        "ru":"Balss",
+                        "en":"Balss"
+                    },
+                    "fileName":"resources/view_5/sounds/zaļā_vārna_balss_2.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S12 ------------------------------",
@@ -413,14 +549,15 @@
                 "en": "",
                 "transform": [
                     20,
-                    380
+                    360,
+                    28
                 ]
             },
             "main": {
                 "diameter": 280,
                 "iconTransform": [
-                    300,
-                    50,
+                    330,
+                    -10,
                     20
                 ],
                 "iconImage": "resources/view_5/images/s12d.png",
@@ -433,7 +570,17 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"Balss",
+                        "ru":"Balss",
+                        "en":"Balss"
+                    },
+                    "fileName":"resources/view_5/sounds/zivju_dzenītis_balss.mp3"
+                }
+            ]
         }
     ]
 }

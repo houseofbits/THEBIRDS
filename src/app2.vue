@@ -70,7 +70,7 @@
                 isAutoRotating:false,
                 rotationStep:0,
                 config:{
-                    userInputTimeout:20000,
+                    userInputTimeout:80000,
                     detailRotationDuration:650,
                 },
                 isDraging:false,
@@ -393,7 +393,7 @@
                 let diff = e.x - this.prevx;
                 if(e.buttons > 0) {
                     this.isDraging = true;
-                    this.angle += (diff * 0.03);
+                    this.angle += (diff * 0.03); //0.03
                     if(-this.angle < this.angleMinMax[0]){
                         this.angle = -this.angleMinMax[0]
                     }
@@ -487,13 +487,13 @@
       /*  border: 1px dashed yellow; */
     }
     .background-slider{
-        width:2240px;
+        width:2736px;
         height:768px;
         position:absolute;
         top:0;
     }
     .background-v-grad{
-        width:2240px;
+        width:1024px;
         height:768px;
         position:absolute;
         background: rgb(2,0,36);
