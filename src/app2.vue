@@ -60,7 +60,7 @@
         name: "app",
         data: function(){return {
                 view: null,
-                angle:0,
+                angle:-95,
                 prevx:null,
                 language:'lv',
                 selectedDetail:null,
@@ -504,7 +504,7 @@
       /*  border: 1px dashed yellow; */
     }
     .background-slider{
-        width:2736px;
+        width:3386px;
         height:768px;
         position:absolute;
         top:0;

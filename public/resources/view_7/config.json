@@ -17,14 +17,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  30,
                   20
               ],
               "iconImage": "resources/view_7/images/s1d.png",
@@ -54,14 +55,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_7/images/s2d.png",
@@ -91,14 +93,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  0,
                   20
               ],
               "iconImage": "resources/view_7/images/s3d.png",
@@ -128,14 +131,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  330,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_7/images/s4d.png",
@@ -165,15 +169,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  290,
+                  0,
+                  30
               ],
               "iconImage": "resources/view_7/images/s5d.png",
               "iconShadow": "resources/view_7/images/s5s.png"
@@ -202,15 +207,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  320,
+                  -10,
+                  10
               ],
               "iconImage": "resources/view_7/images/s6d.png",
               "iconShadow": "resources/view_7/images/s6s.png"
@@ -239,15 +245,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  210,
+                  30,
+                  30
               ],
               "iconImage": "resources/view_7/images/s7d.png",
               "iconShadow": "resources/view_7/images/s7s.png"
@@ -276,14 +283,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  320,
+                  0,
                   20
               ],
               "iconImage": "resources/view_7/images/s8d.png",
@@ -313,15 +321,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
-                  20
+                  -10,
+                  40
               ],
               "iconImage": "resources/view_7/images/s9d.png",
               "iconShadow": "resources/view_7/images/s9s.png"
@@ -350,14 +359,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  330,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_7/images/s10d.png",
@@ -387,14 +397,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  330,
+                  -40,
                   20
               ],
               "iconImage": "resources/view_7/images/s11d.png",
@@ -424,14 +435,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_7/images/s12d.png",
@@ -461,14 +473,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  10,
                   20
               ],
               "iconImage": "resources/view_7/images/s13d.png",
@@ -498,14 +511,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  330,
+                  -20,
                   20
               ],
               "iconImage": "resources/view_7/images/s14d.png",
@@ -535,14 +549,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_7/images/s15d.png",
@@ -572,14 +587,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  320,
+                  -20,
                   20
               ],
               "iconImage": "resources/view_7/images/s16d.png",
@@ -609,14 +625,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_7/images/s17d.png",
@@ -646,14 +663,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  330,
+                  -20,
                   20
               ],
               "iconImage": "resources/view_7/images/s18d.png",
@@ -683,14 +701,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  280,
+                  0,
                   20
               ],
               "iconImage": "resources/view_7/images/s19d.png",
@@ -720,14 +739,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  0,
                   20
               ],
               "iconImage": "resources/view_7/images/s20d.png",
@@ -757,15 +777,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
-                  20
+                  -10,
+                  30
               ],
               "iconImage": "resources/view_7/images/s21d.png",
               "iconShadow": "resources/view_7/images/s21s.png"
@@ -794,14 +815,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  20,
                   20
               ],
               "iconImage": "resources/view_7/images/s22d.png",
@@ -831,15 +853,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
-                  20
+                  -10,
+                  30
               ],
               "iconImage": "resources/view_7/images/s23d.png",
               "iconShadow": "resources/view_7/images/s23s.png"
@@ -868,15 +891,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
-                  20
+                  0,
+                  30
               ],
               "iconImage": "resources/view_7/images/s24d.png",
               "iconShadow": "resources/view_7/images/s24s.png"
@@ -905,14 +929,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  220,
+                  20,
                   20
               ],
               "iconImage": "resources/view_7/images/s25d.png",
@@ -942,15 +967,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  320,
+                  -20,
+                  10
               ],
               "iconImage": "resources/view_7/images/s26d.png",
               "iconShadow": "resources/view_7/images/s26s.png"
@@ -979,14 +1005,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  0,
                   20
               ],
               "iconImage": "resources/view_7/images/s27d.png",
@@ -1016,15 +1043,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  220,
+                  20,
+                  -20
               ],
               "iconImage": "resources/view_7/images/s28d.png",
               "iconShadow": "resources/view_7/images/s28s.png"
@@ -1053,14 +1081,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  0,
                   20
               ],
               "iconImage": "resources/view_7/images/s29d.png",
@@ -1090,15 +1119,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  260,
+                  0,
+                  0
               ],
               "iconImage": "resources/view_7/images/s30d.png",
               "iconShadow": "resources/view_7/images/s30s.png"
@@ -1127,15 +1157,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
-                  20
+                  0,
+                  30
               ],
               "iconImage": "resources/view_7/images/s31d.png",
               "iconShadow": "resources/view_7/images/s31s.png"
@@ -1164,14 +1195,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  330,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_7/images/s32d.png",
@@ -1201,14 +1233,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  0,
                   20
               ],
               "iconImage": "resources/view_7/images/s33d.png",
@@ -1238,15 +1271,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
-                  20
+                  0,
+                  10
               ],
               "iconImage": "resources/view_7/images/s34d.png",
               "iconShadow": "resources/view_7/images/s34s.png"
@@ -1275,15 +1309,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  260,
+                  -10,
+                  -10
               ],
               "iconImage": "resources/view_7/images/s35d.png",
               "iconShadow": "resources/view_7/images/s35s.png"
@@ -1312,14 +1347,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  -20,
                   20
               ],
               "iconImage": "resources/view_7/images/s36d.png",
@@ -1349,14 +1385,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  0,
                   20
               ],
               "iconImage": "resources/view_7/images/s37d.png",
@@ -1386,15 +1423,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
-                  20
+                  10,
+                  30
               ],
               "iconImage": "resources/view_7/images/s38d.png",
               "iconShadow": "resources/view_7/images/s38s.png"
@@ -1423,14 +1461,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  0,
                   20
               ],
               "iconImage": "resources/view_7/images/s39d.png",
@@ -1460,15 +1499,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  330,
+                  -20,
+                  30
               ],
               "iconImage": "resources/view_7/images/s40d.png",
               "iconShadow": "resources/view_7/images/s40s.png"
@@ -1497,14 +1537,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  10,
                   20
               ],
               "iconImage": "resources/view_7/images/s41d.png",
@@ -1534,14 +1575,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  0,
                   20
               ],
               "iconImage": "resources/view_7/images/s42d.png",
@@ -1571,15 +1613,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  270,
+                  0,
+                  10
               ],
               "iconImage": "resources/view_7/images/s43d.png",
               "iconShadow": "resources/view_7/images/s43s.png"
@@ -1608,14 +1651,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_7/images/s44d.png",
@@ -1645,15 +1689,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  320,
+                  -10,
+                  10
               ],
               "iconImage": "resources/view_7/images/s45d.png",
               "iconShadow": "resources/view_7/images/s45s.png"
