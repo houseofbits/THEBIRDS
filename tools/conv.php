@@ -1,6 +1,6 @@
 <?php
 
-$id = '10';
+$id = '8';
 
 $descrFile="desc/".$id.".xhtml";
 $mappingFileName = "desc/".$id.".txt";

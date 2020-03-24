@@ -1,7 +1,7 @@
 <?php 
 
-$viewId = 10;
-$numIcons = 35;
+$viewId = 8;
+$numIcons = 38;
 
 $data = [
     "mainBackground" => "resources/view_1/images/bg2.png",
@@ -34,7 +34,10 @@ for($i=1; $i<=$numIcons; $i++){
         "detailImage" => [
           "image" => "resources/view_".$viewId."/images/s".$i."d.png",
           "transform" => [560,420,0]
-        ]
+        ],
+        "audio" => [
+
+        ]        
     ];
 }
 

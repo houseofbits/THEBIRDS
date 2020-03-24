@@ -27,17 +27,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s1d.png",
-                "iconShadow": "resources/view_10/images/s1s.png"
+                "iconImage": "resources/view_8/images/s1d.png",
+                "iconShadow": "resources/view_8/images/s1s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s1d.png",
+                "image": "resources/view_8/images/s1d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S2 ------------------------------",
@@ -63,17 +64,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s2d.png",
-                "iconShadow": "resources/view_10/images/s2s.png"
+                "iconImage": "resources/view_8/images/s2d.png",
+                "iconShadow": "resources/view_8/images/s2s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s2d.png",
+                "image": "resources/view_8/images/s2d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S3 ------------------------------",
@@ -99,17 +101,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s3d.png",
-                "iconShadow": "resources/view_10/images/s3s.png"
+                "iconImage": "resources/view_8/images/s3d.png",
+                "iconShadow": "resources/view_8/images/s3s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s3d.png",
+                "image": "resources/view_8/images/s3d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S4 ------------------------------",
@@ -135,17 +138,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s4d.png",
-                "iconShadow": "resources/view_10/images/s4s.png"
+                "iconImage": "resources/view_8/images/s4d.png",
+                "iconShadow": "resources/view_8/images/s4s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s4d.png",
+                "image": "resources/view_8/images/s4d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S5 ------------------------------",
@@ -171,17 +175,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s5d.png",
-                "iconShadow": "resources/view_10/images/s5s.png"
+                "iconImage": "resources/view_8/images/s5d.png",
+                "iconShadow": "resources/view_8/images/s5s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s5d.png",
+                "image": "resources/view_8/images/s5d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S6 ------------------------------",
@@ -207,17 +212,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s6d.png",
-                "iconShadow": "resources/view_10/images/s6s.png"
+                "iconImage": "resources/view_8/images/s6d.png",
+                "iconShadow": "resources/view_8/images/s6s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s6d.png",
+                "image": "resources/view_8/images/s6d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S7 ------------------------------",
@@ -243,17 +249,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s7d.png",
-                "iconShadow": "resources/view_10/images/s7s.png"
+                "iconImage": "resources/view_8/images/s7d.png",
+                "iconShadow": "resources/view_8/images/s7s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s7d.png",
+                "image": "resources/view_8/images/s7d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S8 ------------------------------",
@@ -279,17 +286,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s8d.png",
-                "iconShadow": "resources/view_10/images/s8s.png"
+                "iconImage": "resources/view_8/images/s8d.png",
+                "iconShadow": "resources/view_8/images/s8s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s8d.png",
+                "image": "resources/view_8/images/s8d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S9 ------------------------------",
@@ -315,17 +323,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s9d.png",
-                "iconShadow": "resources/view_10/images/s9s.png"
+                "iconImage": "resources/view_8/images/s9d.png",
+                "iconShadow": "resources/view_8/images/s9s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s9d.png",
+                "image": "resources/view_8/images/s9d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S10 ------------------------------",
@@ -351,17 +360,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s10d.png",
-                "iconShadow": "resources/view_10/images/s10s.png"
+                "iconImage": "resources/view_8/images/s10d.png",
+                "iconShadow": "resources/view_8/images/s10s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s10d.png",
+                "image": "resources/view_8/images/s10d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S11 ------------------------------",
@@ -387,17 +397,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s11d.png",
-                "iconShadow": "resources/view_10/images/s11s.png"
+                "iconImage": "resources/view_8/images/s11d.png",
+                "iconShadow": "resources/view_8/images/s11s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s11d.png",
+                "image": "resources/view_8/images/s11d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S12 ------------------------------",
@@ -423,17 +434,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s12d.png",
-                "iconShadow": "resources/view_10/images/s12s.png"
+                "iconImage": "resources/view_8/images/s12d.png",
+                "iconShadow": "resources/view_8/images/s12s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s12d.png",
+                "image": "resources/view_8/images/s12d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S13 ------------------------------",
@@ -459,17 +471,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s13d.png",
-                "iconShadow": "resources/view_10/images/s13s.png"
+                "iconImage": "resources/view_8/images/s13d.png",
+                "iconShadow": "resources/view_8/images/s13s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s13d.png",
+                "image": "resources/view_8/images/s13d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S14 ------------------------------",
@@ -495,17 +508,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s14d.png",
-                "iconShadow": "resources/view_10/images/s14s.png"
+                "iconImage": "resources/view_8/images/s14d.png",
+                "iconShadow": "resources/view_8/images/s14s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s14d.png",
+                "image": "resources/view_8/images/s14d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S15 ------------------------------",
@@ -531,17 +545,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s15d.png",
-                "iconShadow": "resources/view_10/images/s15s.png"
+                "iconImage": "resources/view_8/images/s15d.png",
+                "iconShadow": "resources/view_8/images/s15s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s15d.png",
+                "image": "resources/view_8/images/s15d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S16 ------------------------------",
@@ -567,17 +582,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s16d.png",
-                "iconShadow": "resources/view_10/images/s16s.png"
+                "iconImage": "resources/view_8/images/s16d.png",
+                "iconShadow": "resources/view_8/images/s16s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s16d.png",
+                "image": "resources/view_8/images/s16d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S17 ------------------------------",
@@ -603,17 +619,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s17d.png",
-                "iconShadow": "resources/view_10/images/s17s.png"
+                "iconImage": "resources/view_8/images/s17d.png",
+                "iconShadow": "resources/view_8/images/s17s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s17d.png",
+                "image": "resources/view_8/images/s17d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S18 ------------------------------",
@@ -639,17 +656,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s18d.png",
-                "iconShadow": "resources/view_10/images/s18s.png"
+                "iconImage": "resources/view_8/images/s18d.png",
+                "iconShadow": "resources/view_8/images/s18s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s18d.png",
+                "image": "resources/view_8/images/s18d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S19 ------------------------------",
@@ -675,17 +693,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s19d.png",
-                "iconShadow": "resources/view_10/images/s19s.png"
+                "iconImage": "resources/view_8/images/s19d.png",
+                "iconShadow": "resources/view_8/images/s19s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s19d.png",
+                "image": "resources/view_8/images/s19d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S20 ------------------------------",
@@ -711,17 +730,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s20d.png",
-                "iconShadow": "resources/view_10/images/s20s.png"
+                "iconImage": "resources/view_8/images/s20d.png",
+                "iconShadow": "resources/view_8/images/s20s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s20d.png",
+                "image": "resources/view_8/images/s20d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S21 ------------------------------",
@@ -747,17 +767,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s21d.png",
-                "iconShadow": "resources/view_10/images/s21s.png"
+                "iconImage": "resources/view_8/images/s21d.png",
+                "iconShadow": "resources/view_8/images/s21s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s21d.png",
+                "image": "resources/view_8/images/s21d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S22 ------------------------------",
@@ -783,17 +804,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s22d.png",
-                "iconShadow": "resources/view_10/images/s22s.png"
+                "iconImage": "resources/view_8/images/s22d.png",
+                "iconShadow": "resources/view_8/images/s22s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s22d.png",
+                "image": "resources/view_8/images/s22d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S23 ------------------------------",
@@ -819,17 +841,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s23d.png",
-                "iconShadow": "resources/view_10/images/s23s.png"
+                "iconImage": "resources/view_8/images/s23d.png",
+                "iconShadow": "resources/view_8/images/s23s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s23d.png",
+                "image": "resources/view_8/images/s23d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S24 ------------------------------",
@@ -855,17 +878,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s24d.png",
-                "iconShadow": "resources/view_10/images/s24s.png"
+                "iconImage": "resources/view_8/images/s24d.png",
+                "iconShadow": "resources/view_8/images/s24s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s24d.png",
+                "image": "resources/view_8/images/s24d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S25 ------------------------------",
@@ -891,17 +915,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s25d.png",
-                "iconShadow": "resources/view_10/images/s25s.png"
+                "iconImage": "resources/view_8/images/s25d.png",
+                "iconShadow": "resources/view_8/images/s25s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s25d.png",
+                "image": "resources/view_8/images/s25d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S26 ------------------------------",
@@ -927,17 +952,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s26d.png",
-                "iconShadow": "resources/view_10/images/s26s.png"
+                "iconImage": "resources/view_8/images/s26d.png",
+                "iconShadow": "resources/view_8/images/s26s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s26d.png",
+                "image": "resources/view_8/images/s26d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S27 ------------------------------",
@@ -963,17 +989,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s27d.png",
-                "iconShadow": "resources/view_10/images/s27s.png"
+                "iconImage": "resources/view_8/images/s27d.png",
+                "iconShadow": "resources/view_8/images/s27s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s27d.png",
+                "image": "resources/view_8/images/s27d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S28 ------------------------------",
@@ -999,17 +1026,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s28d.png",
-                "iconShadow": "resources/view_10/images/s28s.png"
+                "iconImage": "resources/view_8/images/s28d.png",
+                "iconShadow": "resources/view_8/images/s28s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s28d.png",
+                "image": "resources/view_8/images/s28d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S29 ------------------------------",
@@ -1035,17 +1063,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s29d.png",
-                "iconShadow": "resources/view_10/images/s29s.png"
+                "iconImage": "resources/view_8/images/s29d.png",
+                "iconShadow": "resources/view_8/images/s29s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s29d.png",
+                "image": "resources/view_8/images/s29d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S30 ------------------------------",
@@ -1071,17 +1100,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s30d.png",
-                "iconShadow": "resources/view_10/images/s30s.png"
+                "iconImage": "resources/view_8/images/s30d.png",
+                "iconShadow": "resources/view_8/images/s30s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s30d.png",
+                "image": "resources/view_8/images/s30d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S31 ------------------------------",
@@ -1107,17 +1137,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s31d.png",
-                "iconShadow": "resources/view_10/images/s31s.png"
+                "iconImage": "resources/view_8/images/s31d.png",
+                "iconShadow": "resources/view_8/images/s31s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s31d.png",
+                "image": "resources/view_8/images/s31d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S32 ------------------------------",
@@ -1143,17 +1174,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s32d.png",
-                "iconShadow": "resources/view_10/images/s32s.png"
+                "iconImage": "resources/view_8/images/s32d.png",
+                "iconShadow": "resources/view_8/images/s32s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s32d.png",
+                "image": "resources/view_8/images/s32d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S33 ------------------------------",
@@ -1179,17 +1211,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s33d.png",
-                "iconShadow": "resources/view_10/images/s33s.png"
+                "iconImage": "resources/view_8/images/s33d.png",
+                "iconShadow": "resources/view_8/images/s33s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s33d.png",
+                "image": "resources/view_8/images/s33d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S34 ------------------------------",
@@ -1215,17 +1248,18 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s34d.png",
-                "iconShadow": "resources/view_10/images/s34s.png"
+                "iconImage": "resources/view_8/images/s34d.png",
+                "iconShadow": "resources/view_8/images/s34s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s34d.png",
+                "image": "resources/view_8/images/s34d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S35 ------------------------------",
@@ -1251,17 +1285,129 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s35d.png",
-                "iconShadow": "resources/view_10/images/s35s.png"
+                "iconImage": "resources/view_8/images/s35d.png",
+                "iconShadow": "resources/view_8/images/s35s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s35d.png",
+                "image": "resources/view_8/images/s35d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
+        },
+        {
+            "comment": "----------------------- S36 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_8/images/s36d.png",
+                "iconShadow": "resources/view_8/images/s36s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_8/images/s36d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            },
+            "audio": []
+        },
+        {
+            "comment": "----------------------- S37 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_8/images/s37d.png",
+                "iconShadow": "resources/view_8/images/s37s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_8/images/s37d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            },
+            "audio": []
+        },
+        {
+            "comment": "----------------------- S38 ------------------------------",
+            "titleLatin": "",
+            "title": {
+                "lv": "",
+                "ru": "",
+                "en": ""
+            },
+            "description": {
+                "lv": "",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_8/images/s38d.png",
+                "iconShadow": "resources/view_8/images/s38s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_8/images/s38d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            },
+            "audio": []
         }
     ]
 }

@@ -5,14 +5,14 @@
     "sectors": [
         {
             "comment": "----------------------- S1 ------------------------------",
-            "titleLatin": "Arenaria interpres",
+            "titleLatin": "Oenanthe oenanthe",
             "title": {
-                "lv": "AKMEŅTĀRTIŅŠ",
-                "ru": "КАМНЕШАРКА",
-                "en": "RUDDY TURNSTONE"
+                "lv": "AKMEŅČAKSTĪTE",
+                "ru": "КАМЕНКА",
+                "en": "NORTHERN WHEATEAR"
             },
             "description": {
-                "lv": "Latvijā nelielā skaitā regulāri caurceļo pie jūras, bet reizēm arī iekšzemē. Divas reizes  novērots ziemā rietumu piekrastē. Latvijai tuvākās ligzdošanas vietas atrodas Igaunijā, Zviedrijā, Somijā un  Krievijā. ",
+                "lv": "Latvijā samērā parasta ligzdotāja. Sastopama būvlaukumos, tīrumos ar akmeņu kaudzēm, kūdras  frēzlaukos, pilsētās arī daudzstāvu dzīvojamo māju rajonos. Ligzdu būvē akmeņu krāvumā, zem būvblokiem un citās  līdzīgās vietās uz zemes vai pat daļēji zem zemes. Pārtiek no kukaiņiem.Gājputns. Pārziemo Āfrikā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -27,28 +27,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s1d.png",
-                "iconShadow": "resources/view_10/images/s1s.png"
+                "iconImage": "resources/view_8/images/s1d.png",
+                "iconShadow": "resources/view_8/images/s1s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s1d.png",
+                "image": "resources/view_8/images/s1d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S2 ------------------------------",
-            "titleLatin": "Recurvirostra avosetta",
+            "titleLatin": "Turdus torquatus",
             "title": {
-                "lv": "AVOZETA",
-                "ru": "ШИЛОКЛЮВКА",
-                "en": "PIED AVOCET"
+                "lv": "APKAKLES STRAZDS",
+                "ru": "БЕЛОЗОБЫЙ ДРОЗД",
+                "en": "RING OUZEL"
             },
             "description": {
-                "lv": "Latvijā samērā reta ieceļotāja un caurceļotāja. Sastopama jūras piekrastē, retāk dažādos  iekšzemes mitrājos. Pārtiek no kukaiņiem, vēžveidīgiem, tārpiem, moluskiem, nelielām zivtiņām. Latvijai tuvākās  ligzdošanas vietas atrodas Igaunijā un Zviedrijā. ",
+                "lv": "Latvijā samērā rets, bet regulārs caurceļotājs. Sastopams galvenokārt pavasara migrācijas laikā  (aprīlī un maijā). Vairums novērojumu valsts rietumu daļā un piejūras zonā. Latvijai tuvākas ligzdošanas vietas  atrodas Skandināvijā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -63,28 +64,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s2d.png",
-                "iconShadow": "resources/view_10/images/s2s.png"
+                "iconImage": "resources/view_8/images/s2d.png",
+                "iconShadow": "resources/view_8/images/s2s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s2d.png",
+                "image": "resources/view_8/images/s2d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S3 ------------------------------",
-            "titleLatin": "Tringa stagnatilis",
+            "titleLatin": "Panurus biarmicus",
             "title": {
-                "lv": "DĪĶU TILBĪTE",
-                "ru": "ПОРУЧЕЙНИК",
-                "en": "MARSH SANDPIPER"
+                "lv": "BĀRDZĪLĪTE",
+                "ru": "УСАТАЯ СИНИЦА",
+                "en": "BEARDED REEDLING"
             },
             "description": {
-                "lv": "Latvijā reta ligzdotāja un ieceļotāja. Pirmo reizi suga konstatēta 1974. gadā. Ligzdošanas  pierādīta vienīgi valsts austrumu daļā. Sastopama zivju dīķos, ezeros, karjeros, palieņu pļavās. Ligzdo uz  zemes. Pārtiek no bezmugurkaulniekiem.Gājputns. Pārziemo Āfrikā. ",
+                "lv": "Piemērotās vietās, ezeros un dīķos ar plašiem niedrājiem, samērā parasta ligzdotāja un  ziemotāja. Retāk sastopama Latvijas austrumu daļā. Ligzdu būvē virs slīkšņas, starp niedru stublājiem, blīvā  vecu niedru skupsnā vai to sagāzumā. Pārtiek no sīkiem kukaiņiem, ziemā – pārsvarā no niedru sēklām.Daļējs gājputns. Bargās ziemās skaits ievērojami samazinās, vai populācija pat iet bojā. Skaita  atjaunošanās prasa vairākus gadus.",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -99,28 +101,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s3d.png",
-                "iconShadow": "resources/view_10/images/s3s.png"
+                "iconImage": "resources/view_8/images/s3d.png",
+                "iconShadow": "resources/view_8/images/s3s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s3d.png",
+                "image": "resources/view_8/images/s3d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S4 ------------------------------",
-            "titleLatin": "Limicola falcinellus",
+            "titleLatin": "Sylvia communis",
             "title": {
-                "lv": "DŪŅŠŅIBĪTIS",
-                "ru": "ГРЯЗОВИК",
-                "en": "BROAD-BILLED SANDPIPER"
+                "lv": "BRŪNSPĀRNU ĶAUĶIS",
+                "ru": "СЕРАЯ СЛАВКА",
+                "en": "COMMON WHITETHROAT"
             },
             "description": {
-                "lv": "Latvijā dūņšņibītis ir samērā rets caurceļotājs pavasarī un vasaras otrajā pusē. Sastopams jūras  piekrastē un iekšzemes ūdeņos. Latvijai tuvākās ligzdošanas vietas atrodas Skandināvijas kalnos, Somijas  ziemeļos, Kolas pussalā. ",
+                "lv": "Latvijā parasts un izplatīts ligzdotājs. Sastopams dažādu klaju vietu krūmājos, dārzos, ceļmalu  dzīvžogos, krūmainos jauktu koku un lapu koku mežu klajumos un izcirtumos. Ligzdo biezākā krūmā vai garā, biezā  zālē. Pārtiek no kukaiņiem, to kāpuriem, arī no ogām.Gājputns. Pārziemo Āfrikā.  ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -135,28 +138,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s4d.png",
-                "iconShadow": "resources/view_10/images/s4s.png"
+                "iconImage": "resources/view_8/images/s4d.png",
+                "iconShadow": "resources/view_8/images/s4s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s4d.png",
+                "image": "resources/view_8/images/s4d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S5 ------------------------------",
-            "titleLatin": "Pluvialis apricaria",
+            "titleLatin": "Acrocephalus schoenobaenus",
             "title": {
-                "lv": "DZELTENAIS TĀRTIŅŠ",
-                "ru": "ЗОЛОТИСТАЯ РЖАНКА",
-                "en": "EURASIAN GOLDEN PLOVER"
+                "lv": "CERU ĶAUĶIS",
+                "ru": "КАМЫШЕВКА-БАРСУЧОК",
+                "en": "SEDGE WARBLER"
             },
             "description": {
-                "lv": "Latvijā piemērotās vietās samērā parasts ligzdotājs un caurceļotājs. Ligzdošanas laikā sastopams  tikai piemērotās vietās – klajos augstajos purvos. Migrācijas laikā arī citās vietās, piemēram, uz mitriem  lauksaimniecības laukiem, mitrās pļavās, nolaistos zivju dīķos. Ligzdo uz zemes. Pārtiek no tārpiem, kukaiņiem,  arī vēžveidīgiem un augu daļām.Gājputns. Pārziemo Rietumeiropā, Vidusjūras reģionā. Siltās ziemās var pārziemot arī Latvijā. ",
+                "lv": "Latvijā parasts ligzdotājs. Sastopams mitrās, krūmainās pļavās upju, ezeru un dīķu krastos, arī  krūmainās zemo purvu vai niedrāju malās. Ligzdu būvē ievītu starp dažādu lakstaugu stublājiem. Pārtiek  galvenokārt no kukaiņiem, kas dzīvo uz lakstaugiem.Gājputns. Pārziemo Āfrikā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -171,28 +175,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s5d.png",
-                "iconShadow": "resources/view_10/images/s5s.png"
+                "iconImage": "resources/view_8/images/s5d.png",
+                "iconShadow": "resources/view_8/images/s5s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s5d.png",
+                "image": "resources/view_8/images/s5d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S6 ------------------------------",
-            "titleLatin": "Calidris alba",
+            "titleLatin": "Phylloscopus collybita",
             "title": {
-                "lv": "GAIŠAIS ŠŅIBĪTIS",
-                "ru": "ПЕСЧАНКА",
-                "en": "SANDERLING"
+                "lv": "ČUŅČIŅŠ",
+                "ru": "ПЕНОЧКА-ТЕНЬКОВКА",
+                "en": "COMMON CHIFFCHAFF"
             },
             "description": {
-                "lv": "Latvijā regulāri caurceļo rudenī un pavasarī. Pavasarī mazākā skaitā nekā rudenī. Sastopams  jūras piekrastē, reti iekšzemes ūdeņos. Latvijai tuvākās ligzdošanas vietas atrodas Grenlandē, Špicbergenā,  Taimirā. ",
+                "lv": "Latvijā parasts un izplatīts ligzdotājs. Sastopams dažādos mežos, parasti izcirtumu vai citu  klajumu tuvumā, retāk arī aizaugušos izcirtumos, krūmājos, mežu puduros starp laukiem. Atšķirībā no citām  ķauķīšu sugām, savu labi nomaskēto lodveida ligzdu būvē nelielā augstumā (līdz 50 cm) virs zemes mazās eglēs,  biezā zāle, starp niedru vai krūmu stumbriem. Pārtiek no lapotnē atrodamiem zirnekļiem, kukaiņiem.Gājputns. Pārziemo Āfrikā. Ļoti reti atsevišķi īpatņi pārziemo arī Latvijā.  ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -207,28 +212,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s6d.png",
-                "iconShadow": "resources/view_10/images/s6s.png"
+                "iconImage": "resources/view_8/images/s6d.png",
+                "iconShadow": "resources/view_8/images/s6s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s6d.png",
+                "image": "resources/view_8/images/s6d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S7 ------------------------------",
-            "titleLatin": "Philomachus pugnax",
+            "titleLatin": "Sylvia borin",
             "title": {
-                "lv": "GUGATNIS",
-                "ru": "ТУРУХТАН",
-                "en": "RUFF"
+                "lv": "DĀRZA ĶAUĶIS",
+                "ru": "САДОВАЯ СЛАВКА",
+                "en": "GARDEN WARBLER"
             },
             "description": {
-                "lv": "Rets ligzdotājs. Kopš 1950. gadiem skaits samazinājies. Bieži novērojams migrācijas laikā.  Sastopama mitrās pļavās ar īsu zāli, dažādos purvos. Migrācijas laikā sastopams dažādos iekšzemes mitrājos un  jūras piekrastē. Pavasarī raksturīgs kolektīvais riests. Ligzdo uz zemes. Pārtiek no kukaiņiem un to kāpuriem,  arī vēžveidīgiem, moluskiem, sēklām. Parasti uzturas nelielos baros, bet migrācijas laikā var pulcēties arī  lielākos baros, pat vairāki tūkstoši gugatņu vienuviet.Gājputns. Pārziemo Vidusjūras reģionā, Dienvidrietumeiropā un Āfrikā. ",
+                "lv": "Latvijā parasts un izplatīts ligzdotājs. Sastopams dažādos mežos ar daudzveidīgu pamežu,  jaunaudzēs, samērā bieži arī laukmalās, krūmājos, parkos un dārzos. Parasti ligzdo lakstaugos (piemēram,  vīgriezēs, avenājos) vai krūmos, retāk eglēs. Pārtiek no kukaiņiem, to kāpuriem, arī no ogām.Gājputns. Pārziemo Āfrikā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -243,28 +249,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s7d.png",
-                "iconShadow": "resources/view_10/images/s7s.png"
+                "iconImage": "resources/view_8/images/s7d.png",
+                "iconShadow": "resources/view_8/images/s7s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s7d.png",
+                "image": "resources/view_8/images/s7d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S8 ------------------------------",
-            "titleLatin": "Pluvialis squatarola",
+            "titleLatin": "Phylloscopus inornatus",
             "title": {
-                "lv": "JŪRAS ĶĪVĪTE",
-                "ru": "ТУЛЕС",
-                "en": "GREY PLOVER"
+                "lv": "DZELTENSVĪTRU ĶAUĶĪTIS",
+                "ru": "ПЕНОЧКА-ЗАРНИЧКА",
+                "en": "YELLOW-BROWED WARBLER"
             },
             "description": {
-                "lv": "Latvijā diezgan parasta caurceļotāja pavasarī un rudenī. Sastopama jūras piekrastē, retāk arī  iekšzemes ūdeņos. Latvijai tuvākās ligzdošanas vietas atrodas Krievijas tundrā. ",
+                "lv": "Latvijā rets ieceļotājs. Pirmo reizi konstatēts 1967. gada rudenī Papes putnu stacijā. Līdz šim  novērots tikai rudens migrācijas laikā. Līdz pat 2003. gadam Pape bija vienīgā šīs sugas novērošanas vieta  Latvijā. Pašlaik zināmi vairāki simti šīs sugas novērojumu Latvijā, un katru gadu to skaits pieaug. Pārtiek no  kukaiņiem. Latvijā, tāpat kā citur Eiropā, regulāri ieklīst no Sibīrijas, kur ligzdo skujkoku taigā.Gājputns. Pārziemo Āzijā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -279,28 +286,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s8d.png",
-                "iconShadow": "resources/view_10/images/s8s.png"
+                "iconImage": "resources/view_8/images/s8d.png",
+                "iconShadow": "resources/view_8/images/s8s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s8d.png",
+                "image": "resources/view_8/images/s8d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S9 ------------------------------",
-            "titleLatin": "Calidris maritima",
+            "titleLatin": "Turdus philomelos",
             "title": {
-                "lv": "JŪRAS ŠŅIBĪTIS",
-                "ru": "МОРСКОЙ ПЕСОЧНИК",
-                "en": "PURPLE SANDPIPER"
+                "lv": "DZIEDĀTĀJSTRAZDS",
+                "ru": "ПЕВЧИЙ ДРОЗД",
+                "en": "SONG THRUSH"
             },
             "description": {
-                "lv": "Latvijā samērā rets caurceļotājs un rets ziemotājs. Sastopams jūras piekrastē, labprāt uzturas  ostās pie moliem. Latvijai tuvākās ligzdošanas vietas atrodas Skandināvijā, Somijā, Krievijā. ",
+                "lv": "Latvijā parasts un izplatīts ligzdotājs. Sastopams dažādos mežos, kur aug egles, arī lielos  parkos un kapsētās. Ligzdu visbiežāk būvē jaunas egles zaru žāklē pie stumbra. Pārtiek no kukaiņiem, ogām,  augļiem.Gājputns. Pārziemo Dienvidrietumeiropā. Regulāri, bet ļoti nelielā skaitā ziemo arī Latvijā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -315,28 +323,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s9d.png",
-                "iconShadow": "resources/view_10/images/s9s.png"
+                "iconImage": "resources/view_8/images/s9d.png",
+                "iconShadow": "resources/view_8/images/s9s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s9d.png",
+                "image": "resources/view_8/images/s9d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S10 ------------------------------",
-            "titleLatin": "Haematopus ostralegus",
+            "titleLatin": "Phoenicurus phoenicurus",
             "title": {
-                "lv": "JŪRAS ŽAGATA",
-                "ru": "КУЛИК-СОРОКА",
-                "en": "EURASIAN OYSTERCATCHER"
+                "lv": "ERICKIŅŠ",
+                "ru": "ОБЫКНОВЕННАЯ ГОРИХВОСТКА",
+                "en": "COMMON REDSTART"
             },
             "description": {
-                "lv": "Latvijā samērā reta ligzdotāja un caurceļotāja. Kā ligzdotāja atzīmētā vietām gar Daugavu (visā  tās garumā) un atsevišķās vietās jūras piekrastē. Daži ligzdošanas gadījumi atzīmēti arī uz jumtiem Rīgā.  Migrācijas laikā arī citās līdzīgās vietās. Ligzdo uz zemes. Pārtiek no gliemjiem, tārpiem, kukaiņu kāpuriem,  arī vēžveidīgiem.Gājputns. Pārziemo Dienvideiropā un Āfrikā. Atsevišķi īpatņi tika novēroti Latvijā arī ziemas  mēnešos.  ",
+                "lv": "Latvijā parasts ligzdotājs. Sastopams sausos, skrajos priežu mežos, parkos, dārzos un viensētu  pagalmos. Parasti ligzdo koku dobumos, būrīšos, ēku sienu spraugās, pažobelēs un citās līdzīgās vietās. Pārtiek  no kukaiņiem, to kāpuriem, arī no ogām.Gājputns. Pārziemo Āfrikā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -351,28 +360,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s10d.png",
-                "iconShadow": "resources/view_10/images/s10s.png"
+                "iconImage": "resources/view_8/images/s10d.png",
+                "iconShadow": "resources/view_8/images/s10s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s10d.png",
+                "image": "resources/view_8/images/s10d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S11 ------------------------------",
-            "titleLatin": "Numenius arquata",
+            "titleLatin": "Acrocephalus scirpaceus",
             "title": {
-                "lv": "KUITALA",
-                "ru": "БОЛЬШОЙ КРОНШНЕП",
-                "en": "EURASIAN CURLEW"
+                "lv": "EZERA ĶAUĶIS",
+                "ru": "ТРОСТНИКОВАЯ КАМЫШЕВКА",
+                "en": "EURASIAN REED-WARBLER"
             },
             "description": {
-                "lv": "Latvijā parasta caurceļotāja pavasarī un rudenī. Ligzdo nelielā skaitā, bet biežāk nekā  lietuvainis. Sastopama augstajos purvos un mitrās pļavās. Migrācijas laikā arī dažādos iekšzemes mitrājos un  jūras piekrastē. Ligzdo uz zemes. Pārtiek no kukaiņiem un to kāpuriem, arī tārpiem, vēžveidīgiem, moluskiem,  sēklām un ogām.Gājputns. Pārziemo Vidusjūras reģionā, Dienvidrietumeiropā un Āfrikā. ",
+                "lv": "Latvijā parasts ligzdotājs. Sastopams dažādos niedrājos ezeros, dīķos, gar upēm un jūrmalā, arī  lielos vienlaidus niedru masīvos. Migrācijas laikā arī krūmājos. Ligzdu parasti ievij starp niedrēm. Pārtiek  galvenokārt no kukaiņiem, kas dzīvo uz niedrēm.Gājputns. Pārziemo Āfrikā.",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -387,28 +397,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s11d.png",
-                "iconShadow": "resources/view_10/images/s11s.png"
+                "iconImage": "resources/view_8/images/s11d.png",
+                "iconShadow": "resources/view_8/images/s11s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s11d.png",
+                "image": "resources/view_8/images/s11d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S12 ------------------------------",
-            "titleLatin": "Gallinago media",
+            "titleLatin": "Sylvia curruca",
             "title": {
-                "lv": "ĶIKUTS",
-                "ru": "ДУПЕЛЬ",
-                "en": "GREAT SNIPE"
+                "lv": "GAIŠAIS ĶAUĶIS",
+                "ru": "СЛАВКА-ЗАВИРУШКА",
+                "en": "LESSER WHITETHROAT"
             },
             "description": {
-                "lv": "Latvijā rets ligzdotājs. Sastopams tikai regulāri applūstošos zālājos – palieņu pļavās un  polderos. Vairums ligzdotāju izvietojas valsts austrumu daļā. Ligzdo uz zemes. Pārtiek no tārpiem, kukaiņiem,  nelieliem gliemežiem un kailgliemežiem.Gājputns. Pārziemo Āfrikā. ",
+                "lv": "Latvijā parasts un izplatīts ligzdotājs. Sastopams birztalās, aizaugušos parkos, dārzos,  klajumos, aizaugušos izcirtumos. Ligzdo krūmos, kadiķos vai jaunās eglēs. Pārtiek no kukaiņiem, to kāpuriem, arī  no ogām.Gājputns. Pārziemo Ziemeļaustrumāfrikā.  ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -423,28 +434,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s12d.png",
-                "iconShadow": "resources/view_10/images/s12s.png"
+                "iconImage": "resources/view_8/images/s12d.png",
+                "iconShadow": "resources/view_8/images/s12s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s12d.png",
+                "image": "resources/view_8/images/s12d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S13 ------------------------------",
-            "titleLatin": "Vanellus vanellus",
+            "titleLatin": "Acrocephalus paludicola",
             "title": {
-                "lv": "ĶĪVĪTE",
-                "ru": "ЧИБИС",
-                "en": "NORTHERN LAPWING"
+                "lv": "GRĪŠĻU ĶAUĶIS",
+                "ru": "ВЕРТЛЯВАЯ КАМЫШЕВКА",
+                "en": "AQUATIC WARBLER"
             },
             "description": {
-                "lv": "Latvijā parasta ligzdotāja un caurceļotāja. Sastopama mitrās pļavās, ganībās, aramzemēs, purvos,  retāk arī nolaistos zivju dīķos, citos mitrājos ar īsu veģetāciju. Ligzdo uz zemes. Pārtiek no kukaiņiem un to  kāpuriem, tārpiem.Gājputns. Pārziemo Rietumeiropā un Vidusjūras reģionā. Reti var pārziemot arī Latvijā.",
+                "lv": "Pirmo reizi Latvijā konstatēts 1940. gadā pie Babītes ezera, kad arī pierādīts pirmais un  vienīgais ligzdošanas gadījums. Mūsdienās salīdzinoši regulāri jaunie putni tiek noķerti vasarās beigās vai  rudens sākumā Liepājas un Papes ezeros, kas liecina par nelielas populācijas iespējamu ligzdošanu Latvijā.  Sastopams pie ezeriem. Ligzdu būvē grīšļu ceros, labi paslēptu starp zāles stiebriem. Pārtiek no kukaiņiem.Gājputns. Pārziemo Āfrikā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -459,28 +471,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s13d.png",
-                "iconShadow": "resources/view_10/images/s13s.png"
+                "iconImage": "resources/view_8/images/s13d.png",
+                "iconShadow": "resources/view_8/images/s13s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s13d.png",
+                "image": "resources/view_8/images/s13d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S14 ------------------------------",
-            "titleLatin": "Calidris canutus",
+            "titleLatin": "Hippolais icterina",
             "title": {
-                "lv": "LIELAIS ŠŅIBĪTIS",
-                "ru": "ИСЛАНДСКИЙ ПЕСОЧНИК",
-                "en": "RED KNOT"
+                "lv": "IEDZELTENAIS ĶAUĶIS",
+                "ru": "ПЕРЕСМЕШКА",
+                "en": "ICTERINE WARBLER"
             },
             "description": {
-                "lv": "Latvijā visbiežāk novērojams caurceļošanas laikā vasaras otrajā pusē – rudenī, retāk pavasarī.  Divi novērojumi ziemas mēnešos. Sastopams jūras piekrastē, reti iekšzemes ūdeņos. Latvijai tuvākās ligzdošanas  vietas atrodas Grenlandē un centrālās Sibīrijas ziemeļos.  ",
+                "lv": "Latvijā parasts un izplatīts ligzdotājs. Sastopams parkos, alejās, dažādos apstādījumos, retāk  lapu koku un jauktu koku mežmalās un klajumu malās. Ligzdu būvē krūma vai koka zaru žāklē. Pārtiek no kukaiņiem,  to kāpuriem, arī no ogām.Gājputns. Pārziemo Āfrikā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -495,28 +508,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s14d.png",
-                "iconShadow": "resources/view_10/images/s14s.png"
+                "iconImage": "resources/view_8/images/s14d.png",
+                "iconShadow": "resources/view_8/images/s14s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s14d.png",
+                "image": "resources/view_8/images/s14d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S15 ------------------------------",
-            "titleLatin": "Tringa nebularia",
+            "titleLatin": "Locustella naevia",
             "title": {
-                "lv": "LIELĀ TILBĪTE",
-                "ru": "БОЛЬШОЙ УЛИТ",
-                "en": "COMMON GREENSHANK"
+                "lv": "KĀRKLU ĶAUĶIS",
+                "ru": "ОБЫКНОВЕННЫЙ СВЕРЧОК",
+                "en": "COMMON GRASSHOPPER WARBLER"
             },
             "description": {
-                "lv": "Latvijā nelielā skaitā caurceļo un reti ligzdo valsts austrumu daļā. Ligzdošana pirmo reizi  pierādīta 2019. gada maijā, kad Naukšēnu pagastā netālu no Igaunijas robežas atrasta ligzda ar olām. Sastopama  augstajos un pārejas purvos, pļavās, jūras un dažādu ūdenstilpju piekrastē. Ligzdo uz zemes. Pārtiek no  bezmugurkaulniekiem.Gājputns. Pārziemo Āfrikā. ",
+                "lv": "Latvijā samērā parasts un izplatīts ligzdotājs. Sastopams palieņu pļavās, lakstaugiem bagātās  ūdenstilpju piekrastēs, zemajos purvos, dažreiz arī labības laukos vai to malās. Migrācijas laikā arī niedrājos.  Ligzdu būvē uz zemes, labi paslēptu augājā. Pārtiek no kukaiņiem un citiem bezmugurkaulniekiem.Gājputns. Pārziemo Āfrikā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -531,28 +545,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s15d.png",
-                "iconShadow": "resources/view_10/images/s15s.png"
+                "iconImage": "resources/view_8/images/s15d.png",
+                "iconShadow": "resources/view_8/images/s15s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s15d.png",
+                "image": "resources/view_8/images/s15d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S16 ------------------------------",
-            "titleLatin": "Numenius phaeopus",
+            "titleLatin": "Muscicapa striata",
             "title": {
-                "lv": "LIETUVAINIS",
-                "ru": "СРЕДНИЙ КРОНШНЕП",
-                "en": "WHIMBREL"
+                "lv": "PELĒKAIS MUŠĶĒRĀJS",
+                "ru": "СЕРАЯ МУХОЛОВКА",
+                "en": "SPOTTED FLYCATCHER"
             },
             "description": {
-                "lv": "Latvijā rets ligzdotājs. Samērā parasts migrācijas laikā pavasarī un rudenī. Ligzdo klajos  purvos. Migrācijas laikā sastopams dažādos iekšzemes mitrājos un jūras piekrastē. Ligzdo uz zemes. Pārtiek no  kukaiņiem un to kāpuriem, arī tārpiem, vēžveidīgiem, moluskiem, ogām.Gājputns. Pārziemo Āfrikā. ",
+                "lv": "Latvijā parasts un izplatīts ligzdotājs. Sastopams apdzīvotās vietās, skrajos mežos, mežmalās,  viensētās, alejās, parkos, dārzos, kapsētās. Ligzdu būvē koku pusdobumos, ēku sienu nišās, malkas grēdās, zem  māju jumtiem, uz palodzēm, lielām, kaltām durvju virām un citās līdzīgās vietās. Pārtiek no kukaiņiem, arī ogām.Gājputns. Pārziemo Āfrikā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -567,28 +582,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s16d.png",
-                "iconShadow": "resources/view_10/images/s16s.png"
+                "iconImage": "resources/view_8/images/s16d.png",
+                "iconShadow": "resources/view_8/images/s16s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s16d.png",
+                "image": "resources/view_8/images/s16d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S17 ------------------------------",
-            "titleLatin": "Calidris ferruginea",
+            "titleLatin": "Acrocephalus dumetorum",
             "title": {
-                "lv": "LĪKŠŅIBĪTIS",
-                "ru": "КРАСНОЗОБИК",
-                "en": "CURLEW SANDPIPER"
+                "lv": "KRŪMU ĶAUĶIS",
+                "ru": "САДОВАЯ КАМЫШЕВКА",
+                "en": "BLYTH’S REED-WARBLER"
             },
             "description": {
-                "lv": "Latvijā caurceļo vasaras otrajā pusē un rudenī, mazāk pavasarī. Rudenī novērojumu ir vairāk,  taču kopskaits nav īpaši liels. Sastopams jūras piekrastē, reti iekšzemes ūdeņos. Latvijai tuvākās ligzdošanas  vietas atrodas arktiskā Sibīrijā. ",
+                "lv": "Kā ligzdotājs Latvijā pirmo reizi konstatēts 1944. gadā, tomēr izteikts skaita pieaugums  atzīmēts, sākot ar 20. gs. 70. gadiem. Šobrīd vietām Latvijas austrumos un dienvidos samērā parasts ligzdotājs.  Retāk ligzdo Kurzemē. Sastopams aizzēlušos izcirtumos lapu koku un jauktu koku mežos, krūmainās ceļmalās,  mežmalās, dārzos, retāk mitrās, krūmainās pļavās un citās līdzīgās vietās. Ligzdu būvē, ievītu starp dažādu  lakstaugu stublājiem vai krūmu zaros. Pārtiek no kukaiņiem.Gājputns. Pārziemo Āzijā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -603,28 +619,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s17d.png",
-                "iconShadow": "resources/view_10/images/s17s.png"
+                "iconImage": "resources/view_8/images/s17d.png",
+                "iconShadow": "resources/view_8/images/s17s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s17d.png",
+                "image": "resources/view_8/images/s17d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S18 ------------------------------",
-            "titleLatin": "Limosa limosa",
+            "titleLatin": "Luscinia luscinia",
             "title": {
-                "lv": "MELNĀ PUSKUITALA",
-                "ru": "МАЛЫЙ ВЕРЕТЕННИК",
-                "en": "BAR-TAILED GODWIT"
+                "lv": "LAKSTĪGALA",
+                "ru": "СОЛОВЕЙ",
+                "en": "THRUSH NIGHTINGALE"
             },
             "description": {
-                "lv": "Latvijā samērā reta ligzdotāja. Sastopama upju, dīķu, ezeru vai jūras piekrastes pļavās,  augstajos purvos, migrācijas laikā arī jūras piekrastē. Ligzdo uz zemes. Pārtiek no augsnes un ūdens  bezmugurkaulniekiem.Gājputns. Pārziemo Vidusjūras reģionā, Rietumeiropā un Āfrikā. ",
+                "lv": "Latvijā parasta un izplatīta ligzdotāja. Sastopama upmalu un mežmalu krūmājos, dažādās nogāzēs,  mitrās, krūmainās pļavās pie upēm un strautiem, dārzos un to apkārtnē, kur pietiekamā daudzumā atrodami dažādi  krūmi. Ligzdu būvē krūmos vai uz zemes pērnajās lapās. Pārtiek no kukaiņiem un to kāpuriem, tārpiem (sliekām),  gliemežiem un citiem bezmugurkaulniekiem, arī ogām un sīkiem augļiem.Gājputns. Pārziemo Āfrikā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -639,28 +656,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s18d.png",
-                "iconShadow": "resources/view_10/images/s18s.png"
+                "iconImage": "resources/view_8/images/s18d.png",
+                "iconShadow": "resources/view_8/images/s18s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s18d.png",
+                "image": "resources/view_8/images/s18d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S19 ------------------------------",
-            "titleLatin": "Tringa ochropus",
+            "titleLatin": "Saxicola rubetra",
             "title": {
-                "lv": "MEŽA TILBĪTE",
-                "ru": "ЧЕРНЫШ",
-                "en": "GREEN SANDPIPER"
+                "lv": "LUKSTU ČAKSTĪTE",
+                "ru": "ЛУГОВОЙ ЧЕКАН",
+                "en": "WHINCHAT"
             },
             "description": {
-                "lv": "Latvijā parasta un izplatīta ligzdotāja un caurceļotāja. Sastopama dažādos mežos ar bebrainēm,  upītēm, strautiem vai grāvjiem, ceļošanās laikā arī citās vietās. Ligzdo kokos, izmantojot citu putnu, sevišķi  mežastrazdu, vecās ligzdas. Pārtiek no kukaiņiem un tārpiem.Gājputns. Pārziemo Āfrikā. ",
+                "lv": "Latvijā parasta un izplatīta ligzdotāja. Sastopama mitrās pļavās un dažādos citos zālājos ar  atsevišķiem krūmiņiem, aizaugušos tīrumos, arī klajos augstajos purvos. Ligzdu vij kādā augstāku lakstaugu cerā  uz zemes. Pārtiek no kukaiņiem, to kāpuriem.Gājputns. Pārziemo Āfrikā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -675,28 +693,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s19d.png",
-                "iconShadow": "resources/view_10/images/s19s.png"
+                "iconImage": "resources/view_8/images/s19d.png",
+                "iconShadow": "resources/view_8/images/s19s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s19d.png",
+                "image": "resources/view_8/images/s19d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S20 ------------------------------",
-            "titleLatin": "Gallinago gallinago",
+            "titleLatin": "Ficedula parva",
             "title": {
-                "lv": "MĒRKAZIŅA",
-                "ru": "БЕКАС",
-                "en": "COMMON SNIPE"
+                "lv": "MAZAIS MUŠĶĒRĀJS",
+                "ru": "МАЛАЯ МУХОЛОВКА",
+                "en": "RED-BREASTED FLYCATCHER"
             },
             "description": {
-                "lv": "Latvijā samērā parasta ligzdotāja, bet lielākā skaitā caurceļo. Sastopama mitrās pļavās, purvu  un ūdenstilpju malās, izcirtumos un klajumos mitros mežos. Ligzdo uz zemes pamitrā vietā vai uz kāda ciņa.  Pārtiek no tārpiem un kukaiņiem.Gājputns. Pārziemo Vidusjūras reģionā un Āfrikā. Nelielā skaitā, atkarībā no ziemas barguma, var  pārziemot arī Latvijā. ",
+                "lv": "Latvijā samērā parasts ligzdotājs. Sastopams vecākos skujkoku un jauktu koku mežos, galvenokārt  egļu audzēs. Ligzdu parasti iebūvē koku vai dažādu stumbeņu pusdobumos, bet tā var būt novietota arī atklāti pie  stumbra uz zara. Pārtiek no kukaiņiem, to kāpuriem, arī no ogām.Gājputns. Pārziemo Āzijā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -711,28 +730,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s20d.png",
-                "iconShadow": "resources/view_10/images/s20s.png"
+                "iconImage": "resources/view_8/images/s20d.png",
+                "iconShadow": "resources/view_8/images/s20s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s20d.png",
+                "image": "resources/view_8/images/s20d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S21 ------------------------------",
-            "titleLatin": "Eudromias morinellus",
+            "titleLatin": "Phoenicurus ochruros",
             "title": {
-                "lv": "MORINELLA TĀRTIŅŠ",
-                "ru": "ХРУСТАН",
-                "en": "EURASIAN DOTTEREL"
+                "lv": "MELNAIS ERICKIŅŠ",
+                "ru": "ГОРИХВОСТКА-ЧЕРНУШКА",
+                "en": "BLACK REDSTART"
             },
             "description": {
-                "lv": "Latvijā rets caurceļotājs. Sastopams jūras piekrastē, piejūras laukos, kā arī iekšzemes laukos.  Latvijai tuvākās ligzdošanas vietas atrodas Lielbritānijas ziemeļos, Skandināvijas kalnu rajonos, Krievijas  ziemeļos, kā arī Eiropas kalnu rajonos Pirenejos, Alpos un Karpatos. ",
+                "lv": "Latvijā parasts ligzdotājs. Apdzīvo dažādas vecas, drūpošas ēkas vai nepabeigtas jaunbūves un  līdzīgas vietas pilsētās un citās apdzīvotās vietās. Ligzdu būvē ēku sienu spraugās, nepabeigtās jaunbūvēs,  ventilācijas un citos caurumos, nišās, pažobelēs. Pārtiek no kukaiņiem, to kāpuriem, arī no ogām.Gājputns. Pārziemo Dienvidrietumeiropā. Atsevišķi īpatņi var pārziemot arī Latvijā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -747,28 +767,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s21d.png",
-                "iconShadow": "resources/view_10/images/s21s.png"
+                "iconImage": "resources/view_8/images/s21d.png",
+                "iconShadow": "resources/view_8/images/s21s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s21d.png",
+                "image": "resources/view_8/images/s21d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S22 ------------------------------",
-            "titleLatin": "Calidris alpina",
+            "titleLatin": "Turdus merula",
             "title": {
-                "lv": "PARASTAIS ŠŅIBĪTIS",
-                "ru": "ЧЕРНОЗОБИК",
-                "en": "DUNLIN"
+                "lv": "MELNAIS MEŽA STRAZDS",
+                "ru": "ЧЕРНЫЙ ДРОЗД",
+                "en": "EURASIAN BLACKBIRD"
             },
             "description": {
-                "lv": "Latvijā parasts caurceļotājs (pasuga alpina) un, iespējams, ļoti rets ligzdotājs (pasuga  schinzii jeb Šinca šņibītis). Tiek vērtēts, ka 20. gs. beigās Latvijā ligzdoja 1–5 pāri Šinca šņibīšu, taču 21.  gs. sākumā drošu ziņu par ligzdošanu vairs nav. Sastopams jūras piekrastē, kā arī iekšzemes ūdeņos. ",
+                "lv": "Latvijā parasts un izplatīts ligzdotājs. Sastopams dažādos mežos (izņemot priežu silus), parkos,  dārzos, pilsētu apstādījumos. Ligzdu būvē zaru staklē, pusdobumā, celmā, apdzīvotās vietās arī malkas grēdās,  notekcaurulēs un citās līdzīgās vietās. Pārtiek no tārpiem (sliekām), kukaiņiem, ogām, augļiem.Gājputns. Pārziemo Dienvidrietumeiropā. Regulāri ziemo arī Latvijā, īpaši apdzīvotās vietās un  to apkārtnes mežos, vairāk rietumu daļā un īpaši piejūras zonā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -783,28 +804,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s22d.png",
-                "iconShadow": "resources/view_10/images/s22s.png"
+                "iconImage": "resources/view_8/images/s22d.png",
+                "iconShadow": "resources/view_8/images/s22s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s22d.png",
+                "image": "resources/view_8/images/s22d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S23 ------------------------------",
-            "titleLatin": "Phalaropus fulicarius",
+            "titleLatin": "Ficedula hypoleuca",
             "title": {
-                "lv": "PLATKNĀBJA PŪSLĪTIS",
-                "ru": "ПЛОСКОНОСЫЙ ПЛАВУНЧИК",
-                "en": "RED PHALAROPE"
+                "lv": "MELNAIS MUŠĶĒRĀJS",
+                "ru": "МУХОЛОВКА-ПЕСТРУШКА",
+                "en": "EUROPEAN PIED FLYCATCHER"
             },
             "description": {
-                "lv": "Latvijā ļoti rets ieceļotājs. Sastopams retāk nekā šaurknābja pūslītis. Sastopams gan iekšzemē,  gan pie jūras. Pārtiek no bezmugurkaulniekiem. Cirkumpolārs gar Ziemeļu ledus okeāna piekrasti. Latvijai tuvākās  ligzdošanas vietas atrodas Islandē un Špicbergenā. ",
+                "lv": "Latvijā parasts ligzdotājs. Sastopams dažādos mežos, parkos, dārzos, kapsētās, apstādījumos, kur  ir piemēroti dobumaini koki vai būrīši. Ligzdu parasti būvē koka dobumā vai būrīšos. Pārtiek no kukaiņiem un to  kāpuriem.Gājputns. Pārziemo Āfrikā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -819,28 +841,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s23d.png",
-                "iconShadow": "resources/view_10/images/s23s.png"
+                "iconImage": "resources/view_8/images/s23d.png",
+                "iconShadow": "resources/view_8/images/s23s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s23d.png",
+                "image": "resources/view_8/images/s23d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S24 ------------------------------",
-            "titleLatin": "Tringa totanus",
+            "titleLatin": "Sylvia atricapilla",
             "title": {
-                "lv": "PĻAVU TILBĪTE",
-                "ru": "ТРАВНИК",
-                "en": "COMMON REDSHANK"
+                "lv": "MELNGALVAS ĶAUĶIS",
+                "ru": "ЧЕРНОГОЛОВАЯ СЛАВКА",
+                "en": "BLACKCAP"
             },
             "description": {
-                "lv": "Latvijā samērā parasta ligzdotāja, tomēr tikai piemērotās vietās. Parasta ceļošanas laikā.  Sastopama dažāda mitruma upju, dīķu, ezeru vai jūras pļavās, arī augstajos purvos. Pēcligzdošanas periodā  novērojams jūras un dažādu ūdenstilpju piekrastē. Ligzda atrodas uz zemes bedrītē. Pārtiek no  augsnes un ūdens bezmugurkaulniekiem.Gājputns. Pārziemo Vidusjūras reģionā un Dienvidrietumeiropā. ",
+                "lv": "Latvijā parasts un izplatīts ligzdotājs. Sastopams dažādos mežos ar daudzveidīgu pamežu,  jaunaudzēs, retāk laukmalās vai krūmājos un parkos. Ligzdu būvē biezā eglē, kadiķī vai zemos lakstaugos  (piemēram, avenājos). Pārtiek no kukaiņiem, to kāpuriem, arī no ogām.Gājputns. Pārziemo Vidusjūras valstīs un Āfrikā. Ļoti reti atsevišķi īpatņi pārziemo arī  Latvijā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -855,28 +878,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s24d.png",
-                "iconShadow": "resources/view_10/images/s24s.png"
+                "iconImage": "resources/view_8/images/s24d.png",
+                "iconShadow": "resources/view_8/images/s24s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s24d.png",
+                "image": "resources/view_8/images/s24d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S25 ------------------------------",
-            "titleLatin": "Tringa glareola",
+            "titleLatin": "Acrocephalus arundinaceus",
             "title": {
-                "lv": "PURVA TILBĪTE",
-                "ru": "ФИФИ",
-                "en": "WOOD SANDPIPER"
+                "lv": "NIEDRU STRAZDS",
+                "ru": "ДРОЗДОВИДНАЯ КАМЫШЕВКА",
+                "en": "GREAT REED-WARBLER"
             },
             "description": {
-                "lv": "Latvijā ligzdo vienīgi augstajos purvos. Parastākā tilbīte ceļošanas laikā. Sastopama purvos,  dažādu ūdenstilpju krastos. Migrācijas laikā novērojams arī dažādās mitrās, staignās vietās. Ligzdo uz zemes.  Pārtiek no kukaiņiem un tārpiem.Gājputns. Pārziemo Āfrikā. ",
+                "lv": "Latvijā parasts ligzdotājs. Sastopams niedru joslās un puduros ezeros, gar upēm un zivju dīķos,  retāk niedrēm aizaugušos bebru dīķos. Izvairās no lieliem vienlaidu niedrājiem. Ligzdu būvē ievītu starp  niedrēm, vilkvālītēm. Pārtiek galvenokārt no laputīm un citiem kukaiņiem, kas dzīvo uz niedrēm.Gājputns. Pārziemo Āfrikā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -891,28 +915,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s25d.png",
-                "iconShadow": "resources/view_10/images/s25s.png"
+                "iconImage": "resources/view_8/images/s25d.png",
+                "iconShadow": "resources/view_8/images/s25s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s25d.png",
+                "image": "resources/view_8/images/s25d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S26 ------------------------------",
-            "titleLatin": "Limosa lapponica",
+            "titleLatin": "Acrocephalus agricola",
             "title": {
-                "lv": "SARKANĀ PUSKUITALA",
-                "ru": "МАЛЫЙ ВЕРЕТЕННИК",
-                "en": "BAR-TAILED GODWIT"
+                "lv": "PALIEŅU ĶAUĶIS",
+                "ru": "ИНДИЙСКАЯ КАМЫШЕВКА",
+                "en": "PADDYFIELD WARBLER"
             },
             "description": {
-                "lv": "Latvijā regulāra caurceļotāja pavasarī un rudenī. Sastopama jūras piekrastē, retāk iekšzemes  mitrājos. Pārtiek no dažādiem augsnes un ūdens bezmugurkaulniekiem. Latvijai tuvākās ligzdošanas vietas atrodas  Skandināvijā, Somijā, Krievijā. ",
+                "lv": "Latvijā ļoti rets ieceļotājs. Latvijai tuvākas ligzdošanas vietas atrodas gar Melnās jūras  ziemeļu un rietumu piekrasti un Krimā. Ziemo Āzijā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -927,28 +952,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s26d.png",
-                "iconShadow": "resources/view_10/images/s26s.png"
+                "iconImage": "resources/view_8/images/s26d.png",
+                "iconShadow": "resources/view_8/images/s26s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s26d.png",
+                "image": "resources/view_8/images/s26d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S27 ------------------------------",
-            "titleLatin": "Scolopax rusticola",
+            "titleLatin": "Turdus pilaris",
             "title": {
-                "lv": "SLOKA",
-                "ru": "ВАЛЬДШНЕП",
-                "en": "EURASIAN WOODCOCK"
+                "lv": "PELĒKAIS STRAZDS",
+                "ru": "ДРОЗД-РЯБИННИК",
+                "en": "FIELDFARE"
             },
             "description": {
-                "lv": "Latvijā parasta ligzdotāja un caurceļotāja. Sastopama dažāda vecuma mitros jauktos un lapu koku  mežos ar pamežu, klajumiem, izcirtumiem. Ceļošanas laikā barojas arī klajās ganībās. Ligzdo uz zemes. Pārtiek no  tārpiem un kukaiņiem.Gājputns. Pārziemo Dienvidrietumeiropā. Nelielā skaitā regulāri pārziemo arī Latvijā, vairāk  rietumu daļā. ",
+                "lv": "Latvijā diezgan parasts ligzdotājs ar nevienmērīgu izplatību. Sastopams alejās, parkos, dārzos,  kapsētās, mežmalās, nelielās lapu koku un jauktu koku audzēs. Parasti ligzdo kolonijās, retāk ligzdo atsevišķi.  Ligzdu būvē kokos. Pārtiek no tārpiem (sliekām), kukaiņiem, sīkiem moluskiem, zirnekļiem, ogām, augļiem.Gājputns. Pārziemo Centrāleiropā un Dienvideiropā. Regulāri ziemo arī Latvijā, tomēr skaits  ievērojami svārstās. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -963,28 +989,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s27d.png",
-                "iconShadow": "resources/view_10/images/s27s.png"
+                "iconImage": "resources/view_8/images/s27d.png",
+                "iconShadow": "resources/view_8/images/s27s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s27d.png",
+                "image": "resources/view_8/images/s27d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S28 ------------------------------",
-            "titleLatin": "Charadrius hiaticula",
+            "titleLatin": "Turdus iliacus",
             "title": {
-                "lv": "SMILŠU TĀRTIŅŠ",
-                "ru": "ГАЛСТУЧНИК",
-                "en": "COMMON RINGED PLOVER"
+                "lv": "PLUKŠĶIS",
+                "ru": "БЕЛОБРОВИК",
+                "en": "REDWING"
             },
             "description": {
-                "lv": "Latvijā samērā parasts ceļošanas laikā, bet rets ligzdotājs. Ligzdo galvenokārt liedagos gar  Rīgas jūras līci un rietumu piekrasti. Migrāciju laikā arī citās līdzīgās vietās. Ligzda uz zemes – sekla  iedobe. Pārtiek no kukaiņiem, to kāpuriem, arī vēžveidīgiem.Gājputns. Pārziemo Āfrikā. ",
+                "lv": "Latvijā parasts ligzdotājs, bet izplatīts nevienmērīgi. Bieži migrācijas laikā, kad Latvijai  caurceļo Igaunijas, Somijas un Krievijas populāciju putni. Sastopams dažādos mežos, retāk arī parkos un  kapsētās. Ligzdu būvē galvenokārt uz celma, nolauzta koka stumbeņa, zaru žāklē pie stumbra. Pārtiek no  kukaiņiem, ogām, augļiem.Gājputns. Pārziemo Dienvidrietumeiropā. Nelielā skaitā regulāri pārziemo Latvijā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -999,28 +1026,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s28d.png",
-                "iconShadow": "resources/view_10/images/s28s.png"
+                "iconImage": "resources/view_8/images/s28d.png",
+                "iconShadow": "resources/view_8/images/s28s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s28d.png",
+                "image": "resources/view_8/images/s28d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S29 ------------------------------",
-            "titleLatin": "Phalaropus lobatus",
+            "titleLatin": "Acrocephalus palustris",
             "title": {
-                "lv": "ŠAURKNĀBJA PŪSLĪTIS",
-                "ru": "КРУГЛОНОСЫЙ ПЛАВУНЧИК",
-                "en": "RED-NECKED PHALAROPE"
+                "lv": "PURVA ĶAUĶIS",
+                "ru": "БОЛОТНАЯ КАМЫШЕВКА",
+                "en": "MARSH WARBLER"
             },
             "description": {
-                "lv": "Latvijā nelielā skaitā caurceļo. Reizēm novērojams arī vasaras vidū (jūlija sākumā). Parasti tās  ir pieaugušās mātītes, kuras pirmās dodas rudens migrācijā. Biežāk uzturas iekšzemē nekā pie jūras. Pārtiek no  bezmugurkaulniekiem. Latvijai tuvākās ligzdošanas vietas atrodas Skandināvijā, Somijā, Krievijā. ",
+                "lv": "Latvijā parasts un izplatīts ligzdotājs. Sastopams krūmainās ceļmalās, mežmalās, mitrās,  krūmainās ieplakās lauksaimniecības zemēs, aizaugošās pļavās un citās līdzīgās vietās. Ligzdu būvē, ievītu starp  dažādu lakstaugu (piemēram, nātru, vīgriežu, vībotņu) stublājiem. Pārtiek galvenokārt no kukaiņiem.Gājputns. Pārziemo Āfrikā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -1035,28 +1063,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s29d.png",
-                "iconShadow": "resources/view_10/images/s29s.png"
+                "iconImage": "resources/view_8/images/s29d.png",
+                "iconShadow": "resources/view_8/images/s29s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s29d.png",
+                "image": "resources/view_8/images/s29d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S30 ------------------------------",
-            "titleLatin": "Calidris temminckii",
+            "titleLatin": "Erithacus rubecula",
             "title": {
-                "lv": "TEMMINKA ŠŅIBĪTIS",
-                "ru": "БЕЛОХВОСТЫЙ ПЕСОЧНИК",
-                "en": "TEMMINCK’S STINT"
+                "lv": "SARKANRĪKLĪTE",
+                "ru": "ЗАРЯНКА",
+                "en": "EUROPEAN ROBIN"
             },
             "description": {
-                "lv": "Latvijā nelielā skaitā caurceļo un reizēm var sastapt arī ligzdošanas sezonā, tomēr šeit  neligzdo. Sastopams pārsvarā iekšzemes ūdeņos, retāk arī jūras piekrastē. Latvijai tuvākās ligzdošanas vietas  atrodas Skandināvijas un Somijas ziemeļos. ",
+                "lv": "Latvijā parasta un izplatīta ligzdotāja. Sastopama dažādos mežos, krūmājos, parkos un dārzos.  Ligzdo uz zemes kādā nogāzē, pie celma, izgāzta koka saknēs, pusdobumā un citās līdzīgās vietās. Pārtiek no  kukaiņiem, to kāpuriem, ogām.Gājputns. Pārziemo Dienvidrietumeiropā. Latvijā novērojama arī ziemā neaizsalušu ūdeņu tuvumā  vai apdzīvotās vietās. Ziemotāju skaits pieaug. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -1071,28 +1100,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s30d.png",
-                "iconShadow": "resources/view_10/images/s30s.png"
+                "iconImage": "resources/view_8/images/s30d.png",
+                "iconShadow": "resources/view_8/images/s30s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s30d.png",
+                "image": "resources/view_8/images/s30d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S31 ------------------------------",
-            "titleLatin": "Calidris minuta",
+            "titleLatin": "Regulus ignicapilla",
             "title": {
-                "lv": "TRULĪTIS",
-                "ru": "КУЛИК-ВОРОБЕЙ",
-                "en": "LITTLE STINT"
+                "lv": "SĀRTGALVĪTIS",
+                "ru": "КРАСНОГОЛОВЫЙ КОРОЛЕК",
+                "en": "FIRECREST"
             },
             "description": {
-                "lv": "Latvijā samērā parasts caurceļotājs vasaras otrajā pusē – rudenī, mazāk pavasarī. Sastopams  jūras piekrastē, īpaši pie atklātas jūras. Latvijai tuvākās ligzdošanas vietas atrodas Skandināvijas ziemeļos un  Krievijas tundras zonā.   ",
+                "lv": "Latvijā samērā nesen, rets ieceļotājs un ligzdotājs. Pēdējos gados novērojumu skaits strauji  pieaug. Lai arī ligzdošanas pierādījumu ir maz, nav jāšaubās, ka sārtgalvītis Latvijā tagad ligzdo regulāri, un  to skaits sniedzas vairākos tūkstošos pāru. Pēdējos gados strauji pieaug novērojumu skaits aprīlī un maijā,  apliecinot ligzdotāju ekspansiju. Sastopams parkos un citos apstādījumos, kur ir egles, retāk platlapju un  jauktu koku mežos. Ligzdo biezos egļu zaros, galvenokārt koku galotnes daļā. Barojas ar sīkiem kukaiņiem.Gājputns. Pārziemo Dienvidrietumeiropā. Atsevišķi īpatņi var pārziemot arī Latvijā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -1107,28 +1137,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s31d.png",
-                "iconShadow": "resources/view_10/images/s31s.png"
+                "iconImage": "resources/view_8/images/s31d.png",
+                "iconShadow": "resources/view_8/images/s31s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s31d.png",
+                "image": "resources/view_8/images/s31d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S32 ------------------------------",
-            "titleLatin": "Tringa erythropus",
+            "titleLatin": "Locustella luscinioides",
             "title": {
-                "lv": "TUMŠĀ TILBĪTE",
-                "ru": "ЩЁГОЛЬ",
-                "en": "SPOTTED REDSHANK"
+                "lv": "SEIVI ĶAUĶIS",
+                "ru": "СОЛОВЬИНЫЙ СВЕРЧОК",
+                "en": "SAVI’S WARBLER"
             },
             "description": {
-                "lv": "Nelielā skaitā regulāri caurceļo. Latvijā neligzdo, taču regulāri novērojama arī vasaras sākumā.  Sastopama dažāda mitruma pļavās, jūras un dažādu ūdenstilpju piekrastē. Pārtiek no bezmugurkaulniekiem. Latvijai  tuvākās ligzdošanas vietas atrodas Skandināvijā, Somijā, Krievijā.  ",
+                "lv": "Latvijā samērā parasts ligzdotājs. Sastopams aizaugušu ezeru un zivju dīķu niedrājos. Ligzda  labi paslēpta starp niedru stublājiem vai sakneņiem. Pārtiek no kukaiņiem un citiem bezmugurkaulniekiem.Gājputns. Pārziemo Āfrikā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -1143,28 +1174,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s32d.png",
-                "iconShadow": "resources/view_10/images/s32s.png"
+                "iconImage": "resources/view_8/images/s32d.png",
+                "iconShadow": "resources/view_8/images/s32s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s32d.png",
+                "image": "resources/view_8/images/s32d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S33 ------------------------------",
-            "titleLatin": "Charadrius dubius",
+            "titleLatin": "Phylloscopus sibilatrix",
             "title": {
-                "lv": "UPES TĀRTIŅŠ",
-                "ru": "МАЛЫЙ ЗУЕК",
-                "en": "LITTLE RINGED PLOVER"
+                "lv": "SVIRLĪTIS",
+                "ru": "ПЕНОЧКА-ТРЕЩЕТКА",
+                "en": "WOOD WARBLER"
             },
             "description": {
-                "lv": "Latvijā samērā parasts ligzdotājs un caurceļotājs. Ligzdošanas laikā sastopams tikai piemērotās  vietās – karjeros, uz laukiem pie nelielām peļķēm, pie zivju dīķiem un vietām arī gar Rīgas jūras līča  piekrasti. Migrācijas laikā arī citās līdzīgās vietās. Ligzda uz zemes – sekla iedobe. Pārtiek no gliemjiem,  tārpiem, kukaiņiem un to kāpuriem, arī vēžveidīgiem.Gājputns. Pārziemo Āfrikā. ",
+                "lv": "Latvijā parasts un izplatīts ligzdotājs. Visbiežāk sastopams dažāda tipa mežos, retāk vecos  parkos, kapsētās un citās līdzīgās vietās. Uz zemes, sūnās, zālē vai uz kailas zemes no sūnām un zālēm būvē ļoti  labi nomaskētu lodveida ligzdu. Pārtiek no lapotnē atrodamiem zirnekļiem, kukaiņiem.Gājputns. Pārziemo Āfrikā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -1179,28 +1211,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s33d.png",
-                "iconShadow": "resources/view_10/images/s33s.png"
+                "iconImage": "resources/view_8/images/s33d.png",
+                "iconShadow": "resources/view_8/images/s33s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s33d.png",
+                "image": "resources/view_8/images/s33d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S34 ------------------------------",
-            "titleLatin": "Actitis hypoleucos",
+            "titleLatin": "Sylvia nisoria",
             "title": {
-                "lv": "UPES TILBĪTE",
-                "ru": "ПЕРЕВОЗЧИК",
-                "en": "COMMON SANDPIPER"
+                "lv": "SVĪTRAINAIS ĶAUĶIS",
+                "ru": "ЯСТРЕБИНАЯ СЛАВКА",
+                "en": "BARRED WARBLER"
             },
             "description": {
-                "lv": "Latvijā parasta ligzdotāja un caurceļotāja. Sastopama lielākās upēs vai ezeros ar klajiem,  niedrēm neaizaugušiem krastiem. Ceļošanas laikā sastopama arī jūras piekrastē, tomēr izvairās no smilšainiem  liedagiem un parasti uzturas akmeņainās un dūņainās vietās. Ligzdo uz zemes. Pārtiek no bezmugurkaulniekiem.Gājputns. Pārziemo Vidusjūras reģionā, Dienvidrietumeiropā un Āfrikā.  ",
+                "lv": "Latvijā samērā rets ligzdotājs. Sastopams krūmājos, ūdenstilpju krastos, ceļmalu dzīvžogos,  vecos parkos, pamestos dārzos, ar krūmiem aizaugušos izcirtumos vai klajumos. Ligzdu būvē starp krūmu zariem vai  tieviem stiebriem. Pārtiek no kukaiņiem, to kāpuriem, arī no ogām.Gājputns. Pārziemo Austrumāfrikā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -1215,28 +1248,29 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s34d.png",
-                "iconShadow": "resources/view_10/images/s34s.png"
+                "iconImage": "resources/view_8/images/s34d.png",
+                "iconShadow": "resources/view_8/images/s34s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s34d.png",
+                "image": "resources/view_8/images/s34d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S35 ------------------------------",
-            "titleLatin": "Lymnocryptes minimus",
+            "titleLatin": "Locustella fluviatilis",
             "title": {
-                "lv": "VISTILBE",
-                "ru": "ГАРШНЕП",
-                "en": "JACK SNIPE"
+                "lv": "UPES ĶAUĶIS",
+                "ru": "РЕЧНОЙ СВЕРЧОК",
+                "en": "EURASIAN RIVER WARBLER"
             },
             "description": {
-                "lv": "Latvijā samērā parasta ceļošanas laikā, bet grūti pamanāma. Ligzdošana pēdējās desmitgadēs nav  pierādīta. Nelielā skaitā regulāri pārziemo pie neaizsalstošiem grāvjiem, strautiem vai pat uzplūdušās, ciņainās  pļavās valsts centrālajā un rietumu daļā. Tomēr, slēptā dzīves veida dēļ, reti novērota. Pārtiek no tārpiem,  kukaiņiem, nelieliem gliemežiem un sēklām. Latvijai tuvākās ligzdošanas vietas atrodas Skandināvijā, Somijā,  Krievijā. ",
+                "lv": "Latvijā samērā parasts un izplatīts ligzdotājs. Sastopams brikšņainās, lakstaugiem bagātās  ūdenstilpju piekrastēs, mežmalās, aizzēlušos izcirtumos, mitrās laucēs mežā, arī palieņu pļavās, dažādās citās  mitrās, krūmainās pļavās. Migrācijas laikā arī niedrājos. Ligzdu būvē uz zemes, labi paslēptu augājā. Pārtiek no  kukaiņiem, zirnekļiem un citiem bezmugurkaulniekiem.Gājputns. Pārziemo Āfrikā. ",
                 "ru": "",
                 "en": "",
                 "transform": [
@@ -1251,17 +1285,129 @@
                     50,
                     20
                 ],
-                "iconImage": "resources/view_10/images/s35d.png",
-                "iconShadow": "resources/view_10/images/s35s.png"
+                "iconImage": "resources/view_8/images/s35d.png",
+                "iconShadow": "resources/view_8/images/s35s.png"
             },
             "detailImage": {
-                "image": "resources/view_10/images/s35d.png",
+                "image": "resources/view_8/images/s35d.png",
                 "transform": [
                     560,
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
+        },
+        {
+            "comment": "----------------------- S36 ------------------------------",
+            "titleLatin": "Phylloscopus trochilus",
+            "title": {
+                "lv": "VĪTĪTIS",
+                "ru": "ПЕНОЧКА-ВЕСНИЧКА",
+                "en": "WILLOW WARBLER"
+            },
+            "description": {
+                "lv": "Latvijā parasts un izplatīts ligzdotājs. Sastopams dažādos mežos, parasti mežmalu, izcirtumu vai  citu klajumu tuvumā, bieži arī nelielos mežu puduros starp laukiem, krūmājos, lapu koku jaunaudzēs. Uz zemes  būvē lodveida ligzdu. Ligzda līdzīga svirlīša ligzdai, bet tās izklājumā ir putnu spalvas. Pārtiek no lapotnē  atrodamiem zirnekļiem, kukaiņiem.Gājputns. Pārziemo Āfrikā. ",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_8/images/s36d.png",
+                "iconShadow": "resources/view_8/images/s36s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_8/images/s36d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            },
+            "audio": []
+        },
+        {
+            "comment": "----------------------- S37 ------------------------------",
+            "titleLatin": "Regulus regulus",
+            "title": {
+                "lv": "ZELTGALVĪTIS",
+                "ru": "ЖЕЛТОГОЛОВЫЙ КОРОЛЕК",
+                "en": "GOLDCREST"
+            },
+            "description": {
+                "lv": "Latvijā parasts ligzdotājs un ziemotājs. Sastopams dažāda tipa mežos, retāk arī parkos un citos  apstādījumos, kur ir egles. Parasti ligzdo biezos egļu zaros koka vidus daļā, tālāk no stumbra. Pārtiek no  sīkiem kukaiņiem, to kāpuriem, zirnekļiem, arī no sēklām.Daļējs gājputns. Pārziemo citviet Eiropā. Samērā lielā skaitā novērojams rudens migrācijas  laikā. ",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_8/images/s37d.png",
+                "iconShadow": "resources/view_8/images/s37s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_8/images/s37d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            },
+            "audio": []
+        },
+        {
+            "comment": "----------------------- S38 ------------------------------",
+            "titleLatin": "Luscinia svecica",
+            "title": {
+                "lv": "ZILRĪKLĪTE",
+                "ru": "ВАРАКУШКА",
+                "en": "BLUETHROAT"
+            },
+            "description": {
+                "lv": "Latvijā reta ligzdotāja un caurceļotāja. Sastopama krūmājos, slapjās pļavās, retos niedrājos pie  dažādiem ūdeņiem. Migrācijas laikā arī citās vietās. Ligzdu būvē uz zemes, parasti labi paslēptu. Pārtiek no  kukaiņiem un to kāpuriem, tārpiem, arī ogām.Gājputns. Pārziemo Āfrikā. ",
+                "ru": "",
+                "en": "",
+                "transform": [
+                    20,
+                    380
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    50,
+                    20
+                ],
+                "iconImage": "resources/view_8/images/s38d.png",
+                "iconShadow": "resources/view_8/images/s38s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_8/images/s38d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            },
+            "audio": []
         }
     ]
 }
