@@ -199,22 +199,24 @@ export default {
         -webkit-background-clip: text;
         background-clip: text; 
         -webkit-text-fill-color: transparent;      
-        filter: drop-shadow(2px 4px 3px #000);     
+        filter: drop-shadow(2px 4px 3px #000);
+        padding-right: 10px;
     }
     .title-latin{
         margin-top:10px;
         margin-left:50px;
         font-size: 40px;
         font-style: italic;
-        width:800px;    
+        width:800px;
     }
     .title-latin span{
         display: inline;
         background: linear-gradient(to top, #e5e5e5, white);
         -webkit-background-clip: text;
-        background-clip: text; 
+        background-clip: text;
         -webkit-text-fill-color: transparent;    
-        filter: drop-shadow(2px 2px 2px #000); 
+        filter: drop-shadow(2px 2px 2px #000);
+        padding-right: 10px;
     }
     .description{
         text-align: justify;
@@ -252,6 +254,6 @@ export default {
         height:768px;
     }    
     .sounds{
-        margin-top: 40px;
+        margin-top: 25px;
     }
 </style>

@@ -13,11 +13,11 @@
             },
             "description": {
                 "lv": "Latvijā zināms tikai viens ieceļošanas gadījums. 1880. gadā Lielvārdē viens īpatnis iegūts  septembra beigās (oktobra sākumā pēc jaunā stila). To Jūs tagad redzat savā priekšā. Putna izbāznis skatāms  Latvijas Dabas muzeja ekspozīcijā „Latvijas putni”. Izplatīta Tuvajos Austrumos un Vidusāzijā.  ",
-                "ru": "",
-                "en": "",
+                "ru": "В Латвии известен один случай залета этой птицы в Латвию. В 1880 году одна особь наблюдалась в конце сентября или начале октября по новому стилю в Лиелварде. Эту птицу можно сейчас увидеть в витрине.  Распространена на Ближнем Востоке и в Средней Азии.",
+                "en": "Only one known recorded sighting – one bird was collected in September 1880 (beginning of October, New Style) near Lielvārde. It is the specimen currently on display in the museum. The houbara bustard breeds in the Middle East and Central Asia.",
                 "transform": [
                     20,
-                    380,
+                    400,
                     30
                 ]
             },
@@ -34,11 +34,14 @@
             "detailImage": {
                 "image": "resources/view_6/images/s1d.png",
                 "transform": [
-                    560,
-                    420,
-                    0
+                    300,
+                    600,
+                    -20
                 ]
-            }
+            },
+            "audio":[
+
+            ]
         },
         {
             "comment": "----------------------- S2 ------------------------------",
@@ -50,8 +53,8 @@
             },
             "description": {
                 "lv": "Latvijā ir samērā parasts ligzdotājs un nometnieks. Sastopams galvenokārt mitros lapu koku un  jauktu koku mežos. Bieži šo sugu sajauc ar dižraibo un vidējo dzeni. ",
-                "ru": "",
-                "en": "",
+                "ru": "В Латвии сравнительно обычная гнездящаяся оседлая птица. Встречается главным образом во влажных лиственных и смешанных лесах. Часто этот вид путают с большим пёстрым дятлом и средним пёстрым дятлом.",
+                "en": "A relatively common breeding, non-migratory bird in Latvia. Mostly found in wet deciduous and mixed forests. The white-backed woodpecker is often confused with great spotted and middle spotted woodpeckers.",
                 "transform": [
                     20,
                     380,
@@ -72,10 +75,28 @@
                 "image": "resources/view_6/images/s2d.png",
                 "transform": [
                     560,
-                    420,
+                    480,
                     0
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"baltmugurdzenis_balss",
+                        "ru":"baltmugurdzenis_balss",
+                        "en":"baltmugurdzenis_balss"
+                    },
+                    "fileName":"resources/view_6/sounds/baltmugurdzenis_balss.mp3"
+                },
+                {
+                    "title":{
+                        "lv":"baltmugurdzenis_bungosana",
+                        "ru":"baltmugurdzenis_bungosana",
+                        "en":"baltmugurdzenis_bungosana"
+                    },
+                    "fileName":"resources/view_6/sounds/baltmugurdzenis_bungosana.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S3 ------------------------------",
@@ -87,13 +108,25 @@
             },
             "description": {
                 "lv": "Latvijā dižraibais dzenis ir parasts ligzdotājs un nometnieks, un tā ir visbiežāk sastopamā  dzeņu suga Latvijā. Sastopams dažādos mežos, parkos un kapsētās. Dižraibo dzeņu kaltie dobumi ir ļoti nozīmīgi  arī citām dobumperētāju putnu sugām, kas tās izmanto ligzdošanai. Ziemā biežāk sastopams skujkoku mežos, kur  barojas galvenokārt ar skujkoku sēklām. Dižraibais dzenis mēdz ierīkot īpašas “kalves” čiekuru apstrādei.  Apmeklē arī putnu barotavas. ",
-                "ru": "",
-                "en": "",
-                "transform": [
-                    20,
-                    380,
-                    30
-                ]
+                "ru": "В Латвии большой пёстрый дятел обычная гнездящаяся оседлая птица и наиболее часто встречающаяся из всех видов дятлов. Обитает в различных лесах, парках, кладбищах. Дупла, выдолбленные большим пёстрым дятлом, имеют большое значение для других видов птиц, которые гнездятся в этих дуплах. Зимой чаще всего встречается в хвойных лесах, где главным образом питается семенами хвойных деревьев. Для долбления шишек используется «кузница», специально отведённое место — развилка дерева, щель в коре или отверстие, проделанное дятлом, в которое вставляется шишка. Наведывается также в кормушки.",
+                "en": "A common breeding non-migratory bird in Latvia – the most widespread of the woodpecker species. Lives in different types of forest, but also in cemeteries and parks. Cavities made by the great spotted woodpecker are important for other bird species that use them for nesting. During winter they often can be found in coniferous forests where they feed on coniferous tree seeds. They create special ‘forges’ where they wedge cones for easier processing. Great spotted woodpeckers also visit bird feeders.",
+                "transform": {
+                    "lv": [
+                        20,
+                        420,
+                        28
+                    ],
+                    "ru": [
+                        20,
+                        450,
+                        22
+                    ],
+                    "en": [
+                        20,
+                        455,
+                        24
+                    ]
+                }
             },
             "main": {
                 "diameter": 280,
@@ -109,10 +142,44 @@
                 "image": "resources/view_6/images/s3d.png",
                 "transform": [
                     560,
-                    420,
+                    480,
                     0
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"dižraibais_dzenis_balss",
+                        "ru":"dižraibais_dzenis_balss",
+                        "en":"dižraibais_dzenis_balss"
+                    },
+                    "fileName":"resources/view_6/sounds/dižraibais_dzenis_balss.mp3"
+                },
+                {
+                    "title":{
+                        "lv":"dižraibais_dzenis_balss_2",
+                        "ru":"dižraibais_dzenis_balss_2",
+                        "en":"dižraibais_dzenis_balss_2"
+                    },
+                    "fileName":"resources/view_6/sounds/dižraibais_dzenis_balss_2.mp3"
+                },
+                {
+                    "title":{
+                        "lv":"dižraibais_dzenis_bungošana",
+                        "ru":"dižraibais_dzenis_bungošana",
+                        "en":"dižraibais_dzenis_bungošana"
+                    },
+                    "fileName":"resources/view_6/sounds/dižraibais_dzenis_bungošana.mp3"
+                },
+                {
+                    "title":{
+                        "lv":"dižraibais_dzenis_bungošana_2",
+                        "ru":"dižraibais_dzenis_bungošana_2",
+                        "en":"dižraibais_dzenis_bungošana_2"
+                    },
+                    "fileName":"resources/view_6/sounds/dižraibais_dzenis_bungošana_2.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S4 ------------------------------",
@@ -124,13 +191,25 @@
             },
             "description": {
                 "lv": "Latvijā piemērotās vietās – niedrēm aizaugušos ezeros, dīķos un vecupēs – parasts ligzdotājs.  Dumbrcāļa dzīvesveids ir slēpts. Putna raibumainais apspalvojums padara to gandrīz neredzamu. Dabā vieglāk to  atpazīt pēc balss, īpaši pēc sivēna kviecienam līdzīgajiem saucieniem. Nelielā skaitā regulāri pārziemo. Pierīgā  ziemotāji atzīmēti, piemēram, Dārziņu vecupē, Sausajā Daugavā.Gājputns. Pārziemo Rietumeiropā un Ziemeļāfrikā. ",
-                "ru": "",
-                "en": "",
-                "transform": [
-                    20,
-                    380,
-                    30
-                ]
+                "ru": "В Латвии обычная гнездящаяся птица. Обитает в заросших тростником озёрах, прудах и старицах. Образ жизни водяного пастушка скрытый, поскольку окраска оперения птицы делает её практически незаметной. Легче всего птицу узнать в природе по голосу, особенно по издаваемым звукам, схожими с поросячьим хрюканьем.  Небольшое число птиц регулярно зимует. Возле Риги зимующие птицы были отмечены, например, в старицах окрестностей Дарзини. Перелётная птица. Зимует в Западной Европе и Северной Африке.",
+                "en": "A relatively common breeding species in suitable habitats – lakes, ponds and oxbows overgrown with reeds. A secretive bird with cryptic plumage that makes them very difficult to spot in the wild. It is much easier to hear its characteristic pig-like squeals than see the bird itself. Small numbers remain to winter in Latvia. Some of its more usual wintering places are located near Riga – Dārziņi and Sausā Daugava. Most birds, however, migrate south and spend the winter in western Europe and north Africa.",
+                "transform": {
+                    "lv": [
+                        20,
+                        360,
+                        30
+                    ],
+                    "ru": [
+                        20,
+                        390,
+                        26
+                    ],
+                    "en": [
+                        20,
+                        360,
+                        28
+                    ]
+                }
             },
             "main": {
                 "diameter": 280,
@@ -149,7 +228,33 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"dumbrcālis_balss",
+                        "ru":"dumbrcālis_balss",
+                        "en":"dumbrcālis_balss"
+                    },
+                    "fileName":"resources/view_6/sounds/dumbrcālis_balss.mp3"
+                },
+                {
+                    "title":{
+                        "lv":"dumbrcālis_balss_2",
+                        "ru":"dumbrcālis_balss_2",
+                        "en":"dumbrcālis_balss_2"
+                    },
+                    "fileName":"resources/view_6/sounds/dumbrcālis_balss_2.mp3"
+                },
+                {
+                    "title":{
+                        "lv":"dumbrcālis_dziesma",
+                        "ru":"dumbrcālis_dziesma",
+                        "en":"dumbrcālis_dziesma"
+                    },
+                    "fileName":"resources/view_6/sounds/dumbrcālis_dziesma.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S5 ------------------------------",
@@ -161,13 +266,25 @@
             },
             "description": {
                 "lv": "Latvijā parasta caurceļotāja un ligzdotāja. Ligzdo vairāki tūkstoši pāru. Ligzdotāju skaits  pēdējos gadu desmitos ir palielinājies. Vietām vasarā sastopami arī neligzdotāju bari, kuros var būt pat vairāki  desmiti un simti īpatņu. Rudeņos var pulcēties vairākus tūkstošus putnu lielos baros. Atsevišķi īpatņi vai  nelielas grupiņas mēdz arī pārziemot.Gājputns, ziemo Rietumeiropā un Ziemeļāfrikā. ",
-                "ru": "",
-                "en": "",
-                "transform": [
-                    20,
-                    380,
-                    30
-                ]
+                "ru": "В Латвии обычная пролётная гнездящаяся птица. Гнездится больше тысячи пар. Число гнездящихся птиц в последние десять лет увеличилось. Местами летом встречаются стаи не гнездящихся птиц, в которых может быть десятки и даже сотни особей. Осенью собираются в большие стаи до нескольких тысяч особей. Отдельные особи или небольшие группы могут зимовать. Перелётная птица. Зимует в Западной Европе и Северной Африке.",
+                "en": "A common breeding and passage migrant species in Latvia with several thousand breeding pairs. Numbers have increased in recent years. It is also possible to see non-breeding birds in summer, sometimes in flocks of up to a few hundred birds. In autumn the flocks are joined by migrating birds and become even larger, up to a few thousand birds. Individual birds may remain in Latvia during winter, especially in mild winters without snow cover. However, most cranes do migrate and winter in southern and western Europe.",
+                "transform": {
+                    "lv": [
+                        20,
+                        380,
+                        30
+                    ],
+                    "ru": [
+                        20,
+                        380,
+                        28
+                    ],
+                    "en": [
+                        20,
+                        380,
+                        26
+                    ]
+                }
             },
             "main": {
                 "diameter": 280,
@@ -182,11 +299,37 @@
             "detailImage": {
                 "image": "resources/view_6/images/s5d.png",
                 "transform": [
-                    560,
-                    420,
-                    0
+                    450,
+                    440,
+                    -20
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"dzērve_balss",
+                        "ru":"dzērve_balss",
+                        "en":"dzērve_balss"
+                    },
+                    "fileName":"resources/view_6/sounds/dzērve_balss.mp3"
+                },
+                {
+                    "title":{
+                        "lv":"dzērve_bars_lidojumā",
+                        "ru":"dzērve_bars_lidojumā",
+                        "en":"dzērve_bars_lidojumā"
+                    },
+                    "fileName":"resources/view_6/sounds/dzērve_bars_lidojumā.mp3"
+                },
+                {
+                    "title":{
+                        "lv":"dzērve_lokalā_lidojumā",
+                        "ru":"dzērve_lokalā_lidojumā",
+                        "en":"dzērve_lokalā_lidojumā"
+                    },
+                    "fileName":"resources/view_6/sounds/dzērve_lokalā_lidojumā.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S6 ------------------------------",
@@ -198,13 +341,25 @@
             },
             "description": {
                 "lv": "Latvijā parasta caurceļotāja un ligzdotāja. Vairāki desmiti tūkstoši pāru ligzdo dabiskos un  cilvēka veidotos zālājos, labības laukos un atmatās. Latvijā griezi apdraud gan pļavu aizaugšana un meliorācija,  gan intensīvā lauksaimniecība un pļaušana ar mehāniskajām pļaujmašīnām.Gājputns. Ziemo Āfrikā. ",
-                "ru": "",
-                "en": "",
-                "transform": [
-                    20,
-                    380,
-                    30
-                ]
+                "ru": "В Латвии обычная пролётная и гнездящаяся птица. Несколько десятков тысяч птиц гнездятся в естественных и культурных ландшафтах. В Латвии коростелю мешают как зарастание лугов, так и мелиорация, интенсивная сельскохозяйственная деятельность, покос лугов механическими косилками. Перелётная птица. Зимует в Африке.",
+                "en": "A common breeding and passage migrant species with tens of thousands of breeding pairs. Builds its nest in natural grasslands and also man-made habitats, such as crop fields and fallow land. Corncrakes are endangered because of the loss of suitable habitats due to the overgrowth of meadows, melioration, and intensive agriculture. Nests can be destroyed when grasslands are mowed in inappropriate seasons. The corncrake is a migratory bird that winters in Africa.",
+                "transform": {
+                    "lv": [
+                        20,
+                        380,
+                        30
+                    ],
+                    "ru": [
+                        20,
+                        380,
+                        30
+                    ],
+                    "en": [
+                        20,
+                        380,
+                        28
+                    ]
+                }
             },
             "main": {
                 "diameter": 280,
@@ -223,7 +378,17 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"grieze_dziesma",
+                        "ru":"grieze_dziesma",
+                        "en":"grieze_dziesma"
+                    },
+                    "fileName":"resources/view_6/sounds/grieze_dziesma.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S7 ------------------------------",
@@ -235,13 +400,25 @@
             },
             "description": {
                 "lv": "Latvijā parasts caurceļotājs un ligzdotājs dīķos un ezeros, arī upēs. To bieži var novērot  atklātos ūdeņos vai pastaigājoties krasta zālē. Paceļoties spārnos, tas kādu laiku skrien pa ūdeni. Laucis ir  skaļš putns, tas daudz klaigā, un putni savā starpā sasaucas. Laucis ir teritoriāls putns un ligzdošanās laikā  aktīvi aizsargā savu teritoriju.Gājputns. Pārziemo Rietumeiropā. Siltās ziemās parasts ziemotājs arī Latvijā, piejūras zonā.  ",
-                "ru": "",
-                "en": "",
-                "transform": [
-                    20,
-                    380,
-                    30
-                ]
+                "ru": "В Латвии обычная пролётная и гнездящаяся птица у прудов, озёр и рек. Её часто можно видеть на открытой воде или бродящей по травянистым берегам. Взлетая, какое – то время бежит по воде. Лысуха шумная птица - перекликаясь друг с другом, громко кричит. Территориальный вид и в период гнездования активно охраняет свою территорию. Перелётная птица. Зимует в Западной Европе. В тёплые зимы может оставаться зимовать в приморской зоне Латвии.",
+                "en": "A common breeding and passage migrant species found by lakes, ponds and large rivers. Mostly seen when swimming in open water or walking near shore. The common coot runs for a short distance on the water’s surface before taking flight. Rather noisy birds who communicate with loud calls. Territorial – defends its breeding territory from other birds. The common coot is a migratory bird that winters in western Europe. In mild winters it may remain in Latvia, especially in coastal areas.",
+                "transform": {
+                    "lv": [
+                        20,
+                        380,
+                        30
+                    ],
+                    "ru": [
+                        20,
+                        380,
+                        28
+                    ],
+                    "en": [
+                        20,
+                        380,
+                        28
+                    ]
+                }
             },
             "main": {
                 "diameter": 280,
@@ -256,11 +433,29 @@
             "detailImage": {
                 "image": "resources/view_6/images/s7d.png",
                 "transform": [
-                    560,
-                    420,
+                    520,
+                    450,
                     0
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"laucis_balss",
+                        "ru":"laucis_balss",
+                        "en":"laucis_balss"
+                    },
+                    "fileName":"resources/view_6/sounds/laucis_balss.mp3"
+                },
+                {
+                    "title":{
+                        "lv":"laucis_dažādas_balsis",
+                        "ru":"laucis_dažādas_balsis",
+                        "en":"laucis_dažādas_balsis"
+                    },
+                    "fileName":"resources/view_6/sounds/laucis_dažādas_balsis.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S8 ------------------------------",
@@ -272,11 +467,11 @@
             },
             "description": {
                 "lv": "Latvijā ļoti rets ligzdotājs, kas sastopams aizaugušos ezeros un dīķos.Gājputns. Ziemo Āfrikā. ",
-                "ru": "",
-                "en": "",
+                "ru": "В Латвии очень редко гнездящаяся птица, встречающаяся в заросших озёрах и прудах. Перелётная птица. Зимует в Африке.",
+                "en": "A rare breeding species in Latvia. Mostly inhabits overgrown ponds and lakes with reed beds. The little crake is a migratory bird that winters in Africa.",
                 "transform": [
                     20,
-                    380,
+                    430,
                     30
                 ]
             },
@@ -294,10 +489,20 @@
                 "image": "resources/view_6/images/s8d.png",
                 "transform": [
                     560,
-                    420,
-                    0
+                    480,
+                    50
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"mazais_ormanītis_dziesma",
+                        "ru":"mazais_ormanītis_dziesma",
+                        "en":"mazais_ormanītis_dziesma"
+                    },
+                    "fileName":"resources/view_6/sounds/mazais_ormanītis_dziesma.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S9 ------------------------------",
@@ -309,11 +514,11 @@
             },
             "description": {
                 "lv": "Latvijā mazais dzenis ir parasts ligzdotājs un nometnieks. Sastopams jauktu koku un lapu koku  mežos, parkos un dārzos. Reizēm arī krūmājos gar ceļiem un laukmalēs. Rudeņos periodiskas invāzijas.   ",
-                "ru": "",
-                "en": "",
+                "ru": "В Латвии малый пёстрый дятел обычная гнездящаяся оседлая птица. Встречается в смешанных и лиственных лесах, парках и садах, иногда в кустарниках вдоль дорог и полей. Осенью периодически наблюдаются инвазии.",
+                "en": "A common breeding, non-migratory bird in Latvia. Inhabits mixed or deciduous forests, as well as parks and gardens; less often found in scrub along roads and field margins. Occasional irruptions in autumn.",
                 "transform": [
                     20,
-                    380,
+                    430,
                     30
                 ]
             },
@@ -330,11 +535,21 @@
             "detailImage": {
                 "image": "resources/view_6/images/s9d.png",
                 "transform": [
-                    560,
-                    420,
-                    0
+                    450,
+                    460,
+                    -20
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"mazais_dzenis_bungošana",
+                        "ru":"mazais_dzenis_bungošana",
+                        "en":"mazais_dzenis_bungošana"
+                    },
+                    "fileName":"resources/view_6/sounds/mazais_dzenis_bungošana.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S10 ------------------------------",
@@ -346,8 +561,8 @@
             },
             "description": {
                 "lv": "Latvijā zināmi astoņi ieceļošanas gadījumi. Kopš 20. gs. sākuma Latvijā nav novērota. Izplatīta Eiropas rietumos, dienvidos un austrumos – Portugālē, Spānijā, Francijā, Itālijā,  Ukrainā, Krievijas dienvidos.    ",
-                "ru": "",
-                "en": "",
+                "ru": "В Латвии отмечена восемь раз. С начала 20 века в Латвии не наблюдалась. Распространена в Западной, Южной и Восточной Европе – Португалии, Испании, Франции, Италии, Украине, на Юге России.",
+                "en": "A very rare vagrant with only 8 known recorded sightings; has not been seen since the beginning of the 20th century. A common breeding species in southern Europe – Portugal, Spain, France, Italy, Ukraine and southern Russia.",
                 "transform": [
                     20,
                     380,
@@ -368,10 +583,13 @@
                 "image": "resources/view_6/images/s10d.png",
                 "transform": [
                     560,
-                    420,
-                    0
+                    450,
+                    10
                 ]
-            }
+            },
+            "audio":[
+
+            ]
         },
         {
             "comment": "----------------------- S11 ------------------------------",
@@ -383,13 +601,25 @@
             },
             "description": {
                 "lv": "Latvijā ir samērā parasta ligzdotāja un nometniece. Sastopama galvenokārt jauktu koku un  skujkoku mežos. Ligzdošanai tā izvēlas skrajākas vietas pie izcirtumiem, laucēm un stigu malām. Dobumus melnā  dzilna visbiežāk kaļ resnās apsēs vai priedēs, kas atrodas klajuma malā. Labprāt ligzdo arī izcirtumu  ekoloģiskajos kokos. Melnajai dzilnai ir liela ekoloģiskā nozīme – tās kaltajos dobumos ligzdo vairākas retas un  apdraudētas putnu sugas:  meža balodis, bikšainais apogs, zaļā vārna. ",
-                "ru": "",
-                "en": "",
-                "transform": [
-                    20,
-                    380,
-                    30
-                ]
+                "ru": "В Латвии сравнительно обычная гнездящаяся оседлая птица. Встречается главным образом в смешанных и хвойных лесах. Для гнездования выбирает разреженные места у вырубок, полян и просек. Дупла желна чаще всего выдалбливает в толстых осинах или соснах, которые находятся по краям полян. Охотно гнездится на лесных вырубках в оставленных деревьях. Желна имеет большое экологическое значение в природе – в выдолбленных ею дуплах гнездятся редкие и охраняемые виды птиц, например, клинтух, мохноногий сыч, а также большой крохаль, обыкновенный гоголь, сизоворонка.",
+                "en": "A relatively common breeding, non-migratory bird in Latvia. Inhabits mature mixed and coniferous forests. Chooses relatively open areas in forests near glades or clear cuts for breeding. The black woodpecker usually makes its nesting cavity in old aspen or pine trees at the edge of open areas. May also create cavities in single trees left after clear-cuts. The black woodpecker is an important ‘keystone’ species because the cavities made by them are used for nesting by other rare and endangered birds. The stock dove and Tengmalm’s owl nest almost exclusively in cavities made by the black woodpecker. The common merganser, the common goldeneye, and the Eurasian roller are other species that use these cavities.",
+                "transform": {
+                    "lv": [
+                        20,
+                        350,
+                        30
+                    ],
+                    "ru": [
+                        20,
+                        350,
+                        26
+                    ],
+                    "en": [
+                        20,
+                        390,
+                        24
+                    ]
+                }
             },
             "main": {
                 "diameter": 280,
@@ -404,11 +634,37 @@
             "detailImage": {
                 "image": "resources/view_6/images/s11d.png",
                 "transform": [
-                    560,
-                    420,
-                    0
+                    540,
+                    460,
+                    -10
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"melnā_dzilna_balss",
+                        "ru":"melnā_dzilna_balss",
+                        "en":"melnā_dzilna_balss"
+                    },
+                    "fileName":"resources/view_6/sounds/melnā_dzilna_balss.mp3"
+                },
+                {
+                    "title":{
+                        "lv":"melnā_dzilna_balss_2",
+                        "ru":"melnā_dzilna_balss_2",
+                        "en":"melnā_dzilna_balss_2"
+                    },
+                    "fileName":"resources/view_6/sounds/melnā_dzilna_balss_2.mp3"
+                },
+                {
+                    "title":{
+                        "lv":"melnā_dzilna_bungosana",
+                        "ru":"melnā_dzilna_bungosana",
+                        "en":"melnā_dzilna_bungosana"
+                    },
+                    "fileName":"resources/view_6/sounds/melnā_dzilna_bungosana.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S12 ------------------------------",
@@ -420,8 +676,8 @@
             },
             "description": {
                 "lv": "Piemērotās vietās Latvijā, gar dīķu, ezeru un upju krastiem, slapjās pļavās un zemajos zāļu  purvos, ir samērā parasts ligzdotājs.   Gājputns. Ziemo Āfrikā.  ",
-                "ru": "",
-                "en": "",
+                "ru": "В Латвии сравнительно обычная гнездящаяся птица. Обитает вдоль берегов прудов, озёр и рек, а также на влажных лугах и низинных болотах. Перелётная птица. Зимует в Африке.",
+                "en": "Rather common breeding species in suitable habitats – along the shores of ponds, lakes and rivers, as well as in wet meadows and fens. The spotted crake is a migratory bird that winters in Africa.",
                 "transform": [
                     20,
                     380,
@@ -445,7 +701,17 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"ormanītis_dziesma",
+                        "ru":"ormanītis_dziesma",
+                        "en":"ormanītis_dziesma"
+                    },
+                    "fileName":"resources/view_6/sounds/ormanītis_dziesma.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S13 ------------------------------",
@@ -457,11 +723,11 @@
             },
             "description": {
                 "lv": "Latvijā ir samērā parasta ligzdotāja un nometniece. Sastopama galvenokārt jauktu koku un lapu  koku mežos. Ligzdošanas dobums galvenokārt tiek izkalts apsēs, alkšņos un bērzos. Pelēkā dzilna, līdzīgi kā zaļā  dzilna, pamatā barojas ar skudrām, bet ir mazāk atkarīga no tām un barojas arī ar citiem kukaiņiem un to  kāpuriem. Ziemā labprāt apmeklē putnu barotavas. ",
-                "ru": "",
-                "en": "",
+                "ru": "В Латвии сравнительно обычная гнездящаяся оседлая птица. Встречается главным образом в смешанных и лиственных лесах. Дупла для гнездования делает главным образом в осинах, ольхах и берёзах. Седой дятел, так же, как и зелёный дятел, в основном питается муравьями, но будучи меньше зависимым от них, потребляет также других насекомых и их личинками. Зимой охотно посещает птичьи кормушки.",
+                "en": "A common breeding, non-migratory bird in Latvia. Mostly found in mixed and deciduous forests. Cavities for nesting are usually made in aspen, alder or birch. The diet of the grey-faced woodpecker is similar to that of the green woodpecker (which consists of ants), but they are less specialised and can also feed on other insects and their larvae. Often visits bird feeders during winter.",
                 "transform": [
                     20,
-                    380,
+                    400,
                     30
                 ]
             },
@@ -478,11 +744,37 @@
             "detailImage": {
                 "image": "resources/view_6/images/s13d.png",
                 "transform": [
-                    560,
-                    420,
-                    0
+                    350,
+                    500,
+                    -30
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"pelēkā_dzilna_balss",
+                        "ru":"pelēkā_dzilna_balss",
+                        "en":"pelēkā_dzilna_balss"
+                    },
+                    "fileName":"resources/view_6/sounds/pelēkā_dzilna_balss.mp3"
+                },
+                {
+                    "title":{
+                        "lv":"pelēkā_dzilna_balss_2",
+                        "ru":"pelēkā_dzilna_balss_2",
+                        "en":"pelēkā_dzilna_balss_2"
+                    },
+                    "fileName":"resources/view_6/sounds/pelēkā_dzilna_balss_2.mp3"
+                },
+                {
+                    "title":{
+                        "lv":"pelēkā_dzilna_balss_3",
+                        "ru":"pelēkā_dzilna_balss_3",
+                        "en":"pelēkā_dzilna_balss_3"
+                    },
+                    "fileName":"resources/view_6/sounds/pelēkā_dzilna_balss_3.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S14 ------------------------------",
@@ -494,13 +786,25 @@
             },
             "description": {
                 "lv": "Latvijā ir parasts ligzdotājs un caurceļotājs. Tas ir vienīgais no deviņām Latvijas dzeņveidīgo  putnu sugām, kas migrē un pārziemo Āfrikā. Ligzdo vecos parkos, dārzos, jauktu koku un lapu  koku mežos. Pats dobumu izkalt nevar, un tam ligzdošanai nepieciešams brīvs dobums vai būris. Ja tītiņš  noskatījis kādu labu, bet jau aizņemtu ligzdošanas vietu, tas kļūst agresīvs un padzen par sevi mazākus putnus,  izmetot to ligzdu ar visām olām vai putnēniem laukā. Iztraucēts perēšanas laikā, tītiņš šņāc kā čūska,  vienlaikus grozot galvu uz visām pusēm. Savu tautas nosaukumu “grozgalvis” tas ieguvis tādēļ, ka spēj pagriezt  galvu gandrīz par 1800. Barojas galvenokārt ar skudrām.",
-                "ru": "",
-                "en": "",
-                "transform": [
-                    20,
-                    380,
-                    30
-                ]
+                "ru": "В Латвии обычная гнездящаяся и пролётная птица. Это единственная из девяти дятлообразных птиц Латвии, которая летит зимовать в Африку. Гнездится в старых парках, садах, смешанных и лиственных лесах. Сама вертишейка дупло выдолбить не может и для гнездования ей нужно готовое дупло или скворечник. Если вертишейка обнаружит подходящее, но уже занятое дупло, то становится агрессивной и выгоняет птичек, которые поменьше, из дупла и выбрасывает оттуда гнёзда с яйцами или птицами. Потревоженная во время высиживания вертишейка начинает шипеть как змея, вращая головой во все стороны. Своё название вертишейка получила потому, что может поворачивать голову почти на 180 градусов. Питается в основном муравьями.",
+                "en": "A common breeding and passage migrant species. The only woodpecker species that is migratory; winters in Africa. During the breeding season it inhabits old parks, gardens, and mixed and deciduous forests. The Eurasian wryneck does not make its own cavities for nesting, so it must find a suitable cavity or nest box. If it comes across a cavity that is already taken by another bird, it become very aggressive and usually drives away the smaller bird and throws out their eggs, or even young birds, if present.",
+                "transform": {
+                    "lv": [
+                        20,
+                        340,
+                        26
+                    ],
+                    "ru": [
+                        20,
+                        340,
+                        24
+                    ],
+                    "en": [
+                        20,
+                        340,
+                        26
+                    ]
+                }
             },
             "main": {
                 "diameter": 280,
@@ -515,11 +819,29 @@
             "detailImage": {
                 "image": "resources/view_6/images/s14d.png",
                 "transform": [
-                    560,
-                    420,
-                    0
+                    550,
+                    460,
+                    -10
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"tītiņš_dziesma",
+                        "ru":"tītiņš_dziesma",
+                        "en":"tītiņš_dziesma"
+                    },
+                    "fileName":"resources/view_6/sounds/tītiņš_dziesma.mp3"
+                },
+                {
+                    "title":{
+                        "lv":"tītiņš_mazuļu_balss",
+                        "ru":"tītiņš_mazuļu_balss",
+                        "en":"tītiņš_mazuļu_balss"
+                    },
+                    "fileName":"resources/view_6/sounds/tītiņš_mazuļu_balss.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S15 ------------------------------",
@@ -531,11 +853,11 @@
             },
             "description": {
                 "lv": "Latvijā ir samērā parasts ligzdotājs un nometnieks. Sastopams galvenokārt jauktu koku mežos ar  eglēm un kalstošiem kokiem. Trīspirkstu dzenis vienmēr atrodas kokā un nekad nenolaižas uz zemes. Klusā  dzīvesveida dēļ grūti konstatējams. ",
-                "ru": "",
-                "en": "",
+                "ru": "В Латвии сравнительно обычная гнездящаяся оседлая птица. Встречается главным образом в смешанных лесах с елями и усыхающие деревьями. Трёхпалый дятел всегда держится на деревьях и никогда не садится на землю. Из–за скрытного образа жизни в природе эту птицу трудно обнаружить.",
+                "en": "A relatively common breeding, non-migratory bird in Latvia. Mostly found in mixed forests with spruces and dead or dying trees. They feed in the canopy of trees or along their trunks – they never land on the ground to feed. The most quiet and unobtrusive of woodpecker species – difficult to spot.",
                 "transform": [
                     20,
-                    380,
+                    470,
                     30
                 ]
             },
@@ -552,11 +874,21 @@
             "detailImage": {
                 "image": "resources/view_6/images/s15d.png",
                 "transform": [
-                    560,
-                    420,
-                    0
+                    340,
+                    570,
+                    -30
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"trīspirkstu_dzenis_bungošana",
+                        "ru":"trīspirkstu_dzenis_bungošana",
+                        "en":"trīspirkstu_dzenis_bungošana"
+                    },
+                    "fileName":"resources/view_6/sounds/trīspirkstu_dzenis_bungošana.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S16 ------------------------------",
@@ -568,13 +900,25 @@
             },
             "description": {
                 "lv": "Latvijas teritorijā tā ir parasta ligzdotāja dīķos un aizaugušos ezeros. Pēdējos desmit gados to  skaits ir samazinājies. Tā kā ūdensvistiņa ir neveikla lidotāja, tā briesmu gadījumos parasti nevis ceļas  spārnos, bet skrien, lai paslēptos starp ūdens augiem. Ja tomēr tā ir spiesta pacelties spārnos, lidojums ir īss  un samērā zems. Ligzdošanas laikā ūdensvistiņa ir ļoti teritoriāla un agresīvi aizsargā savu teritoriju. Gājputns. Pārziemo Rietumeiropā un Ziemeļāfrikā. Nelielā skaitā pārziemo arī Latvijā.  ",
-                "ru": "",
-                "en": "",
-                "transform": [
-                    20,
-                    380,
-                    30
-                ]
+                "ru": "На территории Латвии обычная гнездящаяся птица в прудах и заросших озёрах. Последние десять лет численность уменьшилось. Так как камышница не очень хороший летун, в случае опасности обычно не взлетает, а бежит, чтобы спрятаться среди водных растений. Если всё–таки она вынуждена подняться, то полёт короткий и сравнительно низкий. Территориальная птица и в период гнездования активно охраняет свою территорию. Перелётная птица. Зимует в Западной Европе и на севере Африки.  Небольшое число птиц зимует в Латвии.",
+                "en": "A common breeding species in ponds and overgrown lakes. In the last decade the number of breeding birds has decreased. The common moorhen is a weak flier – when in danger, it does not fly away but runs or swims for cover among aquatic plants. If forced to fly, it can only do so for a short distance and low over the water’s surface. Rather territorial and defends its breeding territories from other birds. The common moorhen is a migratory bird that winters in western Europe and northern Africa. Small numbers may remain and winter in Latvia.",
+                "transform": {
+                    "lv": [
+                        20,
+                        360,
+                        30
+                    ],
+                    "ru": [
+                        20,
+                        360,
+                        26
+                    ],
+                    "en": [
+                        20,
+                        360,
+                        28
+                    ]
+                }
             },
             "main": {
                 "diameter": 280,
@@ -590,10 +934,20 @@
                 "image": "resources/view_6/images/s16d.png",
                 "transform": [
                     560,
-                    420,
+                    400,
                     0
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"ūdensvistiņa_balss",
+                        "ru":"ūdensvistiņa_balss",
+                        "en":"ūdensvistiņa_balss"
+                    },
+                    "fileName":"resources/view_6/sounds/ūdensvistiņa_balss.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S17 ------------------------------",
@@ -605,13 +959,25 @@
             },
             "description": {
                 "lv": "Pirmo reizi Latvijā konstatēts 1923. gada marta sākumā Pilsblīdenē, tagadējā Brocēnu novadā.  Iegūtais putns sākotnēji bija kļūdaini noteikts par dižraibo dzeni. Dzeņa izbāznis atradās toreizējā Skolu  muzeja kolekcijā, kur to 1948. gadā atrada un noteica H. Mihelsons. Šobrīd eksemplārs atrodas Latvijas Dabas  muzeja krājumā. Otrais pierādītais novērojums bija tikai 1979./1980. gada ziemā. Sākot ar 20. gs. 80. gadiem,  notika skaita pieaugums, un mūsdienās vidējais dzenis Latvijā ir samērā parasts ligzdotājs un nometnieks.  Neapdzīvo skujkoku mežus. Parasti sastopams platlapju un jauktu koku mežos, parkos un vecu koku grupās. Ziemā  labprāt apmeklē putnu barotavas.  ",
-                "ru": "",
-                "en": "",
-                "transform": [
-                    20,
-                    380,
-                    30
-                ]
+                "ru": "Первый раз был замечен в 1923 году в начале марта в Пилсблидене (в нынешнем Броценском крае). Вначале эту птицу ошибочно посчитали за большого пёстрого дятла. Чучело этого дятла тогда поместили в коллекцию Школьного музея, где в 1948 году его нашёл и определил Х.Михельсонс. Сейчас этот экземпляр находится в коллекции Латвийского музея природы. Второй раз эту птицу наблюдали только зимой 1979/1980 года. Начиная с 80 –х годов 20 столетия произошло увеличение численности птиц и в настоящее время средний пёстрый дятел сравнительно обычная гнездящаяся оседлая птица в Латвии. Обычно встречается в широколиственных и смешанных лесах, парках, группах старых деревьев, но избегает хвойных лесов. Зимой охотно посещает птичьи кормушки.",
+                "en": "The first sighting in Latvia was recorded in early March, 1923, in Pilsblīdene. The obtained specimen was first identified as a great spotted woodpecker. The specimen of this bird was stored in the collection of the Museum of Riga Schools, where it was later found and identified correctly by H. Mihelsons in 1948. This specimen is now stored in the collection of the Latvian Museum of Natural History. The next recorded sighting only took place in the winter of 1979/80. The number of sightings began to increase in the 1980s, and now the middle spotted woodpecker is a common breeding species in Latvia in suitable habitats – broad-leaved or mixed forests, old parks, cemeteries, and occasionally in single groups of old trees. Usually avoids coniferous forests. Often visits bird feeders during winter.",
+                "transform": {
+                    "lv": [
+                        20,
+                        340,
+                        26
+                    ],
+                    "ru": [
+                        20,
+                        340,
+                        24
+                    ],
+                    "en": [
+                        20,
+                        340,
+                        24
+                    ]
+                }
             },
             "main": {
                 "diameter": 280,
@@ -626,11 +992,29 @@
             "detailImage": {
                 "image": "resources/view_6/images/s17d.png",
                 "transform": [
-                    560,
-                    420,
-                    0
+                    270,
+                    600,
+                    -35
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"vidējais_dzenis_balss",
+                        "ru":"vidējais_dzenis_balss",
+                        "en":"vidējais_dzenis_balss"
+                    },
+                    "fileName":"resources/view_6/sounds/vidējais_dzenis_balss.mp3"
+                },
+                {
+                    "title":{
+                        "lv":"vidējais_dzenis_bungosana",
+                        "ru":"vidējais_dzenis_bungosana",
+                        "en":"vidējais_dzenis_bungosana"
+                    },
+                    "fileName":"resources/view_6/sounds/vidējais_dzenis_bungosana.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S18 ------------------------------",
@@ -642,11 +1026,11 @@
             },
             "description": {
                 "lv": "Latvijā ļoti reta ligzdotāja un nometniece. Retākā no sastopamajām dzeņu sugām Latvijā. Skaits  strauji samazinājās 20. gs. otrajā pusē, taču samazināšanās iemesli nav zināmi. Ligzdo vecos lapu kokos. Galvenā  zaļās dzilnas barība ir skudras.  Lai tās atrastu, zaļā dzilna daudz laika pavada uz zemes. Barojas arī ar  citiem kukaiņiem. ",
-                "ru": "",
-                "en": "",
+                "ru": "В Латвии очень редкая гнездящаяся оседлая птица. Наиболее редкий из всех видов дятлов в Латвии. Численность резко уменьшилось во второй половине 20 века, но причина сокращения неизвестна. Гнездится в старых лиственных деревьях. Главная пища зелёного дятла муравьи. Чтобы их найти, зелёный дятел много времени проводит на земле. Питается также и другими насекомыми.",
+                "en": "Very rare breeding, non-migratory bird in Latvia. The rarest of woodpecker species found in Latvia. The number of breeding birds sharply declined in the second half of the 20th century, for reasons unknown. Nesting cavities are made in old deciduous trees. The Eurasian green woodpecker’s diet mainly consists of ants, and they spend a lot of time on the ground in search of them. Can also feed on other insects.",
                 "transform": [
                     20,
-                    380,
+                    400,
                     30
                 ]
             },
@@ -663,11 +1047,21 @@
             "detailImage": {
                 "image": "resources/view_6/images/s18d.png",
                 "transform": [
-                    560,
-                    420,
-                    0
+                    300,
+                    550,
+                    -40
                 ]
-            }
+            },
+            "audio":[
+                {
+                    "title":{
+                        "lv":"zaļā_dzilna_balss",
+                        "ru":"zaļā_dzilna_balss",
+                        "en":"zaļā_dzilna_balss"
+                    },
+                    "fileName":"resources/view_6/sounds/zaļā_dzilna_balss.mp3"
+                }
+            ]
         }
     ]
 }

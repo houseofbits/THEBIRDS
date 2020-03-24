@@ -76,6 +76,8 @@
                 isDraging:false,
                 userInputTimer:null,
                 passiveMode:false,
+
+                loadDetail:null,
             }
         },
         components: {
@@ -117,6 +119,11 @@
                 } else {
                     let path = window.location.pathname.split('/');
                     id = parseInt(path[1]);
+
+                    let det = path[1].split('-');
+                    if(typeof det[1] != 'undefined') {
+                        this.loadDetail =parseInt(det[1]);
+                    }
                 }
                 if (id != null) {
                     this.$http.get('/resources/view_'+id+'/config.json').then(function(response) {
@@ -124,6 +131,9 @@
                         this.calculateAutoAngles();
                         this.calculateMinMaxAngle();
                         this.initAudio();
+                        if (this.loadDetail !== null) {
+                            this.selectDetailView(this.loadDetail);
+                        }
                     }, function(){});
                 }
             },
@@ -459,6 +469,13 @@
             this.$on('detail-select', this.selectDetailView);
 
             this.userInputActivation();
+
+            // let timeout = setTimeout("location.reload(true);",5000);
+            // function resetTimeout() {
+            //     clearTimeout(timeout);
+            //     timeout = setTimeout("location.reload(true);",5000);
+            // }
+
         }
     }
 </script>
