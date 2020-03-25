@@ -173,7 +173,7 @@
                 }
                 return {
                     width:(w-2)+'px',
-                    left:((w+1)*index)+'px',
+                    left:((w*index)+1)+'px',
                     backgroundColor: color
                 };
             },

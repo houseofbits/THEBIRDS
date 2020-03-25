@@ -38,7 +38,8 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S2 ------------------------------",
@@ -75,7 +76,17 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Migrantu bars",
+                        "ru": "Migrantu bars",
+                        "en": "Migrantu bars"
+                    },
+                    "fileName": "resources/view_10/sounds/avozeta_migrantu_bars.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S3 ------------------------------",
@@ -112,7 +123,17 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Sauciens",
+                        "ru": "Sauciens",
+                        "en": "Sauciens"
+                    },
+                    "fileName": "resources/view_10/sounds/dīķu_tilbīte_sauciens.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S4 ------------------------------",
@@ -149,7 +170,8 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S5 ------------------------------",
@@ -186,7 +208,17 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
+                    },
+                    "fileName": "resources/view_10/sounds/dzeltenais_tārtiņš_dziesma.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S6 ------------------------------",
@@ -223,7 +255,8 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S7 ------------------------------",
@@ -260,7 +293,8 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S8 ------------------------------",
@@ -297,7 +331,8 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S9 ------------------------------",
@@ -334,7 +369,8 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S10 ------------------------------",
@@ -371,7 +407,25 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
+                    },
+                    "fileName": "resources/view_10/sounds/jūras_žagata_dziesma.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Uztraukums",
+                        "ru": "Uztraukums",
+                        "en": "Uztraukums"
+                    },
+                    "fileName": "resources/view_10/sounds/jūras_žagata_uztraukums.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S11 ------------------------------",
@@ -408,7 +462,33 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
+                    },
+                    "fileName": "resources/view_10/sounds/kuitala_dziesma.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Sauciens ligzdošanas vietā",
+                        "ru": "Sauciens ligzdošanas vietā",
+                        "en": "Sauciens ligzdošanas vietā"
+                    },
+                    "fileName": "resources/view_10/sounds/kuitala_sauciens_ligzdošanas_vietā.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Uztraukums",
+                        "ru": "Uztraukums",
+                        "en": "Uztraukums"
+                    },
+                    "fileName": "resources/view_10/sounds/kuitala_uztraukums.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S12 ------------------------------",
@@ -445,7 +525,25 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Riests",
+                        "ru": "Riests",
+                        "en": "Riests"
+                    },
+                    "fileName": "resources/view_10/sounds/ķikuts_riests.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Riests",
+                        "ru": "Riests",
+                        "en": "Riests"
+                    },
+                    "fileName": "resources/view_10/sounds/ķikuts_riests_2.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S13 ------------------------------",
@@ -482,7 +580,25 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Balss ligzdošanas vietā naktī",
+                        "ru": "Balss ligzdošanas vietā naktī",
+                        "en": "Balss ligzdošanas vietā naktī"
+                    },
+                    "fileName": "resources/view_10/sounds/ķīvīte_balss_ligzdošanas_vietā_naktī.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
+                    },
+                    "fileName": "resources/view_10/sounds/ķīvīte_dziesma.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S14 ------------------------------",
@@ -519,7 +635,8 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S15 ------------------------------",
@@ -556,7 +673,17 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Sauciens",
+                        "ru": "Sauciens",
+                        "en": "Sauciens"
+                    },
+                    "fileName": "resources/view_10/sounds/lielā_tilbīte_sauciens.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S16 ------------------------------",
@@ -593,7 +720,25 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
+                    },
+                    "fileName": "resources/view_10/sounds/lietuvainis_dziesma.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Sauciens ligzdošanas vietā",
+                        "ru": "Sauciens ligzdošanas vietā",
+                        "en": "Sauciens ligzdošanas vietā"
+                    },
+                    "fileName": "resources/view_10/sounds/lietuvainis_sauciens_ligzdošanas_vietā.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S17 ------------------------------",
@@ -630,7 +775,8 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S18 ------------------------------",
@@ -667,7 +813,25 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
+                    },
+                    "fileName": "resources/view_10/sounds/melnā_puskuitala_dziesma.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Uztraukums",
+                        "ru": "Uztraukums",
+                        "en": "Uztraukums"
+                    },
+                    "fileName": "resources/view_10/sounds/melnā_puskuitala_uztraukums.mp3"
+                }                
+            ]
         },
         {
             "comment": "----------------------- S19 ------------------------------",
@@ -704,7 +868,8 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S20 ------------------------------",
@@ -741,7 +906,49 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Balss",
+                        "ru": "Balss",
+                        "en": "Balss"
+                    },
+                    "fileName": "resources/view_10/sounds/mērkaziņa_balss.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Balss",
+                        "ru": "Balss",
+                        "en": "Balss"
+                    },
+                    "fileName": "resources/view_10/sounds/mērkaziņa_balss_2.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Balss migrācijā",
+                        "ru": "Balss migrācijā",
+                        "en": "Balss migrācijā"
+                    },
+                    "fileName": "resources/view_10/sounds/mērkaziņa_balss_migrācijā.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Riesta lidojums",
+                        "ru": "Riesta lidojums",
+                        "en": "Riesta lidojums"
+                    },
+                    "fileName": "resources/view_10/sounds/mērkaziņa_riesta_lidojums.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Riests un balss",
+                        "ru": "Riests un balss",
+                        "en": "Riests un balss"
+                    },
+                    "fileName": "resources/view_10/sounds/mērkaziņa_riests_un_balss.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S21 ------------------------------",
@@ -778,7 +985,8 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S22 ------------------------------",
@@ -815,7 +1023,17 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Sauciens",
+                        "ru": "Sauciens",
+                        "en": "Sauciens"
+                    },
+                    "fileName": "resources/view_10/sounds/parastais_šņibītis_sauciens.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S23 ------------------------------",
@@ -852,7 +1070,8 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S24 ------------------------------",
@@ -889,7 +1108,17 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Sauciens",
+                        "ru": "Sauciens",
+                        "en": "Sauciens"
+                    },
+                    "fileName": "resources/view_10/sounds/pļavu_tilbīte_sauciens.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S25 ------------------------------",
@@ -926,7 +1155,33 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Dziesma lidojumā",
+                        "ru": "Dziesma lidojumā",
+                        "en": "Dziesma lidojumā"
+                    },
+                    "fileName": "resources/view_10/sounds/purva_tilbīte_dziesma_lidojumā.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Sauciens",
+                        "ru": "Sauciens",
+                        "en": "Sauciens"
+                    },
+                    "fileName": "resources/view_10/sounds/purva_tilbīte_sauciens.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Uztraukums",
+                        "ru": "Uztraukums",
+                        "en": "Uztraukums"
+                    },
+                    "fileName": "resources/view_10/sounds/purva_tilbīte_uztraukums.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S26 ------------------------------",
@@ -963,7 +1218,8 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S27 ------------------------------",
@@ -1000,7 +1256,25 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Balss",
+                        "ru": "Balss",
+                        "en": "Balss"
+                    },
+                    "fileName": "resources/view_10/sounds/sloka_balss.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Riests",
+                        "ru": "Riests",
+                        "en": "Riests"
+                    },
+                    "fileName": "resources/view_10/sounds/sloka_riests.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S28 ------------------------------",
@@ -1037,7 +1311,25 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Sauciens",
+                        "ru": "Sauciens",
+                        "en": "Sauciens"
+                    },
+                    "fileName": "resources/view_10/sounds/smilšu_tārtiņš_sauciens.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Uztraukums",
+                        "ru": "Uztraukums",
+                        "en": "Uztraukums"
+                    },
+                    "fileName": "resources/view_10/sounds/smilšu_tārtiņš_uztraukums.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S29 ------------------------------",
@@ -1074,7 +1366,8 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S30 ------------------------------",
@@ -1111,7 +1404,17 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Sauciens",
+                        "ru": "Sauciens",
+                        "en": "Sauciens"
+                    },
+                    "fileName": "resources/view_10/sounds/temminka_šņibītis_sauciens.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S31 ------------------------------",
@@ -1148,7 +1451,8 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         },
         {
             "comment": "----------------------- S32 ------------------------------",
@@ -1185,7 +1489,17 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Sauciens",
+                        "ru": "Sauciens",
+                        "en": "Sauciens"
+                    },
+                    "fileName": "resources/view_10/sounds/tumšā_tilbīte_sauciens.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S33 ------------------------------",
@@ -1222,7 +1536,33 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
+                    },
+                    "fileName": "resources/view_10/sounds/upes_tārtiņš_dziesma.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Riesta lidojums",
+                        "ru": "Riesta lidojums",
+                        "en": "Riesta lidojums"
+                    },
+                    "fileName": "resources/view_10/sounds/upes_tārtiņš_riesta_lidojums.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Sauciens",
+                        "ru": "Sauciens",
+                        "en": "Sauciens"
+                    },
+                    "fileName": "resources/view_10/sounds/upes_tārtiņš_sauciens.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S34 ------------------------------",
@@ -1259,7 +1599,25 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Sauciens",
+                        "ru": "Sauciens",
+                        "en": "Sauciens"
+                    },
+                    "fileName": "resources/view_10/sounds/upes_tilbīte_sauciens.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Uztraukums",
+                        "ru": "Uztraukums",
+                        "en": "Uztraukums"
+                    },
+                    "fileName": "resources/view_10/sounds/upes_tilbīte_uztraukums.mp3"
+                }
+            ]
         },
         {
             "comment": "----------------------- S35 ------------------------------",
@@ -1296,7 +1654,8 @@
                     420,
                     0
                 ]
-            }
+            },
+            "audio": []
         }
     ]
 }

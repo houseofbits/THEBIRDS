@@ -39,9 +39,7 @@
                     -20
                 ]
             },
-            "audio":[
-
-            ]
+            "audio": []
         },
         {
             "comment": "----------------------- S2 ------------------------------",
@@ -79,22 +77,22 @@
                     0
                 ]
             },
-            "audio":[
+            "audio": [
                 {
-                    "title":{
-                        "lv":"baltmugurdzenis_balss",
-                        "ru":"baltmugurdzenis_balss",
-                        "en":"baltmugurdzenis_balss"
+                    "title": {
+                        "lv": "Balss",
+                        "ru": "Balss",
+                        "en": "Balss"
                     },
-                    "fileName":"resources/view_6/sounds/baltmugurdzenis_balss.mp3"
+                    "fileName": "resources/view_6/sounds/baltmugurdzenis_balss.mp3"
                 },
                 {
-                    "title":{
-                        "lv":"baltmugurdzenis_bungosana",
-                        "ru":"baltmugurdzenis_bungosana",
-                        "en":"baltmugurdzenis_bungosana"
+                    "title": {
+                        "lv": "Bungosana",
+                        "ru": "Bungosana",
+                        "en": "Bungosana"
                     },
-                    "fileName":"resources/view_6/sounds/baltmugurdzenis_bungosana.mp3"
+                    "fileName": "resources/view_6/sounds/baltmugurdzenis_bungosana.mp3"
                 }
             ]
         },
@@ -146,38 +144,38 @@
                     0
                 ]
             },
-            "audio":[
+            "audio": [
                 {
-                    "title":{
-                        "lv":"dižraibais_dzenis_balss",
-                        "ru":"dižraibais_dzenis_balss",
-                        "en":"dižraibais_dzenis_balss"
+                    "title": {
+                        "lv": "Balss",
+                        "ru": "Balss",
+                        "en": "Balss"
                     },
-                    "fileName":"resources/view_6/sounds/dižraibais_dzenis_balss.mp3"
+                    "fileName": "resources/view_6/sounds/dižraibais_dzenis_balss.mp3"
                 },
                 {
-                    "title":{
-                        "lv":"dižraibais_dzenis_balss_2",
-                        "ru":"dižraibais_dzenis_balss_2",
-                        "en":"dižraibais_dzenis_balss_2"
+                    "title": {
+                        "lv": "Balss",
+                        "ru": "Balss",
+                        "en": "Balss"
                     },
-                    "fileName":"resources/view_6/sounds/dižraibais_dzenis_balss_2.mp3"
+                    "fileName": "resources/view_6/sounds/dižraibais_dzenis_balss_2.mp3"
                 },
                 {
-                    "title":{
-                        "lv":"dižraibais_dzenis_bungošana",
-                        "ru":"dižraibais_dzenis_bungošana",
-                        "en":"dižraibais_dzenis_bungošana"
+                    "title": {
+                        "lv": "Bungošana",
+                        "ru": "Bungošana",
+                        "en": "Bungošana"
                     },
-                    "fileName":"resources/view_6/sounds/dižraibais_dzenis_bungošana.mp3"
+                    "fileName": "resources/view_6/sounds/dižraibais_dzenis_bungošana.mp3"
                 },
                 {
-                    "title":{
-                        "lv":"dižraibais_dzenis_bungošana_2",
-                        "ru":"dižraibais_dzenis_bungošana_2",
-                        "en":"dižraibais_dzenis_bungošana_2"
+                    "title": {
+                        "lv": "Bungošana",
+                        "ru": "Bungošana",
+                        "en": "Bungošana"
                     },
-                    "fileName":"resources/view_6/sounds/dižraibais_dzenis_bungošana_2.mp3"
+                    "fileName": "resources/view_6/sounds/dižraibais_dzenis_bungošana_2.mp3"
                 }
             ]
         },
@@ -229,30 +227,30 @@
                     0
                 ]
             },
-            "audio":[
+            "audio": [
                 {
-                    "title":{
-                        "lv":"dumbrcālis_balss",
-                        "ru":"dumbrcālis_balss",
-                        "en":"dumbrcālis_balss"
+                    "title": {
+                        "lv": "Balss",
+                        "ru": "Balss",
+                        "en": "Balss"
                     },
-                    "fileName":"resources/view_6/sounds/dumbrcālis_balss.mp3"
+                    "fileName": "resources/view_6/sounds/dumbrcālis_balss.mp3"
                 },
                 {
-                    "title":{
-                        "lv":"dumbrcālis_balss_2",
-                        "ru":"dumbrcālis_balss_2",
-                        "en":"dumbrcālis_balss_2"
+                    "title": {
+                        "lv": "Balss",
+                        "ru": "Balss",
+                        "en": "Balss"
                     },
-                    "fileName":"resources/view_6/sounds/dumbrcālis_balss_2.mp3"
+                    "fileName": "resources/view_6/sounds/dumbrcālis_balss_2.mp3"
                 },
                 {
-                    "title":{
-                        "lv":"dumbrcālis_dziesma",
-                        "ru":"dumbrcālis_dziesma",
-                        "en":"dumbrcālis_dziesma"
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
                     },
-                    "fileName":"resources/view_6/sounds/dumbrcālis_dziesma.mp3"
+                    "fileName": "resources/view_6/sounds/dumbrcālis_dziesma.mp3"
                 }
             ]
         },
@@ -304,30 +302,30 @@
                     -20
                 ]
             },
-            "audio":[
+            "audio": [
                 {
-                    "title":{
-                        "lv":"dzērve_balss",
-                        "ru":"dzērve_balss",
-                        "en":"dzērve_balss"
+                    "title": {
+                        "lv": "Balss",
+                        "ru": "Balss",
+                        "en": "Balss"
                     },
-                    "fileName":"resources/view_6/sounds/dzērve_balss.mp3"
+                    "fileName": "resources/view_6/sounds/dzērve_balss.mp3"
                 },
                 {
-                    "title":{
-                        "lv":"dzērve_bars_lidojumā",
-                        "ru":"dzērve_bars_lidojumā",
-                        "en":"dzērve_bars_lidojumā"
+                    "title": {
+                        "lv": "Bars lidojumā",
+                        "ru": "Bars lidojumā",
+                        "en": "Bars lidojumā"
                     },
-                    "fileName":"resources/view_6/sounds/dzērve_bars_lidojumā.mp3"
+                    "fileName": "resources/view_6/sounds/dzērve_bars_lidojumā.mp3"
                 },
                 {
-                    "title":{
-                        "lv":"dzērve_lokalā_lidojumā",
-                        "ru":"dzērve_lokalā_lidojumā",
-                        "en":"dzērve_lokalā_lidojumā"
+                    "title": {
+                        "lv": "Lokalā lidojumā",
+                        "ru": "Lokalā lidojumā",
+                        "en": "Lokalā lidojumā"
                     },
-                    "fileName":"resources/view_6/sounds/dzērve_lokalā_lidojumā.mp3"
+                    "fileName": "resources/view_6/sounds/dzērve_lokalā_lidojumā.mp3"
                 }
             ]
         },
@@ -379,14 +377,14 @@
                     0
                 ]
             },
-            "audio":[
+            "audio": [
                 {
-                    "title":{
-                        "lv":"grieze_dziesma",
-                        "ru":"grieze_dziesma",
-                        "en":"grieze_dziesma"
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
                     },
-                    "fileName":"resources/view_6/sounds/grieze_dziesma.mp3"
+                    "fileName": "resources/view_6/sounds/grieze_dziesma.mp3"
                 }
             ]
         },
@@ -438,22 +436,22 @@
                     0
                 ]
             },
-            "audio":[
+            "audio": [
                 {
-                    "title":{
-                        "lv":"laucis_balss",
-                        "ru":"laucis_balss",
-                        "en":"laucis_balss"
+                    "title": {
+                        "lv": "Balss",
+                        "ru": "Balss",
+                        "en": "Balss"
                     },
-                    "fileName":"resources/view_6/sounds/laucis_balss.mp3"
+                    "fileName": "resources/view_6/sounds/laucis_balss.mp3"
                 },
                 {
-                    "title":{
-                        "lv":"laucis_dažādas_balsis",
-                        "ru":"laucis_dažādas_balsis",
-                        "en":"laucis_dažādas_balsis"
+                    "title": {
+                        "lv": "Dažādas balsis",
+                        "ru": "Dažādas balsis",
+                        "en": "Dažādas balsis"
                     },
-                    "fileName":"resources/view_6/sounds/laucis_dažādas_balsis.mp3"
+                    "fileName": "resources/view_6/sounds/laucis_dažādas_balsis.mp3"
                 }
             ]
         },
@@ -493,14 +491,14 @@
                     50
                 ]
             },
-            "audio":[
+            "audio": [
                 {
-                    "title":{
-                        "lv":"mazais_ormanītis_dziesma",
-                        "ru":"mazais_ormanītis_dziesma",
-                        "en":"mazais_ormanītis_dziesma"
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
                     },
-                    "fileName":"resources/view_6/sounds/mazais_ormanītis_dziesma.mp3"
+                    "fileName": "resources/view_6/sounds/mazais_ormanītis_dziesma.mp3"
                 }
             ]
         },
@@ -540,14 +538,14 @@
                     -20
                 ]
             },
-            "audio":[
+            "audio": [
                 {
-                    "title":{
-                        "lv":"mazais_dzenis_bungošana",
-                        "ru":"mazais_dzenis_bungošana",
-                        "en":"mazais_dzenis_bungošana"
+                    "title": {
+                        "lv": "Bungošana",
+                        "ru": "Bungošana",
+                        "en": "Bungošana"
                     },
-                    "fileName":"resources/view_6/sounds/mazais_dzenis_bungošana.mp3"
+                    "fileName": "resources/view_6/sounds/mazais_dzenis_bungošana.mp3"
                 }
             ]
         },
@@ -587,9 +585,7 @@
                     10
                 ]
             },
-            "audio":[
-
-            ]
+            "audio": []
         },
         {
             "comment": "----------------------- S11 ------------------------------",
@@ -639,30 +635,30 @@
                     -10
                 ]
             },
-            "audio":[
+            "audio": [
                 {
-                    "title":{
-                        "lv":"melnā_dzilna_balss",
-                        "ru":"melnā_dzilna_balss",
-                        "en":"melnā_dzilna_balss"
+                    "title": {
+                        "lv": "Balss",
+                        "ru": "Balss",
+                        "en": "Balss"
                     },
-                    "fileName":"resources/view_6/sounds/melnā_dzilna_balss.mp3"
+                    "fileName": "resources/view_6/sounds/melnā_dzilna_balss.mp3"
                 },
                 {
-                    "title":{
-                        "lv":"melnā_dzilna_balss_2",
-                        "ru":"melnā_dzilna_balss_2",
-                        "en":"melnā_dzilna_balss_2"
+                    "title": {
+                        "lv": "Balss",
+                        "ru": "Balss",
+                        "en": "Balss"
                     },
-                    "fileName":"resources/view_6/sounds/melnā_dzilna_balss_2.mp3"
+                    "fileName": "resources/view_6/sounds/melnā_dzilna_balss_2.mp3"
                 },
                 {
-                    "title":{
-                        "lv":"melnā_dzilna_bungosana",
-                        "ru":"melnā_dzilna_bungosana",
-                        "en":"melnā_dzilna_bungosana"
+                    "title": {
+                        "lv": "Bungosana",
+                        "ru": "Bungosana",
+                        "en": "Bungosana"
                     },
-                    "fileName":"resources/view_6/sounds/melnā_dzilna_bungosana.mp3"
+                    "fileName": "resources/view_6/sounds/melnā_dzilna_bungosana.mp3"
                 }
             ]
         },
@@ -702,14 +698,14 @@
                     0
                 ]
             },
-            "audio":[
+            "audio": [
                 {
-                    "title":{
-                        "lv":"ormanītis_dziesma",
-                        "ru":"ormanītis_dziesma",
-                        "en":"ormanītis_dziesma"
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
                     },
-                    "fileName":"resources/view_6/sounds/ormanītis_dziesma.mp3"
+                    "fileName": "resources/view_6/sounds/ormanītis_dziesma.mp3"
                 }
             ]
         },
@@ -749,30 +745,30 @@
                     -30
                 ]
             },
-            "audio":[
+            "audio": [
                 {
-                    "title":{
-                        "lv":"pelēkā_dzilna_balss",
-                        "ru":"pelēkā_dzilna_balss",
-                        "en":"pelēkā_dzilna_balss"
+                    "title": {
+                        "lv": "Balss",
+                        "ru": "Balss",
+                        "en": "Balss"
                     },
-                    "fileName":"resources/view_6/sounds/pelēkā_dzilna_balss.mp3"
+                    "fileName": "resources/view_6/sounds/pelēkā_dzilna_balss.mp3"
                 },
                 {
-                    "title":{
-                        "lv":"pelēkā_dzilna_balss_2",
-                        "ru":"pelēkā_dzilna_balss_2",
-                        "en":"pelēkā_dzilna_balss_2"
+                    "title": {
+                        "lv": "Balss",
+                        "ru": "Balss",
+                        "en": "Balss"
                     },
-                    "fileName":"resources/view_6/sounds/pelēkā_dzilna_balss_2.mp3"
+                    "fileName": "resources/view_6/sounds/pelēkā_dzilna_balss_2.mp3"
                 },
                 {
-                    "title":{
-                        "lv":"pelēkā_dzilna_balss_3",
-                        "ru":"pelēkā_dzilna_balss_3",
-                        "en":"pelēkā_dzilna_balss_3"
+                    "title": {
+                        "lv": "Balss",
+                        "ru": "Balss",
+                        "en": "Balss"
                     },
-                    "fileName":"resources/view_6/sounds/pelēkā_dzilna_balss_3.mp3"
+                    "fileName": "resources/view_6/sounds/pelēkā_dzilna_balss_3.mp3"
                 }
             ]
         },
@@ -824,22 +820,22 @@
                     -10
                 ]
             },
-            "audio":[
+            "audio": [
                 {
-                    "title":{
-                        "lv":"tītiņš_dziesma",
-                        "ru":"tītiņš_dziesma",
-                        "en":"tītiņš_dziesma"
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
                     },
-                    "fileName":"resources/view_6/sounds/tītiņš_dziesma.mp3"
+                    "fileName": "resources/view_6/sounds/tītiņš_dziesma.mp3"
                 },
                 {
-                    "title":{
-                        "lv":"tītiņš_mazuļu_balss",
-                        "ru":"tītiņš_mazuļu_balss",
-                        "en":"tītiņš_mazuļu_balss"
+                    "title": {
+                        "lv": "Mazuļu balss",
+                        "ru": "Mazuļu balss",
+                        "en": "Mazuļu balss"
                     },
-                    "fileName":"resources/view_6/sounds/tītiņš_mazuļu_balss.mp3"
+                    "fileName": "resources/view_6/sounds/tītiņš_mazuļu_balss.mp3"
                 }
             ]
         },
@@ -879,14 +875,14 @@
                     -30
                 ]
             },
-            "audio":[
+            "audio": [
                 {
-                    "title":{
-                        "lv":"trīspirkstu_dzenis_bungošana",
-                        "ru":"trīspirkstu_dzenis_bungošana",
-                        "en":"trīspirkstu_dzenis_bungošana"
+                    "title": {
+                        "lv": "Bungošana",
+                        "ru": "Bungošana",
+                        "en": "Bungošana"
                     },
-                    "fileName":"resources/view_6/sounds/trīspirkstu_dzenis_bungošana.mp3"
+                    "fileName": "resources/view_6/sounds/trīspirkstu_dzenis_bungošana.mp3"
                 }
             ]
         },
@@ -938,14 +934,14 @@
                     0
                 ]
             },
-            "audio":[
+            "audio": [
                 {
-                    "title":{
-                        "lv":"ūdensvistiņa_balss",
-                        "ru":"ūdensvistiņa_balss",
-                        "en":"ūdensvistiņa_balss"
+                    "title": {
+                        "lv": "Balss",
+                        "ru": "Balss",
+                        "en": "Balss"
                     },
-                    "fileName":"resources/view_6/sounds/ūdensvistiņa_balss.mp3"
+                    "fileName": "resources/view_6/sounds/ūdensvistiņa_balss.mp3"
                 }
             ]
         },
@@ -997,22 +993,22 @@
                     -35
                 ]
             },
-            "audio":[
+            "audio": [
                 {
-                    "title":{
-                        "lv":"vidējais_dzenis_balss",
-                        "ru":"vidējais_dzenis_balss",
-                        "en":"vidējais_dzenis_balss"
+                    "title": {
+                        "lv": "Balss",
+                        "ru": "Balss",
+                        "en": "Balss"
                     },
-                    "fileName":"resources/view_6/sounds/vidējais_dzenis_balss.mp3"
+                    "fileName": "resources/view_6/sounds/vidējais_dzenis_balss.mp3"
                 },
                 {
-                    "title":{
-                        "lv":"vidējais_dzenis_bungosana",
-                        "ru":"vidējais_dzenis_bungosana",
-                        "en":"vidējais_dzenis_bungosana"
+                    "title": {
+                        "lv": "Bungosana",
+                        "ru": "Bungosana",
+                        "en": "Bungosana"
                     },
-                    "fileName":"resources/view_6/sounds/vidējais_dzenis_bungosana.mp3"
+                    "fileName": "resources/view_6/sounds/vidējais_dzenis_bungosana.mp3"
                 }
             ]
         },
@@ -1052,14 +1048,14 @@
                     -40
                 ]
             },
-            "audio":[
+            "audio": [
                 {
-                    "title":{
-                        "lv":"zaļā_dzilna_balss",
-                        "ru":"zaļā_dzilna_balss",
-                        "en":"zaļā_dzilna_balss"
+                    "title": {
+                        "lv": "Balss",
+                        "ru": "Balss",
+                        "en": "Balss"
                     },
-                    "fileName":"resources/view_6/sounds/zaļā_dzilna_balss.mp3"
+                    "fileName": "resources/view_6/sounds/zaļā_dzilna_balss.mp3"
                 }
             ]
         }
