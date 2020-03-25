@@ -115,7 +115,16 @@
                   0
               ]
           },
-          "audio": []
+          "audio": [
+              {
+                  "title":{
+                      "lv":"dadzītis_dziesma",
+                      "ru":"dadzītis_dziesma",
+                      "en":"dadzītis_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/dadzītis_dziesma.mp3"
+              }
+          ]
       },
       {
           "comment": "----------------------- S4 ------------------------------",
@@ -153,7 +162,16 @@
                   0
               ]
           },
-          "audio": []
+          "audio": [
+              {
+                  "title":{
+                      "lv":"dārza_stērste_dziesma",
+                      "ru":"dārza_stērste_dziesma",
+                      "en":"dārza_stērste_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/dārza_stērste_dziesma.mp3"
+              }
+          ]
       },
       {
           "comment": "----------------------- S5 ------------------------------",
@@ -191,7 +209,16 @@
                   0
               ]
           },
-          "audio": []
+          "audio": [
+              {
+                  "title":{
+                      "lv":"dižknābis_dažādi_saucieni",
+                      "ru":"dižknābis_dažādi_saucieni",
+                      "en":"dižknābis_dažādi_saucieni"
+                  },
+                  "fileName":"resources/view_7/sounds/dižknābis_dažādi_saucieni.mp3"
+              }
+          ]
       },
       {
           "comment": "----------------------- S6 ------------------------------",
@@ -229,7 +256,16 @@
                   0
               ]
           },
-          "audio": []
+          "audio": [
+              {
+                  "title":{
+                      "lv":"dzeltenā_stērste_dziesma",
+                      "ru":"dzeltenā_stērste_dziesma",
+                      "en":"dzeltenā_stērste_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/dzeltenā_stērste_dziesma.mp3"
+              }
+          ]
       },
       {
           "comment": "----------------------- S7 ------------------------------",
@@ -267,7 +303,24 @@
                   0
               ]
           },
-          "audio": []
+          "audio": [
+              {
+                  "title":{
+                      "lv":"dzilnītis_Balss",
+                      "ru":"dzilnītis_Balss",
+                      "en":"dzilnītis_Balss"
+                  },
+                  "fileName":"resources/view_7/sounds/dzilnītis_Balss.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"dzilnītis_balss_2",
+                      "ru":"dzilnītis_balss_2",
+                      "en":"dzilnītis_balss_2"
+                  },
+                  "fileName":"resources/view_7/sounds/dzilnītis_balss_2.mp3"
+              }
+          ]
       },
       {
           "comment": "----------------------- S8 ------------------------------",
@@ -305,7 +358,16 @@
                   0
               ]
           },
-          "audio": []
+          "audio": [
+              {
+                  "title":{
+                      "lv":"egļu_krustknābis_sauciens",
+                      "ru":"egļu_krustknābis_sauciens",
+                      "en":"egļu_krustknābis_sauciens"
+                  },
+                  "fileName":"resources/view_7/sounds/egļu_krustknābis_sauciens.mp3"
+              }
+          ]
       },
       {
           "comment": "----------------------- S9 ------------------------------",
@@ -419,7 +481,24 @@
                   0
               ]
           },
-          "audio": []
+          "audio": [
+              {
+                  "title":{
+                      "lv":"garastīte_migrējošs_bars",
+                      "ru":"garastīte_migrējošs_bars",
+                      "en":"garastīte_migrējošs_bars"
+                  },
+                  "fileName":"resources/view_7/sounds/garastīte_migrējošs_bars.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"garastīte_Saucieni",
+                      "ru":"garastīte_Saucieni",
+                      "en":"garastīte_Saucieni"
+                  },
+                  "fileName":"resources/view_7/sounds/garastīte_Saucieni.mp3"
+              }
+          ]
       },
       {
           "comment": "----------------------- S12 ------------------------------",
@@ -457,7 +536,16 @@
                   0
               ]
           },
-          "audio": []
+          "audio": [
+              {
+                  "title":{
+                      "lv":"lielā_stērste_dziesma",
+                      "ru":"lielā_stērste_dziesma",
+                      "en":"lielā_stērste_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/lielā_stērste_dziesma.mp3"
+              }
+          ]
       },
       {
           "comment": "----------------------- S13 ------------------------------",
@@ -495,7 +583,24 @@
                   0
               ]
           },
-          "audio": []
+          "audio": [
+              {
+                  "title":{
+                      "lv":"cekulzīlīte_dziesma",
+                      "ru":"cekulzīlīte_dziesma",
+                      "en":"cekulzīlīte_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/cekulzīlīte_dziesma.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"cekulzīlīte_sauciens",
+                      "ru":"cekulzīlīte_sauciens",
+                      "en":"cekulzīlīte_sauciens"
+                  },
+                  "fileName":"resources/view_7/sounds/cekulzīlīte_sauciens.mp3"
+              }
+          ]
       },
       {
           "comment": "----------------------- S14 ------------------------------",
@@ -609,7 +714,16 @@
                   0
               ]
           },
-          "audio": []
+          "audio": [
+              {
+                  "title":{
+                      "lv":"kaņepītis_dziesma",
+                      "ru":"kaņepītis_dziesma",
+                      "en":"kaņepītis_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/kaņepītis_dziesma.mp3"
+              }
+          ]
       },
       {
           "comment": "----------------------- S17 ------------------------------",
@@ -723,7 +837,24 @@
                   0
               ]
           },
-          "audio": []
+          "audio": [
+              {
+                  "title":{
+                      "lv":"lauku_zvirbulis_dziesma",
+                      "ru":"lauku_zvirbulis_dziesma",
+                      "en":"lauku_zvirbulis_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/lauku_zvirbulis_dziesma.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"lauku_zvirbulis_dziesma_2",
+                      "ru":"lauku_zvirbulis_dziesma_2",
+                      "en":"lauku_zvirbulis_dziesma_2"
+                  },
+                  "fileName":"resources/view_7/sounds/lauku_zvirbulis_dziesma_2.mp3"
+              }
+          ]
       },
       {
           "comment": "----------------------- S20 ------------------------------",
@@ -761,7 +892,32 @@
                   0
               ]
           },
-          "audio": []
+          "audio": [
+              {
+                  "title":{
+                      "lv":"lielā_zīlīte_dziesma",
+                      "ru":"lielā_zīlīte_dziesma",
+                      "en":"lielā_zīlīte_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/lielā_zīlīte_dziesma.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"lielā_zīlīte_izlidojuši_jaunie_putni",
+                      "ru":"lielā_zīlīte_izlidojuši_jaunie_putni",
+                      "en":"lielā_zīlīte_izlidojuši_jaunie_putni"
+                  },
+                  "fileName":"resources/view_7/sounds/lielā_zīlīte_izlidojuši_jaunie_putni.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"lielā_zīlīte_uztraukums",
+                      "ru":"lielā_zīlīte_uztraukums",
+                      "en":"lielā_zīlīte_uztraukums"
+                  },
+                  "fileName":"resources/view_7/sounds/lielā_zīlīte_uztraukums.mp3"
+              }
+          ]
       },
       {
           "comment": "----------------------- S21 ------------------------------",
@@ -799,7 +955,24 @@
                   0
               ]
           },
-          "audio": []
+          "audio": [
+              {
+                  "title":{
+                      "lv":"mājas_strazds_dziesma",
+                      "ru":"mājas_strazds_dziesma",
+                      "en":"mājas_strazds_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/mājas_strazds_dziesma.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"mājas_strazds_izlidojuši_jaunie_putni",
+                      "ru":"mājas_strazds_izlidojuši_jaunie_putni",
+                      "en":"mājas_strazds_izlidojuši_jaunie_putni"
+                  },
+                  "fileName":"resources/view_7/sounds/mājas_strazds_izlidojuši_jaunie_putni.mp3"
+              }
+          ]
       },
       {
           "comment": "----------------------- S22 ------------------------------",
@@ -837,7 +1010,16 @@
                   0
               ]
           },
-          "audio": []
+          "audio": [
+              {
+                  "title":{
+                      "lv":"mājas_zvirbulis_balss",
+                      "ru":"mājas_zvirbulis_balss",
+                      "en":"mājas_zvirbulis_balss"
+                  },
+                  "fileName":"resources/view_7/sounds/mājas_zvirbulis_balss.mp3"
+              }
+          ]
       },
       {
           "comment": "----------------------- S23 ------------------------------",
@@ -913,7 +1095,24 @@
                   0
               ]
           },
-          "audio": []
+          "audio": [
+              {
+                  "title":{
+                      "lv":"mazais_svilpis_dziesma",
+                      "ru":"mazais_svilpis_dziesma",
+                      "en":"mazais_svilpis_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/mazais_svilpis_dziesma.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"mazais_svilpis_sauciens",
+                      "ru":"mazais_svilpis_sauciens",
+                      "en":"mazais_svilpis_sauciens"
+                  },
+                  "fileName":"resources/view_7/sounds/mazais_svilpis_sauciens.mp3"
+              }
+          ]
       },
       {
           "comment": "----------------------- S25 ------------------------------",
@@ -951,7 +1150,24 @@
                   0
               ]
           },
-          "audio": []
+          "audio": [
+              {
+                  "title":{
+                      "lv":"meža_stērste_dziesma",
+                      "ru":"meža_stērste_dziesma",
+                      "en":"meža_stērste_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/meža_stērste_dziesma.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"meža_stērste_sauciens",
+                      "ru":"meža_stērste_sauciens",
+                      "en":"meža_stērste_sauciens"
+                  },
+                  "fileName":"resources/view_7/sounds/meža_stērste_sauciens.mp3"
+              }
+          ]
       },
       {
           "comment": "----------------------- S26 ------------------------------",
@@ -989,7 +1205,24 @@
                   0
               ]
           },
-          "audio": []
+          "audio": [
+              {
+                  "title":{
+                      "lv":"meža_zīlīte_dziesma",
+                      "ru":"meža_zīlīte_dziesma",
+                      "en":"meža_zīlīte_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/meža_zīlīte_dziesma.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"meža_zīlīte_sauciens",
+                      "ru":"meža_zīlīte_sauciens",
+                      "en":"meža_zīlīte_sauciens"
+                  },
+                  "fileName":"resources/view_7/sounds/meža_zīlīte_sauciens.mp3"
+              }
+          ]
       },
       {
           "comment": "----------------------- S27 ------------------------------",
@@ -1027,7 +1260,16 @@
                   0
               ]
           },
-          "audio": []
+          "audio": [
+              {
+                  "title":{
+                      "lv":"mizložņa_dziesma",
+                      "ru":"mizložņa_dziesma",
+                      "en":"mizložņa_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/mizložņa_dziesma.mp3"
+              }
+          ]
       },
       {
           "comment": "----------------------- S28 ------------------------------",

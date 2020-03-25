@@ -60,7 +60,7 @@
         name: "app",
         data: function(){return {
                 view: null,
-                angle:-95,
+                angle:0,
                 prevx:null,
                 language:'lv',
                 selectedDetail:null,

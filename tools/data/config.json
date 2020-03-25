@@ -1,0 +1,1959 @@
+{
+  "mainBackground": "resources/view_1/images/bg2.png",
+  "detailBackground": "resources/view_1/images/detail-bg.png",
+  "circleBackground": "resources/segment_circle.png",
+  "sectors": [
+      {
+          "comment": "----------------------- S1 ------------------------------",
+          "titleLatin": "Loxia leucoptera",
+          "title": {
+              "lv": "BALTSVĪTRU KRUSTKNĀBIS",
+              "ru": "БЕЛОКРЫЛЫЙ КЛЕСТ",
+              "en": "WHITE-WINGED CROSSBILL"
+          },
+          "description": {
+              "lv": "Latvijā regulārs ieceļotājs no ziemeļiem rudens invāziju laikā, taču skaits nav liels. Sastopams  skujkoku mežos. Pārtiek pārsvarā no skujkoku sēklām. Latvijai tuvākas ligzdošanas vietas atrodas Zviedrijā,  Somijā un Krievijā.  ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  30,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s1d.png",
+              "iconShadow": "resources/view_7/images/s1s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s1d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S2 ------------------------------",
+          "titleLatin": "Emberiza aureola",
+          "title": {
+              "lv": "BIRZTALU STĒRSTE",
+              "ru": "ДУБРОВНИК",
+              "en": "YELLOW-BREASTED BUNTING"
+          },
+          "description": {
+              "lv": "Latvijā konstatēta vienu reizi. Latvijai tuvākās ligzdošanas vietas atrodas Krievijas rietumu  daļā. Ligzdošanas areālā skaits samazinās. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  -10,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s2d.png",
+              "iconShadow": "resources/view_7/images/s2s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s2d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S3 ------------------------------",
+          "titleLatin": "Carduelis carduelis",
+          "title": {
+              "lv": "DADZĪTIS",
+              "ru": "ЩЕГОЛ",
+              "en": "EUROPEAN GOLDFINCH"
+          },
+          "description": {
+              "lv": "Latvijā samērā parasts ligzdotājs, caurceļotājs un ziemotājs. Sastopams augļu dārzos, parkos,  alejās, retāk skrajos lapu koku vai jauktu koku mežos. Rudenī un ziemā pārsvarā nezāļu audzēs uz laukiem,  mežmalās un ceļmalās. Ligzdu būvē dažādos kokos. Pārtiek no nezāļu (īpaši dadžu un ušņu) sēklām, bet mazuļus  baro pārsvarā ar kukaiņiem.Daļējs nometnieks, klejotājs vai gājputns. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  0,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s3d.png",
+              "iconShadow": "resources/view_7/images/s3s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s3d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": [
+              {
+                  "title":{
+                      "lv":"dadzītis_dziesma",
+                      "ru":"dadzītis_dziesma",
+                      "en":"dadzītis_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/dadzītis_dziesma.mp3"
+              }
+          ]
+      },
+      {
+          "comment": "----------------------- S4 ------------------------------",
+          "titleLatin": "Emberiza hortulana",
+          "title": {
+              "lv": "DĀRZA STĒRSTE",
+              "ru": "САДОВАЯ ОВСЯНКА",
+              "en": "ORTOLAN BUNTING"
+          },
+          "description": {
+              "lv": "Latvijā vietām diezgan parasta ligzdotāja, bet izplatība nevienmērīga. Vairāk Latvijas rietumu  daļā. Sastopama lauku ainavā, kur krūmi un koku puduri mijas ar tīrumiem un pļavām, alejās, augļu dārzos,  apdzīvotās vietās. Ligzda atrodas uz zemes zālē, biezā augājā, bieži labības laukos. Pārtiek no kukaiņiem un  citiem bezmugurkaulniekiem, arī no sēklām.Gājputns. Pārziemo Āfrikā. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  330,
+                  -10,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s4d.png",
+              "iconShadow": "resources/view_7/images/s4s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s4d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": [
+              {
+                  "title":{
+                      "lv":"dārza_stērste_dziesma",
+                      "ru":"dārza_stērste_dziesma",
+                      "en":"dārza_stērste_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/dārza_stērste_dziesma.mp3"
+              }
+          ]
+      },
+      {
+          "comment": "----------------------- S5 ------------------------------",
+          "titleLatin": "Coccothraustes coccothraustes",
+          "title": {
+              "lv": "DIŽKNĀBIS",
+              "ru": "ДУБОНОС",
+              "en": "HAWFINCH"
+          },
+          "description": {
+              "lv": "Latvijā samērā parasts ligzdotājs. Sastopams platlapju un jauktu koku mežos, parkos, dārzos,  alejās. Ligzdo lapu kokos. Pārtiek no dažādu lapu koku sēklām un pumpuriem, ogām, bezmugurkaulniekiem. Mazuļus  baro galvenokārt ar kukaiņiem.Gājputns. Pārziemo Rietumeiropā un Dienvideiropā. Nelielā skaitā regulāri ziemo. Labprāt apmeklē  barotavas. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  290,
+                  0,
+                  30
+              ],
+              "iconImage": "resources/view_7/images/s5d.png",
+              "iconShadow": "resources/view_7/images/s5s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s5d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": [
+              {
+                  "title":{
+                      "lv":"dižknābis_dažādi_saucieni",
+                      "ru":"dižknābis_dažādi_saucieni",
+                      "en":"dižknābis_dažādi_saucieni"
+                  },
+                  "fileName":"resources/view_7/sounds/dižknābis_dažādi_saucieni.mp3"
+              }
+          ]
+      },
+      {
+          "comment": "----------------------- S6 ------------------------------",
+          "titleLatin": "Emberiza citrinella",
+          "title": {
+              "lv": "DZELTENĀ STĒRSTE",
+              "ru": "ОБЫКНОВЕННАЯ ОВСЯНКА",
+              "en": "YELLOWHAMMER"
+          },
+          "description": {
+              "lv": "Latvijā parasta ligzdotāja. Sastopama lauku ainavā, jūrmalas kāpās, klajumos. Ziemā koncentrējas  pie fermām, lauku saimniecībām, dzirnavām un gar ceļmalām piemērotu barošanās vietu tuvumā. Ligzda atrodas uz  zemes, nereti zemu kādā krūmā vai jaunā eglē. Pārtiek no graudzāļu sēklām, ligzdošanas laikā barojas ar  kukaiņiem.Nometniece. Taču rudenī daļa aizceļo uz dienvidiem, bet Latvijā ieklejo stērstes no ziemeļu un  austrumu apgabaliem. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  320,
+                  -10,
+                  10
+              ],
+              "iconImage": "resources/view_7/images/s6d.png",
+              "iconShadow": "resources/view_7/images/s6s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s6d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": [
+              {
+                  "title":{
+                      "lv":"dzeltenā_stērste_dziesma",
+                      "ru":"dzeltenā_stērste_dziesma",
+                      "en":"dzeltenā_stērste_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/dzeltenā_stērste_dziesma.mp3"
+              }
+          ]
+      },
+      {
+          "comment": "----------------------- S7 ------------------------------",
+          "titleLatin": "Sitta europaea",
+          "title": {
+              "lv": "DZILNĪTIS",
+              "ru": "ПОПОЛЗЕНЬ",
+              "en": "EURASIAN NUTHATCH"
+          },
+          "description": {
+              "lv": "Latvijā parasts ligzdotājs un nometnieks. Rudenī notiek periodiskas invāzijas. Sastopams lapu  koku un jauktu koku mežos, parkos, dārzos, kur ir lieli koki. Ligzdo koku dobumos, reti arī būrīšos. Ja dobuma  vai būrīša skreja ir par lielu, tad to aizķepē ar māliem līdz vajadzīgam izmēram. Pārtiek no kukaiņiem un  zirnekļiem, kurus savāc no koku mizas un mizas spraugām. Labprāt ēd riekstus un sēklas, apmeklē barotavas.  ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  210,
+                  30,
+                  30
+              ],
+              "iconImage": "resources/view_7/images/s7d.png",
+              "iconShadow": "resources/view_7/images/s7s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s7d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": [
+              {
+                  "title":{
+                      "lv":"dzilnītis_Balss",
+                      "ru":"dzilnītis_Balss",
+                      "en":"dzilnītis_Balss"
+                  },
+                  "fileName":"resources/view_7/sounds/dzilnītis_Balss.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"dzilnītis_balss_2",
+                      "ru":"dzilnītis_balss_2",
+                      "en":"dzilnītis_balss_2"
+                  },
+                  "fileName":"resources/view_7/sounds/dzilnītis_balss_2.mp3"
+              }
+          ]
+      },
+      {
+          "comment": "----------------------- S8 ------------------------------",
+          "titleLatin": "Loxia curvirostra",
+          "title": {
+              "lv": "EGĻU KRUSTKNĀBIS",
+              "ru": "КЛЕСТ-ЕЛОВИК",
+              "en": "RED CROSSBILL"
+          },
+          "description": {
+              "lv": "Ligzdotāju skaits Latvijā ievērojami svārstās saistībā ar skuju koku sēklu ražu. Labos egļu  čiekuru ražas gados var ligzdot diezgan ievērojamā skaitā, bet neražas gados neligzdo un aizklejo barības  meklējumos uz citām teritorijām. Sastopams skujkoku un jauktu koku mežos ar egļu īpatsvaru. Ligzdu būvē egles  galotnē pie stumbra (līdz 20 m augstumā). Pārtiek pārsvarā no skujkoku sēklām.  ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  320,
+                  0,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s8d.png",
+              "iconShadow": "resources/view_7/images/s8s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s8d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": [
+              {
+                  "title":{
+                      "lv":"egļu_krustknābis_sauciens",
+                      "ru":"egļu_krustknābis_sauciens",
+                      "en":"egļu_krustknābis_sauciens"
+                  },
+                  "fileName":"resources/view_7/sounds/egļu_krustknābis_sauciens.mp3"
+              }
+          ]
+      },
+      {
+          "comment": "----------------------- S9 ------------------------------",
+          "titleLatin": "Acanthis hornemanni",
+          "title": {
+              "lv": "GAIŠAIS ĶEĢIS",
+              "ru": "ПЕПЕЛЬНАЯ ЧЕЧЕТКА",
+              "en": "ARCTIC REDPOLL"
+          },
+          "description": {
+              "lv": "Latvijā samērā rets caurceļotājs un ziemotājs. Rudenī klejo uz dienvidiem, bet ievērojami mazākā  skaitā un ne tik tālu kā parastais ķeģis. Latvijai tuvākās ligzdošanas vietas atrodas Skandināvijas, Somijas un  Krievijas ziemeļos.  ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  -10,
+                  40
+              ],
+              "iconImage": "resources/view_7/images/s9d.png",
+              "iconShadow": "resources/view_7/images/s9s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s9d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S10 ------------------------------",
+          "titleLatin": "Cyanistes cyanus",
+          "title": {
+              "lv": "GAIŠZILĀ ZĪLĪTE",
+              "ru": "БЕЛАЯ ЛАЗОРЕВКА",
+              "en": "AZURE TIT"
+          },
+          "description": {
+              "lv": "Latvijā novērota četras reizes. Pēdējo reizi – 1916. gadā. Ekspozīcijā redzamais eksemplārs  iegūts Rīgā 1902. gadā. Četras reizes Papes ornitoloģiskā centra stacionārā tika noķerti zilzīlītes un gaišzilās  zīlītes hibrīdi. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  330,
+                  -10,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s10d.png",
+              "iconShadow": "resources/view_7/images/s10s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s10d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S11 ------------------------------",
+          "titleLatin": "Aegithalos caudatus",
+          "title": {
+              "lv": "GARASTĪTE",
+              "ru": "ОПОЛОВНИК",
+              "en": "LONG-TAILED TIT"
+          },
+          "description": {
+              "lv": "Latvijā parasta ligzdotāja un nometniece. Sastopama lapu koku un jauktu koku mežos. Bieži alkšņu  un bērzu audzēs. Pēcligzdošanas laikā arī citur. Būvē lodveidīgu ligzdu no ķērpjiem, astriem un vilnas stumbra  staklē. Nomaskē to ar tāsīm un ķērpjiem. Ligzda ir grūti pamanāma un saplūst ar koka mizu. Barojas ar kukaiņiem  un zirnekļiem. Nometniece. Rudenī un ziemā skaits ievērojami svārstās periodisku invāziju dēļ. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  330,
+                  -40,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s11d.png",
+              "iconShadow": "resources/view_7/images/s11s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s11d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": [
+              {
+                  "title":{
+                      "lv":"garastīte_migrējošs_bars",
+                      "ru":"garastīte_migrējošs_bars",
+                      "en":"garastīte_migrējošs_bars"
+                  },
+                  "fileName":"resources/view_7/sounds/garastīte_migrējošs_bars.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"garastīte_Saucieni",
+                      "ru":"garastīte_Saucieni",
+                      "en":"garastīte_Saucieni"
+                  },
+                  "fileName":"resources/view_7/sounds/garastīte_Saucieni.mp3"
+              }
+          ]
+      },
+      {
+          "comment": "----------------------- S12 ------------------------------",
+          "titleLatin": "Emberiza calandra",
+          "title": {
+              "lv": "LIELĀ STĒRSTE",
+              "ru": "ПРОСЯНКА",
+              "en": "CORN BUNTING"
+          },
+          "description": {
+              "lv": "Latvijā reti sastopama stērste. Iespējams, ka daži pāri ligzdo. Kopš 1940. gada drošu  ligzdošanas pierādījumu nav. Sastopama klajos lauku apvidos. Ligzda atrodas uz zemes vai kādā krūmā. Pārtiek no  sēklām, ligzdošanas laikā mazuļus baro ar kukaiņiem.Gājputns. Pārziemo citviet Eiropā. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  -10,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s12d.png",
+              "iconShadow": "resources/view_7/images/s12s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s12d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": [
+              {
+                  "title":{
+                      "lv":"lielā_stērste_dziesma",
+                      "ru":"lielā_stērste_dziesma",
+                      "en":"lielā_stērste_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/lielā_stērste_dziesma.mp3"
+              }
+          ]
+      },
+      {
+          "comment": "----------------------- S13 ------------------------------",
+          "titleLatin": "Lophophanes cristatus",
+          "title": {
+              "lv": "CEKULZĪLĪTE",
+              "ru": "ХОХЛАТАЯ СИНИЦА",
+              "en": "CRESTED TIT"
+          },
+          "description": {
+              "lv": "Latvijā parasta ligzdotāja un nometniece. Sastopama mežos visā teritorijā, vairāk skujkoku un  jauktos mežos. Ligzdo dažādos, arī pašizkaltos koku dobumos un būrīšos. Pārtiek no zirnekļiem, kukaiņiem un  dažādam (pārsvarā priežu un egļu) sēklām.",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  10,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s13d.png",
+              "iconShadow": "resources/view_7/images/s13s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s13d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": [
+              {
+                  "title":{
+                      "lv":"cekulzīlīte_dziesma",
+                      "ru":"cekulzīlīte_dziesma",
+                      "en":"cekulzīlīte_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/cekulzīlīte_dziesma.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"cekulzīlīte_sauciens",
+                      "ru":"cekulzīlīte_sauciens",
+                      "en":"cekulzīlīte_sauciens"
+                  },
+                  "fileName":"resources/view_7/sounds/cekulzīlīte_sauciens.mp3"
+              }
+          ]
+      },
+      {
+          "comment": "----------------------- S14 ------------------------------",
+          "titleLatin": "Serinus serinus",
+          "title": {
+              "lv": "ĢIRLICIS",
+              "ru": "КАНАРЕЕЧНЫЙ ВЬЮРОК",
+              "en": "EUROPEAN SERIN"
+          },
+          "description": {
+              "lv": "Latvijā izplatīts nevienmērīgi – vietām parasts ligzdotājs, vietām nemaz nav sastopams.  Ligzdošanas laikā regulāri novērojams piejūras pilsētās un ciemos, kā arī bieži Rīgas nomalēs. Vietām arī  iekšzemes rajonos. Sastopams apdzīvotās vietās, pilsētās, parkos, dārzos, retāk mežmalās, jaunaudzēs,  izcirtumos. Ligzdu biežāk būvē skujkokos (priedēs, tūjās), retāk lapu kokos. Pārtiek no sēklām, bet mazuļus baro  pārsvarā ar kukaiņiem.Gājputns. Pārziemo Vidusjūras reģionā. Ļoti reti novērojams Latvijā ziemas mēnešos. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  330,
+                  -20,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s14d.png",
+              "iconShadow": "resources/view_7/images/s14s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s14d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S15 ------------------------------",
+          "titleLatin": "Linaria flavirostris",
+          "title": {
+              "lv": "KALNU ĶEĢIS",
+              "ru": "ГОРНАЯ ЧЕЧЁТКА",
+              "en": "TWITE"
+          },
+          "description": {
+              "lv": "Latvijā ir regulārs caurceļotājs, īpaši rudenī. Nelielā skaitā arī ziemo. Latvijai tuvākās  ligzdošanas vietas atrodas Skandināvijas ziemeļos, Somijā un Krievijā. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  -10,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s15d.png",
+              "iconShadow": "resources/view_7/images/s15s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s15d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S16 ------------------------------",
+          "titleLatin": "Linaria cannabina",
+          "title": {
+              "lv": "KAŅEPĪTIS",
+              "ru": "КОНОПЛЯНКА",
+              "en": "EURASIAN LINNET"
+          },
+          "description": {
+              "lv": "Latvijā samērā parasts ligzdotājs. Sastopams lauku ainavā, dažādos apstādījumos apdzīvotās  vietās, parkos, dārzos, kapsētās, ceļmalu alejās, dzīvžogos. Ligzdo dzīvžogos, atsevišķi augošos kadiķos,  vilkābelēs un citās līdzīgās vietās. Pārtiek no dažādām sēklām. Mazuļus baro ar kukaiņiem un to kāpuriem.Gājputns. Pārziemo Rietumeiropā. Regulāri ziemo arī Latvijā un ziemotāju skaits pieaug. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  320,
+                  -20,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s16d.png",
+              "iconShadow": "resources/view_7/images/s16s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s16d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": [
+              {
+                  "title":{
+                      "lv":"kaņepītis_dziesma",
+                      "ru":"kaņepītis_dziesma",
+                      "en":"kaņepītis_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/kaņepītis_dziesma.mp3"
+              }
+          ]
+      },
+      {
+          "comment": "----------------------- S17 ------------------------------",
+          "titleLatin": "Carduelis spinus",
+          "title": {
+              "lv": "ĶIVULIS",
+              "ru": "ЧИЖ",
+              "en": "EURASIAN SISKIN"
+          },
+          "description": {
+              "lv": "Latvijā parasts un izplatīts ligzdotājs. Migrācijas laikā novērojams diezgan lielos baros.  Skaits gadu no gada svārstās. Diezgan bieži sastopams arī ziemā. Vasarā sastopams skujkoku mežos, citos  gadalaikos – bieži alkšņu un bērzu audzēs. Ligzdu būvē augstu egles vai priedes nokarenos zaros, tālu no  stumbra. Pārtiek no dažādām sēklām.  ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  -10,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s17d.png",
+              "iconShadow": "resources/view_7/images/s17s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s17d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S18 ------------------------------",
+          "titleLatin": "Calcarius lapponicus",
+          "title": {
+              "lv": "LAPZEMES STĒRSTE",
+              "ru": "ЛАПЛАНДСКИЙ ПОДОРОЖНИК",
+              "en": "LAPLAND LONGSPUR"
+          },
+          "description": {
+              "lv": "Latvijā samērā reta, bet regulāra caurceļotāja un ziemotāja. Latvijai tuvākās ligzdošanas vietas  atrodas Skandināvijas un Krievijas galējos ziemeļos.",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  330,
+                  -20,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s18d.png",
+              "iconShadow": "resources/view_7/images/s18s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s18d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S19 ------------------------------",
+          "titleLatin": "Passer montanus",
+          "title": {
+              "lv": "LAUKU ZVIRBULIS",
+              "ru": "ПОЛЕВОЙ ВОРОБЕЙ",
+              "en": "EURASIAN TREE SPARROW"
+          },
+          "description": {
+              "lv": "Latvijā parasts ligzdotājs un nometnieks. Sastopams apdzīvotās vietās, viensētās, retāk arī  lielu pilsētu nomalēs. Parasti ligzdo kolonijās. Ligzdu būvē koku dobumos, būrīšos, ēku sienu iedobumos,  pažobelēs, baltā stārķa ligzdas pamatos, retāk koku zaros. Barojas galvenokārt ar augu barību un kukaiņiem.  Mazuļus baro ar kukaiņiem. Daļa putnu nedaudz migrē.  ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  280,
+                  0,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s19d.png",
+              "iconShadow": "resources/view_7/images/s19s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s19d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": [
+              {
+                  "title":{
+                      "lv":"lauku_zvirbulis_dziesma",
+                      "ru":"lauku_zvirbulis_dziesma",
+                      "en":"lauku_zvirbulis_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/lauku_zvirbulis_dziesma.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"lauku_zvirbulis_dziesma_2",
+                      "ru":"lauku_zvirbulis_dziesma_2",
+                      "en":"lauku_zvirbulis_dziesma_2"
+                  },
+                  "fileName":"resources/view_7/sounds/lauku_zvirbulis_dziesma_2.mp3"
+              }
+          ]
+      },
+      {
+          "comment": "----------------------- S20 ------------------------------",
+          "titleLatin": "Parus major",
+          "title": {
+              "lv": "LIELĀ ZĪLĪTE",
+              "ru": "БОЛЬШАЯ СИНИЦА",
+              "en": "GREAT TIT"
+          },
+          "description": {
+              "lv": "Latvijā parasta un izplatīta ligzdotāja un ziemotāja. Sastopama dažādos mežos, parkos, dārzos,  kapsētās, viensētās, pilsētu un apdzīvotu vietu apstādījumos. Ligzdo dobumos, spraugās, labprāt arī būrīšos  (visbiežāk būrīšos ligzdojošā zīlīšu suga). Dažreiz ligzdas var atrast arī laternās, cauruļveida stabos,  pastkastītēs. Labprāt apmeklē barotavas.Nometniece. Taču bieži sastopama migrācijas laikā rudenī, kad daļa putnu klejo uz dienvidiem,  bet citi ieceļo pārziemošanai no ziemeļiem. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  0,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s20d.png",
+              "iconShadow": "resources/view_7/images/s20s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s20d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": [
+              {
+                  "title":{
+                      "lv":"lielā_zīlīte_dziesma",
+                      "ru":"lielā_zīlīte_dziesma",
+                      "en":"lielā_zīlīte_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/lielā_zīlīte_dziesma.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"lielā_zīlīte_izlidojuši_jaunie_putni",
+                      "ru":"lielā_zīlīte_izlidojuši_jaunie_putni",
+                      "en":"lielā_zīlīte_izlidojuši_jaunie_putni"
+                  },
+                  "fileName":"resources/view_7/sounds/lielā_zīlīte_izlidojuši_jaunie_putni.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"lielā_zīlīte_uztraukums",
+                      "ru":"lielā_zīlīte_uztraukums",
+                      "en":"lielā_zīlīte_uztraukums"
+                  },
+                  "fileName":"resources/view_7/sounds/lielā_zīlīte_uztraukums.mp3"
+              }
+          ]
+      },
+      {
+          "comment": "----------------------- S21 ------------------------------",
+          "titleLatin": "Sturnus vulgaris",
+          "title": {
+              "lv": "MĀJAS STRAZDS",
+              "ru": "СКВОРЕЦ",
+              "en": "COMMON STARLING"
+          },
+          "description": {
+              "lv": "Latvijā parasts un izplatīts ligzdotājs. Kopš 20. gs. 70. gadiem skaits samazinājies.  Sabiedrisks. Daudzi pāri var ligzdot kopā. Ligzdu būvē koku dobumā, būros, arī ēku sienu spraugās. Lielā skaitā  caurceļo. Uz nakšņošanu mēdz pulcēties lielos baros. Sevišķi lieli bari tiek novēroti pēcligzdošanas periodā,  vasaras otrajā pusē – rudenī, kad uz nakšņošanu ezeru niedrājos pulcējas līdz pat desmitiem tūkstošu lieli mājās  strazdu bari. Gājputns. Pārziemo Rietumeiropā. Neliels skaits regulāri ziemo Latvijā, vairāk valsts rietumu  daļā. Ziemotāju skaits pēdējos gados pieaug.  ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  -10,
+                  30
+              ],
+              "iconImage": "resources/view_7/images/s21d.png",
+              "iconShadow": "resources/view_7/images/s21s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s21d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": [
+              {
+                  "title":{
+                      "lv":"mājas_strazds_dziesma",
+                      "ru":"mājas_strazds_dziesma",
+                      "en":"mājas_strazds_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/mājas_strazds_dziesma.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"mājas_strazds_izlidojuši_jaunie_putni",
+                      "ru":"mājas_strazds_izlidojuši_jaunie_putni",
+                      "en":"mājas_strazds_izlidojuši_jaunie_putni"
+                  },
+                  "fileName":"resources/view_7/sounds/mājas_strazds_izlidojuši_jaunie_putni.mp3"
+              }
+          ]
+      },
+      {
+          "comment": "----------------------- S22 ------------------------------",
+          "titleLatin": "Passer domesticus",
+          "title": {
+              "lv": "MĀJAS ZVIRBULIS",
+              "ru": "ДОМОВЫЙ ВОРОБЕЙ",
+              "en": "HOUSE SPARROW"
+          },
+          "description": {
+              "lv": "Latvijā parasts ligzdotājs un nometnieks. Sastopams pilsētās, apdzīvotās vietās, fermās, lauku  saimniecībās, retāk viensētās. Rīgā arī lielu, piemērotu ēku iekštelpās (piemēram, Centrāltirgus paviljonos).  Sabiedrisks. Parasti ligzdo nelielās kolonijās. Ligzdu būvē koku dobumos, būrīšos, ēku sienu iedobumos,  pažobelēs, baltā stārķa ligzdas pamatos, retāk koku zaros. Barojas galvenokārt ar augu barību. Mazuļus sākumā  baro ar kukaiņiem. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  20,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s22d.png",
+              "iconShadow": "resources/view_7/images/s22s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s22d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": [
+              {
+                  "title":{
+                      "lv":"mājas_zvirbulis_balss",
+                      "ru":"mājas_zvirbulis_balss",
+                      "en":"mājas_zvirbulis_balss"
+                  },
+                  "fileName":"resources/view_7/sounds/mājas_zvirbulis_balss.mp3"
+              }
+          ]
+      },
+      {
+          "comment": "----------------------- S23 ------------------------------",
+          "titleLatin": "Emberiza pusilla",
+          "title": {
+              "lv": "MAZĀ STĒRSTE",
+              "ru": "ОВСЯНКА-КРОШКА",
+              "en": "LITTLE BUNTING"
+          },
+          "description": {
+              "lv": "Latvijā reta ieceļotāja. Konstatēta trīs reizes. Latvijai tuvākas ligzdošanas vietas atrodas  Skandināvijas galējos ziemeļos un Krievijas taigas zonā.Ziemo Dienvidaustrumāzijā.  ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  -10,
+                  30
+              ],
+              "iconImage": "resources/view_7/images/s23d.png",
+              "iconShadow": "resources/view_7/images/s23s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s23d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S24 ------------------------------",
+          "titleLatin": "Carpodacus erythrinus",
+          "title": {
+              "lv": "MAZAIS SVILPIS",
+              "ru": "ЧЕЧЕВИЦА",
+              "en": "COMMON ROSEFINCH"
+          },
+          "description": {
+              "lv": "Latvijā parasts ligzdotājs. Sastopams krūmainās pļavās, parkos, dārzos, apstādījumos, mežmalās.  Ligzdu ievij starp lakstaugu stublājiem, sīku krūmu vai koku zariem, parasti samērā zemu. Pārtiek no sēklām,  pumpuriem, ogām, arī kukaiņiem un kāpuriem. Mazuļus baro galvenokārt ar sēklām.Gājputns. Pārziemo Dienvidāzijā. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  0,
+                  30
+              ],
+              "iconImage": "resources/view_7/images/s24d.png",
+              "iconShadow": "resources/view_7/images/s24s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s24d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": [
+              {
+                  "title":{
+                      "lv":"mazais_svilpis_dziesma",
+                      "ru":"mazais_svilpis_dziesma",
+                      "en":"mazais_svilpis_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/mazais_svilpis_dziesma.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"mazais_svilpis_sauciens",
+                      "ru":"mazais_svilpis_sauciens",
+                      "en":"mazais_svilpis_sauciens"
+                  },
+                  "fileName":"resources/view_7/sounds/mazais_svilpis_sauciens.mp3"
+              }
+          ]
+      },
+      {
+          "comment": "----------------------- S25 ------------------------------",
+          "titleLatin": "Emberiza rustica",
+          "title": {
+              "lv": "MEŽA STĒRSTE",
+              "ru": "ОВСЯНКА-РЕМЕЗ",
+              "en": "RUSTIC BUNTING"
+          },
+          "description": {
+              "lv": "Latvijā reta ieceļotāja. Konstatēta septiņas reizes, tai skaitā viens pierādīts ligzdošanas  gadījums 1985. gadā. Vairāk Latvijas rietumu daļā. Latvijai tuvākas ligzdošanas vietas atrodas taigas zonā  Skandināvijas ziemeļos, Somijā un Krievijā.Ziemo Ķīnā, Korejā un Japānā. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  220,
+                  20,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s25d.png",
+              "iconShadow": "resources/view_7/images/s25s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s25d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": [
+              {
+                  "title":{
+                      "lv":"meža_stērste_dziesma",
+                      "ru":"meža_stērste_dziesma",
+                      "en":"meža_stērste_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/meža_stērste_dziesma.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"meža_stērste_sauciens",
+                      "ru":"meža_stērste_sauciens",
+                      "en":"meža_stērste_sauciens"
+                  },
+                  "fileName":"resources/view_7/sounds/meža_stērste_sauciens.mp3"
+              }
+          ]
+      },
+      {
+          "comment": "----------------------- S26 ------------------------------",
+          "titleLatin": "Periparus ater",
+          "title": {
+              "lv": "MEŽA ZĪLĪTE",
+              "ru": "МОСКОВКА",
+              "en": "COAL TIT"
+          },
+          "description": {
+              "lv": "Latvijā parasta ligzdotāja un nometniece. Daļa putnu rudenī klejo uz dienvidiem. Sastopama  jauktos un skujkoku mežos, tomēr mazākā skaitā nekā citas parastās zīlītes. Ligzdo gan dabīgos, gan dzeņu kaltos  koku dobumos, arī putnu būrīšos. Pārtiek no kukaiņiem, to kāpuriem, skujkoku sēklām. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  320,
+                  -20,
+                  10
+              ],
+              "iconImage": "resources/view_7/images/s26d.png",
+              "iconShadow": "resources/view_7/images/s26s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s26d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": [
+              {
+                  "title":{
+                      "lv":"meža_zīlīte_dziesma",
+                      "ru":"meža_zīlīte_dziesma",
+                      "en":"meža_zīlīte_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/meža_zīlīte_dziesma.mp3"
+              },
+              {
+                  "title":{
+                      "lv":"meža_zīlīte_sauciens",
+                      "ru":"meža_zīlīte_sauciens",
+                      "en":"meža_zīlīte_sauciens"
+                  },
+                  "fileName":"resources/view_7/sounds/meža_zīlīte_sauciens.mp3"
+              }
+          ]
+      },
+      {
+          "comment": "----------------------- S27 ------------------------------",
+          "titleLatin": "Certhia familiaris",
+          "title": {
+              "lv": "MIZLOŽŅA",
+              "ru": "ПИЩУХА",
+              "en": "EURASIAN TREECREEPER"
+          },
+          "description": {
+              "lv": "Latvijā parasta ligzdotāja un nometniece. Rudenī notiek periodiskas invāzijas. Sastopama visu  veidu mežos, arī parkos, dārzos, kapsētās, viensētu stādījumos. Ligzdo spraugās aiz atlūzušas mizas, pusdobumos  un līdzīgās vietās. Reti arī būros. Pārtiek pārsvarā no kukaiņiem un zirnekļiem, kas dzīvo uz koku mizas.  Parasti barojas, spirālveidā (no apakšas uz augšu) lodājot gar koka stumbru.   ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  0,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s27d.png",
+              "iconShadow": "resources/view_7/images/s27s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s27d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": [
+              {
+                  "title":{
+                      "lv":"mizložņa_dziesma",
+                      "ru":"mizložņa_dziesma",
+                      "en":"mizložņa_dziesma"
+                  },
+                  "fileName":"resources/view_7/sounds/mizložņa_dziesma.mp3"
+              }
+          ]
+      },
+      {
+          "comment": "----------------------- S28 ------------------------------",
+          "titleLatin": "Emberiza schoeniclus",
+          "title": {
+              "lv": "NIEDRU STĒRSTE",
+              "ru": "КАМЫШОВАЯ ОВСЯНКА",
+              "en": "REED BUNTING"
+          },
+          "description": {
+              "lv": "Latvijā parasta ligzdotāja. Sastopama ūdens tuvumā – krūmainos niedrājos upju, ezeru un dīķu  krastos, arī zemajos un dažkārt augstajos purvos. Ligzda atrodas slīkšņās un uz zemes zālē, nereti arī krūmos  nelielā augstumā. Pārtiek no bezmugurkaulniekiem un sēklām.Gājputns. Pārziemo Dienvideiropā un Rietumeiropā. Atsevišķi īpatņi regulāri pārziemo arī  Latvijā.  ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  220,
+                  20,
+                  -20
+              ],
+              "iconImage": "resources/view_7/images/s28d.png",
+              "iconShadow": "resources/view_7/images/s28s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s28d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S29 ------------------------------",
+          "titleLatin": "Troglodytes troglodytes",
+          "title": {
+              "lv": "PACEPLĪTIS",
+              "ru": "КРАПИВНИК",
+              "en": "EURASIAN WREN"
+          },
+          "description": {
+              "lv": "Latvijā parasts un izplatīts ligzdotājs. Sastopams dažādu tipu mežos ar bagātīgu pamežu,  kritušiem kokiem, izgaztām saknēm un zaru kaudzēm. Ligzdu būvē eglēs, kadiķos, zaru un stumbru žāklēs, zaru  kaudzēs, izgāztu koku saknēs.Gājputns. Ziemo Centrāleiropā un Rietumeiropā. Latvijā pārziemo nelielā skaitā, parasti pie  neaizsalstošām upītēm un strautiem.  ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  0,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s29d.png",
+              "iconShadow": "resources/view_7/images/s29s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s29d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S30 ------------------------------",
+          "titleLatin": "Acanthis flammea",
+          "title": {
+              "lv": "PARASTAIS ĶEĢIS",
+              "ru": "ОБЫКНОВЕННАЯ ЧЕЧЁТКА",
+              "en": "COMMON REDPOLL"
+          },
+          "description": {
+              "lv": "Latvijā parasts caurceļotājs un ziemotājs, tomēr skaits gadu no gada ievērojami svārstās. Viens  sens ligzdošanas gadījums 1931. gadā Dubultos. Latvijai tuvākās ligzdošanas vietas atrodas Skandināvijā, Somijā  un Krievijā. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  260,
+                  0,
+                  0
+              ],
+              "iconImage": "resources/view_7/images/s30d.png",
+              "iconShadow": "resources/view_7/images/s30s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s30d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S31 ------------------------------",
+          "titleLatin": "Poecile montanus",
+          "title": {
+              "lv": "PELĒKĀ ZĪLĪTE",
+              "ru": "Пухляк",
+              "en": "WILLOW TIT"
+          },
+          "description": {
+              "lv": "Latvijā parasta ligzdotāja un nometniece. Daļa (pārsvarā jaunie putni) veic rudens migrācijas uz  dienvidiem. Latvijā ieceļo un caurceļo pelēkās zīlītes arī no ziemeļiem un ziemeļaustrumiem. Sastopama jauktu  koku un skujkoku mežos. Ligzdo galvenokārt koku dobumos, kurus pati izkaļ satrupējušos koku stumbeņos. Ļoti reti  ligzdo arī putnu būrīšos. Pārtiek no kukaiņiem, to kāpuriem, augu sēklām. Labprāt apmeklē barotavas. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  0,
+                  30
+              ],
+              "iconImage": "resources/view_7/images/s31d.png",
+              "iconShadow": "resources/view_7/images/s31s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s31d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S32 ------------------------------",
+          "titleLatin": "Prunella modularis",
+          "title": {
+              "lv": "PEĻKĀJĪTE",
+              "ru": "ЛЕСНАЯ ЗАВИРУШКА",
+              "en": "DUNNOCK"
+          },
+          "description": {
+              "lv": "Latvijā parasta un izplatīta ligzdotāja. Sastopama dažāda veida klajumos dažādu tipu mežos, kur  aug egles. Ligzdu būvē nelielās eglēs, kadiķos. Barojas ar dažādām sēklām, bet mazuļus baro ar kukaiņiem.  Migrācijas laikā lielā skaitā caurceļo. Pēc Latvijas Dabas muzeja ornitologa D. Boiko pētījuma datiem, Birzgales  pagastā rudens migrācijā sastopama no augusta beigām līdz oktobra sākumam, ar maksimumu septembra otrajā pusē.Gājputns. Ziemo Dienvidrietumeiropā. Pēdējos gados Latvijā zināmi vairāki ziemošanas gadījumi. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  330,
+                  -10,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s32d.png",
+              "iconShadow": "resources/view_7/images/s32s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s32d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S33 ------------------------------",
+          "titleLatin": "Loxia pytyopsittacus",
+          "title": {
+              "lv": "PRIEŽU KRUSTKNĀBIS",
+              "ru": "КЛЕСТ-СОСНОВИК",
+              "en": "PARROT CROSSBILL"
+          },
+          "description": {
+              "lv": "Latvijā rets ligzdotājs. Atsevišķos gados, iespējams, neligzdo vispār. Skaits ievērojami  svārstās saistībā ar skujkoku sēklu ražu. Sastopams priežu un jauktu koku mežos. Biežāk nekā pārējās krustknābju  sugas novērojams priežu silos. Ligzdu būvē augstā priedē vai eglē. Pārtiek pārsvarā no skujkoku sēklām. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  0,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s33d.png",
+              "iconShadow": "resources/view_7/images/s33s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s33d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S34 ------------------------------",
+          "titleLatin": "Poecile palustris",
+          "title": {
+              "lv": "PURVA ZĪLĪTE",
+              "ru": "ГАИЧКА",
+              "en": "MARSH TIT"
+          },
+          "description": {
+              "lv": "Latvijā parasta ligzdotāja un nometniece. Sastopama jauktu koku un lapu koku mežos, parkos,  dārzos, upju un ezeru krastos, kur ir nokaltušo koku stumbeņi. Ligzdo galvenokārt dabīgos koku dobumos, ļoti  reti arī putnu būrīšos. Pārtiek no kukaiņiem, dažādu augu sēklām. Labprāt apmeklē barotavas. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  0,
+                  10
+              ],
+              "iconImage": "resources/view_7/images/s34d.png",
+              "iconShadow": "resources/view_7/images/s34s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s34d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S35 ------------------------------",
+          "titleLatin": "Sturnus roseus",
+          "title": {
+              "lv": "SĀRTAIS STRAZDS",
+              "ru": "РОЗОВЫЙ СКВОРЕЦ",
+              "en": "ROSY STARLING"
+          },
+          "description": {
+              "lv": "Latvijā rets ieceļotājs. Novērots 10 reizes. Latvijai tuvākas ligzdošanas vietas atrodas  Dienvidaustrumeiropā.Gājputns. Pārziemo Rietumeiropā un Dienvideiropā. Regulāri, bet nelielā skaitā, ziemo arī  Latvijā. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  260,
+                  -10,
+                  -10
+              ],
+              "iconImage": "resources/view_7/images/s35d.png",
+              "iconShadow": "resources/view_7/images/s35s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s35d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S36 ------------------------------",
+          "titleLatin": "Plectrophenax nivalis",
+          "title": {
+              "lv": "SNIEDZE",
+              "ru": "ПУНОЧКА",
+              "en": "SNOW BUNTING"
+          },
+          "description": {
+              "lv": "Latvijā regulāri caurceļo rudenī un pavasarī. Rudenī sastopama galvenokārt jūras piekrastē, bet  ziemā un pavasarī lielākie bari uzturas iekšzemē. Latvijai tuvākas ligzdošanas vietas atrodas Skandināvijas  ziemeļos, Somijā un Krievijā. Sniedze ir vistālāk ziemeļos ligzdojošais zvirbuļveidīgais putns. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  -20,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s36d.png",
+              "iconShadow": "resources/view_7/images/s36s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s36d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S37 ------------------------------",
+          "titleLatin": "Remiz pendulinus",
+          "title": {
+              "lv": "SOMZĪLĪTE",
+              "ru": "РЕМЕЗ",
+              "en": "EURASIAN PENDULINE-TIT"
+          },
+          "description": {
+              "lv": "Latvijā piemērotās vietās diezgan parasta ligzdotāja. Sastopama ezeru, dīķu, upju krastos, kas  aizauguši ar bērziem, vītoliem, kārkliem un niedrēm. Ligzdu būvē no kārklu, papeļu, vilkvālīšu un citu augu  ziedpūkām. Ligzda piestiprināta bērza, kārkla vai vītola zara galā, parasti virs ūdens. Skaits pēdējās  desmitgadēs ir pieaudzis, un tagad tā bieži sastopama arī Latvijas austrumu daļā.Gājputns. Pārziemo Centrāleiropā, Dienvideiropā. Latvijā reti ziemo vietās ar plašiem  niedrājiem.  ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  0,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s37d.png",
+              "iconShadow": "resources/view_7/images/s37s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s37d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S38 ------------------------------",
+          "titleLatin": "Pyrrhula pyrrhula",
+          "title": {
+              "lv": "SVILPIS",
+              "ru": "СНЕГИРЬ",
+              "en": "EURASIAN BULLFINCH"
+          },
+          "description": {
+              "lv": "Latvijā parasts ligzdotājs un ziemotājs. Daļa putnu rudenī aizklejo, bet citi ielido no  ziemeļiem. Sastopams jauktu koku un skujkoku mežos ar biezu paaugu (jauniem kociņiem). Ziemā arī kultūrainavā,  parkos, dārzos, pilsētu apstādījumos. Ligzdu būvē biezos skujkoku zaros. Pārtiek no sēklām, pumpuriem, ogām.  Labprāt apmeklē barotavas. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  10,
+                  30
+              ],
+              "iconImage": "resources/view_7/images/s38d.png",
+              "iconShadow": "resources/view_7/images/s38s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s38d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S39 ------------------------------",
+          "titleLatin": "Cinclus cinclus",
+          "title": {
+              "lv": "ŪDENSTRAZDS",
+              "ru": "ОЛЯПКА",
+              "en": "WHITE-THROATED DIPPER"
+          },
+          "description": {
+              "lv": "Latvijā samērā parasts ziemotājs pie straujām, neaizsalstošām upītēm, slūžām un ūdenskritumiem.  Ligzdo ļoti reti – zināmas tikai dažas ligzdvietas Kurzemē un Vidzemē. Galvenā barība ir ūdens  bezmugurkaulnieki, lielākoties maksteņu, strauteņu, viendienīšu kāpuri, arī vēžveidīgie, retāk – nelielas  zivtiņas vai moluski.Gājputns. Latvijā ziemo putni no Skandināvijas.  ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  0,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s39d.png",
+              "iconShadow": "resources/view_7/images/s39s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s39d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S40 ------------------------------",
+          "titleLatin": "Carduelis chloris",
+          "title": {
+              "lv": "ZAĻŽUBĪTE",
+              "ru": "ЗЕЛЕНУШКА",
+              "en": "EUROPEAN GREENFINCH"
+          },
+          "description": {
+              "lv": "Latvijā parasta un izplatīta ligzdotāja un ziemotāja. Bieži migrācijas laikā, kad caurceļo putni  no ziemeļiem, aizlido arī daļa no vietējiem ligzdotājiem.Sastopama dažādos apstādījumos apdzīvotās vietās, parkos, dārzos, kapsētās. Ligzdo apstādījumos,  dzīvžogos un citās līdzīgās vietās. Pārtiek no dažādām sēklām. Mazuļus baro galvenokārt ar kukaiņiem. Labprāt  apmeklē barotavas.  ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  330,
+                  -20,
+                  30
+              ],
+              "iconImage": "resources/view_7/images/s40d.png",
+              "iconShadow": "resources/view_7/images/s40s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s40d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S41 ------------------------------",
+          "titleLatin": "Bombycilla garrulus",
+          "title": {
+              "lv": "ZĪDASTE",
+              "ru": "СВИРИСТЕЛЬ",
+              "en": "BOHEMIAN WAXWING"
+          },
+          "description": {
+              "lv": "Latvijā samērā parasta migrācijas laikā rudenī. Skaits gadu no gada atšķiras. Ziemā un pavasara  migrācijas laikā mazākā skaitā nekā rudenī. Ziemotāji parasti uzturas apdzīvotās vietās, kur dārzos un  apstādījumos ir ogas vai āboli.Latvijai tuvākas ligzdošanas vietas atrodas Somijas, Zviedrijas un Krievijas taigā. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  10,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s41d.png",
+              "iconShadow": "resources/view_7/images/s41s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s41d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S42 ------------------------------",
+          "titleLatin": "Fringilla montifringilla",
+          "title": {
+              "lv": "ZIEMAS ŽUBĪTE",
+              "ru": "ВЬЮРОК",
+              "en": "BRAMBLING"
+          },
+          "description": {
+              "lv": "Latvijā, iespējams, ļoti reta ligzdotāja, tomēr konkrēti zināms tikai viens gadījums 1960. gadā.  Parasta caurceļotāja pavasarī un rudenī. Ziemotāji sastopami katru gadu, bet mazā skaitā un vairāk Latvijas  rietumu daļā. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  0,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s42d.png",
+              "iconShadow": "resources/view_7/images/s42s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s42d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S43 ------------------------------",
+          "titleLatin": "Pinicola enucleator",
+          "title": {
+              "lv": "ZIEMEĻU SVILPIS",
+              "ru": "ЩУР",
+              "en": "PINE GROSBEAK"
+          },
+          "description": {
+              "lv": "Latvijā rets ieceļotājs no ziemeļiem un austrumiem. Ieceļo vienīgi vēlā rudenī invāziju laikā.  Skaits parasti nav liels, tāpēc vairāku gadu garumā mēdz būt periodi, kad ziemeļu svilpis Latvijā vispār netiek  pamanīts. Ja barības ziemā patiekami (dažādu koku sēklas un ogas), ziemo ligzdošanas areālā. Sliktos ražas gados  rudenī un ziemā daudzi pārvietojas uz dienvidiem, barības meklējumos sasniedzot arī Baltijas valstis. Latvijai  tuvākās ligzdošanas vietas atrodas Skandināvijas, Somijas un Krievijas ziemeļos. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  270,
+                  0,
+                  10
+              ],
+              "iconImage": "resources/view_7/images/s43d.png",
+              "iconShadow": "resources/view_7/images/s43s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s43d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S44 ------------------------------",
+          "titleLatin": "Cyanistes caeruleus",
+          "title": {
+              "lv": "ZILZĪLĪTE",
+              "ru": "ЛАЗОРЕВКА",
+              "en": "BLUE TIT"
+          },
+          "description": {
+              "lv": "Latvijā parasta un izplatīta ligzdotāja un nometniece. Daļa putnu rudenī klejo uz dienvidiem.  Sastopama lapu koku un jauktu koku mežos, parkos, dārzos, kapsētās. Rudenī un ziemā bieži arī niedrājos, kur  barojas ar niedru laputu kāpuriem un kūniņām. Ligzdo koku dobumos, arī putnu būrīšos. Labprāt apmeklē barotavas. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  300,
+                  -10,
+                  20
+              ],
+              "iconImage": "resources/view_7/images/s44d.png",
+              "iconShadow": "resources/view_7/images/s44s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s44d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      },
+      {
+          "comment": "----------------------- S45 ------------------------------",
+          "titleLatin": "Fringilla coelebs",
+          "title": {
+              "lv": "ŽUBĪTE",
+              "ru": "ЗЯБЛИК",
+              "en": "EURASIAN CHAFFINCH"
+          },
+          "description": {
+              "lv": "Latvijā parasta un izplatīta ligzdotāja. Skaita ziņā lielākā ligzdojošo putnu suga Latvijā.  Masveidā caurceļo kā pavasarī, tā rudenī. Sastopama visu veidu mežos, pilsētas apstādījumos, parkos, dārzos.  Ligzdu būvē dažādos kokos, bieži zaru žāklēs, uz zariem pie stumbra. Pārtiek no sēklām, bet mazuļus baro  pārsvarā ar kukaiņiem.Gājputns. Pārziemo Rietumeiropā. Regulāri ziemo arī Latvijā, vairāk rietumu daļā, kā atsevišķi  īpatņi apdzīvotās vietās (mēdz apmeklēt arī barotavas) vai jauktos baros kopā ar citiem zvirbuļveidīgajiem  putniem. ",
+              "ru": "",
+              "en": "",
+              "transform": [
+                  20,
+                  380,
+                  30
+              ]
+          },
+          "main": {
+              "diameter": 280,
+              "iconTransform": [
+                  320,
+                  -10,
+                  10
+              ],
+              "iconImage": "resources/view_7/images/s45d.png",
+              "iconShadow": "resources/view_7/images/s45s.png"
+          },
+          "detailImage": {
+              "image": "resources/view_7/images/s45d.png",
+              "transform": [
+                  560,
+                  420,
+                  0
+              ]
+          },
+          "audio": []
+      }
+  ]
+}

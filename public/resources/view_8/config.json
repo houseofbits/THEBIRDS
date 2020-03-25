@@ -17,15 +17,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  200,
+                  60,
+                  0
               ],
               "iconImage": "resources/view_8/images/s1d.png",
               "iconShadow": "resources/view_8/images/s1s.png"
@@ -54,15 +55,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  330,
+                  -20,
+                  10
               ],
               "iconImage": "resources/view_8/images/s2d.png",
               "iconShadow": "resources/view_8/images/s2s.png"
@@ -91,14 +93,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  320,
+                  -40,
                   20
               ],
               "iconImage": "resources/view_8/images/s3d.png",
@@ -128,14 +131,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_8/images/s4d.png",
@@ -165,14 +169,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_8/images/s5d.png",
@@ -202,14 +207,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  320,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_8/images/s6d.png",
@@ -239,14 +245,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  310,
+                  0,
                   20
               ],
               "iconImage": "resources/view_8/images/s7d.png",
@@ -276,14 +283,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_8/images/s8d.png",
@@ -313,14 +321,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_8/images/s9d.png",
@@ -350,14 +359,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  310,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_8/images/s10d.png",
@@ -387,14 +397,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  -20,
                   20
               ],
               "iconImage": "resources/view_8/images/s11d.png",
@@ -424,14 +435,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  310,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_8/images/s12d.png",
@@ -461,14 +473,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  0,
                   20
               ],
               "iconImage": "resources/view_8/images/s13d.png",
@@ -498,14 +511,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  0,
                   20
               ],
               "iconImage": "resources/view_8/images/s14d.png",
@@ -535,14 +549,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  320,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_8/images/s15d.png",
@@ -572,15 +587,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
+                  200,
                   50,
-                  20
+                  -40
               ],
               "iconImage": "resources/view_8/images/s16d.png",
               "iconShadow": "resources/view_8/images/s16s.png"
@@ -609,14 +625,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  0,
                   20
               ],
               "iconImage": "resources/view_8/images/s17d.png",
@@ -646,15 +663,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  360,
+                  -20,
+                  0
               ],
               "iconImage": "resources/view_8/images/s18d.png",
               "iconShadow": "resources/view_8/images/s18s.png"
@@ -683,14 +701,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  310,
+                  0,
                   20
               ],
               "iconImage": "resources/view_8/images/s19d.png",
@@ -720,15 +739,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  340,
+                  -30,
+                  10
               ],
               "iconImage": "resources/view_8/images/s20d.png",
               "iconShadow": "resources/view_8/images/s20s.png"
@@ -757,14 +777,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  310,
+                  -20,
                   20
               ],
               "iconImage": "resources/view_8/images/s21d.png",
@@ -794,15 +815,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  320,
+                  0,
+                  10
               ],
               "iconImage": "resources/view_8/images/s22d.png",
               "iconShadow": "resources/view_8/images/s22s.png"
@@ -831,14 +853,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_8/images/s23d.png",
@@ -868,15 +891,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
-                  20
+                  -10,
+                  10
               ],
               "iconImage": "resources/view_8/images/s24d.png",
               "iconShadow": "resources/view_8/images/s24s.png"
@@ -905,14 +929,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  0,
                   20
               ],
               "iconImage": "resources/view_8/images/s25d.png",
@@ -942,15 +967,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
+                  200,
                   50,
-                  20
+                  -10
               ],
               "iconImage": "resources/view_8/images/s26d.png",
               "iconShadow": "resources/view_8/images/s26s.png"
@@ -979,14 +1005,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  0,
                   20
               ],
               "iconImage": "resources/view_8/images/s27d.png",
@@ -1016,15 +1043,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  340,
+                  0,
+                  10
               ],
               "iconImage": "resources/view_8/images/s28d.png",
               "iconShadow": "resources/view_8/images/s28s.png"
@@ -1053,14 +1081,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  340,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_8/images/s29d.png",
@@ -1090,15 +1119,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  340,
+                  -10,
+                  10
               ],
               "iconImage": "resources/view_8/images/s30d.png",
               "iconShadow": "resources/view_8/images/s30s.png"
@@ -1127,14 +1157,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  270,
+                  0,
                   20
               ],
               "iconImage": "resources/view_8/images/s31d.png",
@@ -1164,15 +1195,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  360,
+                  -30,
+                  10
               ],
               "iconImage": "resources/view_8/images/s32d.png",
               "iconShadow": "resources/view_8/images/s32s.png"
@@ -1201,14 +1233,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
                   300,
-                  50,
+                  0,
                   20
               ],
               "iconImage": "resources/view_8/images/s33d.png",
@@ -1238,15 +1271,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  320,
+                  -20,
+                  10
               ],
               "iconImage": "resources/view_8/images/s34d.png",
               "iconShadow": "resources/view_8/images/s34s.png"
@@ -1275,14 +1309,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  350,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_8/images/s35d.png",
@@ -1312,14 +1347,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  320,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_8/images/s36d.png",
@@ -1349,14 +1385,15 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
+                  330,
+                  -10,
                   20
               ],
               "iconImage": "resources/view_8/images/s37d.png",
@@ -1386,15 +1423,16 @@
               "en": "",
               "transform": [
                   20,
-                  380
+                  380,
+                  30
               ]
           },
           "main": {
               "diameter": 280,
               "iconTransform": [
-                  300,
-                  50,
-                  20
+                  220,
+                  20,
+                  -20
               ],
               "iconImage": "resources/view_8/images/s38d.png",
               "iconShadow": "resources/view_8/images/s38s.png"
