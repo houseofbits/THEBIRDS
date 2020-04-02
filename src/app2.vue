@@ -10,6 +10,9 @@
         </div>
 
         <div v-if="!detailViewOpen" class="sector-frame" ref="sectorFrame" :style="computeTransform()" >
+
+            <div class="limiter-left" :style="limiterLeftStyle()"></div>
+
             <sector2 v-for="(sector, index) in sectors" v-if="isVisible(sector.main.position[0])"
             :key="index" 
             :sector="sector.main"
@@ -17,6 +20,9 @@
             :circleUrl="circleUrl"
             :curve="calculateUnitAngle(sector.main.position[0])"
             ></sector2>
+
+            <div class="limiter-right" :style="limiterRightStyle()"></div>
+
         </div>
 
         <div class="detail-screen" ref="detailScreen">
@@ -100,13 +106,41 @@
                 return false;
             },
             detailBackgroundImageUrl:function(){
-                if(this.view && typeof this.view.detailBackground != "undefined"){
+                if(this.view && typeof this.view.detailBackground !== 'undefined'){
                     return this.view.detailBackground;
                 }
                 return '';
-            }            
+            }
         },
         methods: {
+            limiterLeftStyle:function(){
+                if(this.angle < 0 ){
+                    return {
+                        display:'none'
+                    };
+                }else {
+                    return {
+                        transform:
+                        'translateX(512px)'
+                        + ' translateZ(0px)'
+                        + ' rotateY(' + (this.angleMinMax[0] - 20) + 'deg)'
+                    };
+                }
+            },
+            limiterRightStyle:function(){
+                if(Math.abs(this.angle) < (this.angleMinMax[1] - 10) ){
+                    return {
+                        display:'none'
+                    };
+                }else {
+                    return {
+                        transform:
+                        'translateX(512px)'
+                        + ' translateZ(0px)'
+                        + ' rotateY(' + (this.angleMinMax[1] + 10) + 'deg)'
+                    };
+                }
+            },
             init:function () {
                 let id = null;
                 if (typeof window.location.search !== 'undefined'
@@ -121,7 +155,7 @@
                     id = parseInt(path[1]);
 
                     let det = path[1].split('-');
-                    if(typeof det[1] != 'undefined') {
+                    if(typeof det[1] !== 'undefined') {
                         this.loadDetail =parseInt(det[1]);
                     }
                 }
@@ -168,7 +202,7 @@
             posPageStyle:function(index){
                 let w = 1024 / this.sectors.length;
                 let color = 'rgba(255,255,255,0.2)';
-                if(index == this.selectedDetail){
+                if(index === this.selectedDetail){
                     color = 'rgba(0,255,0,0.4)';
                 }
                 return {
@@ -233,7 +267,7 @@
             },
             //Set up default position, visibility and opacity
             initDetailView:function(){
-                if(typeof this.$refs.detailScreen != 'undefined') {
+                if(typeof this.$refs.detailScreen !== 'undefined') {
                     Velocity(this.$refs.detailScreen, {opacity: 0}, {display: "none"});
                     Velocity(this.$refs.detailScreen,"finish");
                     this.rotateDetailView(this.selectedDetail, true);
@@ -243,13 +277,13 @@
 
                 if(this.selectedDetail == null)return false;
 
-                if(this.selectedDetail != null && index == this.selectedDetail)return true;
+                if(this.selectedDetail != null && index === this.selectedDetail)return true;
 
                 let next = this.getNextDetailViewId();
-                if(next != null && index == next)return true;
+                if(next != null && index === next)return true;
 
                 let prev = this.getPreviousDetailViewId();
-                if(prev != null && index == prev)return true;
+                if(prev != null && index === prev)return true;
 
                 return false;
             },
@@ -299,7 +333,7 @@
             },
             getNextDetailViewId:function(){
                 if(this.selectedDetail != null){
-                    if(typeof this.sectors[(this.selectedDetail + 1)] != 'undefined'){
+                    if(typeof this.sectors[(this.selectedDetail + 1)] !== 'undefined'){
                         return (this.selectedDetail + 1);
                     }
                 }
@@ -308,7 +342,7 @@
             getPreviousDetailViewId:function(){
                 if(this.selectedDetail != null){
                     if(this.selectedDetail > 0
-                        && typeof this.sectors[(this.selectedDetail - 1)] != 'undefined'){
+                        && typeof this.sectors[(this.selectedDetail - 1)] !== 'undefined'){
 
                         return (this.selectedDetail - 1);
                     }
@@ -316,9 +350,9 @@
                 return null;
             },
             rotateDetailView:function(targetIndex, imediate = false){
-                var angle = targetIndex * this.rotationStep;
-                var parent = this;
-                var duration = this.config.detailRotationDuration;
+                let angle = targetIndex * this.rotationStep;
+                let parent = this;
+                let duration = this.config.detailRotationDuration;
                 if(imediate)duration = 0;
 
                 Velocity(this.$refs.detailCarousel,"finish");
@@ -334,25 +368,25 @@
             },
             moveNext:function(){
                 this.$emit('stop-sounds');
-                var index = this.getNextDetailViewId();
+                let index = this.getNextDetailViewId();
                 if(index != null) {
                     this.rotateDetailView(index);
                 }
             },
             movePrev:function(){
                 this.$emit('stop-sounds');
-                var index = this.getPreviousDetailViewId();
+                let index = this.getPreviousDetailViewId();
                 if(index != null) {
                     this.rotateDetailView(index);
                 }
             },
             initAudio:function(){
-                var parent = this;
-                if(this.view && typeof this.view.sectors != 'undefined'){
-                    for(var i=0; i<this.view.sectors.length; i++){
-                        if(typeof this.view.sectors[i].audio != "undefined"){
-                            for(var a=0; a<this.view.sectors[i].audio.length; a++){
-                                var audioFile = this.view.sectors[i].audio[a].fileName;
+                let parent = this;
+                if(this.view && typeof this.view.sectors !== 'undefined'){
+                    for(let i=0; i<this.view.sectors.length; i++){
+                        if(typeof this.view.sectors[i].audio !== "undefined"){
+                            for(let a=0; a<this.view.sectors[i].audio.length; a++){
+                                let audioFile = this.view.sectors[i].audio[a].fileName;
                                 this.view.sectors[i].audio[a].sound = new Howl({
                                     src: [audioFile],
                                     preload:true,
@@ -696,5 +730,27 @@
         opacity: 0;
         visibility: hidden;
         transition: opacity 400ms, visibility 400ms;
+    }
+    .limiter-left{
+        position:absolute;
+        top:-100px;
+        left:0px;
+        width:400px;
+        height:1200px;
+        background: rgb(0,255,16);
+        background: linear-gradient(90deg, rgba(0,255,16,0.4598039899553571) 0%, rgba(0,255,21,0) 100%);
+        transform-style: preserve-3d;
+        transform-origin: 0 0 -2000px;
+    }
+    .limiter-right{
+        position:absolute;
+        top:-100px;
+        left:0px;
+        width:300px;
+        height:1200px;
+        background: rgb(0,255,16);
+        background: linear-gradient(-90deg, rgba(0,255,16,0.4598039899553571) 0%, rgba(0,255,21,0) 100%);
+        transform-style: preserve-3d;
+        transform-origin: 0 0 -2000px;
     }
 </style>

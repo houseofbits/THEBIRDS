@@ -16,6 +16,7 @@
 
 import {Vector3, Vector2, Rectangle, getRandomArbitrary, radiansToDegrees} from './common.js'
 import sound from './sound.vue'
+//import autoDescription from './autoDescription.vue'
 
 /**
  *
@@ -72,7 +73,7 @@ export default {
             return this.$parent.detailBackgroundImageUrl;
         },
         title:function(){
-            var language = this.$parent.getLanguage();
+            let language = this.$parent.getLanguage();
 
             if(typeof this.data.title != 'undefined'
                 && typeof this.data.title[language] != 'undefined'){
@@ -87,12 +88,12 @@ export default {
             return '';
         },
         description:function(){
-            var language = this.$parent.getLanguage();
+            let language = this.$parent.getLanguage();
 
             if(typeof this.data.description != 'undefined'
                 && typeof this.data.description[language] != 'undefined'){
 
-                if(typeof this.data.description[language] == "object" && 
+                if(typeof this.data.description[language] == "object" &&
                 typeof this.data.description[language].text != "undefined"){
                     return this.data.description[language].text;
                 }
@@ -162,7 +163,7 @@ export default {
             }            
         },
         calculateAngle:function(positionIndex){
-            var halfAngle = radiansToDegrees(Math.atan((1024/2)/3000));
+            let halfAngle = radiansToDegrees(Math.atan((1024/2)/3000));
             return ((halfAngle * 2) * positionIndex);
         },
     },

@@ -13,13 +13,13 @@
             },
             "description": {
                 "lv": "Latvijā rets ligzdotājs. Ligzdošana pirmo reizi pierādīta Saraiķu–Ziemupes apkārtnē 2003. gada  jūlijā. Vismaz viens vai daži pāri šajā apkārtnē ligzdoja arī turpmākajos gados, ieskaitot 2019. gadu. Otra  ligzdošanas vieta atklāta 2014. gadā Lodes māla karjerā. Trešā ligzdošanas vieta atrasta 2015. gadā Vaidavas  pagastā, Gaujas stāvkrastā pie „Caunītēm”, kas ir netālu no Lodes māla karjera. Kā jau putna nosaukums liecina,  bišu dzenis pamatā barojas ar bitēm, lapsenēm un sirseņiem, bet arī ar citiem kukaiņiem, īpaši lielajiem –  spārēm, vabolēm un citiem. Bišu dzenis vienmēr medī lidojumā. Bieži medījumu gaida, vērojot apkārtni no vadiem,  koka zara vai staba gala. Ligzdo stāvkrastos.Gājputns. Ziemo Āfrikā. ",
-                "ru": "",
-                "en": "",
-                "transform": [
-                    20,
-                    270,
-                    28
-                ]
+                "ru": "В Латвии редкая гнездящаяся птица. Первое доказанное гнездование в 2003 году в Сарайки –  окрестностях Зиемупе. По крайней мере одна или несколько пар гнездились в этой окрестности и в последующие годы, включая 2019 год. Второе место гнездования было обнаружено в 2014 году у карьера Лоде.  Третье место гнездования найдено в 2015 году в волости Вайдава – на берегу Гауи у хутора «Цауните» недалеко от карьера Лоде.  Питается в основном пчёлами, осами, шершнями, а также другими крупными насекомыми как стрекозы, жуки и другие. Золотистая щурка всегда охотится в полёте, часто выжидая добычу с проводов, веток деревьев или столбов. Гнездится в отвесных склонах колониями. Перелётная птица. Зимует в Африке.",
+                "en": "Very rare breeding species in Latvia. The first case of breeding was documented in the Saraiķi-Ziemupe area in July 2003. At least one and up to a few pairs bred in this area in the following years and up to 2019. The second and third breeding locations were discovered in and around Lode clay quarry – inside the quarry in 2014, and on the bank of the Gauja River near ‘Caunītes’ farmstead in 2015. As the name suggests, the European bee-eater’s diet mainly consists of different insects – bees and wasps, as well as dragonflies, beetles and others that are caught in flight. The birds can often be seen perching on treetops or wires, scouting the surrounding area for food. They nest in steep banks. The European bee-eater is a migratory bird that winters in Africa",
+                "transform":{
+                    "lv":[20,270,28],
+                    "ru":[20,290,27],
+                    "en":[20,290,27]
+                }
             },
             "main": {
                 "diameter": 280,
@@ -60,13 +60,13 @@
             },
             "description": {
                 "lv": "Latvijā parasta ligzdotāja. Dzeguzes ir ligzdošanas parazīti, kas nozīmē, ka olas tās dēj citu  putnu sugu ligzdās, kur citi putni tās izperē. Katra mātīte dēj olas noteiktu putnu sugu ligzdās, attiecīga ir  arī to olu krāsa – zilas (lukstu čakstītēm, erickiņiem), pelēkraibas (cielavām, čipstēm), raibas uz gaiša pamata  (sarkanrīklītēm, ķauķiem). Dzeguzes mazuļa attīstība olā ilgst īsāku laiku nekā saimniekputnu mazuliem. Jau  pirmajā dienā pēc izšķilšanās aklais, vēl neapspalvotais dzeguzēns sāk instinktīvi uzstutēt sev uz muguras un  izmest no ligzdas visu, kas tajā atrodas, tādējādi tas ligzdā paliek vienīgais aprūpējamais putnēns.Gājputns. Pārziemo Āfrikā.",
-                "ru": "",
-                "en": "",
-                "transform": [
-                    20,
-                    320,
-                    28
-                ]
+                "ru": "В Латвии обычная гнездящаяся птица. Кукушка является паразитом, что означает, что яйца она откладывает в гнёзда других птиц, которые потом их высиживают. Каждая самка откладывает яйца в гнёзда определённых видов птиц, этому соответствует и окраска яиц: голубые (лугового чекана, обыкновенной горихвостки), серовато-пестрые (трясогузки, конька), пёстрые на светлом фоне (зарянки, славки). Развитие кукушонка в яйце происходит быстрее, чем птенца хозяина. Уже в первый день после вылупления из яйца, слепой и ещё неоперившийся кукушонок инстинктивно переворачивается на спину и выбрасывает из гнезда всё, что там находится. Таким образом в гнезде он остаётся единственным, за кем ухаживают «родители». Перелётная птица. Зимует в Африке",
+                "en": "A common breeding species in Latvia. The cuckoo is a brood parasite that lays eggs in the nests of other birds, which than take care of the young cuckoo birds. Females lay eggs in colours that resemble those of other species – for example blue (whinchat, redstart), mottled grey (wagtails and pipits), light with dark spots (robin and different warblers), etc. Cuckoo chicks develop faster and hatch earlier than chicks of host species. After hatching, the blind and featherless cuckoo chick instinctively uses its back to roll and push unhatched eggs out of the nest, one by one, until it remains the only thing left for the host parents to take care of. The common cuckoo is a migratory bird that winters in Africa.",
+                "transform":{
+                    "lv":[20,320,28],
+                    "ru":[20,320,25],
+                    "en":[20,320,27]
+                }
             },
             "main": {
                 "diameter": 280,
@@ -107,8 +107,8 @@
             },
             "description": {
                 "lv": "Latvijā samērā reta ligzdotāja un nometniece. Vairāk Latvijas rietumu un dienvidu daļas pilsētās  un apdzīvotās vietās. Ligzda ir vienkārša, no žagariem vai salmiem vaļīgi sakrauta platforma. Retos gadījumos tā  oderēta ar mīkstu zāli. Atrodas kādā kokā vai biezā krūmā.  ",
-                "ru": "",
-                "en": "",
+                "ru": "В Латвии сравнительно редкая гнездящаяся оседлая птица. Чаще всего встречается в западных и южных частях Латвии в городах и других населенных пунктах. Гнездо простое, сооруженное из веток или соломы. В редких случаях выстилается мягкой травой. Располагается на дереве или густом кусте.",
+                "en": "A relatively rare breeding, usually non-migratory bird in Latvia. Mostly distributed in western and southern Latvia, where it lives in cities and other populated places. The number of breeding birds in Latvia increased during the 1970s and 80s, but since then has decreased again. Its nest is a simple platform in a tree or thick bush made from branches and larger stems, sometimes lined with grasses.",
                 "transform": [
                     20,
                     380
@@ -128,7 +128,7 @@
                 "image": "resources/view_5/images/s3d.png",
                 "transform": [
                     560,
-                    450,
+                    480,
                     0
                 ]
             },
@@ -153,8 +153,8 @@
             },
             "description": {
                 "lv": "Latvijā parasts caurceļotājs un ligzdotājs. Lauku balodis ligzdo dažāda veida mežos, sastopams  arī parkos un dārzos apdzīvotu vietu tuvumā. Lauku balodis parasti barojas uz lauka, tīrumā vai dārzā.Gājputns. Pārziemo Rietumeiropā un Dienvideiropā. Pēdējos gados atsevišķi īpatņi aizvien biežāk  pārziemo arī Latvijā.  ",
-                "ru": "",
-                "en": "",
+                "ru": "В Латвии обычная пролётная и гнездящаяся птица. Гнездится в лесах различного типа, но встречается также в парках и садах вблизи населенных пунктов. Питается обычно в полях, пашнях или садах. Перелётная птица. Зимует в Западной и Южной Европе. В последние годы отдельные особи всё чаще перезимовывают в Латвии.",
+                "en": "A common breeding bird and passage migrant in Latvia. Inhabits different types of forests, but can also be found in parks and gardens near populated areas. Wood pigeons usually feed on the ground – in fields or gardens. The common wood pigeon is a migratory bird that winters in western Europe.",
                 "transform": [
                     20,
                     380
@@ -199,8 +199,8 @@
             },
             "description": {
                 "lv": "Latvijā samērā rets ligzdotājs. Ligzdo vecos mežos, kur atrodami dobumaini koki, visbiežāk  priedēs un apsēs. Labprāt ligzdošanai izmanto melnās dzilnas dobumus, retāk arī piemērotus putnu būrus. Rudenī  bieži veido jauktus barus ar lauku baložiem. Gājputns. Pārziemo Rietumeiropā un Dienvideiropā. Pēdējos gados Latvijā samērā regulāri  novērojams arī ziemas mēnešos.  ",
-                "ru": "",
-                "en": "",
+                "ru": "В Латвии сравнительно редкая гнездящаяся птица. Гнездится в старых лесах, где находит дуплистые деревья, чаще всего сосны и осины. Охотно гнездится в дуплах желны, реже в скворечниках. Осенью часто собирается в смешанные стаи вместе с вяхирями. Перелётная птица. Зимует в Западной и Южной Европе. В последние годы регулярно в Латвии наблюдается и зимой.",
+                "en": "A relatively rare breeding species in Latvia. Inhabits old forests where they nest in tree cavities in pines or aspens, which have usually been made by the black woodpecker. May also use a suitable nest box. Can be seen in mixed flocks with wood pigeons in autumn. The stock dove is a migratory bird that winters in western and southern Europe. Small numbers may remain in Latvia during winter.",
                 "transform": [
                     20,
                     380
@@ -245,8 +245,8 @@
             },
             "description": {
                 "lv": "Latvijā diezgan parasta ligzdotājā. Līdzīgi kā meža balodis, parastā ūbele pamatā uzturas mežos,  un apdzīvotās vietās to var novērot reti. Parastā ūbele ir mazākā no Latvijā sastopamajiem baložu dzimtas  putniem. Visbiežāk to var redzēt tupam ceļmalās uz vadiem. Pēdējos gados populācija samazinājusies.Gājputns. Pārziemo Āfrikā. ",
-                "ru": "",
-                "en": "",
+                "ru": "В Латвии довольно обычная гнездящаяся птица. Подобно клинтуху, обыкновенная горлица обычно обитает в лесах, в населенных пунктах встречается редко. Является самым мелким представителем семейства голубей в Латвии. Чаще всего можно увидеть на проводах вдоль дорог. В последние годы популяция птиц уменьшилась. Перелётная птица. Зимует в Африке.",
+                "en": "A relatively common breeding species in Latvia. Like the stock dove, the turtle dove mostly lives in forests and usually is rarely seen in urban areas, but sometimes it can be seen perched on power lines near roads. The European turtle dove is the smallest pigeon species in Latvia. The number of breeding pairs has decreased in recent years. The European turtle dove is a migratory bird that winters in Africa.",
                 "transform": [
                     20,
                     380
@@ -266,7 +266,7 @@
                 "image": "resources/view_5/images/s6d.png",
                 "transform": [
                     560,
-                    450,
+                    500,
                     0
                 ]
             },
@@ -291,13 +291,13 @@
             },
             "description": {
                 "lv": "Latvijā rets ligzdotājs. Ligzdo ap 250 pāru. Pupuķi ligzdo koku dobumos, ēku šķirbās, arī ēku  drupās. Mēdz aizņemt putnu būrīšus. Pārtiek no lielākiem kukaiņiem, to kāpuriem un kūniņām. Barojas galvenokārt  uz zemes, barību ar knābi izvelkot no augsnes. Regulāri meklē kukaiņus dzīvnieku mēslos. Barībā bieži priekšroku  dod zemesvēžiem un maijvaboļu kāpuriem. Gājputns. Ziemo Āfrikā.   ",
-                "ru": "",
-                "en": "",
-                "transform": [
-                    20,
-                    390,
-                    30
-                ]
+                "ru": "В Латвии редкая гнездящаяся птица (около 250 пар). Гнезда устраивает в дуплах деревьев, щелях зданий, а также в развалинах. Может заселять скворечники. Питается крупными насекомыми, их личинками и куколками. Питается в основном на земле, клювом извлекая добычу из почвы. Предпочитает медведок и личинок майского жука. Регулярно ищет насекомых в навозе. Перелётная птица. Зимует в Африке.",
+                "en": "A rare breeding species with around 250 breeding pairs in Latvia. They nest in tree cavities or holes in the walls of buildings, but can also use nest boxes. Eurasian hoopoes mostly feed on the ground, and their diet predominantly consists of larger insects and their larvae or pupae – e.g. mole crickets and cockchafer larvae, which they pull out of the soil with their long bills. Sometimes they can be seen searching for insects in animal dung. The Eurasian hoopoe is a migratory bird that winters in Africa.",
+                "transform":{
+                    "lv":[20,390,30],
+                    "ru":[20,390,29],
+                    "en":[20,390,28]
+                }
             },
             "main": {
                 "diameter": 280,
@@ -346,8 +346,8 @@
             },
             "description": {
                 "lv": "Latvijā reta ieceļotāja no centrālās Āzijas. Biežāk novērota 19. gs. beigās – 20. gs. sākumā.  Skaita samazināšanās dēļ mūsdienās ieceļo ļoti reti. 20. gs. otrajā pusē Latvijā novērota vienu reizi, kā arī  tikai vienu reizi 21. gs. sākumā. ",
-                "ru": "",
-                "en": "",
+                "ru": "В Латвию редко залетающая из Центральной Азии птица. Чаще наблюдалась в конце девятнадцатого века – в начале двадцатого века. Из – за уменьшения количества птиц в настоящее время в Латвию залетает очень редко. По одному разу наблюдалась во второй половине двадцатого века и в начале двадцать первого столетия.",
+                "en": "Very rare vagrant species from Central Asia. Most sightings in Latvia are from the 19th century and early 20th. Nowadays these birds vary rarely reach Europe due to their numbers having decreased in their breeding range. There have only been two recorded sightings in Latvia in recent times – in 1976 and 2002.",
                 "transform": [
                     20,
                     380
@@ -382,12 +382,13 @@
             },
             "description": {
                 "lv": "Latvijā tā ir parasta ligzdotāja. Svīre ir slavena ar savu lidotprasmi, tās vārpstveida ķermenis  tam ir lieliski piemērots. No visiem putniem pasaulē visvairāk laika gaisā pavada svīre, tā visu laiku ir  spārnos. Svīre nolaižas tikai, lai perētu un pabarotu mazuļus. Bieži ligzdo cilvēku celtās būvēs. Svīre labprāt  ligzdo arī putnu būrīšos. Lidojumā, nepieskaroties zemei, tā spēj veikt lielāko daļu dzīvībai nepieciešamo  funkciju – ēst, gulēt, dzert un pāroties. Gājputns. Pārziemo Āfrikā.  ",
-                "ru": "",
-                "en": "",
-                "transform": [
-                    20,
-                    380
-                ]
+                "ru": "В Латвии обычная гнездящаяся птица. Чёрный стриж отличается исключительной способностью к полёту и его веретеновидное тело к этому прекрасно приспособлено. В воздухе проводит времени больше всех других птиц на планете, находясь в полете почти непрерывно. Во время полёта птица выполняет большую часть жизненно необходимых функций. Эта птица в полёте ест, также спит, пьёт и спаривается. Стриж опускается только тогда, когда высиживает яйца или кормит птенцов. Часто гнездится на зданиях, охотно селятся в скворечниках. Перелётная птица. Зимует в Африке.",
+                "en": "A common breeding species in Latvia. Swifts have a tapered, aerodynamic body shape with long, scythe-like wings that allow them to excel in flight. Of all bird species, swifts spend the most time in the air. Swifts land only to hatch and raise young birds. They nest in cavities in buildings and trees, but also frequently use nest boxes. Swifts can perform most of their daily necessities in flight – they feed, sleep and even mate and drink water without landing. The common swift is a migratory bird that winters in Africa.",
+                "transform":{
+                    "lv":[20,390,29],
+                    "ru":[20,390,25],
+                    "en":[20,390,27]
+                }
             },
             "main": {
                 "diameter": 280,
@@ -428,12 +429,13 @@
             },
             "description": {
                 "lv": "Tautā bieži tiek saukts arī par lēli. Grūti novērojams putns, jo aktīvs tikai krēslā un naktīs,  kad gaisā ķer kukaiņus. Dienā nekustīgi sēž uz zemes daļēji apēnotā vietā vai cieši piekļāvies koka zaram tā  garenvirzienā. Reizēm nekustīgi tup zemu stabiņu (celmu) galos. Latvijā parasti sastopams sausos mežos ar  izcirtumiem un laucēm, retāk lauksaimniecības teritorijās. Vasaras naktīs un migrācijas laikā pavasarī un rudenī  (arī tikai vakaros un naktīs) bieži var iztraucēt no šosejām un lauku ceļiem. Gājputns, ziemo Āfrikā.  ",
-                "ru": "",
-                "en": "",
-                "transform": [
-                    20,
-                    380
-                ]
+                "ru": "Птица, которую трудно увидеть, так как активна только вечером в сумерки и ночью, когда охотится в воздухе за насекомыми. Днём неподвижно сидит на земле в затенённых местах или тесно прижавшись к веткам деревьев. В Латвии обычно встречается в сухих лесах с вырубками и полянами, реже на сельскохозяйственных угодьях. Летними ночами, а также во время весенне-осенних перелетов, часто можно вспугнуть с шоссе или проселочной дороги. Активен только поздними вечерами вечерам или ночью. Перелётная птица. Зимует в Африке.",
+                "en": "A common breeding species in Latvia but rarely seen because they are active only during dusk and night hours. Their plumage makes them difficult to spot by day, when they usually sleep lengthwise on a tree branch in partly shaded spots or, less often, on tree stumps close to the ground. Inhabits open pine forests and forest clearings, sometimes also near peat bogs or, more rarely, agricultural land. Sometimes it is possible to see nightjars sitting on highways and country roads at night – mostly in summer or during spring and autumn migration periods. The nightjar is a migratory bird that winters in Africa.",
+                "transform":{
+                    "lv":[20,380,29],
+                    "ru":[20,380,26],
+                    "en":[20,400,25]
+                }
             },
             "main": {
                 "diameter": 280,
@@ -490,13 +492,13 @@
             },
             "description": {
                 "lv": "Agrāk Latvijā parasta ligzdotāja, bet kopš 1960. gadiem skaits ir strauji samazinājies, un  šobrīd ligzdo mazāk nekā 30 pāru. Galvenais ligzdošanas rajons atrodas austrumos no Rīgas – Garkalnes, Ādažu un  Silakroga apkārtnes priežu mežos. Ārpus ligzdošanas sezonas zaļā vārna dažkārt tiek novērota arī citviet  Latvijā, tomēr ļoti reti.Līdz 19. gs. beigām zaļo vārnu Latvijā dēvēja par zilo vārnu. Tikai 20. gs. 30. gados to sāka  saukt arī par zaļo vārnu. Kādu laiku valodā lietoja abus nosaukumus, tomēr nosaukums “zaļā vārna” izkonkurēja  nosaukumu “zilā vārna”. Nosaukuma maiņai nav saprotama pamatojuma, jo putna apspalvojums izskatās gaiši zils,  nevis zaļš. 18. gs. zaļo vārnu sauca ne tikai par zilo vārnu, bet arī par Kurzemes papagaili. Gājputns. Ziemo Āfrikā. ",
-                "ru": "",
-                "en": "",
-                "transform": [
-                    20,
-                    310,
-                    26
-                ]
+                "ru": "Ранее в Латвии обычная гнездящаяся птица, но с 1960 года численность птиц стремительно уменьшилась и в настоящее время гнездится менее 30 пар. Основное место гнездования находится к востоку от Риги – в сосновых лесах в окрестностях Гаркалне, Адажи и Силакрога. После сезона гнездования сизоворонку иногда можно наблюдать и в других местах Латвии, однако очень редко. Перелётная птица. Зимует в Африке.",
+                "en": "A formerly common breeding species; since the 1960s the number of breeding birds has dramatically declined, and now there are less than 30 breeding pairs left. The European roller’s last remaining breeding territories in Latvia lie east of Riga, in the pine forests around Garkalne, Ādaži and Silakrogs. They are very rarely seen outside these breeding areas. Up until the end of the 19th century, the Latvian name for the bird described its colour as ‘blue’ (zilā vārna); only in the 1930s was ‘blue’ replaced with ‘green’ (zaļā vārna), and this is the name used today. In the 18th century it was also colloquially called the ‘Courland parrot’. The European roller is a migratory bird that winters in Africa.",
+                "transform":{
+                    "lv":[20,330,25],
+                    "ru":[20,330,30],
+                    "en":[20,330,27]
+                }
             },
             "main": {
                 "diameter": 280,
@@ -545,13 +547,13 @@
             },
             "description": {
                 "lv": "Latvijā piemērotās vietās, pie upēm un kanāliem ar stāvkrastiem, parasts ligzdotājs. Ūdenstilpju  stāvkrastos izrok alas, kurās ligzdo. Zivju dzenītis medī zivis no paaugstinājuma. Zem ūdens tā spārni ir  atvērti, acis aizsargā caurspīdīga plēvīte. Ar medījumu tas atgriežas savā novērošanas postenī. Turot zivi tuvu  pie astes, zivju dzenītis to vairākas reizes sit pret cietu pamatni, līdz tā ir mirusi. Zivs pēc tam tiek norīta  ar galvu pa priekšu.Gājputns. Pārziemo citviet Eiropā. Nereti paliek ziemot arī Latvijā pie vaļējiem ūdeņiem.  Aukstās ziemās daudzi iet bojā.",
-                "ru": "",
-                "en": "",
-                "transform": [
-                    20,
-                    360,
-                    28
-                ]
+                "ru": "В Латвии обычная гнездящаяся птица. Обитает у отвесных берегов рек и каналов. В отвесных склонах выкапывает норки, в которых гнездится. Обыкновенный зимородок добычу высматривается с возвышенного места, охотится на рыбу, за которой ныряет. Под водой крылья расправлены, глаза защищены прозрачной пленкой. С добычей птица возвращается на свой пост наблюдения. Держа рыбку около хвоста, зимородок несколько раз бьёт её об твёрдую поверхность, пока рыба не утихнет. Добыча проглатывается головой вперед. Перелётная птица. Зимует в других частях Европы. Нередко остаётся зимовать в Латвии у незамерзающей воды. В холодные зимы много птиц погибает.",
+                "en": "A relatively common breeding species in Latvia in suitable habitats – along rivers and streams with steep banks. They nest in holes that they dig into the steep banks of rivers. Their diet consists of small fish that they hunt by diving from an elevated perch. They hold their wings open and their eyes are covered by a protective membrane while underwater. After the dive they return to the perch; the caught fish is adjusted until it is held near its tail, then it is beaten against the perch several times. The fish is swallowed head first. The common kingfisher is a migratory bird that winters in Europe. Small numbers may also winter in Latvia, near areas with unfrozen water; in severe winters many perish.",
+                "transform":{
+                    "lv":[20,360,28],
+                    "ru":[20,360,25],
+                    "en":[20,360,25]
+                }
             },
             "main": {
                 "diameter": 280,
