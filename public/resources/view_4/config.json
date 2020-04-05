@@ -4,6 +4,31 @@
   "circleBackground": "resources/segment_circle.png",
   "sectors":[
     {
+      "comment":"------------------------------------- S0 --------------------------------------------",
+      "title":{
+        "lv":"ABERATĪVO PUTNU KOLEKCIJA",
+        "ru":"КОЛЛЕКЦИЯ АБЕРРАНТНЫХ ПТИЦ",
+        "en":"ABERRANT BIRD COLLECTION",
+        "transform":[900, 50]
+      },
+      "description":{
+        "lv": "1895. gada sākumā vācu ornitologsun taksidermists Teodors Lorencs (Theodore K. Lorenz, 1842–1911), kuram Maskavā piederēja viena no lielākajām taksidermijas darbnīcām, izstādē Rīgā izrādīja daļu no savas aberatīvo putnu kolekcijas – 169 eksemplārus.<br>Daudzus gadus T. Lorencs savai kolekcijai meklēja putnus ar aberācijām, piemēram, dažādus hibrīdus, kā arī pilnīgus vai daļējus albīnus. Šādi putni dabā sastopami ļoti reti, tāpēc izbāztu putnu kolekcijās tie ir paši vērtīgākie. Lai šādus brīnumus iegūtu, nācās tos meklēt tirgos un iepirkt no medniekiem plašajā Krievijas teritorijā.<br>Rīgas izstādē šo unikālo kolekciju iekāroja tirgotājs Pauls Hoflingers (Paul Hoflinger) un pierunāja T. Lorencu to pārdot. Darījuma summa nav zināma, bet, domājams, tā bija iespaidīga. Šo kolekciju Hoflingers uzdāvināja Rīgas Dabaspētnieku biedrībai tās 50 gadu jubilejā. Par šo vērtīgo dāvanu daudz rakstīja tā laika avīzēs, bet par pašu P. Hoflingeru zināms vien tas, ka viņš bijis aktīvs mednieks un šīs biedrības biedrs, kurš regulāri papildinājis muzeja krājumu ar retiem putniem. Piemēram, viņš pirmais Latvijas teritorijā konstatēja (nošāva un uzdāvināja Rīgas Dabaspētnieku biedrības muzejam) mazo dūkuri (1890) un pelēko pīli (1894).<br>Par aberatīvo putnu kolekcijas vērtību liecina arī tas, ka 1895. gada vasarā muzejs šo kolekciju izrādīja Lībekas (Vācija) Ziemeļu tirdzniecības un rūpniecības izstādē, kur tā apbalvota ar zelta medaļu.<br>Kolekcija ir saglabājusies līdz mūsdienām, tā glabājas Latvijas Dabas muzejā un ir muzeja zelta fondā, pateicoties tās zinātniskajai un vēsturiskajai vērtībai.",
+        "ru": "Немецкий орнитолог и таксидермист Теодор Лоренц (Theodore K. Lorenz, 1842-1911), которому в Москве принадлежала одна из крупнейших мастерских таксидермии, в начале 1895 года в Риге демонстрировал часть своей коллекции аберрантных птиц – 169 экземпляров.<br>Много лет Т. Лоренц разыскивал для своей коллекции птиц с аберрациями, например, различных гибридов, а также полных или частичных альбиносов. Такие птицы в природе встречаются очень редко, поэтому в коллекциях они являются самыми ценными. Чтобы изготовить такие чучела, пришлось искать птиц на рынках и выкупать у охотников с огромной территории России.<br>На Рижской выставке эту уникальную коллекцию присмотрел торговец Пауль Хофлингер (Paul Hoflinger) и уговорил Т. Лоренца продать ее. Сумма сделки неизвестна, но, вероятно, она была впечатляющей. Эту коллекцию Хофлингер подарил Рижскому обществу естественных исследователей на 50-летний юбилей. Об этом ценном подарке много писали в газетах того времени, а про самого П. Хофлингера известно лишь то, что он был страстным охотником и членом этого общества, регулярно пополнял коллекцию музея редкими птицами. Например, он первый на территории Латвии констатировал (застрелил и подарил Музею Рижского общества естественных исследователей) малую поганку (1890) и серую утку (1894).<br>О ценности коллекции аберантных птиц свидетельствует также то, что летом 1895 года музей демонстрировал эту коллекцию на выставке Северной торговли и промышленности в Любеке (Германия), где она была награждена золотой медалью.<br>Коллекция сохранилась до наших дней и хранится в Латвийском музее природы. Она по праву является золотым фондом музея.",
+        "en": "German ornithologist Theodore K. Lorenz (1842-1911), who owned one of the largest taxidermy workshops in Moscow, displayed part of his aberrant bird collection (169 specimens) in an exhibition in Riga in early 1895.<br>Lorenz spent many years looking for aberrant birds (such as hybrids and partly or completely albino birds) for his collection. Such birds are very rare in nature, which is why they are very valuable specimens in bird taxidermy collections. To obtain these amazing specimens, Lorenz searched for them in markets or bought them from hunters throughout the vast territory of Russia.<br>While the unique collection was on display in Riga, it became of great interest to the merchant Paul Hoflinger, who subsequently convinced Lorenz to sell the collection to him. The amount paid is not known, but it must have been considerable. Hoflinger would go on to gift the collection to the Riga Naturalist Society (Naturforschenden Verein zu Riga) on its 50th anniversary. Although the valuable gift was much talked about in local newspapers at the time, not much is known about Hoflinger himself, except that he was a member of the society, an avid hunter, and would regularly donate rare specimens to the society’s museum collection. For instance, Hoflinger was the first person to ascertain in Latvia the presence of the little grebe (1890) and the gadwall (1894), albeit by shooting and donating a specimen of each to the society’s museum.<br>The value of the aberrant bird collection was demonstrated when the museum displayed it at the Nordic Trade and Industry Exhibition held in Lübeck (Germany) in 1895, where it was awarded the gold medal.<br>The collection has survived to the present day and is stored in the Natural History Museum of Latvia. From a scientific and historic viewpoint, it is one of the museum’s most valuable collections.",
+        "transform":{
+          "lv":[20,110,22],
+          "ru":[20,110,20],
+          "en":[20,110,20]
+        }
+      },
+      "main":{
+        "diameter":280,
+        "iconTransform":[340,-15,25],
+        "iconImage":"resources/view_4/images/s6d.png",
+        "iconShadow":"resources/view_4/images/s6s.png"
+      }
+    },
+    {
       "comment":"------------------------------------- S3 --------------------------------------------",
       "titleLatin":"Tetrao urogallus",
       "title":{
@@ -15,7 +40,11 @@
         "lv":"Klusos priežu mežos, mazāk jauktu koku mežos vai augstajos purvos ir samērā parasts ligzdotājs un nometnieks. Medņus negatīvi ietekmē kailcirtes. Tās rada lielus robus starp medņu apdzīvotajām teritorijām, jo sadrumstalo tās sīkās vienībās. Populāciju ietekmē arī dabiskie ienaidnieki (plēsēji) un cilvēku aktivitātes (ogotāji). 2002. gadā Latvijā bija 412 medņu riesti ar 2096 gaiļiem un 2561 vistu.",
         "ru":"Сравнительно обычный гнездящийся оседлый вид. Населяет сосновые, реже смешанные леса или верховые болота. Вырубки негативно влияют на численность глухаря. Они создают большие разрывы между гнездовыми территориями и фрагментируют их. Сборщики ягод и хищники также оказывают негативное воздействие на численность вида. В 2002 году в Латвии насчитывалось 412 токовища с 2096 самцами и 2561 самкой.",
         "en":"A locally relatively common breeding species in undisturbed wet pine forests, or more rarely, in mixed forests or raised bogs. Non-migratory. The capercaillie is negatively affected by forest clear-cutting in that the activity creates large gaps between territories inhabited by the bird, leading to a very fragmented population that is vulnerable to other disturbances like predators and other human activities.",
-        "transform":[20,390,30]
+        "transform":{
+          "lv":[20,390,30],
+          "ru":[20,390,29],
+          "en":[20,390,30]
+        }
       },
       "main":{
         "diameter":280,
@@ -194,7 +223,7 @@
         "lv":"Latvijā skaits ievērojami svārstās pa gadiem. Dažos gados var būt reta ligzdotāja, bet citos – samērā bieža. Paipalu ir ļoti grūti novērot, jo tā cenšas noslēpties garajā zālē. Lai izvairītos no plēsējiem, tā skrien, nevis lido. Tomēr viegli konstatējama un nav sajaucama pēc raksturīgās dziesmas. Parasti dzirdama vakaros un naktīs. Pārziemo.",
         "ru":"В Латвии количество значительно колеблется по годам. В некоторые года может гнездиться в малом, а в других – в довольно большом количестве. Перепела очень трудно увидить, так как он при опасности старается спрятаться в высокой растительности. Чтобы избежать встречи c хищниками, старается убегать, а не взлетать. Однако вид легко обнаружить по характерной песне по вечерам и ночью. Зимует в Африке.",
         "en":"The number of breeding birds can fluctuate significantly from year to year – some years the common quail is relatively widespread in Latvia, while in other years it is very rare. They are difficult to observe as they live and hide in long grass and escape potential danger by running, not flying, away. The bird’s characteristic song, which can be head in the late evening and at night, is the easiest way to detect the presence of the species. The common quail is migratory and winters in Africa.",
-        "transform":[20,380,30]
+        "transform":[20,360,30]
       },
       "main":{
         "diameter":280,
@@ -242,6 +271,5 @@
         "transform":[560,440,30]
       }
     }
-
   ]
 }

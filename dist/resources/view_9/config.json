@@ -1,35 +1,913 @@
 {
-  "mainBackground": "resources/view_1/images/bg2.png",
-  "detailBackground":"resources/view_1/images/detail-bg.png",
-  "circleBackground": "resources/segment_circle.png",
-  "sectors": [
-    {
-      "comment":"------------------------------------- S1 --------------------------------------------",
-      "titleLatin":"",
-      "title":{
-        "lv":"",
-        "ru":"",
-        "en":""
-      },
-      "description":{
-        "lv":"",
-        "ru":"",
-        "en":"",
-        "transform":[20,380]
-      },
-      "main":{
-        "diameter":280,
-        "iconTransform":[300,50,20],
-        "iconImage":"resources/view_1/images/s11d.png",
-        "iconShadow":"resources/view_1/images/s11s.png"
-      },
-      "detailImage":{
-        "image":"resources/view_1/images/s11d.png",
-        "transform":[560,420,0]
-      }
-    }
-
-
-
-  ]
+    "mainBackground": "resources/view_1/images/bg2.png",
+    "detailBackground": "resources/view_1/images/detail-bg.png",
+    "circleBackground": "resources/segment_circle.png",
+    "sectors": [
+        {
+            "comment": "----------------------- S1 ------------------------------",
+            "titleLatin": "Eremophila alpestris",
+            "title": {
+                "lv": "AUSAINAIS CĪRULIS",
+                "ru": "РОГАТЫЙ ЖАВОРОНОК",
+                "en": "HORNED LARK"
+            },
+            "description": {
+                "lv": "Latvijā nelielā skaitā regulāri caurceļo. Vairāk novērojumu rudenī un piekrastes zonā. Pēdējos  gados daži īpatņi regulāri pārziemo. Latvijai tuvākas ligzdošanas vietas atrodas Skandināvijas kalnos un  Krievijas ziemeļos. ",
+                "en": "A passage migrant species in Latvia, but small in number. Mostly observed during autumn in areas near the coast. Individual birds have begun to overwinter in recent years. The closest breeding areas of the horned lark are in the mountains of Scandinavia and in northern Russia. ",
+                "ru": "В Латвии встречается регулярно в небольшом количестве на пролёте. Чаще всего можно увидеть в прибрежной зоне и осенью. В последние годы отдельные особи регулярно перезимовывают. Ближайшие к Латвии места гнездования расположены в горах Скандинавии и на севере России. ",
+                "transform": [
+                    20,
+                    380,
+                    30
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    330,
+                    0,
+                    20
+                ],
+                "iconImage": "resources/view_9/images/s1d.png",
+                "iconShadow": "resources/view_9/images/s1s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_9/images/s1d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            },
+            "audio": []
+        },
+        {
+            "comment": "----------------------- S2 ------------------------------",
+            "titleLatin": "Motacilla alba",
+            "title": {
+                "lv": "BALTĀ CIELAVA",
+                "ru": "БЕЛАЯ ТРЯСОГУЗКА",
+                "en": "WHITE WAGTAIL"
+            },
+            "description": {
+                "lv": "Latvijas nacionālais putns. Latvijā parasta un izplatīta ligzdotāja. Sastopama apdzīvotās vietās  un lauku ainavā, upju un ūdenstilpju krastos, jūras piekrastē, purvos, lielos mežu izcirtumos, arī pilsētās.  Ligzdu būvē malkas grēdās, zem tiltiem, upju krastos atsegtu koku saknēs, zaru kaudzēs, būrīšos un citās  līdzīgās vietās. Pārtiek no kukaiņiem.Gājputns. Pārziemo Rietumeiropā, Vidusjūras valstīs un Ziemeļāfrikā. Pēdējos gados atsevišķi  īpatņi pārziemo arī Latvijā.  ",
+                "en": "The national bird of Latvia. A common and widespread breeding species in Latvia. Mostly inhabits populated places including large cities and the countryside, but can also be found along rivers and the seashore, and in bogs and forest clear-cuts. Nests are built in various places – in stacks of firewood or piles of branches, under bridges, in the roots of fallen trees, nest boxes, etc. Its diet consists of insects. The white wagtail is a migratory bird that winters in western Europe, along the Mediterranean Sea and in northern Africa. In recent years individual birds have begun to winter in Latvia.",
+                "ru": "Национальная птица Латвии. В Латвии обычная гнездящаяся птица. Встречается в населенных пунктах, сельской местности, по берегам рек и других водоёмов, на побережье, болотах, больших лесных вырубках, а также в городах. Гнёзда устраивает в поленницах дров, под мостами, по берегах рек среди обнажённых корнях деревьев, кучах хвороста, скворечниках и других подобных местах. Питается насекомыми.  Перелётная птица. Зимует в Западной Европе, Средиземноморье и Северной Африке. В последние годы отдельные особи перезимовывают и в Латвии.",
+                "transform":{
+                    "lv":[20,380,30],
+                    "ru":[20,380,25],
+                    "en":[20,380,26]
+                }
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    350,
+                    0,
+                    10
+                ],
+                "iconImage": "resources/view_9/images/s2d.png",
+                "iconShadow": "resources/view_9/images/s2s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_9/images/s2d.png",
+                "transform": [
+                    560,
+                    510,
+                    0
+                ]
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Saucieni",
+                        "ru": "Saucieni",
+                        "en": "Saucieni"
+                    },
+                    "fileName": "resources/view_9/sounds/baltā_cielava_saucieni.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Uztraukuma sauciens",
+                        "ru": "Uztraukuma sauciens",
+                        "en": "Uztraukuma sauciens"
+                    },
+                    "fileName": "resources/view_9/sounds/baltā_cielava_uztraukuma_sauciens.mp3"
+                }
+            ]
+        },
+        {
+            "comment": "----------------------- S3 ------------------------------",
+            "titleLatin": "Hirundo rustica",
+            "title": {
+                "lv": "BEZDELĪGA",
+                "ru": "ДЕРЕВЕНСКАЯ ЛАСТОЧКА",
+                "en": "BARN SWALLOW"
+            },
+            "description": {
+                "lv": "Latvijā parasta un izplatīta ligzdotāja. Sastopama lauku ainavā, cilvēka mītņu un būvju tuvumā,  retāk pilsētās. Ligzdu būvē no dubļiem ar sausu zāles stiebru piejaukumu dažādās būvēs – kūtīs, šķūņos un citās  ēkās –  parasti iekštelpās, arī zem tiltiem. Pēcligzdošanas laikā pulcējas baros un nakšņo niedrājos, līdz pat  vairākiem simtiem putnu vienuviet. Pārtiek no kukaiņiem.Gājputns. Pārziemo Āfrikā.  ",
+                "en": "A common and widespread breeding species in Latvia. Inhabits rural landscapes in close proximity to populated places, sometimes even in larger cities. It makes its nest out of mud mixed with the dry stems of grasses, and usually locates it in open buildings, such as barns or large sheds, but it can also nest under bridges and similar structures. They gather in large flocks of up to several hundred birds after breeding, and roost in reed beds. Its diet consists of insects. The barn swallow is a migratory bird that winters in Africa.",
+                "ru": "В Латвии обычная гнездящаяся птица. Встречается в сельской местности вблизи жилищ и построек, реже в городах. Гнёзда строит из грязи с примесью стеблей сухих трав, обычно внутри различных строений - в хлевах, сараях, зданиях, а также под мостами. В послегнездовой период собирается в стаи и ночует в тростниках вплоть до нескольких сот птиц в одном месте. Питается насекомыми. Перелётная птица. Зимует в Африке.",
+                "transform":{
+                    "lv":[20,380,30],
+                    "ru":[20,380,28],
+                    "en":[20,380,28]
+                }
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    380,
+                    -30,
+                    30
+                ],
+                "iconImage": "resources/view_9/images/s3d.png",
+                "iconShadow": "resources/view_9/images/s3s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_9/images/s3d.png",
+                "transform": [
+                    590,
+                    420,
+                    0
+                ]
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
+                    },
+                    "fileName": "resources/view_9/sounds/bezdelīga_dziesma.mp3"
+                }
+            ]
+        },
+        {
+            "comment": "----------------------- S4 ------------------------------",
+            "titleLatin": "Lanius collurio",
+            "title": {
+                "lv": "BRŪNĀ ČAKSTE",
+                "ru": "ЖУЛАН",
+                "en": "RED-BACKED SHRIKE"
+            },
+            "description": {
+                "lv": "Latvijā parasta un izplatīta ligzdotāja. Sastopama aizaugušos izcirtumos, krūmainās ceļmalās,  augļu dārzos, mežmalās, aizaugošās pļavās, mitrās, krūmainās ieplakās lauksaimniecībās zemēs. Ligzdu būvē  galvenokārt koku un dzeloņainu krūmu (piemēram, mežrozīšu) vai jaunu skujkoku (egles, priedes, kadiķi, tūjas)  zaros. Pārtiek no lieliem kukaiņiem, arī no sīkiem grauzējiem un maziem putniem.Gājputns. Pārziemo Āfrikā.  ",
+                "en": "A common and widespread breeding species in Latvia. Inhabits different habitats – forest clear-cuts, neglected overgrown meadows and similar areas in agricultural landscapes, orchards, scrub along roadsides and similar spots. The nest is built between the branches of thick, often thorny bushes (e.g. dog rose) or young conifers (pine, juniper, spruce, etc.). Its diet mainly consists of large insects, but it can also prey on small rodents and birds. The red-backed shrike is a migratory bird that winters in Africa.",
+                "ru": "В Латвии обычная гнездящаяся птица. Встречается на заросших вырубках, в кустарниках по обочинам дорог, фруктовых садах, опушках, заросших лугах, влажных заросших кустами ложбинах на сельскохозяйственных землях. Гнёзда строит главным образом среди ветвей колючих кустарников и деревьев (например, шиповника) или молодых хвойных деревьев (ёлочек, можжевельника, сосенок, туи). Питается крупными насекомыми, а также мелкими грызунами и птичками. Перелётная птица. Зимует в Африке.",
+                "transform":{
+                    "lv":[20,380,30],
+                    "ru":[20,380,28],
+                    "en":[20,380,28]
+                }
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    230,
+                    30,
+                    0
+                ],
+                "iconImage": "resources/view_9/images/s4d.png",
+                "iconShadow": "resources/view_9/images/s4s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_9/images/s4d.png",
+                "transform": [
+                    370,
+                    630,
+                    -30
+                ]
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
+                    },
+                    "fileName": "resources/view_9/sounds/brūnā_čakste_dziesma.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Uztraukums",
+                        "ru": "Uztraukums",
+                        "en": "Uztraukums"
+                    },
+                    "fileName": "resources/view_9/sounds/brūnā_čakste_uztraukums.mp3"
+                }
+            ]
+        },
+        {
+            "comment": "----------------------- S5 ------------------------------",
+            "titleLatin": "Galerida cristata",
+            "title": {
+                "lv": "CEKULAINAIS CĪRULIS",
+                "ru": "ХОХЛАТЫЙ ЖАВОРОНОК",
+                "en": "CRESTED LARK"
+            },
+            "description": {
+                "lv": "Latvijā rets ligzdotājs, nometnieks un klejotājs migrāciju laikā. Regulāri novērojams Liepājā.  Sastopams pļavās pilsētu nomalēs, tukšainēs, smilšainās ceļmalās, dzelzceļmalās, citās līdzīgās ainavās. Ligzdu  būvē uz zemes, parasti zāļu cinī. Pārtiek no kukaiņiem, to kāpuriem, citiem bezmugurkaulniekiem, arī augiem un  sēklām. ",
+                "en": "A rare breeding, non-migratory bird in Latvia. Regularly can be observed only in and around Liepāja. Inhabits meadows on the city’s outskirts, sandy habitats near roads and railways, barren fields and similar areas. Builds its nest on the ground, usually in a clump of grass. Its diet consists mainly of insects and other invertebrates, but will also eat plants and their seeds.",
+                "ru": "В Латвии редко встречающаяся гнездящаяся, оседлая и в период миграции кочующая птица. Регулярно наблюдается в Лиепае. Встречается на лугах по окраинам городов, пустырях, песчаных краях дорог, откосах железных дорог и других подобных местах. Гнёзда строит на земле, обычно на злаковых кочках. Питается насекомыми, их личинками, беспозвоночными, а также растениями и семенами.",
+                "transform":{
+                    "lv":[20,410,30],
+                    "ru":[20,400,28],
+                    "en":[20,380,30]
+                }
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    290,
+                    -10,
+                    30
+                ],
+                "iconImage": "resources/view_9/images/s5d.png",
+                "iconShadow": "resources/view_9/images/s5s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_9/images/s5d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
+                    },
+                    "fileName": "resources/view_9/sounds/cekulainais_cīrulis_dziesma.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Sauciens lidojumā migrācijā",
+                        "ru": "Sauciens lidojumā migrācijā",
+                        "en": "Sauciens lidojumā migrācijā"
+                    },
+                    "fileName": "resources/view_9/sounds/cekulainais_cīrulis_sauciens_lidojumā_migrācijā.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Sauciens lokāli ligzdošanas rajonā",
+                        "ru": "Sauciens lokāli ligzdošanas rajonā",
+                        "en": "Sauciens lokāli ligzdošanas rajonā"
+                    },
+                    "fileName": "resources/view_9/sounds/cekulainais_cīrulis_sauciens_lokāli_ligzdošanas_rajonā.mp3"
+                }
+            ]
+        },
+        {
+            "comment": "----------------------- S6 ------------------------------",
+            "titleLatin": "Motacilla citreola",
+            "title": {
+                "lv": "CITRONCIELAVA",
+                "ru": "ЖЕЛТОГОЛОВАЯ ТРЯСОГУЗКА",
+                "en": "CITRINE WAGTAIL"
+            },
+            "description": {
+                "lv": "Pirmo reizi Latvijā novērota 1982. gadā. Latvijā pirmā ligzda atrasta 1992. gadā. Skaita  palielinājums saistīts ar sugas areāla izplešanos rietumu virzienā. Pašreiz Latvijā varētu ligzdot vairāki simti  pāru. Sastopama palieņu pļavās, arī purvos, aizaugušos zivju dīķos. Ligzdu būvē uz zemes. Pārtiek no kukaiņiem.Gājputns. Pārziemo Dienvidāzijā, Persijas līča reģionā un Izraēlā. ",
+                "en": "The first observation of this species in Latvia took place in 1982, and the first nest was found in 1992. An increase in observations correlates with the westward expansion of the species’ breeding range. There could be a few hundred breeding pairs in Latvia by now. Inhabits floodplain meadows, bogs, and overgrown fishponds. Builds its nest on the ground. Its diet mainly consists of insects. The citrine wagtail is a migratory bird that winters in south-east Asia, along the Persian Gulf, and in Israel. ",
+                "ru": "Первый раз в Латвии была отмечена в 1982 году, а первое гнездо было найдено в 1992 году. Увеличение числа птиц связано с перемещением ареала на запад. В настоящее время в Латвии может гнездиться несколько сот пар. Встречается на пойменных лугах, болотах, заросших рыбоводных прудах. Гнёзда устраивает на земле. Питается насекомыми. Перелётная птица. Зимует в Южной Азии, регионе Персидского залива и Израиле. ",
+                "transform":{
+                    "lv":[20,380,30],
+                    "ru":[20,380,30],
+                    "en":[20,380,28]
+                }
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    350,
+                    -10,
+                    10
+                ],
+                "iconImage": "resources/view_9/images/s6d.png",
+                "iconShadow": "resources/view_9/images/s6s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_9/images/s6d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            },
+            "audio": []
+        },
+        {
+            "comment": "----------------------- S7 ------------------------------",
+            "titleLatin": "Motacilla flava",
+            "title": {
+                "lv": "DZELTENĀ CIELAVA",
+                "ru": "ЖЕЛТАЯ ТРЯСОГУЗКА",
+                "en": "YELLOW WAGTAIL"
+            },
+            "description": {
+                "lv": "Latvijā parasta, bet nevienmērīgi izplatīta ligzdotāja. Sastopama mitrās, ciņainās un krūmainās  pļavās un ganībās, galvenokārt dažādu mitrāju tuvumā vai jūras piekrastē, arī klajos augstajos purvos. Ligzdo uz  zemes. Pārtiek no kukaiņiem.Gājputns. Pārziemo Āfrikā. ",
+                "en": "A common but unevenly distributed breeding species in Latvia. Inhabits wet meadows with bushes and pastures, often near wetlands or the sea coast, and also in raised bogs. Builds its nest on the ground. Its diet consists mainly of insects. The yellow wagtail is a migratory bird that winters in Africa. ",
+                "ru": "В Латвии обычная, но неравномерно распространённая гнездящаяся птица. Встречается на различных влажных лугах и пастбищах с кочками или поросших кустарником, вблизи водно-болотных угодий или на побережье моря, на открытых частях верховых болот. Гнездится на земле. Питается насекомыми. Перелётная птица. Зимует в Африке.",
+                "transform": [
+                    20,
+                    400,
+                    30
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    0,
+                    20
+                ],
+                "iconImage": "resources/view_9/images/s7d.png",
+                "iconShadow": "resources/view_9/images/s7s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_9/images/s7d.png",
+                "transform": [
+                    560,
+                    490,
+                    0
+                ]
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
+                    },
+                    "fileName": "resources/view_9/sounds/deltenā_cielava_dziesma.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Sauciens",
+                        "ru": "Sauciens",
+                        "en": "Sauciens"
+                    },
+                    "fileName": "resources/view_9/sounds/dzeltenā_cielava_sauciens.mp3"
+                }
+            ]
+        },
+        {
+            "comment": "----------------------- S8 ------------------------------",
+            "titleLatin": "Anthus trivialis",
+            "title": {
+                "lv": "KOKU ČIPSTE",
+                "ru": "ЛЕСНОЙ КОНЁК",
+                "en": "TREE PIPIT"
+            },
+            "description": {
+                "lv": "Latvijā parasta un izplatīta ligzdotāja. Visbiežāk sastopamā čipste ligzdošanas sezonā.  Sastopama dažādos mežos, parasti pie izcirtumiem, laucēm, arī sūnu purvos un krūmainās pļavās. Ligzdu būvē uz  zemes, kādā cinī vai tamlīdzīgā vietā. Pārtiek galvenokārt no kukaiņiem.Gājputns. Pārziemo Āfrikā.   ",
+                "en": "A common and widespread breeding species in Latvia. The most common pipit species during the breeding season. Inhabits clearings, glades and other open areas in forests, but can also be found in raised bogs and meadows with tall bushes. Builds its nest on the ground between small scrubs, in grass clumps, or in similar spots. Its diet mainly consists of insects. The tree pipit is a migratory bird that winters in Africa. ",
+                "ru": "В Латвии обычная гнездящаяся птица. Чаще всего встречается в гнездовой период. Обитают в различных лесах, обычно у вырубок, полян, а также на моховых болотах и заросших кустами лугах. Гнёзда устраивает на земле в кочках и других подобных местах. Питается главным образом насекомыми. Перелётная птица. Зимует в Африке. ",
+                "transform": [
+                    20,
+                    380,
+                    30
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    320,
+                    0,
+                    30
+                ],
+                "iconImage": "resources/view_9/images/s8d.png",
+                "iconShadow": "resources/view_9/images/s8s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_9/images/s8d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
+                    },
+                    "fileName": "resources/view_9/sounds/koku_čipste_dziesma.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Uztraukums",
+                        "ru": "Uztraukums",
+                        "en": "Uztraukums"
+                    },
+                    "fileName": "resources/view_9/sounds/koku_čipste_uztraukums.mp3"
+                }
+            ]
+        },
+        {
+            "comment": "----------------------- S9 ------------------------------",
+            "titleLatin": "Riparia riparia",
+            "title": {
+                "lv": "KRASTU ČURKSTE",
+                "ru": "БЕРЕГОВАЯ ЛАСТОЧКА",
+                "en": "SAND MARTIN"
+            },
+            "description": {
+                "lv": "Latvijā piemērotās vietās parasta ligzdotāja. Visbiežāk sastopama atklātā ainavā. Ligzdo  stāvkrastos, upju krastu atsegumos, dažādos karjeros, gravās. Ligzdo kolonijās, ļoti retos gadījumos – pa vienam  pārim. Ligzdo pašizraktās alās krastu nobrukumos, smilšakmens atsegumos, arī smilšu, zemes vai kūdras kaudzēs.  Pēcligzdošanas laikā pulcējas baros un nakšņo niedrājos līdz pat vairākiem simtiem putnu vienuviet. Pārtiek no  kukaiņiem.Gājputns. Pārziemo Āfrikā. ",
+                "en": "A common breeding species in Latvia in suitable areas. Mostly found in open landscapes. Inhabits bluffs, steep river ravines, old quarries and similar areas. A colonial nesting species – very rarely does it nest in single pairs. Nests are placed at the end of a self-made burrow that the sand martin digs in a steep and vertical bank, sandstone outcrop, or sometimes even in a large gravel or turf pile. They gather in large flocks of up to several hundred birds after breeding, and roost in reed beds. Its diet consists of insects. The sand martin is a migratory bird that winters in Africa.",
+                "ru": "В Латвии в подходящих местах обычный гнездящийся вид. Чаще всего встречается на открытых ландшафтах. Гнездится колониями в крутых склонах, на обрывистых берегах рек, карьерах, оврагах; очень редко отдельными парами. Гнезда устраиваются в вырытых птицами норах на откосах берегов рек, в песчаных обнажениях, кучах торфа, земли или песка. В послегнездовой период собирается в стаи и ночует в тростниках вплоть до ста птиц в одном месте. Питается насекомыми.Перелётная птица. Зимует в Африке.",
+                "transform":{
+                    "lv":[20,390,28],
+                    "ru":[20,390,25],
+                    "en":[20,390,26]
+                }
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    240,
+                    20,
+                    -20
+                ],
+                "iconImage": "resources/view_9/images/s9d.png",
+                "iconShadow": "resources/view_9/images/s9s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_9/images/s9d.png",
+                "transform": [
+                    360,
+                    530,
+                    -50
+                ]
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Balss ligzdojošās kolonijas apkārtnē",
+                        "ru": "Balss ligzdojošās kolonijas apkārtnē",
+                        "en": "Balss ligzdojošās kolonijas apkārtnē"
+                    },
+                    "fileName": "resources/view_9/sounds/krastu_čurkste_balss_ligzdojošās_kolonijas_apkārtnē.mp3"
+                }
+            ]
+        },
+        {
+            "comment": "----------------------- S10 ------------------------------",
+            "titleLatin": "Alauda arvensis",
+            "title": {
+                "lv": "LAUKU CĪRULIS",
+                "ru": "ПОЛЕВОЙ ЖАВОРОНОК",
+                "en": "EURASIAN SKYLARK"
+            },
+            "description": {
+                "lv": "Latvijā parasts un izplatīts ligzdotājs. Sastopams klajās lauku ainavās – ganībās, kultivētos  zālājos, pļavās ar atsevišķiem krūmiem un citās līdzīgās vietās. Ligzdo uz zemes, parasti kādā grāvmalē, ežā un  tamlīdzīgās vietās. Pārtiek no kukaiņiem, to kāpuriem, citiem bezmugurkaulniekiem, arī augiem un sēklām.Gājputns. Pārziemo Dienvidrietumeiropā. Atsevišķi īpatņi var pārziemot arī Latvijas rietumu  daļā. ",
+                "en": "A common and widely distributed breeding species in Latvia. Inhabits different open habitats – agricultural fields, pastures, meadows and similar places. Builds its nest on the ground at field margins, near ditches, and in similar spots. Its diet consists mainly of insects and other invertebrates, but will also eat plants and their seeds. The Eurasian skylark is a migratory bird that winters in southern and western Europe. Individual birds may winter in Latvia – mainly in the western part of the country.",
+                "ru": "В Латвии обычная распространённая гнездящаяся птица. Встречается в открытых ландшафтах - пастбищах, покосах, лугах с отдельными кустами и других подобных местах. Гнездится на земле, обычно вблизи канав, межей. Питается насекомыми, их личинками, другими беспозвоночными, а также растениями и семенами. Перелётная птица. Зимует в Юго – Западной части Европы. В западной части Латвии могут перезимовать отдельные особи.",
+                "transform":{
+                    "lv":[20,380,30],
+                    "ru":[20,380,28],
+                    "en":[20,380,28]
+                }
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    330,
+                    -20,
+                    10
+                ],
+                "iconImage": "resources/view_9/images/s10d.png",
+                "iconShadow": "resources/view_9/images/s10s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_9/images/s10d.png",
+                "transform": [
+                    560,
+                    450,
+                    0
+                ]
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Balss lokāli",
+                        "ru": "Balss lokāli",
+                        "en": "Balss lokāli"
+                    },
+                    "fileName": "resources/view_9/sounds/lauku_cīrulis_balss_lokāli.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
+                    },
+                    "fileName": "resources/view_9/sounds/lauku_cīrulis_dziesma.mp3"
+                }
+            ]
+        },
+        {
+            "comment": "----------------------- S11 ------------------------------",
+            "titleLatin": "Lanius excubitor",
+            "title": {
+                "lv": "LIELĀ ČAKSTE",
+                "ru": "СЕРЫЙ СОРОКОПУТ",
+                "en": "GREAT GREY SHRIKE"
+            },
+            "description": {
+                "lv": "Latvijā samērā reta ligzdotāja. Ligzdo augstajos purvos. Pēcligzdošanas laikā sastopama arī  citās atklātās vietās. Bieži var novērot tupam uz elektrības vadiem. Ligzdu būvē koku, galvenokārt priežu,  zaros. Pārtiek no lieliem kukaiņiem, sīkiem grauzējiem un maziem putniem, kurus bieži uzsprauž uz krūmu zariem.Daļējs gājputns. Latvijā pārziemo lielās čakstes no ziemeļiem un Skandināvijas. Latvijas lielās  čakstes, iespējams, aizlido uz Eiropas dienvidrietumiem vai paliek pārziemot Latvijā.  ",
+                "en": "A relatively rare breeding species in Latvia. Mostly inhabits raised bogs but can also be found in similar open landscapes, especially in the post breeding period. Often seen perched on wires. The nest is usually made between the branches of young pine trees. Its diet consists of large insects, small mammals and birds – which it often impales on thorns or sharp branches for later consumption. The great grey shrike is a partly migratory bird. Birds found wintering in Latvia include birds from northern populations in Scandinavia. Locally breeding birds can either remain here during winter or migrate southwest.",
+                "ru": "В Латвии сравнительно редкая гнездящаяся птица. Гнездится на верховых болотах. В послегнездовой период встречается и на других открытых местах. Часто можно наблюдать сидящим на электрических проводах. Гнёзда строит на ветках деревьев (главным образом сосен). Питается крупными насекомыми, мелкими грызунами и птичками, которых часто накалывает на ветки кустов. Частично перелётная птица. У нас зимуют сорокопуты с северных регионов и Скандинавии. Из Латвии сорокопуты, возможно, улетают в юго-западные регионы или остаются зимовать здесь. ",
+                "transform":{
+                    "lv":[20,380,28],
+                    "ru":[20,380,25],
+                    "en":[20,380,26]
+                }
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    320,
+                    0,
+                    20
+                ],
+                "iconImage": "resources/view_9/images/s11d.png",
+                "iconShadow": "resources/view_9/images/s11s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_9/images/s11d.png",
+                "transform": [
+                    560,
+                    480,
+                    0
+                ]
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Uztraukums",
+                        "ru": "Uztraukums",
+                        "en": "Uztraukums"
+                    },
+                    "fileName": "resources/view_9/sounds/lielā_čakste_uztraukums.mp3"
+                }
+            ]
+        },
+        {
+            "comment": "----------------------- S12 ------------------------------",
+            "titleLatin": "Delichon urbicum",
+            "title": {
+                "lv": "MĀJAS ČURKSTE",
+                "ru": "ГОРОДСКАЯ ЛАСТОЧКА",
+                "en": "NORTHERN HOUSE MARTIN"
+            },
+            "description": {
+                "lv": "Latvijā parasta un izplatīta ligzdotāja. Sastopama lauku ainavā, pie fermām, lauku saimniecībām,  kūtīm, apdzīvotās vietās. Pilsētās sastopama lielākoties daudztāvu apbūves rajonos. Ligzdu no dubļiem būvē pie  ēku ārējām sienām, parasti starp jumtu un sienu, arī zem dzelzsbetona tiltiem. Bieži ligzdo kolonijās, līdz pat  vairākiem simtiem pāru vienuviet. Pārtiek no kukaiņiem.Gājputns. Pārziemo Āfrikā. ",
+                "en": "A common and widespread breeding species in Latvia. Inhabits rural landscapes with farmyards and urban areas. It makes its nest out of mud, and usually places it on the outside of a building at the junction of a vertical surface and an overhang; northern house martins often prefer multi-storied buildings in cities. Nests can also be built under bridges, overpasses and similar man-made structures. Sometimes they nest in colonies consisting of a few hundred breeding pairs. Its diet consists of insects. The northern house martin is a migratory bird that winters in Africa.",
+                "ru": "В Латвии обычная гнездящаяся птица. Встречается в сельской местности, возле ферм, хлевов, в населенных пунктах. В городах преимущественно в зоне многоэтажных застроек. Гнёзда строит из грязи на внешних сторонах стен зданий, обычно между стенами и крышей, а также под железнобетонными мостами. Часто гнездится колониями, до несколько сотен пар в одном месте. Питается насекомыми. Перелётная птица. Зимует в Африке.",
+                "transform":{
+                    "lv":[20,380,30],
+                    "ru":[20,380,28],
+                    "en":[20,380,26]
+                }
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    360,
+                    -20,
+                    20
+                ],
+                "iconImage": "resources/view_9/images/s12d.png",
+                "iconShadow": "resources/view_9/images/s12s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_9/images/s12d.png",
+                "transform": [
+                    560,
+                    480,
+                    30
+                ]
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Balss ligzdošanas vietā",
+                        "ru": "Balss ligzdošanas vietā",
+                        "en": "Balss ligzdošanas vietā"
+                    },
+                    "fileName": "resources/view_9/sounds/mājas_čurkste_balss_ligzdošanas vietā.mp3"
+                }
+            ]
+        },
+        {
+            "comment": "----------------------- S13 ------------------------------",
+            "titleLatin": "Lanius minor",
+            "title": {
+                "lv": "MELNPIERES ČAKSTE",
+                "ru": "ЧЕРНОЛОБЫЙ СОРОКОПУТ",
+                "en": "LESSER GREY SHRIKE"
+            },
+            "description": {
+                "lv": "Agrāk, pagājušajā gadsimtā, Latvijā bijusi sastopama biežāk, bet tagad ļoti reta ieceļotāja.  Kopš Otrā pasaules kara zināmi tikai seši novērojumi. Latvijai tuvākās ligzdošanas vietas atrodas Dienvideiropā  un Austrumeiropā. Pārziemo Āfrikā. ",
+                "en": "The species used to be more common, but now it is a very rare vagrant species in Latvia – it has been observed only six times since the Second World War. Its closest breeding areas are located in southern and eastern Europe. The lesser Grey shrike is a migratory bird that winters in Africa.",
+                "ru": "Раньше, в прошлом столетии в Латвии встречалась чаще, в настоящее время очень редкая залетная. После второй мировой войны только шесть наблюдений. Ближайшие к Латвии места гнездования находятся в Южной и Восточной Европе. Зимует в Африке. ",
+                "transform": [
+                    20,
+                    460,
+                    30
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    240,
+                    20,
+                    0
+                ],
+                "iconImage": "resources/view_9/images/s13d.png",
+                "iconShadow": "resources/view_9/images/s13s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_9/images/s13d.png",
+                "transform": [
+                    400,
+                    580,
+                    -20
+                ]
+            },
+            "audio": []
+        },
+        {
+            "comment": "----------------------- S14 ------------------------------",
+            "titleLatin": "Motacilla cinerea",
+            "title": {
+                "lv": "PELĒKĀ CIELAVA",
+                "ru": "ГОРНАЯ ТРЯСОГУЗКА",
+                "en": "GREY WAGTAIL"
+            },
+            "description": {
+                "lv": "Līdz 20. gs. 90. gadiem pelēko cielavu Latvijā uzskatīja par ļoti retu ieceļotāju. Pirmais  pierādītais ligzdošanas gadījums bija 1991. gadā Siguldā pie Gūtmaņa alas. Šobrīd pelēkā cielava ir reta  ligzdotāja pie nelielām, straujām upītēm Vidzemē, galvenokārt vietās ar smilšakmens atsegumiem. Kā ligzdotāja  atzīmēta arī Kurzemē. Ligzdu parasti būvē smilšakmens iežu nišās, zem tiltiem un citās līdzīgās vietās. Pārtiek  no kukaiņiem.Gājputns. Pārziemo Rietumeiropā, Vidusjūras valstīs un Āfrikā. Atsevišķi īpatņi var pārziemot  arī Latvijā.  ",
+                "en": "A very rare vagrant species in Latvia up until the 1990s. The first case of breeding was observed in 1991 in Sigulda, near Gūtmanis’ Cave. Currently the grey wagtail is a rare breeding species living along small, fast flowing rivers in Vidzeme and Kurzeme, especially in locations with sandstone outcrops. Nests are built in sandstone crevices, under bridges, or in other suitable cavities. Its diet consists of insects. The grey wagtail is a migratory bird that winters in western Europe, along the Mediterranean Sea and in northern Africa. Individual birds have also been observed in Latvia during the winter months. ",
+                "ru": "До 1990 года 20 -го столетия горная трясогузка в Латвии считалась очень редкой залётной птицей. Первый доказанный случай гнездования был в 1991 году в Сигулде у пещеры Гутмана. В настоящее время горная трясогузка изредка гнездится у небольших речек в Видземе, главным образом на песчаниковых обнажениях. Гнездование отмечено также в Курземе. Гнёзда строит в основном в нишах песчаника, под мостами и других подобных местах. Питается насекомыми. Перелётная птица. Зимует в Западной Европе, в странах Средиземноморья и Африке. Отдельные особи перезимовывают и в Латвии. ",
+                "transform":{
+                    "lv":[20,330,29],
+                    "ru":[20,330,27],
+                    "en":[20,330,27]
+                }
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    330,
+                    -30,
+                    30
+                ],
+                "iconImage": "resources/view_9/images/s14d.png",
+                "iconShadow": "resources/view_9/images/s14s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_9/images/s14d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            },
+            "audio": []
+        },
+        {
+            "comment": "----------------------- S15 ------------------------------",
+            "titleLatin": "Anthus pratensis",
+            "title": {
+                "lv": "PĻAVU ČIPSTE",
+                "ru": "ЛУГОВОЙ КОНЕК",
+                "en": "MEADOW PIPIT"
+            },
+            "description": {
+                "lv": "Latvijā parasta un izplatīta ligzdotāja. Sastopama pļavās ar atsevišķiem krūmiem, ganībās,  kultivētos zālājos, arī klajos augstajos purvos. Ligzdu būvē no sausas zāles uz zemes zāles vai viršu cinī.  Pārtiek galvenokārt no kukaiņiem.Gājputns. Pārziemo Dienvidrietumeiropā un Āfrikā. Atsevišķi īpatņi var pārziemot arī Latvijā. ",
+                "en": "A common and widespread breeding species in Latvia. Inhabits meadows with individual bushes, pastures, cultivated grasslands, and raised bogs. Builds its nest on the ground between grass stems or in a clump of grass. Its diet mainly consists of insects. The meadow pipit is a migratory bird that winters in southern and western Europe and northern Africa. Individual birds may winter in Latvia. ",
+                "ru": "В Латвии обычная гнездящаяся птица. Встречается на лугах с одиночными кустарниками, на пастбищах, покосах, а также на открытых участках верховых болот. Гнёзда строит на земле, в травяных или вересковых кочках из сухой травы. Питается главным образом насекомыми. Перелётная птица. Зимует на Юго – Западе Европы и в Африке. Отдельные особи могут перезимовывать и в Латвии. ",
+                "transform": [
+                    20,
+                    380,
+                    30
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    300,
+                    0,
+                    30
+                ],
+                "iconImage": "resources/view_9/images/s15d.png",
+                "iconShadow": "resources/view_9/images/s15s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_9/images/s15d.png",
+                "transform": [
+                    560,
+                    450,
+                    10
+                ]
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
+                    },
+                    "fileName": "resources/view_9/sounds/pļavu_čipste_dziesma.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Sauciens",
+                        "ru": "Sauciens",
+                        "en": "Sauciens"
+                    },
+                    "fileName": "resources/view_9/sounds/pļavu_čipste_sauciens.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Uztraukums",
+                        "ru": "Uztraukums",
+                        "en": "Uztraukums"
+                    },
+                    "fileName": "resources/view_9/sounds/pļavu_čipste_uztraukums.mp3"
+                }
+            ]
+        },
+        {
+            "comment": "----------------------- S16 ------------------------------",
+            "titleLatin": "Lullula arborea",
+            "title": {
+                "lv": "SILA CĪRULIS",
+                "ru": "ЛЕСНОЙ ЖАВОРОНОК",
+                "en": "WOOD LARK"
+            },
+            "description": {
+                "lv": "Latvijā parasts, bet nevienmērīgi izplatīts ligzdotājs. Sastopams izcirtumos, mežmalās un citos  klajumos, sausos priežu mežos, arī jūrmalas kāpās, retāk sausās augsto purvu malās un citās līdzīgās vietās.  Ligzdo uz zemes, parasti mežmalā. Pārtiek no kukaiņiem, to kāpuriem, citiem bezmugurkaulniekiem, arī augiem un  sēklām.Gājputns. Pārziemo Dienvidrietumeiropā. Atsevišķi īpatņi siltās ziemās var pārziemot arī  Latvijā. ",
+                "en": "A common but unevenly distributed breeding species in Latvia. Mainly inhabits margins and clear cuts in dry pine forests and dunes; less often – the margins of raised bogs and similar areas. Builds its nest on the ground, usually near forest margins. Its diet consists mainly of insects and other invertebrates, but will also eat plants and their seeds. The wood lark is a migratory bird that winters in southern and western Europe. Individual birds may winter in Latvia.",
+                "ru": "В Латвии обычная, но неравномерно распространённая гнездящаяся птица. Встречается на вырубках, опушках или полянах в сухих сосновых лесах, в приморских дюнах, реже по краям сухих верховых болот и другим подобным местам. Гнездится на земле, обычно на опушках. Питается насекомыми, их личинками, другими беспозвоночными, а также растениями и семенами. Перелётная птица. Зимует в Юго – Западной части Европы. В отдельных случаях в тёплые зимы может перезимовать и в Латвии.",
+                "transform":{
+                    "lv":[20,400,30],
+                    "ru":[20,410,26],
+                    "en":[20,410,26]
+                }
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    290,
+                    0,
+                    10
+                ],
+                "iconImage": "resources/view_9/images/s16d.png",
+                "iconShadow": "resources/view_9/images/s16s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_9/images/s16d.png",
+                "transform": [
+                    560,
+                    420,
+                    0
+                ]
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Dziesma lidojumā",
+                        "ru": "Dziesma lidojumā",
+                        "en": "Dziesma lidojumā"
+                    },
+                    "fileName": "resources/view_9/sounds/sila_cīrulis_dziesma_lidojumā.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Sauciens lokāli",
+                        "ru": "Sauciens lokāli",
+                        "en": "Sauciens lokāli"
+                    },
+                    "fileName": "resources/view_9/sounds/sila_cīrulis_sauciens_lokāli.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Sauciens migrācijā",
+                        "ru": "Sauciens migrācijā",
+                        "en": "Sauciens migrācijā"
+                    },
+                    "fileName": "resources/view_9/sounds/sila_cīrulis_sauciens_migrācijā.mp3"
+                }
+            ]
+        },
+        {
+            "comment": "----------------------- S17 ------------------------------",
+            "titleLatin": "Anthus campestris",
+            "title": {
+                "lv": "STEPES ČIPSTE",
+                "ru": "ПОЛЕВОЙ КОНЕК",
+                "en": "TAWNY PIPIT"
+            },
+            "description": {
+                "lv": "Latvijā, piekrastes kāpu zonā, diezgan parasta ligzdotāja. Iekšzemē retāk sastopama, parasti  smiltāju teritorijās, plašos, sausos meža izcirtumos un pie karjeriem. Ligzdu būvē uz zemes. Pārtiek galvenokārt  no kukaiņiem.Gājputns. Pārziemo Āfrikā.  ",
+                "en": "A relatively common breeding species in Latvia – mainly in coastal dunes. It is much rarer inland, where it inhabits sandy areas, dry forest clear-cuts, old quarries and similar open and dry habitats. Builds its nest on the ground, near thicker plant clumps. Its diet mainly consists of insects. The tawny pipit is a migratory bird that winters in Africa. ",
+                "ru": "В Латвии обычная гнездящаяся птица в зоне приморских дюн. В глубине суши встречается редко, главным образом на песчаных местах, обширных сухих лесных вырубках и в карьерах. Гнёзда как правило скрыты под густым растением; устраиваются на земле. Питается главным образом насекомыми. Перелётная птица. Зимует в Африке. ",
+                "transform": [
+                    20,
+                    380,
+                    30
+                ]
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    320,
+                    -40,
+                    20
+                ],
+                "iconImage": "resources/view_9/images/s17d.png",
+                "iconShadow": "resources/view_9/images/s17s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_9/images/s17d.png",
+                "transform": [
+                    560,
+                    400,
+                    20
+                ]
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Dziesma",
+                        "ru": "Dziesma",
+                        "en": "Dziesma"
+                    },
+                    "fileName": "resources/view_9/sounds/stepes_čipste_dziesma.mp3"
+                }
+            ]
+        },
+        {
+            "comment": "----------------------- S18 ------------------------------",
+            "titleLatin": "Oriolus oriolus",
+            "title": {
+                "lv": "VĀLODZE",
+                "ru": "ИВОЛГА",
+                "en": "EURASIAN GOLDEN ORIOLE"
+            },
+            "description": {
+                "lv": "Latvijā parasta un izplatīta ligzdotāja. Sastopama dažādos mežos, bet visbiežāk lapu koku (īpaši  platlapju) mežos upju tuvumā, retāk parkos. Var arī sastapt mazos mežu pudurīšos kultūrainavā. Ligzdu, kas  meistarīgi ievīta zaru galu žāklē, būvē augstu lapu kokā. Pārtiek no kukaiņiem, arī no ogām.Gājputns. Pārziemo Āfrikā. ",
+                "en": "A common and widespread breeding species in Latvia. Inhabits different forests – mainly deciduous, often near rivers. Less often it can be found in parks or small patches of woodland in agricultural landscapes. It builds its nest high in the tree canopy, where the nest is masterfully suspended in a fork of small branches. Its diet consists of various insects and berries. The golden oriole is a migratory bird that winters in Africa. ",
+                "ru": "В Латвии обычная распространённая гнездящаяся птица. Встречается в различных лесах, но чаще всего в лиственных (особенно широколиственных) лесах вблизи рек, реже в парках. Можно также встретить в небольших рощах в культурных ландшафтах. Гнёзда, которые мастерски вплетены в развилки на концах веточек, устраиваются высоко в кроне лиственных деревьев. Питается насекомыми, а также ягодами. Перелётная птица. Зимует в Африке.",
+                "transform":{
+                    "lv":[20,380,30],
+                    "ru":[20,380,28],
+                    "en":[20,380,30]
+                }
+            },
+            "main": {
+                "diameter": 280,
+                "iconTransform": [
+                    330,
+                    -20,
+                    20
+                ],
+                "iconImage": "resources/view_9/images/s18d.png",
+                "iconShadow": "resources/view_9/images/s18s.png"
+            },
+            "detailImage": {
+                "image": "resources/view_9/images/s18d.png",
+                "transform": [
+                    560,
+                    440,
+                    30
+                ]
+            },
+            "audio": [
+                {
+                    "title": {
+                        "lv": "Sauciens un dziesma",
+                        "ru": "Sauciens un dziesma",
+                        "en": "Sauciens un dziesma"
+                    },
+                    "fileName": "resources/view_9/sounds/vālodze_sauciens_un_dziesma.mp3"
+                },
+                {
+                    "title": {
+                        "lv": "Sauciens un dziesma",
+                        "ru": "Sauciens un dziesma",
+                        "en": "Sauciens un dziesma"
+                    },
+                    "fileName": "resources/view_9/sounds/vālodze_sauciens_un_dziesma_2.mp3"
+                }
+            ]
+        }
+    ]
 }

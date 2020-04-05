@@ -2,9 +2,9 @@
     <div class="detail-element" :style="{backgroundImage: 'url(' + detailBackgroundImageUrl + ')'}">
         <div class="detail-content">
             <div class="image" :style="imageStyle"></div>
-            <div class="title"><span>{{title}}</span></div>
+            <div class="title" :style="titleStyle"><span>{{title}}</span></div>
             <div class="title-latin"><span>{{titleLatin}}</span></div>
-            <div class="description" :style="descriptionStyle"><span>{{description}}</span></div>
+            <div class="description" :style="descriptionStyle"><span v-html="description"></span></div>
             <div class="sounds">
                 <sound v-for="(sound, soundIndex) in data.audio" :key="soundComponentKey(soundIndex)" :sound="sound"></sound>
             </div>
@@ -51,14 +51,27 @@ export default {
     },
     computed:{
         imageStyle:function(){
-            let ts = this.getImageTransform();
-            return {
-                width:ts[0] + 'px',
-                height:(ts[0] * this.imageAspect) + 'px',
-                top:ts[2] + 'px',
-                left:ts[1] + 'px',
-                backgroundImage: 'url(' + this.getDetailProp('image') + ')'
-            };
+            if(this.data && typeof this.data.detailImage != 'undefined') {
+                let ts = this.getImageTransform();
+                return {
+                    width: ts[0] + 'px',
+                    height: (ts[0] * this.imageAspect) + 'px',
+                    top: ts[2] + 'px',
+                    left: ts[1] + 'px',
+                    backgroundImage: 'url(' + this.getDetailProp('image') + ')'
+                };
+            }
+            return false;
+        },
+        titleStyle:function(){
+            if(this.data && typeof this.data.title['transform'] != 'undefined') {
+                let ts = this.data.title['transform'];
+                return {
+                    width: ts[0] + 'px',
+                    fontSize: ts[1] + 'px',
+                };
+            }
+            return false;
         },
         descriptionStyle:function(){
             let ts = this.getDescriptionTransform();
