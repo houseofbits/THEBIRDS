@@ -11,12 +11,19 @@
         <div class="circle" :style="circleStyle()"></div>
         <div class="active-circle"
              :style="activeCircleStyle()"
+
              v-on:click="onClick"
              v-on:mousedown="onMouseDown"
              v-on:mouseup="onMouseLeave"
              v-on:mousemove="onMouseMove"
              v-on:mouseleave="onMouseLeave"
-             v-on:mouseenter="onMouseEnter"></div>
+             v-on:mouseenter="onMouseEnter"
+
+             v-on:touchstart="onTouchStart"
+             v-on:touchend="onTouchEnd"
+             v-on:touchmove="onTouchMove"
+             v-on:touchcancel="onTouchCancel"
+             ></div>
     </div>
 </template>
 
@@ -139,22 +146,67 @@
                 }
                 return this.data.position[2] - (this.curve.sliderCurve * 150) + 50;
             },
+            
+            onTouchStart:function(){
+                if(!this.$parent.config.useTouchEvents){
+                    return null;
+                }
+                this.isSelected = true;
+                this.angleOnMouseDown = this.$parent.angle;
+            },
+            onTouchEnd:function(){
+                if(!this.$parent.config.useTouchEvents){
+                    return null;
+                }                
+                let diff = Math.abs(this.angleOnMouseDown - this.$parent.angle);
+                if(diff > 0.3)return;
+                this.$parent.$emit('detail-select', this.$vnode.key); 
+                this.isSelected = true;               
+            },
+            onTouchMove:function(){
+                if(!this.$parent.config.useTouchEvents){
+                    return null;
+                }                
+                let diff = Math.abs(this.angleOnMouseDown - this.$parent.angle);
+                if(diff > 0.3){
+                    this.isSelected = false;
+                }              
+            },
+            onTouchCancel:function(){
+                if(!this.$parent.config.useTouchEvents){
+                    return null;
+                }                
+                this.isSelected = false;              
+            },
+
             onClick:function(){
+                if(this.$parent.config.useTouchEvents){
+                    return null;
+                }
                 let diff = Math.abs(this.angleOnMouseDown - this.$parent.angle);
                 if(diff > 0.3)return;
                 this.$parent.$emit('detail-select', this.$vnode.key);
             },
             onMouseDown:function(){
+                if(this.$parent.config.useTouchEvents){
+                    return null;
+                }
                 this.isSelected = true;
                 this.angleOnMouseDown = this.$parent.angle;
             },
             onMouseMove:function(){
+                if(this.$parent.config.useTouchEvents){
+                    return null;
+                }
                 let diff = Math.abs(this.angleOnMouseDown - this.$parent.angle);
                 if(diff > 0.3){
                     this.isSelected = false;
                 }
             },
             onMouseLeave:function(){
+                if(this.$parent.config.useTouchEvents){
+                    return null;
+                }
                 this.isSelected = false;
             },
             onMouseEnter:function(e){

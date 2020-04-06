@@ -43,8 +43,12 @@
                 <div class="flag ru" :class="{active:(getLanguage()=='ru')}" v-on:click="setLanguage('ru')"></div>
                 <div class="flag en" :class="{active:(getLanguage()=='en')}" v-on:click="setLanguage('en')"></div>
                 <div class="flag lv" :class="{active:(getLanguage()=='lv')}" v-on:click="setLanguage('lv')"></div>
-                <div class="button-prev" v-if="!detailViewOpen" v-on:click="autoRotate(10)"></div>
-                <div class="button-next" v-if="!detailViewOpen" v-on:click="autoRotate(-10)"></div>
+                <div class="button-prev" v-if="!detailViewOpen" 
+                    v-on:click="autoRotate(10)"
+                    ></div>
+                <div class="button-next" v-if="!detailViewOpen" 
+                    v-on:click="autoRotate(-10)"
+                    ></div>
             </div>
             <div class="pos-page-bg" v-if="detailViewOpen">
                 <div v-for="(sector, index) in sectors" class="pos-page" :style="posPageStyle(index)"></div>
@@ -76,6 +80,7 @@
                 isAutoRotating:false,
                 rotationStep:0,
                 config:{
+                    useTouchEvents:true,
                     userInputTimeout:80000,
                     detailRotationDuration:650,
                 },
@@ -485,17 +490,56 @@
                     }
                 });
             },
+
+            onTouchStart:function(){
+                this.userInputActivation(); 
+            },
+            onTouchEnd:function(){
+                this.isDraging = false;
+                this.userInputActivation();    
+                this.prevx = null;          
+            },
+            onTouchMove:function(e){
+
+                let touchPosX = e.touches[0].clientX;
+
+                if(this.prevx==null){
+                    this.prevx = touchPosX;
+                    return;
+                }
+                let diff = touchPosX - this.prevx;
+
+                this.isDraging = true;
+                this.angle += (diff * 0.03); //0.03
+                if(-this.angle < this.angleMinMax[0]){
+                    this.angle = -this.angleMinMax[0]
+                }
+                if(-this.angle > this.angleMinMax[1]){
+                    this.angle = -this.angleMinMax[1]
+                }
+
+                let displacement = this.angle * 10;
+                this.backgroundSliderPos = displacement - 100;              
+
+                this.prevx = touchPosX;              
+            },                        
+            onTouchCancel:function(){
+                this.isDraging = false;
+                this.userInputActivation();  
+                this.prevx = null;                     
+            },                                    
         },
         mounted:function() {
             this.init();
-            document.addEventListener('mousemove', this.onDrag);
-            document.addEventListener('mouseup', this.onMouseUp);
-
-            // document.addEventListener('touchstart', this.onTouchMove, false);
-            // document.addEventListener('touchmove', this.onTouchMove, false);
-            // document.addEventListener('touchcancel', this.onTouchMove, false);
-            // document.addEventListener('touchend', this.onTouchMove, false);
-
+            if (this.config.useTouchEvents) {
+                document.addEventListener('touchstart', this.onTouchStart, false);
+                document.addEventListener('touchmove', this.onTouchMove, false);
+                document.addEventListener('touchcancel', this.onTouchCancel, false);
+                document.addEventListener('touchend', this.onTouchEnd, false);
+            } else {
+                document.addEventListener('mousemove', this.onDrag);
+                document.addEventListener('mouseup', this.onMouseUp);
+            }
             this.initDetailView();
 
             this.rotationStep = 2 * radiansToDegrees(Math.atan((1024/2)/3000));
@@ -671,7 +715,7 @@
         opacity: 0.4;
         transition: opacity 200ms;
     }
-    .button-prev:hover{
+    .button-prev:active{
         background-image: url("/resources/button_return_on.png");
         opacity: 1;
         transition: opacity 200ms;
@@ -689,7 +733,7 @@
         opacity: 0.4;
         transition: opacity 200ms;
     }
-    .button-next:hover{
+    .button-next:active{
         background-image: url("/resources/button_return_on.png");
         opacity: 1;
         transition: opacity 200ms;
@@ -706,7 +750,7 @@
         opacity: 0.4;
         transition: opacity 200ms;
     }
-    .button-exit:hover{
+    .button-exit:active{
         background-image: url("/resources/button_exit_on.png");
         opacity: 1;
         transition: opacity 200ms;
