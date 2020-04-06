@@ -80,7 +80,7 @@
                 isAutoRotating:false,
                 rotationStep:0,
                 config:{
-                    useTouchEvents:true,
+                    useTouchEvents:false,
                     userInputTimeout:80000,
                     detailRotationDuration:650,
                 },
