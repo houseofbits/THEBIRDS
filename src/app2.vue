@@ -530,6 +530,11 @@
             },                                    
         },
         mounted:function() {
+
+            this.config.useTouchEvents = (('ontouchstart' in window) ||         // html5 browsers
+                    (navigator.maxTouchPoints > 0) ||                           // future IE
+                    (navigator.msMaxTouchPoints > 0));                          // current IE10
+
             this.init();
             if (this.config.useTouchEvents) {
                 document.addEventListener('touchstart', this.onTouchStart, false);
@@ -553,7 +558,6 @@
             //     clearTimeout(timeout);
             //     timeout = setTimeout("location.reload(true);",5000);
             // }
-
         }
     }
 </script>
