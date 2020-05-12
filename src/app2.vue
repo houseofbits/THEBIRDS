@@ -81,7 +81,7 @@
                 rotationStep:0,
                 config:{
                     useTouchEvents:false,
-                    userInputTimeout:80000,
+                    userInputTimeout:100000,
                     detailRotationDuration:650,
                 },
                 isDraging:false,
@@ -676,23 +676,24 @@
         width:1024px;
         height:768px;
         position:absolute;
-        top:0px;
-        left:0px;
+        top:0;
+        left:0;
         background-repeat: round;
     }
     .detail-3d{
         position:absolute;
-        left:0px;
-        top:0px;
+        left:0;
+        top:0;
         width:1024px;
         height:768px;
         perspective: 300px;
         transform: rotateX(0deg) rotateY(0deg);
     }
     .detail-frame{
+        pointer-events: none;
         position:absolute;
-        left:0px;
-        top:0px;
+        left:0;
+        top:0;
         width:1024px;
         height:768px;
         transform-style: preserve-3d;
@@ -701,15 +702,15 @@
     }
     .detail-screen .navigation {
         position: absolute;
-        bottom:0px;
-        left:0px;
+        bottom:0;
+        left:0;
         width:1024px;
         height:80px;
     }
 
     .button-prev{
         position:fixed;
-        left: 0px;
+        left: 0;
         bottom:10px;
         background-image: url("/resources/button_return.png");
         width:100px;
@@ -726,7 +727,7 @@
     }
     .button-next{
         position:fixed;
-        right: 0px;
+        right: 0;
         bottom:10px;
         background-image: url("/resources/button_return.png");
         width:100px;

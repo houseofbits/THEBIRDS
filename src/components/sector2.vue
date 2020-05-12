@@ -5,8 +5,8 @@
             <div class="icon-shadow" :style="iconStyleShadow()"></div>
         </div>
         <div class="title" :style="titleStyle()">
-            <span :style="titleTextStyle()">{{title}}</span></div>
-        <div class="title-shadow" :style="titleShadowStyle()"><span>{{title}}</span></div>
+            <span :style="titleTextStyle()">{{titleText}}</span></div>
+        <div class="title-shadow" :style="titleShadowStyle()"><span>{{titleText}}</span></div>
         <div class="shadow" :style="{transform: 'translateZ('+(this.calculateZPos() - 30)+'px)'}"></div>
         <div class="circle" :style="circleStyle()"></div>
         <div class="active-circle"
@@ -41,7 +41,9 @@
             angleOnMouseDown:0
         }},
         computed:{
-
+            titleText:function () {
+                return this.title;// + ", " + (this.$vnode.key+1);
+            }
         },
         methods: {
             activeCircleStyle:function(){

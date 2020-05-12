@@ -16,27 +16,7 @@
 
 import {Vector3, Vector2, Rectangle, getRandomArbitrary, radiansToDegrees} from './common.js'
 import sound from './sound.vue'
-//import autoDescription from './autoDescription.vue'
 
-/**
- *
- *  Data structure:
- *      description{
- *          lv,ru,en:"string"
- *          transform:[left, top, fontSize]
- *          transform:{
- *              lv,ru,en:[left, top, fontSize]
- *          }
- *      }
- *      detailImage{
- *          image:url
- *          transform:[width,left,top]
- *          transform:{
- *              lv,ru,en:[width,left,top]
- *          }
- *      }
- *
- */
 export default {
     props: ['sector'],
     template:'#detail-template',
@@ -233,7 +213,7 @@ export default {
         padding-right: 10px;
     }
     .description{
-        text-align: justify;
+        text-align: left;
         font-size: 30px;
         line-height: 35px;
         position:absolute;
@@ -259,6 +239,7 @@ export default {
         height:968px;
         transform-origin: 512px 0 -3000px;
         background-repeat: round;
+        pointer-events:all;
     }
     .detail-content{
         position:absolute;
