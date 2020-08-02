@@ -89,6 +89,9 @@
                 passiveMode:false,
 
                 loadDetail:null,
+
+                //detailState:null,
+                detailStateTimer:null,
             }
         },
         components: {
@@ -273,8 +276,9 @@
             //Set up default position, visibility and opacity
             initDetailView:function(){
                 if(typeof this.$refs.detailScreen !== 'undefined') {
-                    Velocity(this.$refs.detailScreen, {opacity: 0}, {display: "none"});
-                    Velocity(this.$refs.detailScreen,"finish");
+
+                    this.$refs.detailScreen.classList.remove("detail-screen-visible");
+
                     this.rotateDetailView(this.selectedDetail, true);
                 }
             },
@@ -296,45 +300,48 @@
 
                 if(this.selectedDetail == null)return;
 
-                let parent = this;
+                if(this.detailStateTimer == null ){
 
-                this.$emit('detail-close', this.selectedDetail);
+                    let parent = this;
 
-                this.$emit('stop-sounds');
+                    this.$emit('detail-close', this.selectedDetail);
 
-                this.detailViewOpen = false;
+                    this.$emit('stop-sounds');
 
-                //Fade off detail view background
-                Velocity(this.$refs.detailScreen,{
-                    opacity:0
-                }, { duration: 600,
-                    display: "none",
-                    complete:function(){
-                        parent.selectedDetail = null;
-                        parent.detailViewOpen = false;
-                    }
-                });
-                this.userInputActivation();
+                    this.detailViewOpen = false;
+                    
+                    this.$refs.detailScreen.classList.remove("detail-screen-visible");
+
+                    this.detailStateTimer = setTimeout(this.closeDetailViewOnComplete, 500);
+
+                    this.userInputActivation();
+                }
             },  
             selectDetailView:function(id){
+        
+                if (this.detailStateTimer == null 
+                        && this.selectedDetail == null 
+                        && id != null) {
 
-                this.selectedDetail = id;
-
-                if (this.selectedDetail != null) {
+                    this.selectedDetail = id;
 
                     let parent = this;
 
                     this.initDetailView();
 
-                    Velocity(this.$refs.detailScreen,{
-                        opacity:1
-                    }, { duration: 1000,
-                        display: "block",
-                        complete:function () {
-                            parent.detailViewOpen = true;
-                        }
-                    });
+                    this.$refs.detailScreen.classList.add("detail-screen-visible");
+
+                    this.detailStateTimer = setTimeout(this.selectDetailViewOnComplete, 1000);
                 }
+            },
+            selectDetailViewOnComplete:function(){
+                this.detailViewOpen = true;
+                this.detailStateTimer = null;
+            },
+            closeDetailViewOnComplete:function(){
+                this.selectedDetail = null;
+                this.detailViewOpen = false;
+                this.detailStateTimer = null;                
             },
             getNextDetailViewId:function(){
                 if(this.selectedDetail != null){
@@ -679,7 +686,17 @@
         top:0;
         left:0;
         background-repeat: round;
+        transition: visibility 0.5s, opacity 0.5s;
+        visibility: hidden;
+        opacity:0;
     }
+
+    .detail-screen-visible{
+        opacity:1;
+        transition: visibility 1s, opacity 1s;
+        visibility:visible;
+    }
+
     .detail-3d{
         position:absolute;
         left:0;
@@ -802,4 +819,5 @@
         transform-style: preserve-3d;
         transform-origin: 0 0 -2000px;
     }
+
 </style>

@@ -59,7 +59,7 @@ export default {
 
     .sound{
         display: block;
-        width: 50%;
+        width: 60%;
         height: 55px;
         margin: 0px;
         margin-left: 50px;
